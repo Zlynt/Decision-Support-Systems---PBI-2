@@ -106,26 +106,93 @@ public class Manage_File {
 		}
 	}
 	
-	public void CreateNewFile()
-	{
+	public void CreateNewFile()	throws IOException
+	{	
+		boolean result_origin 			= false;
+		boolean result_pbi 				= false;
+		boolean result_eclipse 			= false;
+		boolean result_pentaho 			= false;
+		boolean result_weka 			= false;
+		boolean result_implementation 	= false;
+		boolean result_config 			= false;
+		
 		if (originFile == false)
 		{
 			System.out.println("Creating all files...");
-			//process of creating file
+			System.out.println("Creating directory: " + fileOrigin.getName());
+			System.out.println("Creating directory: " + filePBI.getName());
+			System.out.println("Creating directory: " + fileEclipse.getName());
+			System.out.println("Creating directory: " + filePentaho.getName());
+			System.out.println("Creating directory: " + fileWeka.getName());
+			System.out.println("Creating directory: " + fileImplementation.getName());
+			System.out.println("Creating directory: " + fileConfig.getName());
+			try
+			{
+					fileOrigin.mkdir();
+					filePBI.mkdir();
+					fileEclipse.mkdir();
+					filePentaho.mkdir();
+					fileWeka.mkdir();
+					fileImplementation.mkdir();
+					fileConfig.mkdir();
+					
+					result_origin = true;
+					result_pbi = true;
+					result_eclipse = true;
+					result_pentaho = true;
+					result_weka = true;
+					result_implementation = true;
+					result_config = true;
+			}
+			catch(SecurityException se)
+			{
+				 
+			}
+			
+			
 			System.out.println("Done!");
 		}
 		else if (PBIFile == false)
 		{
 			System.out.println("Creating the rest of the files...");
-			//process of creating file
+			System.out.println("Creating directory: " + filePBI.getName());
+			try
+			{
+				filePBI.mkdir();
+				fileEclipse.mkdir();
+				filePentaho.mkdir();
+				fileWeka.mkdir();
+				fileImplementation.mkdir();
+				fileConfig.mkdir();
+
+				result_pbi = true;
+				result_eclipse = true;
+				result_pentaho = true;
+				result_weka = true;
+				result_implementation = true;
+				result_config = true;
+			}
+			catch(SecurityException se)
+			{
+				 
+			}
 			System.out.println("Done!");
 		}
-		else if (PBIFile == false)
+		else if (PBIFile != false)
 		{
 			if(eclipseFile == false)
 			{
 				System.out.println("Creating Eclipse file...");
-				//process of creating file
+				System.out.println("Creating directory: " + fileEclipse.getName());
+				try
+				{
+						fileEclipse.mkdir();
+						result_config = true;
+				}
+				catch(SecurityException se)
+				{
+					 
+				}
 				System.out.println("Done!");
 			}
 			
@@ -133,7 +200,16 @@ public class Manage_File {
 			if (pentahoFile == false)
 			{
 				System.out.println("Creating Pentaho file...");
-				//process of creating file
+				System.out.println("Creating directory: " + filePentaho.getName());
+				try
+				{
+						filePentaho.mkdir();
+						result_config = true;
+				}
+				catch(SecurityException se)
+				{
+					 
+				}
 				System.out.println("Done!");
 			}
 			
@@ -141,7 +217,16 @@ public class Manage_File {
 			if (wekaFile == false)
 			{
 				System.out.println("Creating Weka file...");
-				//process of creating file
+				System.out.println("Creating directory: " + fileWeka.getName());
+				try
+				{
+						fileWeka.mkdir();
+						result_config = true;
+				}
+				catch(SecurityException se)
+				{
+					 
+				}
 				System.out.println("Done!");
 			}
 			
@@ -149,7 +234,16 @@ public class Manage_File {
 			if (implementationFile == false)
 			{
 				System.out.println("Creating implementation file...");
-				//process of creating file
+				System.out.println("Creating directory: " + fileImplementation.getName());
+				try
+				{
+						fileImplementation.mkdir();
+						result_config = true;
+				}
+				catch(SecurityException se)
+				{
+					 
+				}
 				System.out.println("Done!");
 			}
 			
@@ -157,7 +251,16 @@ public class Manage_File {
 			if (configFile == false)
 			{
 				System.out.println("Creating config file...");
-				//process of creating file
+				System.out.println("Creating directory: " + fileConfig.getName());
+				try
+				{
+						fileConfig.mkdir();
+						result_config = true;
+				}
+				catch(SecurityException se)
+				{
+					 
+				}
 				System.out.println("Done!");
 			}
 		}

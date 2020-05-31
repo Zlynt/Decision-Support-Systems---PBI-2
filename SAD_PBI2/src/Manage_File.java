@@ -110,60 +110,61 @@ public class Manage_File {
 	{
 		if (originFile == false)
 		{
-			System.out.print("Creating all files...");
+			System.out.println("Creating all files...");
 			//process of creating file
-			System.out.print("Done!");
+			System.out.println("Done!");
 		}
 		else if (PBIFile == false)
 		{
-			System.out.print("Creating the rest of the files...");
+			System.out.println("Creating the rest of the files...");
 			//process of creating file
-			System.out.print("Done!");
+			System.out.println("Done!");
 		}
 		else if (PBIFile == false)
 		{
 			if(eclipseFile == false)
 			{
-				System.out.print("Creating Eclipse file...");
+				System.out.println("Creating Eclipse file...");
 				//process of creating file
-				System.out.print("Done!");
+				System.out.println("Done!");
 			}
 			
 			
 			if (pentahoFile == false)
 			{
-				System.out.print("Creating Pentaho file...");
+				System.out.println("Creating Pentaho file...");
 				//process of creating file
-				System.out.print("Done!");
+				System.out.println("Done!");
 			}
 			
 			
 			if (wekaFile == false)
 			{
-				System.out.print("Creating Weka file...");
+				System.out.println("Creating Weka file...");
 				//process of creating file
-				System.out.print("Done!");
+				System.out.println("Done!");
 			}
 			
 			
 			if (implementationFile == false)
 			{
-				System.out.print("Creating implementation file...");
+				System.out.println("Creating implementation file...");
 				//process of creating file
-				System.out.print("Done!");
+				System.out.println("Done!");
 			}
 			
 			
 			if (configFile == false)
 			{
-				System.out.print("Creating config file...");
+				System.out.println("Creating config file...");
 				//process of creating file
-				System.out.print("Done!");
+				System.out.println("Done!");
 			}
 		}
 		else 
 		{
-			
+			System.out.println("Nothing to create files...");
+			System.out.println("Clear!");
 		}
 	}
 }

@@ -22,71 +22,85 @@ public class Manage_File {
 	File fileConfig 		= new File(configPath);
 	
 	
-	int missingFiles[];
+	boolean originFile, PBIFile, eclipseFile, pentahoFile, wekaFile, implementationFile, configFile;
 	
 	public void CheckFiles()
 	{
 		System.out.println("Checking the existance of the first path");
 		if (fileOrigin.exists())
 		{
+			originFile = true;
 			System.out.println("SAD Folder exists");
 			if(filePBI.exists())
 			{
+				PBIFile = true;
 				System.out.println("PBI Folder exists");
 				if(fileEclipse.exists())
 				{
+					eclipseFile = true;
 					System.out.println("Eclipse Folder exists");
 				}
 				else 
 				{
+					eclipseFile = false;
 					System.out.println("Don't exist Eclipse Folder");
 				}
 				
 				if(filePentaho.exists())
 				{
+					pentahoFile = true;
 					System.out.println("Pentaho Folder exists");
 				}
 				else 
 				{
+					pentahoFile = false;
 					System.out.println("Don't exist Pentaho Folder");
 				}
 				
 				if(fileWeka.exists())
 				{
+					wekaFile = true;
 					System.out.println("Weka Folder exists");
 				}
 				else 
 				{
+					wekaFile = false;
 					System.out.println("Don't exist Weka Folder");
 					
 				}
 				
 				if(fileImplementation.exists())
 				{
+					implementationFile = true;
 					System.out.println("Implementation Folder exists");
 				}
 				else 
 				{
+					implementationFile = false;
 					System.out.println("Don't exist implementacao Folder");
 				}
 				
 				if(fileConfig.exists())
 				{
+					configFile = true;
 					System.out.println("Config Folder exists");
 				}
 				else
 				{
+					configFile = false;
 					System.out.println("Don't exist config Folder");
 				}
 			}
 			else
 			{
+				PBIFile = false;
 				System.out.println("Don't exist PBI Folder");
 				System.out.println("Creating new files...");
 			}
 		}
 		else
 		{
+			originFile = false;
 			System.out.println("Don't exist SAD Folder");
 			System.out.println("Creating new files...");
 		}
@@ -94,6 +108,62 @@ public class Manage_File {
 	
 	public void CreateNewFile()
 	{
-		
+		if (originFile == false)
+		{
+			System.out.print("Creating all files...");
+			//process of creating file
+			System.out.print("Done!");
+		}
+		else if (PBIFile == false)
+		{
+			System.out.print("Creating the rest of the files...");
+			//process of creating file
+			System.out.print("Done!");
+		}
+		else if (PBIFile == false)
+		{
+			if(eclipseFile == false)
+			{
+				System.out.print("Creating Eclipse file...");
+				//process of creating file
+				System.out.print("Done!");
+			}
+			
+			
+			if (pentahoFile == false)
+			{
+				System.out.print("Creating Pentaho file...");
+				//process of creating file
+				System.out.print("Done!");
+			}
+			
+			
+			if (wekaFile == false)
+			{
+				System.out.print("Creating Weka file...");
+				//process of creating file
+				System.out.print("Done!");
+			}
+			
+			
+			if (implementationFile == false)
+			{
+				System.out.print("Creating implementation file...");
+				//process of creating file
+				System.out.print("Done!");
+			}
+			
+			
+			if (configFile == false)
+			{
+				System.out.print("Creating config file...");
+				//process of creating file
+				System.out.print("Done!");
+			}
+		}
+		else 
+		{
+			
+		}
 	}
 }

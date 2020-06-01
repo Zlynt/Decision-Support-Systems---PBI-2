@@ -10,8 +10,8 @@ public class Manage_File {
 	final static String eclipsePath = "C:\\sad\\PBI\\Eclipse";
 	final static String pentahoPath = "C:\\sad\\PBI\\Pentaho";
 	final static String wekaPath = "C:\\sad\\PBI\\Weka";
-	final static String implementationPath = "C:\\sad\\PBI\\implementacao";
-	final static String configPath = "C:\\sad\\PBI\\config";
+	final static String implementationPath = "C:\\sad\\implementacao";
+	final static String configPath = "C:\\sad\\config";
 	
 	File fileOrigin 		= new File(origin);
 	File filePBI 			= new File(pbiPath);

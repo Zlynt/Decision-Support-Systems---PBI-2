@@ -490,27 +490,12 @@
   <order>
     <hop>
       <from>Obter Produtos comprados por talão</from>
-      <to>Prepare Data</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
-      <from>Prepare Data</from>
-      <to>Select values</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
-      <from>Select values</from>
-      <to>Exportar talão com produtos comprados e o seu preço</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
-      <from>Obter Produtos comprados por talão</from>
       <to>Exportar talão com produtos comprados e o seu preço 2</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Exportar talão com produtos comprados e o seu preço</name>
+    <name>Exportar talão com produtos comprados e o seu preço 2</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -552,7 +537,7 @@
     </file>
     <fields>
       <field>
-        <name>ORDER</name>
+        <name>ORDERNUMBER</name>
         <type>Integer</type>
         <format>####0;-####0</format>
         <currency/>
@@ -560,11 +545,11 @@
         <group>.</group>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>-1</length>
+        <length>9</length>
         <precision>0</precision>
       </field>
       <field>
-        <name>PRODUCT</name>
+        <name>PRODUCTCODE</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -572,11 +557,11 @@
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>-1</length>
+        <length>50</length>
         <precision>-1</precision>
       </field>
       <field>
-        <name>PRICE</name>
+        <name>QUANTITYORDERED</name>
         <type>Integer</type>
         <format>####0;-####0</format>
         <currency/>
@@ -584,7 +569,19 @@
         <group>.</group>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>-1</length>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>PRICEEACH</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>17</length>
         <precision>0</precision>
       </field>
     </fields>
@@ -597,7 +594,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>816</xloc>
+      <xloc>496</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -732,210 +729,6 @@ FROM "PUBLIC".ORDERDETAILS
     <GUI>
       <xloc>144</xloc>
       <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Prepare Data</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>
-      <jsScript>
-        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>//Script here
-
-var ORDER = ORDERNUMBER;
-var PRODUCT = PRODUCTCODE;
-var PRICE = PRICEEACH;
-
-for(rowIndex=2;rowIndex&lt;=QUANTITYORDERED;rowIndex++)
-{
-	newRow = createRowCopy(getOutputRowMeta().size());
-	var rowIndex = getInputRowMeta().size();
-	newRow[rowIndex++] = ORDER;
-	newRow[rowIndex++] = PRODUCT;
-	newRow[rowIndex++] = PRICE;
-	putRow(newRow);
-}</jsScript_script>
-      </jsScript>
-    </jsScripts>
-    <fields>
-      <field>
-        <name>ORDER</name>
-        <rename>ORDER</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>
-      <field>
-        <name>PRODUCT</name>
-        <rename>PRODUCT</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>
-      <field>
-        <name>PRICE</name>
-        <rename>PRICE</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>368</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>ORDER</name>
-      </field>
-      <field>
-        <name>PRODUCT</name>
-      </field>
-      <field>
-        <name>PRICE</name>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>560</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Exportar talão com produtos comprados e o seu preço 2</name>
-    <type>TextFileOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>windows-1252</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>${Internal.Entry.Current.Directory}/CSV/TASKDATA4</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
-    <fields>
-      <field>
-        <name>ORDERNUMBER</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>PRODUCTCODE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>50</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>PRICEEACH</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>17</length>
-        <precision>0</precision>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>448</xloc>
-      <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

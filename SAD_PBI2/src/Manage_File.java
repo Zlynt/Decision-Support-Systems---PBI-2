@@ -151,6 +151,7 @@ public class Manage_File {
 			
 			
 			System.out.println("Done!");
+			System.out.println("Please create the rest of the files!");
 		}
 		else if (PBIFile == false)
 		{
@@ -177,6 +178,7 @@ public class Manage_File {
 				 
 			}
 			System.out.println("Done!");
+			System.out.println("Please create the rest of the files!");
 		}
 		else if (PBIFile != false)
 		{
@@ -194,6 +196,7 @@ public class Manage_File {
 					 
 				}
 				System.out.println("Done!");
+				System.out.println("Please create the rest of the files!");
 			}
 			
 			
@@ -211,6 +214,7 @@ public class Manage_File {
 					 
 				}
 				System.out.println("Done!");
+				System.out.println("Please create the rest of the files!");
 			}
 			
 			
@@ -228,6 +232,7 @@ public class Manage_File {
 					 
 				}
 				System.out.println("Done!");
+				System.out.println("Please create the rest of the files!");
 			}
 			
 			
@@ -245,6 +250,7 @@ public class Manage_File {
 					 
 				}
 				System.out.println("Done!");
+				System.out.println("Please create the rest of the files!");
 			}
 			
 			
@@ -262,6 +268,7 @@ public class Manage_File {
 					 
 				}
 				System.out.println("Done!");
+				System.out.println("Please create the rest of the files!");
 			}
 		}
 		else 

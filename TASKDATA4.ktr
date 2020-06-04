@@ -505,7 +505,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
+    <separator>,</separator>
     <enclosure>"</enclosure>
     <enclosure_forced>N</enclosure_forced>
     <enclosure_fix_disabled>N</enclosure_fix_disabled>
@@ -538,15 +538,15 @@
     <fields>
       <field>
         <name>ORDERNUMBER</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
+        <type>String</type>
+        <format/>
         <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
+        <decimal/>
+        <group/>
         <nullif/>
         <trim_type>none</trim_type>
         <length>9</length>
-        <precision>0</precision>
+        <precision>-1</precision>
       </field>
       <field>
         <name>PRODUCTCODE</name>
@@ -559,30 +559,6 @@
         <trim_type>none</trim_type>
         <length>50</length>
         <precision>-1</precision>
-      </field>
-      <field>
-        <name>QUANTITYORDERED</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>PRICEEACH</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>17</length>
-        <precision>0</precision>
       </field>
     </fields>
     <attributes/>
@@ -631,7 +607,7 @@ FROM "PUBLIC".ORDERDETAILS
         <name>ORDERNUMBER</name>
         <length>9</length>
         <precision>0</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
+        <origin>Obter Produtos comprados por talão</origin>
         <comments>ORDERNUMBER</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>,</decimal_symbol>
@@ -654,7 +630,7 @@ FROM "PUBLIC".ORDERDETAILS
         <name>PRODUCTCODE</name>
         <length>50</length>
         <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
+        <origin>Obter Produtos comprados por talão</origin>
         <comments>PRODUCTCODE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -677,7 +653,7 @@ FROM "PUBLIC".ORDERDETAILS
         <name>QUANTITYORDERED</name>
         <length>9</length>
         <precision>0</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
+        <origin>Obter Produtos comprados por talão</origin>
         <comments>QUANTITYORDERED</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>,</decimal_symbol>
@@ -700,7 +676,7 @@ FROM "PUBLIC".ORDERDETAILS
         <name>PRICEEACH</name>
         <length>17</length>
         <precision>0</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
+        <origin>Obter Produtos comprados por talão</origin>
         <comments>PRICEEACH</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>,</decimal_symbol>

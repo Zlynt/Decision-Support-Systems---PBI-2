@@ -505,7 +505,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
+    <separator>,</separator>
     <enclosure>"</enclosure>
     <enclosure_forced>N</enclosure_forced>
     <enclosure_fix_disabled>N</enclosure_fix_disabled>
@@ -519,7 +519,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Entry.Current.Directory}/CSV/classic_cars_sales</name>
+      <name>${Internal.Entry.Current.Directory}/CSV/TASKDATA3</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -657,6 +657,18 @@
         <precision>0</precision>
       </field>
       <field>
+        <name>PRODUCTLINE</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>16</length>
+        <precision>-1</precision>
+      </field>
+      <field>
         <name>MSRP</name>
         <type>Integer</type>
         <format>####0;-####0</format>
@@ -678,54 +690,6 @@
         <nullif/>
         <trim_type>none</trim_type>
         <length>9</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>CUSTOMERNAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>34</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>PHONE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>30</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADDRESSLINE1</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>42</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADDRESSLINE2</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>30</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -753,18 +717,6 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>POSTALCODE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>COUNTRY</name>
         <type>String</type>
         <format/>
@@ -786,30 +738,6 @@
         <nullif/>
         <trim_type>none</trim_type>
         <length>5</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>CONTACTLASTNAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>11</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>CONTACTFIRSTNAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>10</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -862,6 +790,7 @@
 , QTR_ID
 , MONTH_ID
 , YEAR_ID
+, PRODUCTLINE
 , MSRP
 , PRODUCTCODE
 , CUSTOMERNAME
@@ -877,8 +806,6 @@
 , CONTACTFIRSTNAME
 , DEALSIZE
 FROM "PUBLIC".SALES_DATA
-WHERE
-"PUBLIC".SALES_DATA.PRODUCTLINE = 'Classic Cars';
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -1103,6 +1030,29 @@ WHERE
         <origin>[All countries] [Classic Cars] Importing Data</origin>
         <comments>YEAR_ID</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>pt_PT</date_format_locale>
+        <date_format_timezone>Europe/London</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>PRODUCTLINE</name>
+        <length>16</length>
+        <precision>-1</precision>
+        <origin>[All countries] [Classic Cars] Importing Data</origin>
+        <comments>PRODUCTLINE</comments>
+        <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
         <currency_symbol/>

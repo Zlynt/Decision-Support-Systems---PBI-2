@@ -1,6 +1,9 @@
-import weka.core.Instance;
+
+import weka.core.Instances;
 import weka.core.converters.ArffLoader;
 import weka.core.converters.CSVLoader;
+
+import java.io.File;
 
 public class Main {
 

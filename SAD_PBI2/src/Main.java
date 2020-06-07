@@ -1,6 +1,7 @@
 
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
+import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 
 import java.io.File;
@@ -17,6 +18,12 @@ public class Main {
 		CSVLoader loader = new CSVLoader();
 		//loader.setSource(file);
 		Instances data = loader.getDataSet();
+		
+		
+		ArffSaver saver = new ArffSaver();
+		saver.setInstances(data);
+		//saver.setFile(outputFile);
+		saver.writeBatch();
 		
 	}
 

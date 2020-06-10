@@ -489,7 +489,12 @@
   </connection>
   <order>
     <hop>
-      <from>[All countries] [Classic Cars] Importing Data</from>
+      <from>Obter produtos, tid e país</from>
+      <to>Modified JavaScript value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified JavaScript value</from>
       <to>[All countries] [Classic Cars] Exporting CSV</to>
       <enabled>Y</enabled>
     </hop>
@@ -549,78 +554,6 @@
         <precision>0</precision>
       </field>
       <field>
-        <name>QUANTITYORDERED</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>PRICEEACH</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>5</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ORDERLINENUMBER</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>SALES</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>ORDERDATE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>STATUS</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>10</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>QTR_ID</name>
         <type>Integer</type>
         <format>####0;-####0</format>
@@ -657,6 +590,18 @@
         <precision>0</precision>
       </field>
       <field>
+        <name>PRODUCTCODE</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>-1</precision>
+      </field>
+      <field>
         <name>PRODUCTLINE</name>
         <type>String</type>
         <format/>
@@ -669,19 +614,7 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>MSRP</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>PRODUCTCODE</name>
+        <name>PRODUCTVENDOR</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -689,7 +622,19 @@
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>9</length>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ADDRESSLINE1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>42</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -705,7 +650,7 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>STATE</name>
+        <name>POSTALCODE</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -713,7 +658,7 @@
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>13</length>
+        <length>9</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -740,18 +685,6 @@
         <length>5</length>
         <precision>-1</precision>
       </field>
-      <field>
-        <name>DEALSIZE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>255</length>
-        <precision>-1</precision>
-      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -768,7 +701,7 @@
     </GUI>
   </step>
   <step>
-    <name>[All countries] [Classic Cars] Importing Data</name>
+    <name>Obter produtos, tid e país</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -780,32 +713,26 @@
     </partitioning>
     <connection>Test</connection>
     <sql>SELECT
-  ORDERNUMBER
-, QUANTITYORDERED
-, PRICEEACH
-, ORDERLINENUMBER
-, SALES
-, ORDERDATE
-, STATUS
-, QTR_ID
-, MONTH_ID
-, YEAR_ID
-, PRODUCTLINE
-, MSRP
-, PRODUCTCODE
-, CUSTOMERNAME
-, PHONE
-, ADDRESSLINE1
-, ADDRESSLINE2
-, CITY
-, STATE
-, POSTALCODE
-, COUNTRY
-, TERRITORY
-, CONTACTLASTNAME
-, CONTACTFIRSTNAME
-, DEALSIZE
-FROM "PUBLIC".SALES_DATA
+  SALES_DATA.ORDERNUMBER
+
+, SALES_DATA.QTR_ID
+, SALES_DATA.MONTH_ID
+, SALES_DATA.YEAR_ID
+
+, SALES_DATA.PRODUCTCODE
+, SALES_DATA.PRODUCTLINE
+, PRODUCTS.PRODUCTVENDOR
+
+, SALES_DATA.ADDRESSLINE1
+, SALES_DATA.CITY
+, SALES_DATA.POSTALCODE
+, SALES_DATA.COUNTRY
+, SALES_DATA.TERRITORY
+
+FROM "PUBLIC".SALES_DATA, "PUBLIC".PRODUCTS
+WHERE 
+SALES_DATA.PRODUCTCODE = PRODUCTS.PRODUCTCODE;
+
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -823,144 +750,6 @@ FROM "PUBLIC".SALES_DATA
         <origin>[All countries] [Classic Cars] Importing Data</origin>
         <comments>ORDERNUMBER</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>QUANTITYORDERED</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>QUANTITYORDERED</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>PRICEEACH</name>
-        <length>5</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>PRICEEACH</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>ORDERLINENUMBER</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>ORDERLINENUMBER</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>SALES</name>
-        <length>9</length>
-        <precision>0</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>SALES</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>ORDERDATE</name>
-        <length>15</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>ORDERDATE</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>STATUS</name>
-        <length>10</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>STATUS</comments>
-        <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
         <currency_symbol/>
@@ -1047,52 +836,6 @@ FROM "PUBLIC".SALES_DATA
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>PRODUCTLINE</name>
-        <length>16</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>PRODUCTLINE</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MSRP</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>MSRP</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
         <name>PRODUCTCODE</name>
         <length>9</length>
         <precision>-1</precision>
@@ -1116,11 +859,11 @@ FROM "PUBLIC".SALES_DATA
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>CUSTOMERNAME</name>
-        <length>34</length>
+        <name>PRODUCTLINE</name>
+        <length>16</length>
         <precision>-1</precision>
         <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>CUSTOMERNAME</comments>
+        <comments>PRODUCTLINE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1139,11 +882,11 @@ FROM "PUBLIC".SALES_DATA
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>PHONE</name>
-        <length>30</length>
+        <name>PRODUCTVENDOR</name>
+        <length>50</length>
         <precision>-1</precision>
         <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>PHONE</comments>
+        <comments>PRODUCTVENDOR</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1185,57 +928,11 @@ FROM "PUBLIC".SALES_DATA
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>ADDRESSLINE2</name>
-        <length>30</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>ADDRESSLINE2</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
         <name>CITY</name>
         <length>14</length>
         <precision>-1</precision>
         <origin>[All countries] [Classic Cars] Importing Data</origin>
         <comments>CITY</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>STATE</name>
-        <length>13</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>STATE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1320,75 +1017,6 @@ FROM "PUBLIC".SALES_DATA
         <date_format_timezone>Europe/London</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CONTACTLASTNAME</name>
-        <length>11</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>CONTACTLASTNAME</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CONTACTFIRSTNAME</name>
-        <length>10</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>CONTACTFIRSTNAME</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>DEALSIZE</name>
-        <length>255</length>
-        <precision>-1</precision>
-        <origin>[All countries] [Classic Cars] Importing Data</origin>
-        <comments>DEALSIZE</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_PT</date_format_locale>
-        <date_format_timezone>Europe/London</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
     </row-meta>
     <attributes/>
     <cluster_schema/>
@@ -1400,6 +1028,74 @@ FROM "PUBLIC".SALES_DATA
     </remotesteps>
     <GUI>
       <xloc>144</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified JavaScript value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+
+if(ORDERNUMBER === 'null')
+ORDERNUMBER = 'null';
+
+if(QTR_ID === 'null')
+QTR_ID = 'null';
+
+if(MONTH_ID === 'null')
+MONTH_ID = 'null';
+
+if(YEAR_ID === 'null')
+YEAR_ID = 'null';
+
+if(PRODUCTCODE === 'null')
+PRODUCTCODE = 'null';
+
+if(PRODUCTLINE === 'null')
+PRODUCTLINE = 'null';
+
+if(ADDRESSLINE1 === 'null')
+ADDRESSLINE1 = 'null';
+
+if(CITY === 'null')
+CITY = 'null';
+
+if(POSTALCODE === 'null')
+POSTALCODE = 'null';
+
+if(COUNTRY === 'null')
+COUNTRY = 'null';
+
+if(TERRITORY === 'null')
+TERRITORY = 'null';</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>

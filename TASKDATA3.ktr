@@ -554,31 +554,7 @@
         <precision>0</precision>
       </field>
       <field>
-        <name>QTR_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
         <name>MONTH_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>YEAR_ID</name>
         <type>Integer</type>
         <format>####0;-####0</format>
         <currency/>
@@ -602,66 +578,6 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>PRODUCTLINE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>16</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>PRODUCTVENDOR</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>50</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADDRESSLINE1</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>42</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>CITY</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>14</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>POSTALCODE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>COUNTRY</name>
         <type>String</type>
         <format/>
@@ -670,19 +586,7 @@
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>13</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>TERRITORY</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>5</length>
+        <length>-1</length>
         <precision>-1</precision>
       </field>
     </fields>
@@ -1051,41 +955,79 @@ SALES_DATA.PRODUCTCODE = PRODUCTS.PRODUCTCODE;
         <jsScript_name>Script 1</jsScript_name>
         <jsScript_script>//Script here
 
-if(ORDERNUMBER === 'null')
-ORDERNUMBER = 'null';
+var POSTALCODE2;
+if(POSTALCODE === null)
+	POSTALCODE2 = 'null';
+else
+	POSTALCODE2 = POSTALCODE;
 
-if(QTR_ID === 'null')
-QTR_ID = 'null';
+var CITY2;
+if(CITY === null)
+	CITY2 = 'null';
+else
+	CITY2 = CITY;
 
-if(MONTH_ID === 'null')
-MONTH_ID = 'null';
+var COUNTRY2;
+if(COUNTRY === null)
+	COUNTRY2 = 'null';
+else
+	COUNTRY2 = COUNTRY;
 
-if(YEAR_ID === 'null')
-YEAR_ID = 'null';
+var TERRITORY2;
+if(TERRITORY === null)
+	TERRITORY2 = 'null';
+else
+	TERRITORY2 = TERRITORY;
 
-if(PRODUCTCODE === 'null')
-PRODUCTCODE = 'null';
-
-if(PRODUCTLINE === 'null')
-PRODUCTLINE = 'null';
-
-if(ADDRESSLINE1 === 'null')
-ADDRESSLINE1 = 'null';
-
-if(CITY === 'null')
-CITY = 'null';
-
-if(POSTALCODE === 'null')
-POSTALCODE = 'null';
-
-if(COUNTRY === 'null')
-COUNTRY = 'null';
-
-if(TERRITORY === 'null')
-TERRITORY = 'null';</jsScript_script>
+var ADDRESSLINE12;
+if(ADDRESSLINE1 === null)
+	ADDRESSLINE12 = 'null';
+else
+	ADDRESSLINE12 = ADDRESSLINE1;</jsScript_script>
       </jsScript>
     </jsScripts>
-    <fields>    </fields>
+    <fields>
+      <field>
+        <name>POSTALCODE2</name>
+        <rename>POSTALCODE</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>CITY2</name>
+        <rename>CITY</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>COUNTRY2</name>
+        <rename>COUNTRY</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>TERRITORY2</name>
+        <rename>TERRITORY</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>ADDRESSLINE12</name>
+        <rename>ADDRESSLINE1</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>

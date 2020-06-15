@@ -500,8 +500,8 @@
     </hop>
   </order>
   <step>
-    <name>[All countries] [Classic Cars] Exporting CSV</name>
-    <type>TextFileOutput</type>
+    <name>Modified JavaScript value</name>
+    <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -510,84 +510,85 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>,</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>windows-1252</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>${Internal.Entry.Current.Directory}/CSV/TASKDATA3</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+
+var POSTALCODE2;
+if(POSTALCODE === null)
+	POSTALCODE2 = 'null';
+else
+	POSTALCODE2 = POSTALCODE;
+
+var CITY2;
+if(CITY === null)
+	CITY2 = 'null';
+else
+	CITY2 = CITY;
+
+var COUNTRY2;
+if(COUNTRY === null)
+	COUNTRY2 = 'null';
+else
+	COUNTRY2 = COUNTRY;
+
+var TERRITORY2;
+if(TERRITORY === null)
+	TERRITORY2 = 'null';
+else
+	TERRITORY2 = TERRITORY;
+
+var ADDRESSLINE12;
+if(ADDRESSLINE1 === null)
+	ADDRESSLINE12 = 'null';
+else
+	ADDRESSLINE12 = ADDRESSLINE1;</jsScript_script>
+      </jsScript>
+    </jsScripts>
     <fields>
       <field>
-        <name>ORDERNUMBER</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>MONTH_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>PRODUCTCODE</name>
+        <name>POSTALCODE2</name>
+        <rename>POSTALCODE</rename>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>COUNTRY</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
         <length>-1</length>
         <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>CITY2</name>
+        <rename>CITY</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>COUNTRY2</name>
+        <rename>COUNTRY</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>TERRITORY2</name>
+        <rename>TERRITORY</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+      <field>
+        <name>ADDRESSLINE12</name>
+        <rename>ADDRESSLINE1</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
       </field>
     </fields>
     <attributes/>
@@ -599,7 +600,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>752</xloc>
+      <xloc>448</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -937,8 +938,8 @@ SALES_DATA.PRODUCTCODE = PRODUCTS.PRODUCTCODE;
     </GUI>
   </step>
   <step>
-    <name>Modified JavaScript value</name>
-    <type>ScriptValueMod</type>
+    <name>[All countries] [Classic Cars] Exporting CSV</name>
+    <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -947,85 +948,84 @@ SALES_DATA.PRODUCTCODE = PRODUCTS.PRODUCTCODE;
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>
-      <jsScript>
-        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>//Script here
-
-var POSTALCODE2;
-if(POSTALCODE === null)
-	POSTALCODE2 = 'null';
-else
-	POSTALCODE2 = POSTALCODE;
-
-var CITY2;
-if(CITY === null)
-	CITY2 = 'null';
-else
-	CITY2 = CITY;
-
-var COUNTRY2;
-if(COUNTRY === null)
-	COUNTRY2 = 'null';
-else
-	COUNTRY2 = COUNTRY;
-
-var TERRITORY2;
-if(TERRITORY === null)
-	TERRITORY2 = 'null';
-else
-	TERRITORY2 = TERRITORY;
-
-var ADDRESSLINE12;
-if(ADDRESSLINE1 === null)
-	ADDRESSLINE12 = 'null';
-else
-	ADDRESSLINE12 = ADDRESSLINE1;</jsScript_script>
-      </jsScript>
-    </jsScripts>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}/CSV/TASKDATA3</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
     <fields>
       <field>
-        <name>POSTALCODE2</name>
-        <rename>POSTALCODE</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>Y</replace>
+        <name>ORDERNUMBER</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
       </field>
       <field>
-        <name>CITY2</name>
-        <rename>CITY</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>Y</replace>
+        <name>MONTH_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
       </field>
       <field>
-        <name>COUNTRY2</name>
-        <rename>COUNTRY</rename>
+        <name>PRODUCTCODE</name>
         <type>String</type>
-        <length>-1</length>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
         <precision>-1</precision>
-        <replace>Y</replace>
       </field>
       <field>
-        <name>TERRITORY2</name>
-        <rename>TERRITORY</rename>
+        <name>COUNTRY</name>
         <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
         <length>-1</length>
         <precision>-1</precision>
-        <replace>Y</replace>
-      </field>
-      <field>
-        <name>ADDRESSLINE12</name>
-        <rename>ADDRESSLINE1</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>Y</replace>
       </field>
     </fields>
     <attributes/>
@@ -1037,7 +1037,7 @@ else
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
+      <xloc>752</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>

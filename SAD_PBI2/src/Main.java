@@ -25,6 +25,7 @@ public class Main {
 		
 		TASKDATA4 taskdata4 = new TASKDATA4();
 		taskdata4.csv_to_arff();
+		taskdata4.load_arff();
 		
 
 		//CSVLoader loader = new CSVLoader();

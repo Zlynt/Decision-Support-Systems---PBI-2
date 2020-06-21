@@ -5,5 +5,7 @@ public class TASKDATA4 extends TASKDATA {
 		super(4); //TASKDATA4
 	}
 	
-	
+	public void csv_to_arff() {
+		
+	}
 }

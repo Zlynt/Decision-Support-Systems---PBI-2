@@ -20,18 +20,22 @@ public class Main {
 		System.out.println("Josué Ferreira");
 		System.out.println("=====================================");
 		
-		File file = new File("C:\\sad\\implementacao\\TASKDATA1.csv");
-		File outputFile = new File("C:\\sad\\implementacao\\TASKDATA1.arff");
+		//File file = new File("C:\\sad\\implementacao\\TASKDATA1.csv");
+		//File outputFile = new File("C:\\sad\\implementacao\\TASKDATA1.arff");
+		
+		TASKDATA4 taskdata4 = new TASKDATA4();
+		taskdata4.process_and_save();
+		
 
-		CSVLoader loader = new CSVLoader();
-		loader.setSource(file);
-		Instances data = loader.getDataSet();
+		//CSVLoader loader = new CSVLoader();
+		//loader.setSource(file);
+		//Instances data = loader.getDataSet();
 		
 		
-		ArffSaver saver = new ArffSaver();
-		saver.setInstances(data);
-		saver.setFile(outputFile);
-		saver.writeBatch();
+		//ArffSaver saver = new ArffSaver();
+		//saver.setInstances(data);
+		//saver.setFile(outputFile);
+		//saver.writeBatch();
 		
 //		String dataset = "C:\\sad\\implementacao\\TASKDATA1.arff";
 //		DataSource source = new DataSource(dataset);

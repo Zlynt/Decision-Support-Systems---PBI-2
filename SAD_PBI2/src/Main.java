@@ -24,7 +24,7 @@ public class Main {
 		//File outputFile = new File("C:\\sad\\implementacao\\TASKDATA1.arff");
 		
 		TASKDATA4 taskdata4 = new TASKDATA4();
-		taskdata4.process_and_save();
+		taskdata4.csv_to_arff();
 		
 
 		//CSVLoader loader = new CSVLoader();

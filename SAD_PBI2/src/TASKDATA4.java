@@ -10,6 +10,7 @@ import java.text.Collator;
 import java.util.Comparator;
 import java.util.LinkedList;
 
+import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader.ArffReader;
 import weka.core.converters.ArffSaver;
@@ -111,8 +112,8 @@ public class TASKDATA4 {
 
 		for (int i = 0; i < data_loaded.length; i++) {
 			int index_of_tid = tid.indexOf(data_loaded[i].split(",")[0]);
-			System.out.println("DATA: ="+data_loaded[i].split(",")[0]);
-			System.out.println("INDEX= "+index_of_tid);
+			//System.out.println("DATA: ="+data_loaded[i].split(",")[0]);
+			//System.out.println("INDEX= "+index_of_tid);
 			if(index_of_tid != -1)
 			buysPerTID.get(index_of_tid).add(data_loaded[i].split(",")[1]);
 		}
@@ -138,15 +139,35 @@ public class TASKDATA4 {
 			arff_file.substring(0, arff_file.length() - 1);
 			arff_file += "\n";
 		}
+		
+		Reader inputString = new StringReader(arff_file);
+		BufferedReader reader = new BufferedReader(inputString);
+		 try {
+			ArffReader arff = new ArffReader(reader);
+			 Instances data = arff.getData();
+			 ArffSaver saver = new ArffSaver();
+			 saver.setInstances(data);
+			 saver.setFile(new File(outputFile));
+			 saver.writeBatch();
+			 System.out.println("TASKDATA4.arff saved!");
+			 Apriori model = new Apriori();
+			 model.buildAssociations(data);
+			 System.out.println(model);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		 
 
-		try {
+
+		/*try {
 			PrintWriter out = new PrintWriter(outputFile); //Perguntar ao prof se posso usar isto em vez de ARFFSaver
 			out.print(arff_file);
 			out.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		
 		//ArffSaver saver = new ArffSaver();
 		//saver.setInstances(arff_file);

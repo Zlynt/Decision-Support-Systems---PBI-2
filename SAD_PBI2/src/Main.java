@@ -23,9 +23,12 @@ public class Main {
 		//File file = new File("C:\\sad\\implementacao\\TASKDATA1.csv");
 		//File outputFile = new File("C:\\sad\\implementacao\\TASKDATA1.arff");
 		
-		TASKDATA4 taskdata4 = new TASKDATA4();
-		taskdata4.csv_to_arff();
-		taskdata4.load_arff();
+		Josue josue = new Josue();
+		josue.executar_codigo();
+		
+		Ivan ivan = new Ivan();
+		ivan.executar_codigo();
+		
 		
 
 		//CSVLoader loader = new CSVLoader();

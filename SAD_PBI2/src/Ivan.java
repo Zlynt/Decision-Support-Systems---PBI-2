@@ -21,7 +21,8 @@ public class Ivan {
 			//System.out.println(taskdata4.apriori_mine_association_rules(taskdata4_instances));
 
 			System.out.println("[TASKDATA3] Processing the CSV input...");
-			taskdata3.save_arff(taskdata3.csv_to_instances());
+			//taskdata3.save_arff(taskdata3.csv_to_instances());
+			taskdata3.csv_to_instances();
 			//taskdata3.csv_to_instances();
 			
 			//System.out.println("[TASKDATA3] Loading arff...");

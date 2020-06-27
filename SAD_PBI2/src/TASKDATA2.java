@@ -27,6 +27,20 @@ public class TASKDATA2 extends TASKDATA{
 		// Read CSV
 		Instances trainSet = read_csv();
 		
+		String tmp_data_loaded = trainSet.toString();
+		while (tmp_data_loaded.contains(" '"))
+			tmp_data_loaded = tmp_data_loaded.replace(" '", "'");
+		
+		tmp_data_loaded = tmp_data_loaded.replace("@relationTASKDATA2", "");
+		tmp_data_loaded = tmp_data_loaded.replace("@relationTASKDATA2", "");
+		String[] data_loaded = tmp_data_loaded.split("\n");
+		
+		Reader inputString = new StringReader(transactionList.toARFF());
+		BufferedReader reader = new BufferedReader(inputString);
+		ArffReader arff = new ArffReader(reader);
+			
+			
+		
 	}
 
 }

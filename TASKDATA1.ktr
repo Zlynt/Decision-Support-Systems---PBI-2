@@ -871,7 +871,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
       <schema_name/>
     </partitioning>
     <connection>Test</connection>
-    <sql>SELECT DISTINCT
+    <sql>SELECT
 PRODUCTS.PRODUCTCODE
 ,PRODUCTS.PRODUCTNAME
 , SALES_DATA.DEALSIZE
@@ -896,7 +896,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
         <name>PRODUCTCODE</name>
         <length>50</length>
         <precision>-1</precision>
-        <origin>[Import] TASKDATA1</origin>
+        <origin>[Import] TASKDATA1 2</origin>
         <comments>PRODUCTCODE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -919,7 +919,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
         <name>PRODUCTNAME</name>
         <length>70</length>
         <precision>-1</precision>
-        <origin>[Import] TASKDATA1</origin>
+        <origin>[Import] TASKDATA1 2</origin>
         <comments>PRODUCTNAME</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -942,7 +942,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
         <name>DEALSIZE</name>
         <length>255</length>
         <precision>-1</precision>
-        <origin>[Import] TASKDATA1</origin>
+        <origin>[Import] TASKDATA1 2</origin>
         <comments>DEALSIZE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -965,7 +965,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
         <name>QTR_ID</name>
         <length>15</length>
         <precision>0</precision>
-        <origin>[Import] TASKDATA1</origin>
+        <origin>[Import] TASKDATA1 2</origin>
         <comments>QTR_ID</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>,</decimal_symbol>

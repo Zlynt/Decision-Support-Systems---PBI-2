@@ -20,13 +20,13 @@ public class TASKDATA1 extends TASKDATA{
 		super(1); //TASKDATA1; The 1 number goes from the TASKDATA number
 	}
 	
-	public Instances csv_to_instances() throws Exception {
+//	public Instances csv_to_instances() throws Exception {
 //		if(!csv_exists())
 //			throw new Exception(taskdata_name+".csv does not exist!");
 //		
 //		//Read CSV
 //		Instances trainSet = read_csv();
 		
-	}
+//	}
 
 }

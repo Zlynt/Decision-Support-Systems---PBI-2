@@ -9,14 +9,23 @@ public class Josue {
 		TASKDATA2 taskdata2 = new TASKDATA2();
 		
 		try {
-//			System.out.println("[TASKDATA4] Processing the CSV input...");
-//			taskdata4.save_arff(taskdata4.csv_to_instances());
+//			System.out.println("[TASKDATA1] Processing the CSV input...");
+//			taskdata4.save_arff(taskdata1.csv_to_instances());
 //			
-//			System.out.println("[TASKDATA4] Loading arff...");
-//			Instances taskdata4_instances = taskdata4.load_arff();
+//			System.out.println("[TASKDATA1] Loading arff...");
+//			Instances taskdata4_instances = taskdata1.load_arff();
 //
-//			System.out.println("[TASKDATA4] Mining association rules...");
-//			System.out.println(taskdata4.apriori_mine_association_rules(taskdata4_instances));
+//			System.out.println("[TASKDATA1] Mining association rules...");
+//			System.out.println(taskdata1.apriori_mine_association_rules(taskdata1_instances));
+			
+//			System.out.println("[TASKDATA2] Processing the CSV input...");
+//			taskdata4.save_arff(taskdata2.csv_to_instances());
+//			
+//			System.out.println("[TASKDATA2] Loading arff...");
+//			Instances taskdata4_instances = taskdata2.load_arff();
+//
+//			System.out.println("[TASKDATA2] Mining association rules...");
+//			System.out.println(taskdata2.apriori_mine_association_rules(taskdata2_instances));
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

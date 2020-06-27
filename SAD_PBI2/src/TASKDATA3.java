@@ -8,6 +8,8 @@ import java.text.Collator;
 import java.util.Comparator;
 import java.util.LinkedList;
 
+import TASKDATA3.Transaction;
+import TASKDATA3.TransactionList;
 import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
@@ -38,33 +40,33 @@ public class TASKDATA3 extends TASKDATA {
 		tmp_data_loaded = tmp_data_loaded.replace("@relationTASKDATA3", "");
 		String[] data_loaded = tmp_data_loaded.split("\n");
 
-		LinkedList<String> tid = new LinkedList<String>();
-		LinkedList<String> products = new LinkedList<String>();
-		LinkedList<String> months = new LinkedList<String>();
-
 		boolean read_data = false;
+		TransactionList transactionList = new TransactionList();
 
 		for (int i = 0; i < data_loaded.length; i++) {
 
 			if (read_data) {
 				String tmp_tid = data_loaded[i].split(",")[0];
 				String tmp_prod = data_loaded[i].split(",")[1];
-				String tmp_month = data_loaded[i].split(",")[1];
+				String tmp_month = data_loaded[i].split(",")[2];
 
-				System.out.println("[" + tmp_tid + "][" + tmp_month + "] " + tmp_prod);
+				// System.out.println("[" + tmp_tid + "][" + tmp_month + "] " + tmp_prod);
+				Transaction transaction = new Transaction(Integer.parseInt(tmp_tid), tmp_month);
+				transaction.addProduct(tmp_prod);
+				transactionList.addTransaction(transaction);
 			}
 
 			if (data_loaded[i].contains("@data")) {
 				read_data = true;
 			}
 		}
-		/*
-		 * //System.out.println(arff_file); Reader inputString = new
-		 * StringReader(arff_file); BufferedReader reader = new
-		 * BufferedReader(inputString); ArffReader arff = new ArffReader(reader); return
-		 * arff.getData();
-		 */
-		return null;
+
+		// System.out.println(arff_file);
+		Reader inputString = new StringReader(transactionList.toARFF());
+		BufferedReader reader = new BufferedReader(inputString);
+		ArffReader arff = new ArffReader(reader);
+		return arff.getData();
+
 	}
 
 }

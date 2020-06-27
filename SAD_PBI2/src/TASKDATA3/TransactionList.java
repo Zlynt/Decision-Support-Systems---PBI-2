@@ -16,6 +16,8 @@ public class TransactionList {
 	// Constructor
 	public TransactionList() {
 		transactionList = new LinkedList<Transaction>();
+		productList = new LinkedList<String>();
+		monthList = new LinkedList<String>();
 	}
 
 	// Sort any LinkedList<String>
@@ -44,12 +46,40 @@ public class TransactionList {
 		}
 	}
 
+	// Check if a transaction already exists
+	public boolean transactionExists(int transactionID) {
+		for (int i = 0; i < transactionList.size(); i++)
+			if (transactionList.get(i).getID() == transactionID)
+				return true;
+
+		return false;
+	}
+
+	// Get a transaction position in the LinkedList
+	public int getTransactionIndex(int transactionID) {
+		for (int i = 0; i < transactionList.size(); i++)
+			if (transactionList.get(i).getID() == transactionID)
+				return i;
+
+		return -1;
+	}
+
 	// Add transaction to the list
 	public void addTransaction(Transaction transaction) {
-		transactionList.add(transaction);
-		addMonth(transaction.getMonth());
-		for (int i = 0; i < transaction.getProducts().size(); i++) {
-			addProduct(transaction.getProducts().get(i));
+		if (transactionExists(transaction.getID())) {
+			int transactionIndex = getTransactionIndex(transaction.getID());
+
+			// Add the products to the existing transaction
+			for (int i = 0; i < transaction.getProducts().size(); i++) {
+				transactionList.get(transactionIndex).addProduct(transaction.getProducts().get(i));
+				addProduct(transaction.getProducts().get(i));
+			}
+		} else {
+			transactionList.add(transaction);
+			addMonth(transaction.getMonth());
+			for (int i = 0; i < transaction.getProducts().size(); i++) {
+				addProduct(transaction.getProducts().get(i));
+			}
 		}
 	}
 
@@ -62,13 +92,13 @@ public class TransactionList {
 	public String toARFF() {
 		String arff = "";
 
-		arff += "TASKDATA3\n\n"; // Add TaskData relation name (in this case it is the TaskData 3
+		arff += "@relation TASKDATA3\n\n"; // Add TaskData relation name (in this case it is the TaskData 3
 
 		// Add the transaction id attribute
 		arff += "@attribute TID {";
 		// Add the transactions to the possible values list
 		for (int i = 0; i < transactionList.size(); i++) {
-			arff += transactionList.get(i) + ",";
+			arff += transactionList.get(i).getID() + ",";
 		}
 		// Remove last comma and close the transaction attribute
 		arff = arff.substring(0, arff.length() - 1);

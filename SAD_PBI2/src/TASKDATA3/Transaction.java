@@ -14,8 +14,9 @@ public class Transaction {
 	// List of products in this transaction
 	private LinkedList<String> products;
 
-	public Transaction(int id) {
+	public Transaction(int id, String month) {
 		this.id = id;
+		this.month = month;
 		products = new LinkedList<String>();
 	}
 

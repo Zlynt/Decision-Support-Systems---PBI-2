@@ -19,5 +19,14 @@ public class TASKDATA2 extends TASKDATA{
 	public TASKDATA2() {
 		super(2); //TASKDATA2; The 2 number goes from the TASKDATA number
 	}
+	
+	public Instances csv_to_instances() throws Exception {
+		if (!csv_exists())
+			throw new Exception(taskdata_name + ".csv does not exist!");
+
+		// Read CSV
+		Instances trainSet = read_csv();
+		
+	}
 
 }

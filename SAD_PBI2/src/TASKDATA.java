@@ -10,8 +10,8 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 
 public class TASKDATA {
-	private static final String csv_path  = "C:\\sad\\implementacao\\CSV";
-	private static final String arff_path = "C:\\sad\\implementacao\\ARFF";
+	protected static final String csv_path  = "C:\\sad\\implementacao\\CSV";
+	protected static final String arff_path = "C:\\sad\\implementacao\\ARFF";
 	protected String taskdata_name;
 	
 	public TASKDATA(int taskdata_number) {

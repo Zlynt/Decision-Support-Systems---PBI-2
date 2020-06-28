@@ -500,7 +500,7 @@
     <hop>
       <from>[Import] TASKDATA2 2</from>
       <to>[Output] TASKDATA2 CSV</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>[Import] TASKDATA2 2 3</from>
@@ -967,7 +967,7 @@ AND SALES_DATA.YEAR_ID = DIM_TIME.YEAR_ID;</sql>
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Entry.Current.Directory}/TASKDATA2_2</name>
+      <name>${Internal.Entry.Current.Directory}/CSV/TASKDATA2</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1009,28 +1009,28 @@ AND SALES_DATA.YEAR_ID = DIM_TIME.YEAR_ID;</sql>
         <precision>-1</precision>
       </field>
       <field>
-        <name>QTR_DESC</name>
-        <type>String</type>
-        <format/>
+        <name>QTR_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>,</decimal>
+        <group>.</group>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
       </field>
       <field>
-        <name>MONTH_DESC</name>
-        <type>String</type>
-        <format/>
+        <name>MONTH_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>,</decimal>
+        <group>.</group>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
       </field>
     </fields>
     <attributes/>

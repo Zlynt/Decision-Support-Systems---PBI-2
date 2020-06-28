@@ -1,24 +1,2609 @@
-PRODUCTCODE;PRODUCTNAME;PRODUCTLINE;PRODUCTSCALE;PRODUCTVENDOR;QUANTITYINSTOCK;BUYPRICE;MSRP
-S10_1949                                          ;1952 Alpine Renault 1300                                              ;Classic Cars                                      ;1:10      ;Classic Metal Creations                           ;7305;99;214
-S10_4962                                          ;1962 LanciaA Delta 16V                                                ;Classic Cars                                      ;1:10      ;Second Gear Diecast                               ;6791;103;148
-S12_3148                                          ;1969 Corvair Monza                                                    ;Classic Cars                                      ;1:18      ;Welly Diecast Productions                         ;6906;89;151
-S12_3380                                          ;1968 Dodge Charger                                                    ;Classic Cars                                      ;1:12      ;Welly Diecast Productions                         ;9123;75;117
-S12_3990                                          ;1970 Plymouth Hemi Cuda                                               ;Classic Cars                                      ;1:12      ;Studio M Art Models                               ;5663;32;80
-S12_4675                                          ;1969 Dodge Charger                                                    ;Classic Cars                                      ;1:12      ;Welly Diecast Productions                         ;7323;59;115
-S18_1589                                          ;1965 Aston Martin DB5                                                 ;Classic Cars                                      ;1:18      ;Classic Metal Creations                           ;9042;66;124
-S18_1889                                          ;1948 Porsche 356-A Roadster                                           ;Classic Cars                                      ;1:18      ;Gearbox Collectibles                              ;8826;54;77
-S18_1984                                          ;1995 Honda Civic                                                      ;Classic Cars                                      ;1:18      ;Min Lin Diecast                                   ;9772;94;142
-S18_2870                                          ;1999 Indy 500 Monte Carlo SS                                          ;Classic Cars                                      ;1:18      ;Red Start Diecast                                 ;8164;57;132
-S18_3232                                          ;1992 Ferrari 360 Spider red                                           ;Classic Cars                                      ;1:18      ;Unimax Art Galleries                              ;8347;78;169
-S18_3233                                          ;1985 Toyota Supra                                                     ;Classic Cars                                      ;1:18      ;Highway 66 Mini Classics                          ;7733;57;108
-S18_3482                                          ;1976 Ford Gran Torino                                                 ;Classic Cars                                      ;1:18      ;Gearbox Collectibles                              ;9127;73;147
-S18_3685                                          ;1948 Porsche Type 356 Roadster                                        ;Classic Cars                                      ;1:18      ;Gearbox Collectibles                              ;8990;62;141
-S18_4027                                          ;1970 Triumph Spitfire                                                 ;Classic Cars                                      ;1:18      ;Min Lin Diecast                                   ;5545;92;144
-S24_1628                                          ;1966 Shelby Cobra 427 S/C                                             ;Classic Cars                                      ;1:24      ;Carousel DieCast Legends                          ;8197;29;50
-S24_2972                                          ;1982 Lamborghini Diablo                                               ;Classic Cars                                      ;1:24      ;Second Gear Diecast                               ;7723;16;38
-S24_3371                                          ;1971 Alpine Renault 1600s                                             ;Classic Cars                                      ;1:24      ;Welly Diecast Productions                         ;7995;39;61
-S24_3432                                          ;2002 Chevy Corvette                                                   ;Classic Cars                                      ;1:24      ;Gearbox Collectibles                              ;9446;62;107
-S24_3856                                          ;1956 Porsche 356A Coupe                                               ;Classic Cars                                      ;1:18      ;Classic Metal Creations                           ;6600;98;140
-S24_4048                                          ;1992 Porsche Cayenne Turbo Silver                                     ;Classic Cars                                      ;1:24      ;Exoto Designs                                     ;6582;70;118
-S24_4620                                          ;1961 Chevrolet Impala                                                 ;Classic Cars                                      ;1:18      ;Classic Metal Creations                           ;7869;32;81
-S700_2824                                         ;1982 Camaro Z28                                                       ;Classic Cars                                      ;1:18      ;Carousel DieCast Legends                          ;6934;47;101
+PRODUCTLINE,COUNTRY,QTR_ID,MONTH_ID
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,Norway       ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,Norway       ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Austria      ,4,11
+Motorcycles                                       ,Australia    ,4,12
+Motorcycles                                       ,France       ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,Spain        ,2,5
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,12
+Classic Cars                                      ,Norway       ,1,1
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,Canada       ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Japan        ,2,6
+Classic Cars                                      ,Australia    ,3,7
+Classic Cars                                      ,Italy        ,3,8
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Australia    ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,1,2
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,Australia    ,2,4
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,Norway       ,4,11
+Motorcycles                                       ,Japan        ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,France       ,3,9
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Japan        ,4,11
+Motorcycles                                       ,Australia    ,4,12
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,France       ,2,4
+Motorcycles                                       ,Spain        ,2,5
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,12
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,Australia    ,2,4
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,Norway       ,4,11
+Motorcycles                                       ,Japan        ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Japan        ,4,11
+Motorcycles                                       ,USA          ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,Spain        ,2,5
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,12
+Classic Cars                                      ,Austria      ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Finland      ,4,10
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Belgium      ,3,7
+Classic Cars                                      ,Canada       ,3,8
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,France       ,4,12
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,France       ,1,3
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Norway       ,1,1
+Classic Cars                                      ,France       ,2,4
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,Austria      ,4,10
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Singapore    ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Singapore    ,2,6
+Classic Cars                                      ,Australia    ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Canada       ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Australia    ,1,1
+Classic Cars                                      ,Australia    ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,France       ,1,2
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Singapore    ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Spain        ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,Ireland      ,1,2
+Classic Cars                                      ,Spain        ,1,3
+Classic Cars                                      ,Finland      ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Italy        ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,France       ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,France       ,1,3
+Classic Cars                                      ,USA          ,2,5
+Trucks and Buses                                  ,Norway       ,1,1
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,Singapore    ,3,9
+Trucks and Buses                                  ,Austria      ,4,10
+Trucks and Buses                                  ,Australia    ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,Canada       ,4,12
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,USA          ,2,5
+Trucks and Buses                                  ,Japan        ,2,6
+Trucks and Buses                                  ,Australia    ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,Australia    ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Australia    ,1,1
+Trucks and Buses                                  ,Australia    ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,1,2
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Australia    ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,Norway       ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Austria      ,4,11
+Motorcycles                                       ,USA          ,1,1
+Motorcycles                                       ,France       ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,Spain        ,2,5
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,Singapore    ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Spain        ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,Ireland      ,1,2
+Classic Cars                                      ,Germany      ,1,3
+Classic Cars                                      ,Finland      ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Italy        ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Japan        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Singapore    ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Spain        ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,Ireland      ,1,2
+Classic Cars                                      ,Spain        ,1,3
+Classic Cars                                      ,Finland      ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Italy        ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,France       ,4,12
+Classic Cars                                      ,Japan        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Finland      ,1,2
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Trucks and Buses                                  ,Spain        ,1,1
+Trucks and Buses                                  ,USA          ,2,4
+Trucks and Buses                                  ,USA          ,2,6
+Trucks and Buses                                  ,Finland      ,3,8
+Trucks and Buses                                  ,Finland      ,3,9
+Trucks and Buses                                  ,Singapore    ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,USA          ,1,2
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,3,9
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Denmark      ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Spain        ,4,12
+Trucks and Buses                                  ,USA          ,1,1
+Trucks and Buses                                  ,USA          ,1,2
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,France       ,2,5
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,Finland      ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,Singapore    ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Finland      ,1,2
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Trucks and Buses                                  ,Norway       ,1,1
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,Singapore    ,3,9
+Trucks and Buses                                  ,Austria      ,4,10
+Trucks and Buses                                  ,Australia    ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,Canada       ,4,12
+Trucks and Buses                                  ,USA          ,1,1
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,USA          ,2,5
+Trucks and Buses                                  ,Japan        ,2,6
+Trucks and Buses                                  ,Australia    ,3,7
+Trucks and Buses                                  ,Italy        ,3,8
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,Australia    ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Australia    ,1,1
+Trucks and Buses                                  ,Australia    ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,France       ,3,7
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,Japan        ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,France       ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Finland      ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,Austria      ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Norway       ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,France       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,Australia    ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Norway       ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,France       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Australia    ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,1,2
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,France       ,3,7
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Austria      ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Austria      ,2,4
+Planes                                            ,USA          ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,Finland      ,4,10
+Planes                                            ,France       ,4,11
+Planes                                            ,UK           ,4,11
+Planes                                            ,Philippines  ,4,11
+Planes                                            ,Japan        ,1,1
+Planes                                            ,USA          ,1,2
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,7
+Planes                                            ,USA          ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Belgium      ,4,11
+Planes                                            ,UK           ,4,12
+Planes                                            ,Finland      ,1,1
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,Spain        ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,UK           ,4,10
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,Finland      ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Finland      ,1,2
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,France       ,3,7
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Japan        ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,France       ,4,12
+Classic Cars                                      ,Belgium      ,1,1
+Classic Cars                                      ,Finland      ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,Finland      ,3,8
+Classic Cars                                      ,Finland      ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Germany      ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,Singapore    ,2,6
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,France       ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,Spain        ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,Spain        ,4,10
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Trucks and Buses                                  ,Spain        ,1,1
+Trucks and Buses                                  ,France       ,2,4
+Trucks and Buses                                  ,USA          ,2,6
+Trucks and Buses                                  ,Finland      ,3,8
+Trucks and Buses                                  ,Finland      ,3,9
+Trucks and Buses                                  ,Singapore    ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,3,9
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Spain        ,4,12
+Trucks and Buses                                  ,Australia    ,1,1
+Trucks and Buses                                  ,Spain        ,1,2
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,France       ,2,5
+Vintage Cars                                      ,Germany      ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,Spain        ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,France       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,Singapore    ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Trucks and Buses                                  ,Norway       ,1,1
+Trucks and Buses                                  ,France       ,2,4
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,Finland      ,3,9
+Trucks and Buses                                  ,Singapore    ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Singapore    ,1,2
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,Australia    ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Australia    ,1,1
+Trucks and Buses                                  ,Australia    ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,France       ,2,5
+Trucks and Buses                                  ,USA          ,1,2
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Australia    ,2,4
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,Japan        ,1,1
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,USA          ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,Ireland      ,3,9
+Planes                                            ,USA          ,4,10
+Planes                                            ,USA          ,4,11
+Planes                                            ,Japan        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,Australia    ,2,4
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,Norway       ,4,11
+Motorcycles                                       ,Japan        ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,France       ,3,9
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Japan        ,4,11
+Motorcycles                                       ,USA          ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,France       ,2,4
+Motorcycles                                       ,Spain        ,2,5
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,12
+Vintage Cars                                      ,Germany      ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Spain        ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Norway       ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,France       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,France       ,3,7
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,Belgium      ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Austria      ,2,5
+Vintage Cars                                      ,Norway       ,1,1
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Canada       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,USA          ,2,6
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Australia    ,1,3
+Vintage Cars                                      ,Belgium      ,2,5
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,Norway       ,1,1
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Canada       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,USA          ,2,6
+Vintage Cars                                      ,Austria      ,3,7
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Austria      ,1,3
+Vintage Cars                                      ,Belgium      ,2,5
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,1,2
+Ships                                             ,Italy        ,1,2
+Ships                                             ,Austria      ,2,4
+Ships                                             ,USA          ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Finland      ,4,10
+Ships                                             ,France       ,4,11
+Ships                                             ,UK           ,4,11
+Ships                                             ,USA          ,1,2
+Ships                                             ,USA          ,2,5
+Ships                                             ,Spain        ,2,6
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,USA          ,4,10
+Ships                                             ,UK           ,4,11
+Ships                                             ,Belgium      ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Finland      ,1,1
+Ships                                             ,Spain        ,1,3
+Ships                                             ,France       ,1,3
+Ships                                             ,USA          ,2,4
+Ships                                             ,USA          ,2,5
+Ships                                             ,USA          ,1,1
+Vintage Cars                                      ,Norway       ,1,1
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Canada       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,USA          ,2,6
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Austria      ,1,3
+Vintage Cars                                      ,Belgium      ,2,5
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,Singapore    ,2,4
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,Spain        ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Spain        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,France       ,1,1
+Vintage Cars                                      ,Belgium      ,1,2
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Belgium      ,3,7
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,Italy        ,3,9
+Vintage Cars                                      ,UK           ,4,10
+Vintage Cars                                      ,Denmark      ,4,10
+Vintage Cars                                      ,Norway       ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Japan        ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,France       ,2,4
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,France       ,3,7
+Classic Cars                                      ,Finland      ,3,8
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Finland      ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,Finland      ,2,4
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Singapore    ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Canada       ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Belgium      ,1,1
+Classic Cars                                      ,Australia    ,1,1
+Classic Cars                                      ,Finland      ,1,2
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,Spain        ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,4,10
+Trains                                            ,Singapore    ,2,4
+Trains                                            ,Spain        ,2,6
+Trains                                            ,USA          ,3,8
+Trains                                            ,Spain        ,3,9
+Trains                                            ,Singapore    ,4,10
+Trains                                            ,Spain        ,4,11
+Trains                                            ,USA          ,4,11
+Trains                                            ,USA          ,4,11
+Trains                                            ,France       ,1,1
+Trains                                            ,Belgium      ,1,2
+Trains                                            ,UK           ,1,3
+Trains                                            ,USA          ,2,5
+Trains                                            ,Belgium      ,3,7
+Trains                                            ,USA          ,3,8
+Trains                                            ,Italy        ,3,9
+Trains                                            ,UK           ,4,10
+Trains                                            ,Denmark      ,4,10
+Trains                                            ,France       ,4,11
+Trains                                            ,Spain        ,4,12
+Trains                                            ,Japan        ,1,1
+Trains                                            ,Spain        ,1,2
+Trains                                            ,USA          ,1,3
+Trains                                            ,USA          ,2,5
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,Australia    ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Norway       ,1,1
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Canada       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,USA          ,2,6
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Germany      ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,Austria      ,1,3
+Vintage Cars                                      ,Belgium      ,2,5
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,Australia    ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,Philippines  ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,France       ,3,7
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Japan        ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,Austria      ,2,5
+Motorcycles                                       ,Philippines  ,1,3
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,3,7
+Motorcycles                                       ,USA          ,3,9
+Motorcycles                                       ,Australia    ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,France       ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Philippines  ,4,11
+Motorcycles                                       ,Australia    ,4,11
+Motorcycles                                       ,Spain        ,4,12
+Motorcycles                                       ,Finland      ,1,1
+Motorcycles                                       ,Spain        ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,USA          ,4,10
+Vintage Cars                                      ,Italy        ,1,2
+Vintage Cars                                      ,Austria      ,2,4
+Vintage Cars                                      ,USA          ,2,6
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,Finland      ,4,10
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,Belgium      ,3,7
+Vintage Cars                                      ,Canada       ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,Belgium      ,4,11
+Vintage Cars                                      ,UK           ,4,12
+Vintage Cars                                      ,Finland      ,1,1
+Vintage Cars                                      ,Spain        ,1,3
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,Singapore    ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Ireland      ,1,2
+Classic Cars                                      ,Germany      ,1,3
+Classic Cars                                      ,Finland      ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Japan        ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,Spain        ,1,3
+Classic Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Australia    ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,UK           ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,UK           ,4,10
+Vintage Cars                                      ,Spain        ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Singapore    ,2,4
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,Spain        ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Spain        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,France       ,1,1
+Vintage Cars                                      ,Belgium      ,1,2
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Belgium      ,3,7
+Vintage Cars                                      ,Canada       ,3,8
+Vintage Cars                                      ,Italy        ,3,9
+Vintage Cars                                      ,UK           ,4,10
+Vintage Cars                                      ,France       ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Japan        ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Trucks and Buses                                  ,Norway       ,1,1
+Trucks and Buses                                  ,France       ,2,4
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,Singapore    ,3,9
+Trucks and Buses                                  ,Austria      ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Singapore    ,1,2
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,USA          ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,Australia    ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,Germany      ,4,11
+Trucks and Buses                                  ,Australia    ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Australia    ,1,1
+Trucks and Buses                                  ,USA          ,1,2
+Trucks and Buses                                  ,France       ,2,5
+Vintage Cars                                      ,Norway       ,1,1
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,USA          ,3,7
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,Austria      ,4,10
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,Canada       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Japan        ,2,6
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Spain        ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Australia    ,1,1
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Finland      ,3,9
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Philippines  ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,UK           ,1,1
+Classic Cars                                      ,France       ,1,3
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Spain        ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Australia    ,2,5
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Spain        ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Australia    ,2,5
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,Finland      ,3,8
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Ireland      ,1,2
+Classic Cars                                      ,Germany      ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,Singapore    ,2,6
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,Spain        ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,France       ,2,5
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,Australia    ,2,4
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,Norway       ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,Norway       ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Japan        ,4,11
+Motorcycles                                       ,USA          ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,Spain        ,2,5
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,12
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,France       ,3,7
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Australia    ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Australia    ,2,4
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,Japan        ,1,1
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,Ireland      ,3,9
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,Japan        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Vintage Cars                                      ,Germany      ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Spain        ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,France       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,Australia    ,1,3
+Vintage Cars                                      ,Singapore    ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,Australia    ,2,4
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Norway       ,4,10
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,Norway       ,4,11
+Motorcycles                                       ,Japan        ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Ireland      ,3,9
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Finland      ,1,1
+Motorcycles                                       ,France       ,1,2
+Motorcycles                                       ,France       ,2,4
+Motorcycles                                       ,Italy        ,2,5
+Motorcycles                                       ,USA          ,4,12
+Ships                                             ,Singapore    ,2,4
+Ships                                             ,UK           ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Spain        ,3,9
+Ships                                             ,Spain        ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,France       ,1,1
+Ships                                             ,Belgium      ,1,2
+Ships                                             ,UK           ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,Italy        ,3,9
+Ships                                             ,UK           ,4,10
+Ships                                             ,France       ,4,10
+Ships                                             ,USA          ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Japan        ,1,1
+Ships                                             ,USA          ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,USA          ,1,2
+Vintage Cars                                      ,Germany      ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Spain        ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Norway       ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,France       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,Australia    ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Trucks and Buses                                  ,Norway       ,1,1
+Trucks and Buses                                  ,France       ,2,4
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,Finland      ,3,9
+Trucks and Buses                                  ,Singapore    ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Singapore    ,1,2
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,Spain        ,4,12
+Trucks and Buses                                  ,USA          ,1,1
+Trucks and Buses                                  ,USA          ,1,2
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,France       ,2,5
+Motorcycles                                       ,Philippines  ,1,3
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Australia    ,4,11
+Motorcycles                                       ,Spain        ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,Norway       ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Philippines  ,4,11
+Motorcycles                                       ,Austria      ,4,11
+Motorcycles                                       ,Spain        ,4,12
+Motorcycles                                       ,Finland      ,1,1
+Motorcycles                                       ,France       ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,USA          ,4,10
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,France       ,1,3
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Spain        ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Australia    ,2,5
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,France       ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,Finland      ,3,8
+Classic Cars                                      ,Finland      ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,Singapore    ,2,6
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,Spain        ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,France       ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Austria      ,2,4
+Planes                                            ,USA          ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,Finland      ,4,10
+Planes                                            ,France       ,4,11
+Planes                                            ,UK           ,4,11
+Planes                                            ,Philippines  ,4,11
+Planes                                            ,USA          ,1,2
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,7
+Planes                                            ,USA          ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,Japan        ,4,11
+Planes                                            ,UK           ,4,12
+Planes                                            ,Finland      ,1,1
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Australia    ,2,5
+Planes                                            ,USA          ,1,1
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,UK           ,1,1
+Classic Cars                                      ,France       ,1,3
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Spain        ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Australia    ,2,5
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,Finland      ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Austria      ,2,4
+Vintage Cars                                      ,UK           ,2,6
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Spain        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,France       ,1,1
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Belgium      ,3,7
+Vintage Cars                                      ,Canada       ,3,8
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,UK           ,4,10
+Vintage Cars                                      ,France       ,4,10
+Vintage Cars                                      ,Japan        ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Finland      ,1,1
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,1,2
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,France       ,1,3
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Spain        ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,UK           ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Australia    ,2,5
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Germany      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Italy        ,1,2
+Vintage Cars                                      ,Austria      ,2,4
+Vintage Cars                                      ,USA          ,2,6
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,Finland      ,4,10
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Philippines  ,4,11
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,USA          ,3,7
+Vintage Cars                                      ,USA          ,3,7
+Vintage Cars                                      ,Norway       ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,Japan        ,4,11
+Vintage Cars                                      ,UK           ,4,12
+Vintage Cars                                      ,Australia    ,4,12
+Vintage Cars                                      ,Finland      ,1,1
+Vintage Cars                                      ,Spain        ,1,3
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Classic Cars                                      ,UK           ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Spain        ,3,8
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,Spain        ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,Austria      ,2,4
+Vintage Cars                                      ,UK           ,2,6
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,Finland      ,4,10
+Vintage Cars                                      ,France       ,4,11
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,Belgium      ,3,7
+Vintage Cars                                      ,Canada       ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Japan        ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,Finland      ,1,1
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Austria      ,4,11
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,Finland      ,2,4
+Classic Cars                                      ,UK           ,2,6
+Classic Cars                                      ,Italy        ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Norway       ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,Austria      ,2,5
+Classic Cars                                      ,USA          ,4,10
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Austria      ,2,4
+Planes                                            ,USA          ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,Finland      ,4,10
+Planes                                            ,USA          ,4,10
+Planes                                            ,France       ,4,11
+Planes                                            ,Philippines  ,4,11
+Planes                                            ,Japan        ,1,1
+Planes                                            ,USA          ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,Japan        ,4,11
+Planes                                            ,UK           ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,Finland      ,1,1
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,UK           ,1,3
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,Spain        ,1,1
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,Singapore    ,3,9
+Vintage Cars                                      ,Spain        ,4,10
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,Spain        ,1,2
+Vintage Cars                                      ,Japan        ,2,4
+Vintage Cars                                      ,Australia    ,2,5
+Vintage Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Spain        ,1,1
+Classic Cars                                      ,USA          ,2,4
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,Finland      ,3,8
+Classic Cars                                      ,Australia    ,3,9
+Classic Cars                                      ,Singapore    ,4,10
+Classic Cars                                      ,Italy        ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,Ireland      ,1,2
+Classic Cars                                      ,Germany      ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,USA          ,4,10
+Classic Cars                                      ,Denmark      ,4,10
+Classic Cars                                      ,Norway       ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,USA          ,4,12
+Classic Cars                                      ,France       ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,Spain        ,1,3
+Classic Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,Norway       ,1,1
+Vintage Cars                                      ,Spain        ,2,5
+Vintage Cars                                      ,Australia    ,3,7
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Australia    ,4,11
+Vintage Cars                                      ,Canada       ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,Spain        ,2,4
+Vintage Cars                                      ,USA          ,2,6
+Vintage Cars                                      ,Austria      ,3,7
+Vintage Cars                                      ,Italy        ,3,8
+Vintage Cars                                      ,USA          ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,11
+Vintage Cars                                      ,Spain        ,4,11
+Vintage Cars                                      ,Spain        ,4,12
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,1
+Vintage Cars                                      ,USA          ,1,2
+Vintage Cars                                      ,Belgium      ,2,5
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,USA          ,4,11
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Australia    ,2,4
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,Japan        ,1,1
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,USA          ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,Ireland      ,3,9
+Planes                                            ,USA          ,4,10
+Planes                                            ,USA          ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,France       ,1,2
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Classic Cars                                      ,Philippines  ,1,3
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,USA          ,3,9
+Classic Cars                                      ,Australia    ,4,11
+Classic Cars                                      ,France       ,1,1
+Classic Cars                                      ,France       ,2,5
+Classic Cars                                      ,USA          ,2,6
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Finland      ,3,9
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,Finland      ,1,1
+Classic Cars                                      ,Spain        ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,4,10
+Trucks and Buses                                  ,Norway       ,1,1
+Trucks and Buses                                  ,France       ,2,4
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,Finland      ,3,9
+Trucks and Buses                                  ,Austria      ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Singapore    ,1,2
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,USA          ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,Australia    ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,Spain        ,4,12
+Trucks and Buses                                  ,USA          ,1,1
+Trucks and Buses                                  ,USA          ,1,2
+Trucks and Buses                                  ,France       ,2,5
+Motorcycles                                       ,USA          ,1,2
+Motorcycles                                       ,Australia    ,2,4
+Motorcycles                                       ,Spain        ,2,6
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,Norway       ,4,11
+Motorcycles                                       ,Japan        ,1,1
+Motorcycles                                       ,Australia    ,1,2
+Motorcycles                                       ,Canada       ,2,4
+Motorcycles                                       ,USA          ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,France       ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Ireland      ,3,9
+Motorcycles                                       ,USA          ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,12
+Motorcycles                                       ,Finland      ,1,1
+Motorcycles                                       ,France       ,1,2
+Motorcycles                                       ,Singapore    ,1,3
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,Italy        ,2,5
+Motorcycles                                       ,Philippines  ,1,3
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Australia    ,4,11
+Motorcycles                                       ,Spain        ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,France       ,4,11
+Motorcycles                                       ,Spain        ,4,12
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,Spain        ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,USA          ,4,10
+Trucks and Buses                                  ,Spain        ,1,1
+Trucks and Buses                                  ,France       ,2,4
+Trucks and Buses                                  ,USA          ,2,6
+Trucks and Buses                                  ,Finland      ,3,8
+Trucks and Buses                                  ,Finland      ,3,9
+Trucks and Buses                                  ,Singapore    ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,USA          ,1,2
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,3,9
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,Norway       ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,France       ,4,12
+Trucks and Buses                                  ,USA          ,1,1
+Trucks and Buses                                  ,Spain        ,1,2
+Trucks and Buses                                  ,Spain        ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,France       ,2,5
+Trains                                            ,Spain        ,1,1
+Trains                                            ,Belgium      ,2,4
+Trains                                            ,USA          ,2,6
+Trains                                            ,USA          ,3,8
+Trains                                            ,Australia    ,3,9
+Trains                                            ,Singapore    ,4,10
+Trains                                            ,Italy        ,4,11
+Trains                                            ,Spain        ,4,11
+Trains                                            ,USA          ,4,11
+Trains                                            ,USA          ,4,12
+Trains                                            ,Ireland      ,1,2
+Trains                                            ,Germany      ,1,3
+Trains                                            ,Finland      ,2,5
+Trains                                            ,USA          ,3,7
+Trains                                            ,USA          ,3,8
+Trains                                            ,USA          ,3,9
+Trains                                            ,UK           ,4,10
+Trains                                            ,Denmark      ,4,10
+Trains                                            ,Norway       ,4,11
+Trains                                            ,France       ,4,11
+Trains                                            ,Spain        ,4,12
+Trains                                            ,France       ,4,12
+Trains                                            ,USA          ,1,1
+Trains                                            ,Spain        ,1,2
+Trains                                            ,Spain        ,1,3
+Trains                                            ,USA          ,2,5
+Trucks and Buses                                  ,Norway       ,1,1
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,Singapore    ,3,9
+Trucks and Buses                                  ,Austria      ,4,10
+Trucks and Buses                                  ,UK           ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,Canada       ,4,12
+Trucks and Buses                                  ,Singapore    ,1,2
+Trucks and Buses                                  ,USA          ,1,3
+Trucks and Buses                                  ,USA          ,2,5
+Trucks and Buses                                  ,Japan        ,2,6
+Trucks and Buses                                  ,Australia    ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,Canada       ,4,10
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,Spain        ,4,12
+Trucks and Buses                                  ,Australia    ,1,1
+Trucks and Buses                                  ,USA          ,1,2
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,USA          ,4,11
+Vintage Cars                                      ,Italy        ,1,2
+Vintage Cars                                      ,Australia    ,2,4
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,Belgium      ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,Japan        ,1,1
+Vintage Cars                                      ,Australia    ,1,2
+Vintage Cars                                      ,Canada       ,2,4
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,France       ,3,7
+Vintage Cars                                      ,Norway       ,3,8
+Vintage Cars                                      ,Ireland      ,3,9
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,Australia    ,4,12
+Vintage Cars                                      ,France       ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Italy        ,2,5
+Motorcycles                                       ,Philippines  ,1,3
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Australia    ,4,11
+Motorcycles                                       ,Spain        ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,Norway       ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Austria      ,4,11
+Motorcycles                                       ,Spain        ,4,12
+Motorcycles                                       ,USA          ,1,1
+Motorcycles                                       ,France       ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,USA          ,4,10
+Vintage Cars                                      ,Italy        ,1,2
+Vintage Cars                                      ,Australia    ,2,4
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,USA          ,3,8
+Vintage Cars                                      ,Spain        ,4,10
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,Japan        ,1,1
+Vintage Cars                                      ,Australia    ,1,2
+Vintage Cars                                      ,Canada       ,2,4
+Vintage Cars                                      ,USA          ,2,5
+Vintage Cars                                      ,Spain        ,2,6
+Vintage Cars                                      ,France       ,3,7
+Vintage Cars                                      ,Norway       ,3,8
+Vintage Cars                                      ,USA          ,4,10
+Vintage Cars                                      ,UK           ,4,11
+Vintage Cars                                      ,Italy        ,4,11
+Vintage Cars                                      ,USA          ,4,12
+Vintage Cars                                      ,Australia    ,4,12
+Vintage Cars                                      ,France       ,1,2
+Vintage Cars                                      ,USA          ,1,3
+Vintage Cars                                      ,France       ,1,3
+Vintage Cars                                      ,USA          ,2,4
+Vintage Cars                                      ,Italy        ,2,5
+Trucks and Buses                                  ,Spain        ,1,1
+Trucks and Buses                                  ,USA          ,2,4
+Trucks and Buses                                  ,USA          ,2,6
+Trucks and Buses                                  ,Finland      ,3,8
+Trucks and Buses                                  ,Finland      ,3,9
+Trucks and Buses                                  ,Singapore    ,4,10
+Trucks and Buses                                  ,Italy        ,4,11
+Trucks and Buses                                  ,Spain        ,4,11
+Trucks and Buses                                  ,USA          ,4,11
+Trucks and Buses                                  ,USA          ,4,12
+Trucks and Buses                                  ,Ireland      ,1,2
+Trucks and Buses                                  ,Germany      ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,Singapore    ,2,6
+Trucks and Buses                                  ,USA          ,3,7
+Trucks and Buses                                  ,USA          ,3,8
+Trucks and Buses                                  ,USA          ,3,9
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,USA          ,4,10
+Trucks and Buses                                  ,Denmark      ,4,10
+Trucks and Buses                                  ,Norway       ,4,11
+Trucks and Buses                                  ,France       ,4,11
+Trucks and Buses                                  ,Spain        ,4,12
+Trucks and Buses                                  ,France       ,4,12
+Trucks and Buses                                  ,USA          ,1,1
+Trucks and Buses                                  ,Spain        ,1,2
+Trucks and Buses                                  ,France       ,1,3
+Trucks and Buses                                  ,Spain        ,2,5
+Trucks and Buses                                  ,France       ,2,5
+Trains                                            ,Spain        ,1,1
+Trains                                            ,Singapore    ,2,4
+Trains                                            ,USA          ,2,6
+Trains                                            ,USA          ,3,8
+Trains                                            ,Spain        ,3,9
+Trains                                            ,Singapore    ,4,10
+Trains                                            ,Italy        ,4,11
+Trains                                            ,USA          ,4,11
+Trains                                            ,USA          ,4,11
+Trains                                            ,France       ,1,1
+Trains                                            ,Ireland      ,1,2
+Trains                                            ,Germany      ,1,3
+Trains                                            ,Finland      ,2,5
+Trains                                            ,USA          ,3,7
+Trains                                            ,USA          ,3,8
+Trains                                            ,USA          ,3,9
+Trains                                            ,UK           ,4,10
+Trains                                            ,Denmark      ,4,10
+Trains                                            ,Norway       ,4,11
+Trains                                            ,USA          ,4,11
+Trains                                            ,Spain        ,4,12
+Trains                                            ,France       ,4,12
+Trains                                            ,Japan        ,1,1
+Trains                                            ,Spain        ,1,2
+Trains                                            ,France       ,1,3
+Trains                                            ,USA          ,2,5
+Motorcycles                                       ,Philippines  ,1,3
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,3,7
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Australia    ,4,11
+Motorcycles                                       ,Spain        ,4,11
+Motorcycles                                       ,France       ,1,1
+Motorcycles                                       ,USA          ,2,4
+Motorcycles                                       ,France       ,2,5
+Motorcycles                                       ,USA          ,2,6
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,USA          ,3,8
+Motorcycles                                       ,Finland      ,3,9
+Motorcycles                                       ,Norway       ,4,10
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,USA          ,4,11
+Motorcycles                                       ,Austria      ,4,11
+Motorcycles                                       ,France       ,4,12
+Motorcycles                                       ,USA          ,1,1
+Motorcycles                                       ,France       ,1,2
+Motorcycles                                       ,USA          ,1,3
+Motorcycles                                       ,UK           ,2,4
+Motorcycles                                       ,USA          ,4,10
+Ships                                             ,Austria      ,2,4
+Ships                                             ,UK           ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Spain        ,3,9
+Ships                                             ,Spain        ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,France       ,1,1
+Ships                                             ,USA          ,1,2
+Ships                                             ,USA          ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,USA          ,3,9
+Ships                                             ,UK           ,4,10
+Ships                                             ,France       ,4,10
+Ships                                             ,Japan        ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Finland      ,1,1
+Ships                                             ,USA          ,1,2
+Ships                                             ,USA          ,1,3
+Ships                                             ,USA          ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Australia    ,2,4
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,Spain        ,4,10
+Planes                                            ,USA          ,4,10
+Planes                                            ,USA          ,4,12
+Planes                                            ,Japan        ,1,1
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,France       ,1,2
+Planes                                            ,USA          ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Ships                                             ,Singapore    ,2,4
+Ships                                             ,Spain        ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Spain        ,3,9
+Ships                                             ,USA          ,4,10
+Ships                                             ,Spain        ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,France       ,1,1
+Ships                                             ,Belgium      ,1,2
+Ships                                             ,UK           ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,USA          ,3,8
+Ships                                             ,Italy        ,3,9
+Ships                                             ,UK           ,4,10
+Ships                                             ,Denmark      ,4,10
+Ships                                             ,USA          ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Japan        ,1,1
+Ships                                             ,France       ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,USA          ,1,2
+Ships                                             ,Italy        ,1,2
+Ships                                             ,Austria      ,2,4
+Ships                                             ,USA          ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Finland      ,4,10
+Ships                                             ,France       ,4,11
+Ships                                             ,UK           ,4,11
+Ships                                             ,USA          ,1,2
+Ships                                             ,USA          ,2,5
+Ships                                             ,Spain        ,2,6
+Ships                                             ,USA          ,3,7
+Ships                                             ,USA          ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,USA          ,4,10
+Ships                                             ,UK           ,4,11
+Ships                                             ,Italy        ,4,11
+Ships                                             ,Japan        ,4,11
+Ships                                             ,USA          ,4,12
+Ships                                             ,Australia    ,4,12
+Ships                                             ,Finland      ,1,1
+Ships                                             ,Spain        ,1,3
+Ships                                             ,France       ,1,3
+Ships                                             ,USA          ,2,4
+Ships                                             ,Australia    ,2,5
+Ships                                             ,USA          ,1,1
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Australia    ,2,4
+Planes                                            ,USA          ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,Finland      ,4,10
+Planes                                            ,USA          ,4,10
+Planes                                            ,France       ,4,11
+Planes                                            ,Philippines  ,4,11
+Planes                                            ,Japan        ,1,1
+Planes                                            ,USA          ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,France       ,1,2
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Ships                                             ,Austria      ,2,4
+Ships                                             ,UK           ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,USA          ,4,10
+Ships                                             ,Spain        ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,France       ,1,1
+Ships                                             ,USA          ,1,2
+Ships                                             ,USA          ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,USA          ,3,9
+Ships                                             ,UK           ,4,10
+Ships                                             ,UK           ,4,11
+Ships                                             ,Japan        ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Finland      ,1,1
+Ships                                             ,Spain        ,1,3
+Ships                                             ,France       ,1,3
+Ships                                             ,USA          ,2,5
+Classic Cars                                      ,Norway       ,1,1
+Classic Cars                                      ,France       ,2,4
+Classic Cars                                      ,Spain        ,2,5
+Classic Cars                                      ,USA          ,3,7
+Classic Cars                                      ,Singapore    ,3,9
+Classic Cars                                      ,Austria      ,4,10
+Classic Cars                                      ,UK           ,4,11
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,Canada       ,4,12
+Classic Cars                                      ,Singapore    ,1,2
+Classic Cars                                      ,USA          ,1,3
+Classic Cars                                      ,USA          ,2,5
+Classic Cars                                      ,Japan        ,2,6
+Classic Cars                                      ,Australia    ,3,7
+Classic Cars                                      ,USA          ,3,8
+Classic Cars                                      ,Canada       ,4,10
+Classic Cars                                      ,USA          ,4,11
+Classic Cars                                      ,France       ,4,11
+Classic Cars                                      ,Spain        ,4,11
+Classic Cars                                      ,Spain        ,4,12
+Classic Cars                                      ,USA          ,1,1
+Classic Cars                                      ,USA          ,1,2
+Classic Cars                                      ,Spain        ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Australia    ,2,4
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,Norway       ,4,11
+Planes                                            ,Japan        ,1,1
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,USA          ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,USA          ,3,8
+Planes                                            ,USA          ,3,8
+Planes                                            ,Ireland      ,3,9
+Planes                                            ,USA          ,4,10
+Planes                                            ,USA          ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,France       ,1,2
+Planes                                            ,USA          ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Australia    ,2,4
+Planes                                            ,USA          ,3,8
+Planes                                            ,Finland      ,4,10
+Planes                                            ,USA          ,4,10
+Planes                                            ,USA          ,4,12
+Planes                                            ,Japan        ,1,1
+Planes                                            ,Australia    ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,Austria      ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,France       ,1,2
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Ships                                             ,UK           ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Spain        ,3,9
+Ships                                             ,Spain        ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,France       ,1,1
+Ships                                             ,USA          ,1,2
+Ships                                             ,UK           ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,USA          ,3,9
+Ships                                             ,UK           ,4,10
+Ships                                             ,France       ,4,10
+Ships                                             ,USA          ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Finland      ,1,1
+Ships                                             ,Spain        ,1,3
+Ships                                             ,France       ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Singapore    ,2,4
+Ships                                             ,UK           ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Spain        ,3,9
+Ships                                             ,Spain        ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,France       ,1,1
+Ships                                             ,USA          ,1,2
+Ships                                             ,UK           ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,USA          ,3,9
+Ships                                             ,UK           ,4,10
+Ships                                             ,France       ,4,10
+Ships                                             ,USA          ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Finland      ,1,1
+Ships                                             ,Spain        ,1,3
+Ships                                             ,France       ,1,3
+Ships                                             ,USA          ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Austria      ,2,4
+Planes                                            ,USA          ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,Finland      ,4,10
+Planes                                            ,USA          ,4,10
+Planes                                            ,France       ,4,11
+Planes                                            ,Philippines  ,4,11
+Planes                                            ,Japan        ,1,1
+Planes                                            ,USA          ,1,2
+Planes                                            ,Canada       ,2,4
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,France       ,3,7
+Planes                                            ,Norway       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,Italy        ,4,11
+Planes                                            ,Japan        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,Finland      ,1,1
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Italy        ,2,5
+Planes                                            ,Italy        ,1,2
+Planes                                            ,Austria      ,2,4
+Planes                                            ,USA          ,2,6
+Planes                                            ,USA          ,3,8
+Planes                                            ,Finland      ,4,10
+Planes                                            ,France       ,4,11
+Planes                                            ,UK           ,4,11
+Planes                                            ,USA          ,1,2
+Planes                                            ,USA          ,2,5
+Planes                                            ,Spain        ,2,6
+Planes                                            ,USA          ,3,7
+Planes                                            ,USA          ,3,7
+Planes                                            ,Canada       ,3,8
+Planes                                            ,USA          ,4,10
+Planes                                            ,UK           ,4,11
+Planes                                            ,USA          ,4,11
+Planes                                            ,Japan        ,4,11
+Planes                                            ,USA          ,4,12
+Planes                                            ,Australia    ,4,12
+Planes                                            ,Finland      ,1,1
+Planes                                            ,Spain        ,1,3
+Planes                                            ,France       ,1,3
+Planes                                            ,USA          ,2,4
+Planes                                            ,Australia    ,2,5
+Planes                                            ,USA          ,1,1
+Ships                                             ,Singapore    ,2,4
+Ships                                             ,UK           ,2,6
+Ships                                             ,USA          ,3,8
+Ships                                             ,Spain        ,3,9
+Ships                                             ,Spain        ,4,11
+Ships                                             ,USA          ,4,11
+Ships                                             ,France       ,1,1
+Ships                                             ,USA          ,1,2
+Ships                                             ,UK           ,1,3
+Ships                                             ,USA          ,2,5
+Ships                                             ,Belgium      ,3,7
+Ships                                             ,Canada       ,3,8
+Ships                                             ,Italy        ,3,9
+Ships                                             ,UK           ,4,10
+Ships                                             ,France       ,4,10
+Ships                                             ,USA          ,4,11
+Ships                                             ,Spain        ,4,12
+Ships                                             ,Finland      ,1,1
+Ships                                             ,Spain        ,1,3
+Ships                                             ,France       ,1,3
+Ships                                             ,USA          ,2,5

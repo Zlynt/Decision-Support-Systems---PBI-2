@@ -15,6 +15,7 @@ public class TASKDATA {
 	protected String taskdata_name;
 	private Boolean enableDebug;
 	
+	// enableDebug -> Show extra debug info about methods
 	public TASKDATA(int taskdata_number, boolean enableDebug) {
 		this.taskdata_name = "TASKDATA"+taskdata_number;
 		this.enableDebug = enableDebug;

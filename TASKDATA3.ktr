@@ -709,16 +709,16 @@ SALES_DATA.MONTH_ID = DIM_TIME.MONTH_ID
     </file>
     <fields>
       <field>
-        <name>ORDERNUMBER</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
+        <name>PRODUCTNAME</name>
+        <type>String</type>
+        <format/>
         <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
+        <decimal/>
+        <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
+        <length>-1</length>
+        <precision>-1</precision>
       </field>
       <field>
         <name>MONTH_NAME</name>

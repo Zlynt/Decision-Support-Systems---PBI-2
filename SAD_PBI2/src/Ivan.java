@@ -23,9 +23,10 @@ public class Ivan {
 			Instances taskdata3_instances = taskdata3.load_arff();
 
 			System.out.println("[TASKDATA3] Mining association rules...");
-			//System.out.println(taskdata3.apriori_mine_association_rules(taskdata3_instances));
+			System.out.println(taskdata3.apriori_mine_association_rules(taskdata3_instances));
 			
 
+			
 			
 			
 			/*

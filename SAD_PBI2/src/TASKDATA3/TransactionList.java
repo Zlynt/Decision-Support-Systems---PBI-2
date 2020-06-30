@@ -105,9 +105,14 @@ public class TransactionList {
 		arff += "}\n";
 
 		// Add the months to the attribute list
+		arff += "@attribute Months {";
+		// Add the transactions to the possible values list
 		for (int i = 0; i < monthList.size(); i++) {
-			arff += "@attribute " + monthList.get(i) + " {1,0}\n";
+			arff += monthList.get(i) + ",";
 		}
+		// Remove last comma and close the transaction attribute
+		arff = arff.substring(0, arff.length() - 1);
+		arff += "}\n";
 
 		// Add the products to the attribute list
 		for (int i = 0; i < productList.size(); i++) {
@@ -120,15 +125,7 @@ public class TransactionList {
 			Transaction currentTransaction = transactionList.get(i);
 
 			arff += currentTransaction.getID() + ",";
-
-			// Set the month
-			for (int a = 0; a < monthList.size(); a++) {
-				String currentMonth = monthList.get(a);
-				if (currentMonth.contains(currentTransaction.getMonth()))
-					arff += "1,";
-				else
-					arff += "0,";
-			}
+			arff += currentTransaction.getMonth() + ",";
 
 			// Set the products
 			for (int a = 0; a < productList.size(); a++) {

@@ -106,12 +106,12 @@ public class TransactionList {
 
 		// Add the months to the attribute list
 		for (int i = 0; i < monthList.size(); i++) {
-			arff += "@attribute " + monthList.get(i) + " {y,n}\n";
+			arff += "@attribute " + monthList.get(i) + " {1,0}\n";
 		}
 
 		// Add the products to the attribute list
 		for (int i = 0; i < productList.size(); i++) {
-			arff += "@attribute " + productList.get(i) + " {y,n}\n";
+			arff += "@attribute " + productList.get(i) + " {1,0}\n";
 		}
 
 		// Add the data (transactions)
@@ -125,17 +125,17 @@ public class TransactionList {
 			for (int a = 0; a < monthList.size(); a++) {
 				String currentMonth = monthList.get(a);
 				if (currentMonth.contains(currentTransaction.getMonth()))
-					arff += "y,";
+					arff += "1,";
 				else
-					arff += "n,";
+					arff += "0,";
 			}
 
 			// Set the products
 			for (int a = 0; a < productList.size(); a++) {
 				if (currentTransaction.getProducts().contains(productList.get(a)))
-					arff += "y,";
+					arff += "1,";
 				else
-					arff += "n,";
+					arff += "0,";
 			}
 			// Remove extra comma
 			arff = arff.substring(0, arff.length() - 1);

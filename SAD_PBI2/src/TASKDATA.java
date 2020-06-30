@@ -13,9 +13,11 @@ public class TASKDATA {
 	protected static final String csv_path  = "C:\\sad\\implementacao\\CSV";
 	protected static final String arff_path = "C:\\sad\\implementacao\\ARFF";
 	protected String taskdata_name;
+	private Boolean enableDebug;
 	
-	public TASKDATA(int taskdata_number) {
+	public TASKDATA(int taskdata_number, boolean enableDebug) {
 		this.taskdata_name = "TASKDATA"+taskdata_number;
+		this.enableDebug = enableDebug;
 	}
 	
 	//Check if CSV file exists
@@ -61,6 +63,10 @@ public class TASKDATA {
 		
 		BufferedReader reader = new BufferedReader(new FileReader(arff_path+"\\"+taskdata_name+".arff"));
 		ArffReader arff = new ArffReader(reader);
+
+		if(enableDebug)
+			System.out.println("[DEBUG] "+arff_path+"\\"+taskdata_name+".arff was loaded!");
+		
 		return arff.getData();
 	}
 	
@@ -70,6 +76,9 @@ public class TASKDATA {
 		saver.setInstances(instances);
 		saver.setFile(new File(arff_path+"\\"+taskdata_name+".arff"));
 		saver.writeBatch();
+		
+		if(enableDebug)
+			System.out.println("[DEBUG] ARFF saved on "+arff_path+"\\"+taskdata_name+".arff");
 	}
 	
 	//Mine the association rules

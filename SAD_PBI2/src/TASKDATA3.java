@@ -20,7 +20,7 @@ public class TASKDATA3 extends TASKDATA {
 
 	// TASKDATA Constructor
 	public TASKDATA3() {
-		super(3); // TASKDATA3; The 3 number goes from the TASKDATA number
+		super(3, true); // TASKDATA3; The 3 number goes from the TASKDATA number
 	}
 
 	// Convert CSV to instances by converting csv to arff and then to instances

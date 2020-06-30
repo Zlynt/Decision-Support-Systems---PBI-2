@@ -721,18 +721,6 @@ SALES_DATA.MONTH_ID = DIM_TIME.MONTH_ID
         <precision>0</precision>
       </field>
       <field>
-        <name>PRODUCTNAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>MONTH_NAME</name>
         <type>String</type>
         <format/>

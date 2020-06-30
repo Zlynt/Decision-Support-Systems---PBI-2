@@ -14,7 +14,7 @@ public class Ivan {
 			
 			
 			
-			
+			/*
 			// Task Data 3
 			System.out.println("[TASKDATA3] Processing the CSV input...");
 			taskdata3.save_arff(taskdata3.csv_to_instances());
@@ -24,7 +24,7 @@ public class Ivan {
 
 			System.out.println("[TASKDATA3] Mining association rules...");
 			System.out.println(taskdata3.apriori_mine_association_rules(taskdata3_instances));
-
+			*/
 
 			
 			

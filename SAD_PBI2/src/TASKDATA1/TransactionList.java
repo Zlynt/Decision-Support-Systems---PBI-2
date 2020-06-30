@@ -11,12 +11,14 @@ public class TransactionList {
 	
 	private LinkedList<Transaction> transactionList; 	// Transaction list
 	private LinkedList<String> productList;				// Product list
+	private LinkedList<String> qtrList;					// Quarterly list
 	
 	//Constructor
 	public TransactionList()
 	{
 		transactionList = new LinkedList<Transaction>();
 		productList = new LinkedList<String>();
+		qtrList = new LinkedList<String>();
 	}
 	
 	// Sort any LinkedList<String>
@@ -120,7 +122,7 @@ public class TransactionList {
 				else 
 					arff += "0, ";
 			}
-			arff = arff.substring(0, arff.length() - 1);
+			arff = arff.substring(0, arff.length() - 1); //remove last comma
 			arff += "\n";
 		}
 		

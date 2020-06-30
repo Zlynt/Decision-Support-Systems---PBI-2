@@ -20,6 +20,29 @@ public class Transaction {
 		products = new LinkedList<String>();
 	}
 	
+	// Sort the products in the product list
+	private void sortProduct() 
+	{
+		// Sort the product list
+		Collections.sort(products, new Comparator<String>() {
+				@Override
+				public int compare(String o1, String o2) {
+				return Collator.getInstance().compare(o1, o2);
+			}
+		});
+	}
+	
+	// Add the products in the product list
+	public void addProduct()
+	{
+		
+	}
+	
+	// Remove the products in the product list
+	public void removeProduct()
+	{
+		
+	}
 	
 	// Get the id transaction from the product
 	public int getID()

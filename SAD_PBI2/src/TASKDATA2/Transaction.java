@@ -18,6 +18,16 @@ public class Transaction {
 		products = new LinkedList<String>();
 	}
 	
+	private void sortProducts() {
+		// Sort the product list
+		Collections.sort(products, new Comparator<String>() {
+				@Override
+				public int compare(String o1, String o2) {
+				return Collator.getInstance().compare(o1, o2);
+			}
+		});
+	}
+	
 	
 	//Get the product line of the transaction
 	public String getProductLine()

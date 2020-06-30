@@ -21,7 +21,7 @@ public class Transaction {
 	}
 	
 	// Sort the products in the product list
-	private void sortProduct() 
+	private void sortProducts() 
 	{
 		// Sort the product list
 		Collections.sort(products, new Comparator<String>() {
@@ -33,15 +33,20 @@ public class Transaction {
 	}
 	
 	// Add the products in the product list
-	public void addProduct()
+	public void addProduct(String product)
 	{
-		
+		if(!products.contains(product)) 
+		{
+			//Add the product
+			products.add(product);
+			sortProducts(); // sort the product
+		}
 	}
 	
 	// Remove the products in the product list
-	public void removeProduct()
+	public void removeProduct(String product)
 	{
-		
+		products.remove(product);
 	}
 	
 	// Get the id transaction from the product

@@ -18,7 +18,7 @@ public class TASKDATA2 extends TASKDATA{
 
 	//TASKDATA Constructor
 	public TASKDATA2() {
-		super(2); //TASKDATA2; The 2 number goes from the TASKDATA number
+		super(2, false); //TASKDATA2; The 2 number goes from the TASKDATA number
 	}
 	
 	public Instances csv_to_instances() throws Exception {

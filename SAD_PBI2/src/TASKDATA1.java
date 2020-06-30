@@ -18,7 +18,7 @@ public class TASKDATA1 extends TASKDATA{
 
 	//TASKDATA Constructor
 	public TASKDATA1() {
-		super(1); //TASKDATA1; The 1 number goes from the TASKDATA number
+		super(1, false); //TASKDATA1; The 1 number goes from the TASKDATA number
 	}
 	
 	public Instances csv_to_instances() throws Exception {

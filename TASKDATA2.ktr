@@ -1009,6 +1009,18 @@ AND SALES_DATA.YEAR_ID = DIM_TIME.YEAR_ID;</sql>
     </file>
     <fields>
       <field>
+        <name>PRODUCTCODE</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
         <name>PRODUCTLINE</name>
         <type>String</type>
         <format/>

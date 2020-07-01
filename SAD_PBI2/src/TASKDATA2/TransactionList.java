@@ -20,6 +20,34 @@ public class TransactionList {
 		countryList = new LinkedList<String>();
 	}
 	
+	// Sort any LinkedList<String>
+	private void sortStringLinkedList(LinkedList<String> list) {
+		Collections.sort(list, new Comparator<String>() {
+			@Override
+			public int compare(String o1, String o2) {
+				return Collator.getInstance().compare(o1, o2);
+			}
+		});
+	}
+	
+	public void addProductLine(String productLine)
+	{
+		if(!productLineList.contains(productLine))
+		{
+			productLineList.add(productLine);
+			sortStringLinkedList(productLineList);
+		}
+	}
+	
+	public void addCountry(String country)
+	{
+		if(!countryList.contains(country))
+		{
+			countryList.add(country);
+			sortStringLinkedList(countryList);
+		}
+	}
+	
 	public String toArff()
 	{
 		String arff = "";

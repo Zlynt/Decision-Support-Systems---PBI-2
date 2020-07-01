@@ -11,6 +11,7 @@ public class TransactionList {
 	
 	private LinkedList<Transaction> transactionList; 	// Transaction list
 	private LinkedList<String> productList;				// Product list
+	private LinkedList<String> dealsizeList;			// Deal Size list
 	private LinkedList<String> qtrList;					// Quarterly list
 	
 	//Constructor
@@ -38,6 +39,24 @@ public class TransactionList {
 		{
 			productList.add(product);
 			sortStringLinkedList(productList);
+		}
+	}
+	
+	public void addDealsize(String dealsize)
+	{
+		if(!dealsizeList.contains(dealsize))
+		{
+			dealsizeList.add(dealsize);
+			sortStringLinkedList(dealsizeList);
+		}
+	}
+	
+	public void addQTR(String qtr)
+	{
+		if(!qtrList.contains(qtr))
+		{
+			qtrList.add(qtr);
+			sortStringLinkedList(qtrList);
 		}
 	}
 	

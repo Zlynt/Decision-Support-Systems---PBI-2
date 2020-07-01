@@ -5,13 +5,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-import TASKDATA4.Transaction;
-
 public class TransactionList {
 	
 	private LinkedList<Transaction> transactionList; 		// Transaction list
 	private LinkedList<String> productLineList;				// Product Line list
-	private LinkedList<String> countryList;						// Quarterly list
+	private LinkedList<String> countryList;					// Quarterly list
 
 	public TransactionList()
 	{
@@ -46,6 +44,56 @@ public class TransactionList {
 			countryList.add(country);
 			sortStringLinkedList(countryList);
 		}
+	}
+	
+	// Check if a transaction already exists	
+	public boolean transactionExists(int transactionID)
+	{
+		for (int i = 0; i < transactionList.size(); i++)
+			if (transactionList.get(i).getID() == transactionID)
+				return true;
+		return false;
+	}
+	
+	// Get a transaction position in the LinkedList
+	public int getTransactionIndex(int transactionID) 
+	{
+		for (int i = 0; i < transactionList.size(); i++)
+			if (transactionList.get(i).getID() == transactionID)
+				return i;
+		
+		return -1;
+	}
+	
+	// Add transaction to the list
+	public void addTransaction(Transaction transaction) 
+	{
+		if (transactionExists(transaction.getID()))
+		{
+			int transactionIndex = getTransactionIndex(transaction.getID());
+			
+			// Add the products to the existing transaction
+			for (int i = 0; i < transaction.getProducts().size(); i++)
+			{
+				transactionList.get(transactionIndex).addProduct(transaction.getProducts().get(i));
+				addProductLine(transaction.getProducts().get(i));
+			}
+		}
+		else
+		{
+			transactionList.add(transaction);
+			addCountry(transaction.getCountry());
+			for (int i = 0; i < transaction.getProducts().size(); i++)
+			{
+				addProductLine(transaction.getProducts().get(i));
+			}
+		}
+	}
+
+	// Remove transaction from the list
+	public void removeTransaction(Transaction transaction) 
+	{
+		transactionList.remove(transaction);
 	}
 	
 	public String toArff()

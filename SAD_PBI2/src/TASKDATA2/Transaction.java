@@ -7,6 +7,7 @@ import java.util.LinkedList;
 
 public class Transaction {
 	
+	private int id;
 	private String productline;
 	private String country;
 	private LinkedList<String> products;
@@ -29,15 +30,15 @@ public class Transaction {
 	}
 	
 	// Add the products in the product list
-		public void addProduct(String product)
+	public void addProduct(String product)
+	{
+		if(!products.contains(product)) 
 		{
-			if(!products.contains(product)) 
-			{
-				//Add the product
-				products.add(product);
-				sortProducts(); // sort the product
-			}
+			//Add the product
+			products.add(product);
+			sortProducts(); // sort the product
 		}
+	}
 		
 	// Remove the products in the product list
 	public void removeProduct(String product)
@@ -45,6 +46,10 @@ public class Transaction {
 		products.remove(product);
 	}
 	
+	// Return transaction ID
+		public int getID() {
+			return this.id;
+	}
 	
 	//Get the product line of the transaction
 	public String getProductLine()

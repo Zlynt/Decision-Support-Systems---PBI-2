@@ -1044,30 +1044,6 @@ AND SALES_DATA.YEAR_ID = DIM_TIME.YEAR_ID;</sql>
         <length>13</length>
         <precision>-1</precision>
       </field>
-      <field>
-        <name>QTR_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>MONTH_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
     </fields>
     <attributes/>
     <cluster_schema/>

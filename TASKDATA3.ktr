@@ -518,7 +518,7 @@
         <jsScript_name>Script 1</jsScript_name>
         <jsScript_script>
 var PROD = PRODUCTNAME.replace("'","`");
-</jsScript_script>
+var SALE_MONTH = MONTH_NAME+"/"+YEAR_ID;</jsScript_script>
       </jsScript>
     </jsScripts>
     <fields>
@@ -529,6 +529,14 @@ var PROD = PRODUCTNAME.replace("'","`");
         <length>-1</length>
         <precision>-1</precision>
         <replace>Y</replace>
+      </field>
+      <field>
+        <name>SALE_MONTH</name>
+        <rename>SALE_MONTH</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
       </field>
     </fields>
     <attributes/>
@@ -561,7 +569,9 @@ var PROD = PRODUCTNAME.replace("'","`");
 
 SALES_DATA.ORDERNUMBER,
 PRODUCTS.PRODUCTNAME,
-DIM_TIME.MONTH_NAME
+DIM_TIME.YEAR_ID,
+DIM_TIME.MONTH_NAME,
+DIM_TIME.TIME_ID
 
 FROM 
 
@@ -629,6 +639,29 @@ SALES_DATA.MONTH_ID = DIM_TIME.MONTH_ID
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>YEAR_ID</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Obter produtos, tid e país 2</origin>
+        <comments>YEAR_ID</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>pt_PT</date_format_locale>
+        <date_format_timezone>Europe/London</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
         <name>MONTH_NAME</name>
@@ -636,6 +669,29 @@ SALES_DATA.MONTH_ID = DIM_TIME.MONTH_ID
         <precision>-1</precision>
         <origin>Obter produtos, tid e país 2</origin>
         <comments>MONTH_NAME</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>pt_PT</date_format_locale>
+        <date_format_timezone>Europe/London</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TIME_ID</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>Obter produtos, tid e país 2</origin>
+        <comments>TIME_ID</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -709,19 +765,7 @@ SALES_DATA.MONTH_ID = DIM_TIME.MONTH_ID
     </file>
     <fields>
       <field>
-        <name>ORDERNUMBER</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <name>PRODUCTNAME</name>
+        <name>SALE_MONTH</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -733,7 +777,7 @@ SALES_DATA.MONTH_ID = DIM_TIME.MONTH_ID
         <precision>-1</precision>
       </field>
       <field>
-        <name>MONTH_NAME</name>
+        <name>PRODUCTNAME</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -741,7 +785,7 @@ SALES_DATA.MONTH_ID = DIM_TIME.MONTH_ID
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>3</length>
+        <length>-1</length>
         <precision>-1</precision>
       </field>
     </fields>

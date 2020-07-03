@@ -103,8 +103,31 @@ public class TransactionList {
 		arff += "@relation TASKDATA2\n\n"; //The format for the arff TAKSDATA1
 		arff += "@attribute TID {";
 		for (int i = 0; i < transactionList.size(); i++)
-			arff += transactionList.get(i).getID() + ", ";
+		{
+			arff += transactionList.get(i).getID() + ",";	
+		}
+		arff = arff.substring(0, arff.length() - 1);
 		arff += "}\n";
+		
+		arff += "@attribute ProductLine{";
+		
+		for (int i = 0; i < productLineList.size(); i++)
+		{
+			arff += productLineList.get(i) + ",";
+		}		
+		arff = arff.substring(0, arff.length() - 1);
+		arff += "}";
+		
+		arff += "@attribute Country{";
+		
+		for (int i = 0; i < countryList.size(); i++)
+		{
+			arff += countryList.get(i) + ",";
+		}		
+		arff = arff.substring(0, arff.length() - 1);
+		arff += "}";
+		
+		
 		
 		return arff;
 	}

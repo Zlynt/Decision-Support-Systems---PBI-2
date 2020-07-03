@@ -52,6 +52,7 @@ public class TransactionList {
 		for (int i = 0; i < transactionList.size(); i++)
 			if (transactionList.get(i).getID() == transactionID)
 				return true;
+		
 		return false;
 	}
 	
@@ -101,6 +102,8 @@ public class TransactionList {
 		String arff = "";
 		arff += "@relation TASKDATA2\n\n"; //The format for the arff TAKSDATA1
 		arff += "@attribute TID {";
+		for (int i = 0; i < transactionList.size(); i++)
+			arff += transactionList.get(i).getID() + ", ";
 		arff += "}\n";
 		
 		return arff;

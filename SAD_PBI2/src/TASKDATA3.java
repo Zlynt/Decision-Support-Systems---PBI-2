@@ -43,15 +43,16 @@ public class TASKDATA3 extends TASKDATA {
 		boolean read_data = false;
 		TransactionList transactionList = new TransactionList();
 
+		System.out.print("Processing tuples...");
 		for (int i = 0; i < data_loaded.length; i++) {
 
 			if (read_data) {
-				String tmp_tid = data_loaded[i].split(",")[0];
+				String tmp_month = data_loaded[i].split(",")[0];
 				String tmp_prod = data_loaded[i].split(",")[1];
-				String tmp_month = data_loaded[i].split(",")[2];
 
-				// System.out.println("[" + tmp_tid + "][" + tmp_month + "] " + tmp_prod);
-				Transaction transaction = new Transaction(Integer.parseInt(tmp_tid), tmp_month);
+				//System.out.println("["+(i-5)+" de "+(data_loaded.length-5)+"] " + tmp_month + " ; " + tmp_prod);
+				
+				Transaction transaction = new Transaction(tmp_month);
 				transaction.addProduct(tmp_prod);
 				transactionList.addTransaction(transaction);
 			}
@@ -60,9 +61,17 @@ public class TASKDATA3 extends TASKDATA {
 				read_data = true;
 			}
 		}
+		System.out.println("done!");
 
-		// System.out.println(arff_file);
-		Reader inputString = new StringReader(transactionList.toARFF());
+		System.out.print("Converting to arff...");
+		String arff_file = transactionList.toARFF();
+		System.out.println("done!");
+
+		PrintWriter out = new PrintWriter("debug_arff_taskdata_3.txt");
+		out.println(arff_file);
+		out.close();
+
+		Reader inputString = new StringReader(arff_file);
 		BufferedReader reader = new BufferedReader(inputString);
 		ArffReader arff = new ArffReader(reader);
 		return arff.getData();

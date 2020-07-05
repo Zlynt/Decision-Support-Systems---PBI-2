@@ -47,18 +47,18 @@ public class TransactionList {
 	}
 
 	// Check if a transaction already exists
-	public boolean transactionExists(int transactionID) {
+	public boolean transactionExists(String transactionMonth) {
 		for (int i = 0; i < transactionList.size(); i++)
-			if (transactionList.get(i).getID() == transactionID)
+			if (transactionList.get(i).getMonth() == transactionMonth)
 				return true;
 
 		return false;
 	}
 
 	// Get a transaction position in the LinkedList
-	public int getTransactionIndex(int transactionID) {
+	public int getTransactionIndex(String transactionMonth) {
 		for (int i = 0; i < transactionList.size(); i++)
-			if (transactionList.get(i).getID() == transactionID)
+			if (transactionList.get(i).getMonth() == transactionMonth)
 				return i;
 
 		return -1;
@@ -66,8 +66,8 @@ public class TransactionList {
 
 	// Add transaction to the list
 	public void addTransaction(Transaction transaction) {
-		if (transactionExists(transaction.getID())) {
-			int transactionIndex = getTransactionIndex(transaction.getID());
+		if (transactionExists(transaction.getMonth())) {
+			int transactionIndex = getTransactionIndex(transaction.getMonth());
 
 			// Add the products to the existing transaction
 			for (int i = 0; i < transaction.getProducts().size(); i++) {
@@ -94,16 +94,6 @@ public class TransactionList {
 
 		arff += "@relation TASKDATA3\n\n"; // Add TaskData relation name (in this case it is the TaskData 3
 
-		// Add the transaction id attribute
-		arff += "@attribute TID {";
-		// Add the transactions to the possible values list
-		for (int i = 0; i < transactionList.size(); i++) {
-			arff += transactionList.get(i).getID() + ",";
-		}
-		// Remove last comma and close the transaction attribute
-		arff = arff.substring(0, arff.length() - 1);
-		arff += "}\n";
-
 		// Add the months to the attribute list
 		arff += "@attribute Months {";
 		// Add the transactions to the possible values list
@@ -124,7 +114,6 @@ public class TransactionList {
 		for (int i = 0; i < transactionList.size(); i++) {
 			Transaction currentTransaction = transactionList.get(i);
 
-			arff += currentTransaction.getID() + ",";
 			arff += currentTransaction.getMonth() + ",";
 
 			// Set the products

@@ -7,15 +7,12 @@ import java.util.LinkedList;
 
 //This class represents a Transaction
 public class Transaction {
-	// Transaction id
-	private int id;
 	// Transaction month
 	private String month;
 	// List of products in this transaction
 	private LinkedList<String> products;
 
-	public Transaction(int id, String month) {
-		this.id = id;
+	public Transaction(String month) {
 		this.month = month;
 		products = new LinkedList<String>();
 	}
@@ -59,10 +56,5 @@ public class Transaction {
 	// Set the transaction month
 	public void setMonth(String month) {
 		this.month = month;
-	}
-
-	// Return transaction ID
-	public int getID() {
-		return this.id;
 	}
 }

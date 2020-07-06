@@ -48,7 +48,9 @@ public class TASKDATA1 extends TASKDATA{
 				String tmp_tid = data_loaded[i].split(",")[0];
 				String tmp_prod = data_loaded[i].split(",")[1];
 				
-				//Transaction transaction = new Transaction();
+				Transaction transaction = new Transaction(Integer.parseInt(tmp_tid));
+				transaction.addProduct(tmp_prod);
+				transactionList.addTransaction(transaction);
 			}
 		}
 		

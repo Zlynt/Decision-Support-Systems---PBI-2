@@ -97,7 +97,7 @@ public class TransactionList {
 		transactionList.remove(transaction);
 	}
 	
-	public String toArff()
+	public String toARFF()
 	{
 		String arff = "";
 		arff += "@relation TASKDATA2\n\n"; //The format for the arff TAKSDATA1

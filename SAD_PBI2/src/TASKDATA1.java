@@ -52,7 +52,7 @@ public class TASKDATA1 extends TASKDATA{
 			}
 		}
 		
-		Reader inputString = new StringReader(transactionList.toArff());
+		Reader inputString = new StringReader(transactionList.toARFF());
 		BufferedReader reader = new BufferedReader(inputString);
 		ArffReader arff = new ArffReader(reader);
 		return arff.getData();

@@ -10,11 +10,8 @@ public class Ivan {
 		TASKDATA3 taskdata3 = new TASKDATA3();
 		TASKDATA4 taskdata4 = new TASKDATA4();
 
-		try {
-			
-			
-			
-			
+		try {			
+			/*
 			// Task Data 3
 			System.out.println("[TASKDATA3] Processing the CSV input...");
 			taskdata3.save_arff(taskdata3.csv_to_instances());
@@ -26,7 +23,7 @@ public class Ivan {
 			String association_rules = taskdata3.apriori_mine_association_rules(taskdata3_instances);
 			System.out.println("done!");
 			System.out.println(association_rules);
-			
+			*/
 			
 			
 			

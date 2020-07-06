@@ -904,13 +904,66 @@ SALES_DATA.PRODUCTCODE = PRODUCTS.PRODUCTCODE</sql>
 //else
 //var PROD = COUNTRY.replace("'","`");
 var PROD = ORDERDATE;
-var DAY = PROD.split(" ")[0].split("/")[0];</jsScript_script>
+var MONTH = PROD.split(" ")[0].split("/")[0];
+/*switch(MONTH){
+	case "1":
+		MONTH="Janeiro";
+		break;
+	case "2":
+		MONTH="Fevereiro";
+		break;
+
+	case "3":
+		MONTH="Marco";
+		break;
+
+	case "4":
+		MONTH="Abril";
+		break;
+
+	case "5":
+		MONTH="Maio";
+		break;
+
+	case "6":
+		MONTH="Junho";
+		break;
+
+	case "7":
+		MONTH="Julho";
+		break;
+
+	case "8":
+		MONTH="Agosto";
+		break;
+
+	case "9":
+		MONTH="Setembro";
+		break;
+
+	case "10":
+		MONTH="Outubro";
+		break;
+
+	case "11":
+		MONTH="Novembro";
+		break;
+
+	case "12":
+		MONTH="Dezembro";
+		break;
+	default:
+		MONTH="?";
+		break;
+}
+
+*/</jsScript_script>
       </jsScript>
     </jsScripts>
     <fields>
       <field>
-        <name>DAY</name>
-        <rename>DAY</rename>
+        <name>MONTH</name>
+        <rename>MONTH</rename>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -951,7 +1004,7 @@ var DAY = PROD.split(" ")[0].split("/")[0];</jsScript_script>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>DAY</name>
+        <name>MONTH</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -1024,7 +1077,7 @@ var DAY = PROD.split(" ")[0].split("/")[0];</jsScript_script>
     </file>
     <fields>
       <field>
-        <name>DAY</name>
+        <name>MONTH</name>
         <type>String</type>
         <format/>
         <currency/>

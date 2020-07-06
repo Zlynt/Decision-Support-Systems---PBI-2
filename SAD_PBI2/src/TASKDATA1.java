@@ -7,7 +7,9 @@ import java.text.Collator;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-import TASKDATA3.TransactionList;
+import TASKDATA1.TransactionList;
+import TASKDATA1.Transaction;
+
 import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
@@ -39,7 +41,18 @@ public class TASKDATA1 extends TASKDATA{
 		boolean read_data = false;
 		TransactionList transactionList = new TransactionList();
 		
-		Reader inputString = new StringReader(transactionList.toARFF());
+		for (int i = 0; i < data_loaded.length; i++)
+		{
+			if (read_data)
+			{
+				String tmp_tid = data_loaded[i].split(",")[0];
+				String tmp_prod = data_loaded[i].split(",")[1];
+				
+				//Transaction transaction = new Transaction();
+			}
+		}
+		
+		Reader inputString = new StringReader(transactionList.toArff());
 		BufferedReader reader = new BufferedReader(inputString);
 		ArffReader arff = new ArffReader(reader);
 		return arff.getData();

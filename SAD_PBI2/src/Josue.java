@@ -10,25 +10,25 @@ public class Josue {
 		TASKDATA2 taskdata2 = new TASKDATA2();
 		
 		try {
-			taskdata1.csv_to_instances();
-//			System.out.println("[TASKDATA1] Processing the CSV input...");
-//			taskdata1.save_arff(taskdata1.csv_to_instances());
-//			
-//			System.out.println("[TASKDATA1] Loading arff...");
-//			Instances taskdata1_instances = taskdata1.load_arff();
-//
-//			System.out.println("[TASKDATA1] Mining association rules...");
-//			System.out.println(taskdata1.apriori_mine_association_rules(taskdata1_instances));
+//			taskdata1.csv_to_instances();
+			System.out.println("[TASKDATA1] Processing the CSV input...");
+			taskdata1.save_arff(taskdata1.csv_to_instances());
+			
+			System.out.println("[TASKDATA1] Loading arff...");
+			Instances taskdata1_instances = taskdata1.load_arff();
+
+			System.out.println("[TASKDATA1] Mining association rules...");
+			System.out.println(taskdata1.apriori_mine_association_rules(taskdata1_instances));
 			
 //			taskdata2.csv_to_instances();
-//			System.out.println("[TASKDATA2] Processing the CSV input...");
-//			taskdata2.save_arff(taskdata2.csv_to_instances());
-//			
-//			System.out.println("[TASKDATA2] Loading arff...");
-//			Instances taskdata4_instances = taskdata2.load_arff();
-//
-//			System.out.println("[TASKDATA2] Mining association rules...");
-//			System.out.println(taskdata2.apriori_mine_association_rules(taskdata2_instances));
+			System.out.println("[TASKDATA2] Processing the CSV input...");
+			taskdata2.save_arff(taskdata2.csv_to_instances());
+			
+			System.out.println("[TASKDATA2] Loading arff...");
+			Instances taskdata2_instances = taskdata2.load_arff();
+
+			System.out.println("[TASKDATA2] Mining association rules...");
+			System.out.println(taskdata2.apriori_mine_association_rules(taskdata2_instances));
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

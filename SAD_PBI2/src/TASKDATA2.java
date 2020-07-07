@@ -87,7 +87,7 @@ public class TASKDATA2 extends TASKDATA {
 			}
 			for (int k = 0; k < listTuple.getCountryList().size(); k++)
 			{
-				if(listTuple.getTuple().get(i).getProductLine().compareTo(listTuple.getProductLineList().get(k)) == 0)
+				if(listTuple.getTuple().get(i).getCountry().compareTo(listTuple.getCountryList().get(k)) == 0)
 					arff+=arrayList[1];
 				else 
 					arff+=arrayList[0];
@@ -99,11 +99,10 @@ public class TASKDATA2 extends TASKDATA {
 		System.out.println(arff);
 			
 
-//		Reader inputString = new StringReader(arff_file);
-//		BufferedReader reader = new BufferedReader(inputString);
-//		ArffReader arff = new ArffReader(reader);
-//		return arff.getData();
-		return null;
+		Reader inputString = new StringReader(arff);
+		BufferedReader reader = new BufferedReader(inputString);
+		ArffReader arff_reader = new ArffReader(reader);
+		return arff_reader.getData();
 
 	}
 

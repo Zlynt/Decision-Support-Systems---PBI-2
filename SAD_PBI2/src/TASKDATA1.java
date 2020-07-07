@@ -85,8 +85,8 @@ public class TASKDATA1 extends TASKDATA {
 		}
 
 		arff += "\n@data\n";
-		System.out.println(listTuple.getTuple().size());
-		System.out.println(listTuple.getTuple());
+		//System.out.println(listTuple.getTuple().size());
+		//System.out.println(listTuple.getTuple());
 		for (int i = 0; i < listTuple.getTuple().size(); i++) {
 			arff+=listTuple.getTuple().get(i).getProductCode()+",";
 			for (int j = 0; j < listTuple.getDealSizeList().size(); j++) {

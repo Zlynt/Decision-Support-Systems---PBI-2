@@ -5,15 +5,15 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-public class TransactionList {
+public class TransactionList_bak {
 	
-	private LinkedList<Transaction> transactionList; 		// Transaction list
+	private LinkedList<Transaction_bak> transactionList; 		// Transaction list
 	private LinkedList<String> productLineList;				// Product Line list
 	private LinkedList<String> countryList;					// Quarterly list
 
-	public TransactionList()
+	public TransactionList_bak()
 	{
-		transactionList = new LinkedList<Transaction>();
+		transactionList = new LinkedList<Transaction_bak>();
 		productLineList = new LinkedList<String>();
 		countryList = new LinkedList<String>();
 	}
@@ -67,7 +67,7 @@ public class TransactionList {
 	}
 	
 	// Add transaction to the list
-	public void addTransaction(Transaction transaction) 
+	public void addTransaction(Transaction_bak transaction) 
 	{
 		if (transactionExists(transaction.getID()))
 		{
@@ -92,7 +92,7 @@ public class TransactionList {
 	}
 
 	// Remove transaction from the list
-	public void removeTransaction(Transaction transaction) 
+	public void removeTransaction(Transaction_bak transaction) 
 	{
 		transactionList.remove(transaction);
 	}

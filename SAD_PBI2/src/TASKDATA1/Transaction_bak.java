@@ -5,14 +5,14 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-public class Transaction {
+public class Transaction_bak {
 
 	private String productcode;				//Transaction of product id
 	private String dealsize;				//Transaction Deal Size
 	private int qtr; 						//Transaction QTR - Quarterly
 	private LinkedList<String> products;	//List of products from a transaction 
 	
-	public Transaction(String productcode, String dealsize, int qtr)
+	public Transaction_bak(String productcode, String dealsize, int qtr)
 	{
 		this.productcode = productcode;
 		this.dealsize = dealsize;

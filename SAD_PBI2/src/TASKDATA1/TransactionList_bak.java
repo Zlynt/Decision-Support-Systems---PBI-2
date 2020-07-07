@@ -6,17 +6,17 @@ import java.util.Comparator;
 import java.util.LinkedList;
 
 
-public class TransactionList {
+public class TransactionList_bak {
 	
-	private LinkedList<Transaction> transactionList; 	// Transaction list
+	private LinkedList<Transaction_bak> transactionList; 	// Transaction list
 	private LinkedList<String> productList;				// Product list
 	private LinkedList<String> dealsizeList;			// Deal Size list
 	private LinkedList<String> qtrList;					// Quarterly list
 	
 	//Constructor
-	public TransactionList()
+	public TransactionList_bak()
 	{
-		transactionList = new LinkedList<Transaction>();
+		transactionList = new LinkedList<Transaction_bak>();
 		productList = new LinkedList<String>();
 		qtrList = new LinkedList<String>();
 	}
@@ -80,7 +80,7 @@ public class TransactionList {
 	}
 	
 	//Add transaction from the list
-	public void addTransaction(Transaction transaction) {
+	public void addTransaction(Transaction_bak transaction) {
 		if (transactionExists(transaction.getProductCode())) 
 		{
 			int transactionIndex = getTransactionIndex(transaction.getProductCode());
@@ -102,7 +102,7 @@ public class TransactionList {
 	}
 
 	//Remove transaction from the list
-	public void removeTransaction(Transaction transaction)
+	public void removeTransaction(Transaction_bak transaction)
 	{
 		transactionList.remove(transaction);
 	}
@@ -129,7 +129,7 @@ public class TransactionList {
 		arff += "\n@data\n";
 		for (int i = 0; i < transactionList.size(); i++)
 		{
-			Transaction currentTransaction = transactionList.get(i);
+			Transaction_bak currentTransaction = transactionList.get(i);
 			arff += currentTransaction.getProductCode() + ",";
 			
 			//Set products

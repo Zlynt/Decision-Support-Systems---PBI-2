@@ -26,8 +26,8 @@ public class Main {
 		Josue josue = new Josue();
 		josue.executar_codigo();
 		
-		Ivan ivan = new Ivan();
-		ivan.executar_codigo();
+//		Ivan ivan = new Ivan();
+//		ivan.executar_codigo();
 //		
 		
 

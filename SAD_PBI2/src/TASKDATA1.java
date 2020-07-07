@@ -7,9 +7,7 @@ import java.text.Collator;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-import TASKDATA1.TransactionList;
 import TASKDATA1.ListTuple;
-import TASKDATA1.Transaction;
 
 import weka.associations.Apriori;
 import weka.core.Instances;
@@ -87,6 +85,8 @@ public class TASKDATA1 extends TASKDATA {
 		}
 
 		arff += "\n@data\n";
+		System.out.println(listTuple.getTuple().size());
+		System.out.println(listTuple.getTuple());
 		for (int i = 0; i < listTuple.getTuple().size(); i++) {
 			arff+=listTuple.getTuple().get(i).getProductCode()+",";
 			for (int j = 0; j < listTuple.getDealSizeList().size(); j++) {

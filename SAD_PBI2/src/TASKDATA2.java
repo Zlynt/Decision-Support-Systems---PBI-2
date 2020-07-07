@@ -13,59 +13,98 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 import weka.core.converters.ArffLoader.ArffReader;
 
-import TASKDATA2.Transaction;
-import TASKDATA2.TransactionList;
+import TASKDATA2.ListTuple;
 
-public class TASKDATA2 extends TASKDATA{
+public class TASKDATA2 extends TASKDATA {
 
-	//TASKDATA Constructor
+	// TASKDATA Constructor
 	public TASKDATA2() {
-		super(2, false); //TASKDATA2; The 2 number goes from the TASKDATA number
+		super(2, false); // TASKDATA2; The 2 number goes from the TASKDATA number
 	}
-	
+
 	public Instances csv_to_instances() throws Exception {
 		if (!csv_exists())
 			throw new Exception(taskdata_name + ".csv does not exist!");
 
 		// Read CSV
 		Instances trainSet = read_csv();
-		
+
 		String tmp_data_loaded = trainSet.toString();
 		while (tmp_data_loaded.contains(" '"))
 			tmp_data_loaded = tmp_data_loaded.replace(" '", "'");
-		
+
 		tmp_data_loaded = tmp_data_loaded.replace("@relationTASKDATA2", "");
 		tmp_data_loaded = tmp_data_loaded.replace("@relationTASKDATA2", "");
 		String[] data_loaded = tmp_data_loaded.split("\n");
-		
+
 		boolean read_data = false;
-		TransactionList transactionList = new TransactionList();
-		
-		for (int i = 0; i < data_loaded.length; i++)
-		{
-			if (read_data)
-			{
-				String tmp_tid = data_loaded[i].split(",")[0];
-				String tmp_prod = data_loaded[i].split(",")[1];
-				
-				Transaction transaction = new Transaction(Integer.parseInt(tmp_tid));
-				transaction.addProduct(tmp_prod);
-				transactionList.addTransaction(transaction);
+		ListTuple listTuple = new ListTuple();
+
+		for (int i = 0; i < data_loaded.length; i++) {
+			if (read_data) {
+				String tmp_productline = data_loaded[i].split(",")[0].replace("'", "");
+				String tmp_country = data_loaded[i].split(",")[1].replace("'", "");
+				System.out.println(tmp_productline + ", " + tmp_country);
+
+				listTuple.addTuple(tmp_productline, tmp_country);
+				listTuple.addProductLine(tmp_productline);
+				listTuple.addCountry(tmp_country);
+
 			}
-			
-			if (data_loaded[i].contains("@data"))
-			{
+
+			if (data_loaded[i].contains("@data")) {
 				read_data = true;
 			}
 		}
+
+		String arff = "";
+		arff += "@relation TASKDATA2\n\n"; // The format for the arff TAKSDATA1
+
+		String[] arrayList = { "0", "1" };
+		for (int i = 0; i < listTuple.getProductLineList().size(); i++) {
+			arff += "@attribute 'PRODUCTLINE=" + listTuple.getProductLineList().get(i) + "' {" + arrayList[0] + ","
+					+ arrayList[1] + "}\n";
+		}
 		
-		Reader inputString = new StringReader(transactionList.toARFF());
-		BufferedReader reader = new BufferedReader(inputString);
-		ArffReader arff = new ArffReader(reader);
-		return arff.getData();
-			
-			
+		String[] arrayList2 = { "0", "1" };
+		for (int i = 0; i < listTuple.getCountryList().size(); i++) {
+			arff += "@attribute 'COUNTRY=" + listTuple.getCountryList().get(i) + "' {" + arrayList2[0] + "," + arrayList2[1] + "}\n";
+		}
+		System.out.println(arff);
 		
+		arff+="\n@data\n";
+		//System.out.println(listTuple.getTuple().size());
+		//System.out.println(listTuple.getTuple());
+		for (int i = 0; i < listTuple.getTuple().size(); i++)
+		{
+			for (int j = 0; j < listTuple.getProductLineList().size(); j++)
+			{
+				if(listTuple.getTuple().get(i).getProductLine().compareTo(listTuple.getProductLineList().get(j)) == 0)
+					arff+=arrayList[1];
+				else 
+					arff+=arrayList[0];
+				arff+=",";
+			}
+			for (int k = 0; k < listTuple.getCountryList().size(); k++)
+			{
+				if(listTuple.getTuple().get(i).getProductLine().compareTo(listTuple.getProductLineList().get(k)) == 0)
+					arff+=arrayList[1];
+				else 
+					arff+=arrayList[0];
+				arff+=",";
+			}
+			arff = arff.substring(0, arff.length() - 1); // remove last comma
+			arff += "\n";
+		}
+		System.out.println(arff);
+			
+
+//		Reader inputString = new StringReader(arff_file);
+//		BufferedReader reader = new BufferedReader(inputString);
+//		ArffReader arff = new ArffReader(reader);
+//		return arff.getData();
+		return null;
+
 	}
 
 }

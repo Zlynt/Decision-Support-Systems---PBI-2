@@ -10,6 +10,7 @@ public class Josue {
 		TASKDATA2 taskdata2 = new TASKDATA2();
 		
 		try {
+//			taskdata1.csv_to_instances();
 			System.out.println("[TASKDATA1] Processing the CSV input...");
 			taskdata1.save_arff(taskdata1.csv_to_instances());
 			

@@ -6,7 +6,7 @@
 	* Agosto
 	* Setembro
 	* Dezembro
-Pois a adesão à sua compra será muito baixa
+Pois a adesão à sua compra em principio será muito baixa
 
 === TASKDATA4 ===
 Aplicando as propriedades matemáticas do "Conditional Statements", podemos concluir que:

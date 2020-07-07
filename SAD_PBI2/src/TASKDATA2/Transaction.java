@@ -8,8 +8,8 @@ import java.util.LinkedList;
 public class Transaction {
 	
 	private int id;
-	//private String productline;
-	//private String country;
+	private String productline;
+	private String country;
 	private LinkedList<String> products;
 	
 	public Transaction(int id ) //String productline, String country)
@@ -52,29 +52,29 @@ public class Transaction {
 			return this.id;
 	}
 	
-//	//Get the product line of the transaction
-//	public String getProductLine()
-//	{
-//		return this.productline;
-//	}
-//	
-//	//Set the product line of the transaction
-//	public void setProductLine(String productline)
-//	{
-//		this.productline = productline;
-//	}
-//	
-//	//Get the country of the transaction
-//	public String getCountry()
-//	{
-//		return this.country;
-//	}
-//	
-//	//Set the country of the transaction
-//	public void setCountry(String country)
-//	{
-//		this.country = country;
-//	}
+	//Get the product line of the transaction
+	public String getProductLine()
+	{
+		return this.productline;
+	}
+	
+	//Set the product line of the transaction
+	public void setProductLine(String productline)
+	{
+		this.productline = productline;
+	}
+	
+	//Get the country of the transaction
+	public String getCountry()
+	{
+		return this.country;
+	}
+	
+	//Set the country of the transaction
+	public void setCountry(String country)
+	{
+		this.country = country;
+	}
 	
 	// Get all the products in this transaction
 	public LinkedList<String> getProducts() 

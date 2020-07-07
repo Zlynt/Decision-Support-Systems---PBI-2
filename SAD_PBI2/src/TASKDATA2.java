@@ -52,6 +52,11 @@ public class TASKDATA2 extends TASKDATA{
 				transaction.addProduct(tmp_prod);
 				transactionList.addTransaction(transaction);
 			}
+			
+			if (data_loaded[i].contains("@data"))
+			{
+				read_data = true;
+			}
 		}
 		
 		Reader inputString = new StringReader(transactionList.toARFF());

@@ -45,10 +45,11 @@ public class TASKDATA1 extends TASKDATA{
 		{
 			if (read_data)
 			{
-				String tmp_tid = data_loaded[i].split(",")[0];
-				String tmp_prod = data_loaded[i].split(",")[1];
+				String tmp_productcode = data_loaded[i].split(",")[0];
+				String tmp_dealsize = data_loaded[i].split(",")[1];
+				String tmp_quarter = data_loaded[i].split(",")[2];
 				
-				Transaction transaction = new Transaction(Integer.parseInt(tmp_tid));
+				Transaction transaction = new Transaction(tmp_productcode, tmp_dealsize, Integer.parseInt(tmp_quarter));
 				transaction.addProduct(tmp_prod);
 				transactionList.addTransaction(transaction);
 			}

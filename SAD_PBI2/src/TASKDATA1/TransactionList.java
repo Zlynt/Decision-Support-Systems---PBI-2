@@ -60,20 +60,20 @@ public class TransactionList {
 	}
 	
 	//Check the existence from the transaction
-	public boolean transactionExists(int transactionID)
+	public boolean transactionExists(String transactionID)
 	{
 		for (int i=0; i < transactionList.size(); i++)
-			if (transactionList.get(i).getID() == transactionID)
+			if (transactionList.get(i).getProductCode() == transactionID)
 				return true;
 		
 		return false;
 	}
 	
 	//Get the transaction from the list
-	public int getTransactionIndex(int transactionID)
+	public int getTransactionIndex(String transactionID)
 	{
 		for (int i = 0; i < transactionList.size(); i++)
-			if (transactionList.get(i).getID() == transactionID)
+			if (transactionList.get(i).getProductCode() == transactionID)
 				return i;
 		
 		return -1;
@@ -81,9 +81,9 @@ public class TransactionList {
 	
 	//Add transaction from the list
 	public void addTransaction(Transaction transaction) {
-		if (transactionExists(transaction.getID())) 
+		if (transactionExists(transaction.getProductCode())) 
 		{
-			int transactionIndex = getTransactionIndex(transaction.getID());
+			int transactionIndex = getTransactionIndex(transaction.getProductCode());
 			
 			for (int i = 0; i < transaction.getProducts().size(); i++)
 			{
@@ -115,7 +115,7 @@ public class TransactionList {
 		
 		//Add the transactions of possible values list
 		for (int i = 0; i < transactionList.size(); i++)
-			arff += transactionList.get(i).getID() + ",";
+			arff += transactionList.get(i).getProductCode() + ",";
 		
 		//Remove last comma and close the transaction attribute
 		arff = arff.substring(0, arff.length() - 1);
@@ -130,7 +130,7 @@ public class TransactionList {
 		for (int i = 0; i < transactionList.size(); i++)
 		{
 			Transaction currentTransaction = transactionList.get(i);
-			arff += currentTransaction.getID() + ",";
+			arff += currentTransaction.getProductCode() + ",";
 			
 			//Set products
 			for (int j = 0; j < productList.size(); j++)

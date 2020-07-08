@@ -11,15 +11,15 @@ public class Josue {
 		
 		try {
 //			taskdata1.csv_to_instances();
-			System.out.println("[TASKDATA1] Processing the CSV input...");
-			taskdata1.save_arff(taskdata1.csv_to_instances());
-			
-			System.out.println("[TASKDATA1] Loading arff...");
-			Instances taskdata1_instances = taskdata1.load_arff();
-
-			System.out.println("[TASKDATA1] Mining association rules...");
-			System.out.println(taskdata1.apriori_mine_association_rules(taskdata1_instances));
-			
+//			System.out.println("[TASKDATA1] Processing the CSV input...");
+//			taskdata1.save_arff(taskdata1.csv_to_instances());
+//			
+//			System.out.println("[TASKDATA1] Loading arff...");
+//			Instances taskdata1_instances = taskdata1.load_arff();
+//
+//			System.out.println("[TASKDATA1] Mining association rules...");
+//			System.out.println(taskdata1.apriori_mine_association_rules(taskdata1_instances));
+//			
 //			taskdata2.csv_to_instances();
 			System.out.println("[TASKDATA2] Processing the CSV input...");
 			taskdata2.save_arff(taskdata2.csv_to_instances());

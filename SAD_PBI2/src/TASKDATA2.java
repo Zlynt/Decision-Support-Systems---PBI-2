@@ -43,6 +43,12 @@ public class TASKDATA2 extends TASKDATA {
 		for (int i = 0; i < data_loaded.length; i++) {
 			if (read_data) {
 				String tmp_productline = data_loaded[i].split(",")[0].replace("'", "");
+				if (tmp_productline.compareTo("Classic Cars") == 0)
+					tmp_productline = "Classic_Cars";
+				if (tmp_productline.compareTo("Trucks and Buses") == 0)
+					tmp_productline = "Trucks_and_Buses";
+				if (tmp_productline.compareTo("Vintage Cars") == 0)
+					tmp_productline = "Vintage_Cars";
 				String tmp_country = data_loaded[i].split(",")[1].replace("'", "");
 				System.out.println(tmp_productline + ", " + tmp_country);
 
@@ -60,13 +66,13 @@ public class TASKDATA2 extends TASKDATA {
 		String arff = "";
 		arff += "@relation TASKDATA2\n\n"; // The format for the arff TAKSDATA1
 
-		String[] arrayList = { "0", "1" };
+		String[] arrayList = { "'NoThisProductLine'", "'ThisProductLine'" };
 		for (int i = 0; i < listTuple.getProductLineList().size(); i++) {
 			arff += "@attribute 'PRODUCTLINE=" + listTuple.getProductLineList().get(i) + "' {" + arrayList[0] + ","
 					+ arrayList[1] + "}\n";
 		}
 		
-		String[] arrayList2 = { "0", "1" };
+		String[] arrayList2 = { "'NotThisCountry'", "'ThisCountry'" };
 		for (int i = 0; i < listTuple.getCountryList().size(); i++) {
 			arff += "@attribute 'COUNTRY=" + listTuple.getCountryList().get(i) + "' {" + arrayList2[0] + "," + arrayList2[1] + "}\n";
 		}
@@ -103,7 +109,7 @@ public class TASKDATA2 extends TASKDATA {
 		BufferedReader reader = new BufferedReader(inputString);
 		ArffReader arff_reader = new ArffReader(reader);
 		return arff_reader.getData();
-
+//		return null;
 	}
 
 }

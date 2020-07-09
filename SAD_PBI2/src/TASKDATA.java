@@ -34,7 +34,7 @@ public class TASKDATA {
         Trans trans = new Trans(transMeta); //create new transformation object
         trans.execute(null);
         trans.waitUntilFinished();
-        System.out.println("["+taskdata_name+"] CSV saved to "+csv_path+taskdata_name+".csv");
+        System.out.println("["+taskdata_name+"] CSV saved to "+csv_path+"\\"+taskdata_name+".csv");
 	}
 	
 	//Check if CSV file exists

@@ -1,61 +1,61 @@
 @relation TASKDATA2
 
-@attribute PRODUCTLINE=Classic_Cars {0,1}
-@attribute PRODUCTLINE=Motorcycles {0,1}
-@attribute PRODUCTLINE=Trucks_and_Buses {0,1}
-@attribute PRODUCTLINE=Vintage_Cars {0,1}
-@attribute COUNTRY=Australia {0,1}
-@attribute COUNTRY=France {0,1}
-@attribute COUNTRY=USA {0,1}
+@attribute PRODUCTLINE=Classic_Cars {NoThisProductLine,ThisProductLine}
+@attribute PRODUCTLINE=Motorcycles {NoThisProductLine,ThisProductLine}
+@attribute PRODUCTLINE=Trucks_and_Buses {NoThisProductLine,ThisProductLine}
+@attribute PRODUCTLINE=Vintage_Cars {NoThisProductLine,ThisProductLine}
+@attribute COUNTRY=Australia {NotThisCountry,ThisCountry}
+@attribute COUNTRY=France {NotThisCountry,ThisCountry}
+@attribute COUNTRY=USA {NotThisCountry,ThisCountry}
 
 @data
-0,1,0,0,0,1,0
-1,0,0,0,0,0,1
-0,1,0,0,0,1,0
-0,1,0,0,0,1,0
-1,0,0,0,0,0,1
-1,0,0,0,0,0,1
-0,0,1,0,0,0,1
-0,1,0,0,0,1,0
-1,0,0,0,0,0,1
-1,0,0,0,0,0,1
-1,0,0,0,0,0,1
-0,0,1,0,0,0,1
-1,0,0,0,0,1,0
-0,0,0,1,1,0,0
-0,0,0,1,1,0,0
-1,0,0,0,0,1,0
-1,0,0,0,0,0,1
-1,0,0,0,0,1,0
-0,0,1,0,0,0,1
-0,1,0,0,0,1,0
-0,0,0,1,1,0,0
-1,0,0,0,0,1,0
-0,0,0,1,1,0,0
-0,0,0,1,1,0,0
-0,0,0,1,1,0,0
-1,0,0,0,0,1,0
-1,0,0,0,0,0,1
-0,0,0,1,1,0,0
-1,0,0,0,0,0,1
-1,0,0,0,0,1,0
-0,1,0,0,0,0,1
-0,0,1,0,0,0,1
-0,0,0,1,0,0,1
-1,0,0,0,0,0,1
-0,1,0,0,0,1,0
-1,0,0,0,0,1,0
-0,1,0,0,0,1,0
-0,0,1,0,0,0,1
-0,1,0,0,0,0,1
-1,0,0,0,0,0,1
-1,0,0,0,0,0,1
-1,0,0,0,0,0,1
-0,0,0,1,1,0,0
-1,0,0,0,0,0,1
-0,0,1,0,0,0,1
-0,1,0,0,0,0,1
-0,0,1,0,0,0,1
-0,1,0,0,0,0,1
-0,1,0,0,0,0,1
-1,0,0,0,0,0,1
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,ThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,ThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,ThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,ThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,ThisCountry,NotThisCountry
+NoThisProductLine,NoThisProductLine,ThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,NoThisProductLine,ThisProductLine,ThisCountry,NotThisCountry,NotThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,ThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,NoThisProductLine,ThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+NoThisProductLine,ThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry
+ThisProductLine,NoThisProductLine,NoThisProductLine,NoThisProductLine,NotThisCountry,NotThisCountry,ThisCountry

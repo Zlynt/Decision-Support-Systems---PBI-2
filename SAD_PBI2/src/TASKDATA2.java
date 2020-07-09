@@ -94,9 +94,9 @@ public class TASKDATA2 extends TASKDATA {
 			for (int k = 0; k < listTuple.getCountryList().size(); k++)
 			{
 				if(listTuple.getTuple().get(i).getCountry().compareTo(listTuple.getCountryList().get(k)) == 0)
-					arff+=arrayList[1];
+					arff+=arrayList2[1];
 				else 
-					arff+=arrayList[0];
+					arff+=arrayList2[0];
 				arff+=",";
 			}
 			arff = arff.substring(0, arff.length() - 1); // remove last comma

@@ -10,6 +10,8 @@ public class Josue {
 		TASKDATA2 taskdata2 = new TASKDATA2();
 		
 		try {
+			
+			taskdata1.generateCSV();
 //			taskdata1.csv_to_instances();
 			System.out.println("[TASKDATA1] Processing the CSV input...");
 			taskdata1.save_arff(taskdata1.csv_to_instances());
@@ -19,7 +21,9 @@ public class Josue {
 
 			System.out.println("[TASKDATA1] Mining association rules...");
 			System.out.println(taskdata1.apriori_mine_association_rules(taskdata1_instances));
-//			
+
+			
+			taskdata2.generateCSV();
 //			taskdata2.csv_to_instances();
 			System.out.println("[TASKDATA2] Processing the CSV input...");
 			taskdata2.save_arff(taskdata2.csv_to_instances());

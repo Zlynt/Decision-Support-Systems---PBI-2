@@ -14,8 +14,10 @@ public class Ivan {
 
 		try {
 			
-			
 			// Task Data 3
+
+			taskdata3.generateCSV();
+			
 			System.out.println("[TASKDATA3] Processing the CSV input...");
 			taskdata3.save_arff(taskdata3.csv_to_instances());
 
@@ -32,6 +34,9 @@ public class Ivan {
 			
 			
 			// Task Data 4
+			
+			taskdata4.generateCSV();
+			
 			System.out.println("[TASKDATA4] Processing the CSV input...");
 			taskdata4.save_arff(taskdata4.csv_to_instances());
 

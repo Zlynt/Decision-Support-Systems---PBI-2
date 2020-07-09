@@ -3,6 +3,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import org.pentaho.di.core.KettleEnvironment;
+import org.pentaho.di.core.exception.KettleException;
+import org.pentaho.di.trans.Trans;
+import org.pentaho.di.trans.TransMeta;
+
 import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader.ArffReader;
@@ -10,8 +15,9 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 
 public class TASKDATA {
-	protected static final String csv_path  = "C:\\sad\\implementacao\\CSV";
-	protected static final String arff_path = "C:\\sad\\implementacao\\ARFF";
+	protected static final String projectPath = "C:\\\\sad\\\\implementacao";
+	protected static final String csv_path  = projectPath+"\\CSV";
+	protected static final String arff_path = projectPath+"\\ARFF";
 	protected String taskdata_name;
 	private Boolean enableDebug;
 	
@@ -19,6 +25,16 @@ public class TASKDATA {
 	public TASKDATA(int taskdata_number, boolean enableDebug) {
 		this.taskdata_name = "TASKDATA"+taskdata_number;
 		this.enableDebug = enableDebug;
+	}
+	
+	public void generateCSV() throws KettleException {
+		System.out.println("["+taskdata_name+"] Generating CSV file...");
+        KettleEnvironment.init();
+        TransMeta transMeta = new TransMeta(projectPath+"\\"+taskdata_name+".ktr");
+        Trans trans = new Trans(transMeta); //create new transformation object
+        trans.execute(null);
+        trans.waitUntilFinished();
+        System.out.println("["+taskdata_name+"] CSV saved to "+csv_path+taskdata_name+".csv");
 	}
 	
 	//Check if CSV file exists

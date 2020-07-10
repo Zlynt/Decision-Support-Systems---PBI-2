@@ -98,7 +98,7 @@ public class TASKDATA1 extends TASKDATA {
 				if(listTuple.getTuple().get(i).getQtr_Id().compareTo(listTuple.getQtrIDList().get(k)) == 0)
 					arff+=arrayList2[1];
 				else 
-					arff+=arrayList2[0];;
+					arff+=arrayList2[0];
 				arff+=",";	
 			}
 			arff = arff.substring(0, arff.length() - 1); // remove last comma

@@ -71,17 +71,15 @@ public class TASKDATA1 extends TASKDATA {
 		arff = arff.substring(0, arff.length() - 1); // remove last comma
 		arff += "}\n";
 
-		String[] arrayList = { "'NotThisDealsize'", "'ThisDealsize'" };
+		String[] arrayList = {"'ThisDealsize'"};
 		for (int i = 0; i < listTuple.getDealSizeList().size(); i++) {
-			arff += "@attribute 'DEALSIZE=" + listTuple.getDealSizeList().get(i) + "' {" + arrayList[0] + ","
-					+ arrayList[1] + "}\n";
+			arff += "@attribute 'DEALSIZE=" + listTuple.getDealSizeList().get(i) + "' {" + arrayList[0] + "}\n";
 			// System.out.println(listTuple.getDealSizeList().get(i));
 		}
 
-		String[] arrayList2 = { "'NotThisQTR'", "'ThisQTR'" };
+		String[] arrayList2 = {"'ThisQTR'"};
 		for (int i = 0; i < listTuple.getQtrIDList().size(); i++) {
-			arff += "@attribute 'QTR_ID=" + listTuple.getQtrIDList().get(i) + "' {" + arrayList2[0] + ","
-					+ arrayList2[1] + "}\n";
+			arff += "@attribute 'QTR_ID=" + listTuple.getQtrIDList().get(i) + "' {" + arrayList2[0] + "}\n";
 		}
 
 		arff += "\n@data\n";
@@ -91,16 +89,16 @@ public class TASKDATA1 extends TASKDATA {
 			arff+=listTuple.getTuple().get(i).getProductCode()+",";
 			for (int j = 0; j < listTuple.getDealSizeList().size(); j++) {
 				if(listTuple.getTuple().get(i).getDealSize().compareTo(listTuple.getDealSizeList().get(j)) == 0)
-					arff+=arrayList[1];
-				else 
 					arff+=arrayList[0];
+				else 
+					arff+= "'?'";
 				arff+=",";
 			}
 			for (int k = 0; k < listTuple.getQtrIDList().size(); k++) {
 				if(listTuple.getTuple().get(i).getQtr_Id().compareTo(listTuple.getQtrIDList().get(k)) == 0)
-					arff+=arrayList2[1];
-				else 
 					arff+=arrayList2[0];
+				else 
+					arff+= "'?'";
 				arff+=",";	
 			}
 			arff = arff.substring(0, arff.length() - 1); // remove last comma

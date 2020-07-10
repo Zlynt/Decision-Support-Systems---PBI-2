@@ -71,13 +71,13 @@ public class TASKDATA1 extends TASKDATA {
 		arff = arff.substring(0, arff.length() - 1); // remove last comma
 		arff += "}\n";
 
-		String[] arrayList = {"'?'","'ThisDealsize'"};
+		String[] arrayList = {"?","'ThisDealsize'"};
 		for (int i = 0; i < listTuple.getDealSizeList().size(); i++) {
 			arff += "@attribute 'DEALSIZE=" + listTuple.getDealSizeList().get(i) + "' {" + arrayList[1] + "}\n";
 			// System.out.println(listTuple.getDealSizeList().get(i));
 		}
 
-		String[] arrayList2 = {"'?'","'ThisQTR'"};
+		String[] arrayList2 = {"?","'ThisQTR'"};
 		for (int i = 0; i < listTuple.getQtrIDList().size(); i++) {
 			arff += "@attribute 'QTR_ID=" + listTuple.getQtrIDList().get(i) + "' {" + arrayList2[1] + "}\n";
 		}

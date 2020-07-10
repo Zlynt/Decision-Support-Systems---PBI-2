@@ -66,12 +66,12 @@ public class TASKDATA2 extends TASKDATA {
 		String arff = "";
 		arff += "@relation TASKDATA2\n\n"; // The format for the arff TAKSDATA1
 
-		String[] arrayList = { "'?'", "'ThisProductLine'" };
+		String[] arrayList = { "?", "'ThisProductLine'" };
 		for (int i = 0; i < listTuple.getProductLineList().size(); i++) {
 			arff += "@attribute 'PRODUCTLINE=" + listTuple.getProductLineList().get(i) + "' {" + arrayList[1] + "}\n";
 		}
 		
-		String[] arrayList2 = { "'?'", "'ThisCountry'" };
+		String[] arrayList2 = { "?", "'ThisCountry'" };
 		for (int i = 0; i < listTuple.getCountryList().size(); i++) {
 			arff += "@attribute 'COUNTRY=" + listTuple.getCountryList().get(i) + "' {" + arrayList2[1] + "}\n";
 		}

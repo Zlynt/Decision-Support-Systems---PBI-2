@@ -490,6 +490,11 @@
   <order>
     <hop>
       <from>Obter Produtos comprados por talão</from>
+      <to>Modified JavaScript value 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified JavaScript value 2 2</from>
       <to>Exportar talão com produtos comprados e o seu preço 2</to>
       <enabled>Y</enabled>
     </hop>
@@ -538,18 +543,18 @@
     <fields>
       <field>
         <name>ORDERNUMBER</name>
-        <type>String</type>
-        <format/>
+        <type>Integer</type>
+        <format>####0;-####0</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>,</decimal>
+        <group>.</group>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>9</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
       </field>
       <field>
-        <name>PRODUCTCODE</name>
+        <name>PRODUCTNAME</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -557,7 +562,7 @@
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>50</length>
+        <length>70</length>
         <precision>-1</precision>
       </field>
     </fields>
@@ -588,10 +593,16 @@
     </partitioning>
     <connection>Test</connection>
     <sql>SELECT
-  ORDERNUMBER
-, PRODUCTCODE
-FROM "PUBLIC".SALES_DATA
+  SALES_DATA.ORDERNUMBER
+, PRODUCTS.PRODUCTNAME
+FROM 
+"PUBLIC".SALES_DATA,
+"PUBLIC".PRODUCTS
+
 WHERE
+
+SALES_DATA.PRODUCTCODE = PRODUCTS.PRODUCTCODE
+AND
 SALES_DATA.COUNTRY = 'USA';
 </sql>
     <limit>0</limit>
@@ -627,11 +638,11 @@ SALES_DATA.COUNTRY = 'USA';
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>PRODUCTCODE</name>
-        <length>9</length>
+        <name>PRODUCTNAME</name>
+        <length>70</length>
         <precision>-1</precision>
         <origin>Obter Produtos comprados por talão</origin>
-        <comments>PRODUCTCODE</comments>
+        <comments>PRODUCTNAME</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -658,6 +669,50 @@ SALES_DATA.COUNTRY = 'USA';
     </remotesteps>
     <GUI>
       <xloc>144</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified JavaScript value 2 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>var PROD = PRODUCTNAME.replace(",","").replace("'","");</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>PROD</name>
+        <rename>PRODUCTNAME</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>

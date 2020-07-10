@@ -331,10 +331,18 @@
             <table>
               <tbody>
                 <tr>
-                  <td class="gwt-MenuItem" id="filemenu" role="menuitem" aria-haspopup="true">TASKDATA1</td>
-                  <td class="gwt-MenuItem" id="viewmenu" role="menuitem" aria-haspopup="true">TASKDATA2</td>
-                  <td class="gwt-MenuItem" id="toolsmenu" role="menuitem" aria-haspopup="true">TASKDATA3</td>
-                  <td class="gwt-MenuItem" id="helpmenu" role="menuitem" aria-haspopup="true">TASKDATA4</td>
+                  <td class="gwt-MenuItem" id="filemenu" role="menuitem" aria-haspopup="true" onclick="setTASKDATA(1)">
+                    TASKDATA1
+                  </td>
+                  <td class="gwt-MenuItem" id="viewmenu" role="menuitem" aria-haspopup="true" onclick="setTASKDATA(2)">
+                    TASKDATA2
+                  </td>
+                  <td class="gwt-MenuItem" id="toolsmenu" role="menuitem" aria-haspopup="true" onclick="setTASKDATA(3)">
+                    TASKDATA3
+                  </td>
+                  <td class="gwt-MenuItem" id="helpmenu" role="menuitem" aria-haspopup="true" onclick="setTASKDATA(4)">
+                    TASKDATA4
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -373,7 +381,11 @@
   </div>
 
   <!-- ngView: -->
-
+  <script>
+    const setTASKDATA = (task_number) => {
+      document.getElementById('current_taskdata').innerHTML = task_number;
+    };
+  </script>
 
 </body>
 

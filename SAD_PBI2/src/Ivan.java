@@ -25,7 +25,7 @@ public class Ivan {
 			Instances taskdata3_instances = taskdata3.load_arff();
 
 			System.out.print("[TASKDATA3] Mining association rules...");
-			String taskData3MinedAssociationRules = taskdata3.apriori_mine_association_rules(taskdata3_instances);
+			String taskData3MinedAssociationRules = taskdata3.apriori_mine_association_rules(taskdata3_instances, 0.01, 0.7);
 			System.out.println("done!");
 			System.out.println(taskData3MinedAssociationRules);
 			
@@ -44,16 +44,21 @@ public class Ivan {
 			Instances taskdata4_instances = taskdata4.load_arff();
 
 			System.out.println("[TASKDATA4] Mining association rules...");
-			String taskData4MinedAssociationRules = taskdata4.apriori_mine_association_rules(taskdata4_instances);
+			String taskData4MinedAssociationRules = taskdata4.apriori_mine_association_rules(taskdata4_instances, 0.01);
 			System.out.println(taskData4MinedAssociationRules);
 			
 			
 			PrintWriter out = new PrintWriter("Ivan_Mined_Associations_Debug.txt");
 			out.println("===== TASKDATA3 =====");
+			out.println("Pergunta de negocio: Qual a relação entre os produtos comprados e os clientes que as compram?");
+			out.println("=====================");
 			out.println(taskData3MinedAssociationRules); 
 			out.println();
 			out.println("===== TASKDATA4 =====");
+			out.println("Pergunta de negocio: Qual a relação entre produtos nos EUA (Market Basket Analisys)?");
+			out.println("=====================");
 			out.println(taskData4MinedAssociationRules);
+			//out.println(taskdata4.csv_to_instances().toString());
 			out.close();			
 			
 			

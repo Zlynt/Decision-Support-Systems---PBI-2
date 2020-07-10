@@ -8,10 +8,7 @@ import java.text.Collator;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-import TASKDATA3.AttributeValueList;
-import TASKDATA3.Transaction;
-import TASKDATA3.TransactionList;
-import TASKDATA3.TransactionProcessor;
+import TASKDATA3.AttributeList;
 import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
@@ -43,84 +40,51 @@ public class TASKDATA3 extends TASKDATA {
 		String[] data_loaded = tmp_data_loaded.split("\n");
 
 		boolean read_data = false;
-		TransactionProcessor transactionList = new TransactionProcessor();
+		AttributeList productList = new AttributeList();
+		AttributeList clientList = new AttributeList();
+		String arff_data = "";
 
-		System.out.print("[TASKDATA3] Processing tuples...");
 		for (int i = 0; i < data_loaded.length; i++) {
 
 			if (read_data) {
-				String tupleMonth = data_loaded[i].split(",")[0];
-				String tupleProduct = data_loaded[i].split(",")[1].replace("'", "");
+				String tmp_tid = data_loaded[i].split(",")[0];
+				String tmp_prod = data_loaded[i].split(",")[1];
+				String tmp_client = data_loaded[i].split(",")[2];
 
-				transactionList.addMonth(tupleMonth);
-				transactionList.addProduct(tupleProduct);
-				transactionList.addPurchase(tupleMonth, tupleProduct);
-
+				productList.addAttribute(tmp_prod);
+				clientList.addAttribute(tmp_client);
+				arff_data += tmp_prod + "," + tmp_client + "\n";
 			}
 
 			if (data_loaded[i].contains("@data")) {
 				read_data = true;
 			}
 		}
-		System.out.println("done!");
-		for (int i = 0; i < transactionList.getPurchases().size(); i++) {
-			String tupleMonth = transactionList.getPurchases().get(i)[0];
-			String tupleProduct = transactionList.getPurchases().get(i)[1];
-			// System.out.println("[" + tupleMonth + "] -> " + tupleProduct);
-		}
 
-		System.out.print("[TASKDATA3] Converting to arff...");
 		String arff_file = "@relation TASKDATA3\n\n";
-
-		// Set Month Attributes
-		String[] boolean_month = { "'ThisMonth'", "'NotThisMonth'" };
-		for (int i = 0; i < transactionList.getMonthList().size(); i++) {
-			arff_file += "@attribute MONTH=" + transactionList.getMonthList().get(i) + " {" + boolean_month[0] + ","
-					+ boolean_month[1] + "}\n";
+		
+		arff_file += "@attribute PRODUCT {";
+		for (int i = 0; i < productList.getAttributeList().size(); i++) {
+			arff_file += productList.getAttributeList().get(i)+",";
 		}
+		arff_file = arff_file.substring(0, arff_file.length() - 1);
+		arff_file += "}\n";
 
-		// Set Product Attributes
-		String[] boolean_product = { "'Purchased'", "'NotPurchased'" };
-		for (int i = 0; i < transactionList.getProductList().size(); i++) {
-			arff_file += "@attribute 'PRODUCTLINE=" + transactionList.getProductList().get(i) + "' {" + boolean_product[0]
-					+ "," + boolean_product[1] + "}\n";
+		arff_file += "@attribute CLIENT {";
+		for (int i = 0; i < clientList.getAttributeList().size(); i++) {
+			arff_file += clientList.getAttributeList().get(i)+",";
 		}
+		arff_file = arff_file.substring(0, arff_file.length() - 1);
+		arff_file += "}\n";
+		
+		arff_file += "\n@data\n"+arff_data;
 
-		arff_file += "\n@data\n";
-
-		LinkedList<String[]> purchasesList = transactionList.getPurchases();
-		for (int a = 0; a < purchasesList.size(); a++) {
-
-			for (int i = 0; i < transactionList.getMonthList().size(); i++) {
-				if (purchasesList.get(a)[0].compareTo(transactionList.getMonthList().get(i)) == 0)
-					arff_file += boolean_month[0];
-				else
-					arff_file += boolean_month[1];
-				arff_file += ",";
-			}
-
-			for (int i = 0; i < transactionList.getProductList().size(); i++) {
-				if (purchasesList.get(a)[1].compareTo(transactionList.getProductList().get(i)) == 0)
-					arff_file += boolean_product[0];
-				else
-					arff_file += boolean_product[1];
-				arff_file += ",";
-			}
-
-			// Remove extra comma
-			arff_file = arff_file.substring(0, arff_file.length() - 1);
-			arff_file += "\n";
-		}
-
-		System.out.println("done!");
-
-		//PrintWriter out = new PrintWriter("debug_arff_taskdata_4.txt");
-		//out.println(arff_file); out.close();
-
+		System.out.println(arff_file);
 		Reader inputString = new StringReader(arff_file);
 		BufferedReader reader = new BufferedReader(inputString);
 		ArffReader arff = new ArffReader(reader);
 		return arff.getData();
+		// return null;
 
 	}
 

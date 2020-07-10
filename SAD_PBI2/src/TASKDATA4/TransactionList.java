@@ -83,18 +83,18 @@ public class TransactionList {
 		arff += "@relation TASKDATA3\n\n"; // Add TaskData relation name (in this case it is the TaskData 3
 
 		// Add the transaction id attribute
-		arff += "@attribute TID {";
+		//arff += "@attribute TID {";
 		// Add the transactions to the possible values list
-		for (int i = 0; i < transactionList.size(); i++) {
-			arff += transactionList.get(i).getID() + ",";
-		}
+		//for (int i = 0; i < transactionList.size(); i++) {
+		//	arff += transactionList.get(i).getID() + ",";
+		//}
 		// Remove last comma and close the transaction attribute
-		arff = arff.substring(0, arff.length() - 1);
-		arff += "}\n";
+		//arff = arff.substring(0, arff.length() - 1);
+		//arff += "}\n";
 
 		// Add the products to the attribute list
 		for (int i = 0; i < productList.size(); i++) {
-			arff += "@attribute " + productList.get(i) + " {Comprou,NaoComprou}\n";
+			arff += "@attribute " + productList.get(i) + " {Comprou}\n";
 		}
 
 		// Add the data (transactions)
@@ -102,14 +102,14 @@ public class TransactionList {
 		for (int i = 0; i < transactionList.size(); i++) {
 			Transaction currentTransaction = transactionList.get(i);
 
-			arff += currentTransaction.getID() + ",";
+			//arff += currentTransaction.getID() + ",";
 
 			// Set the products
 			for (int a = 0; a < productList.size(); a++) {
 				if (currentTransaction.getProducts().contains(productList.get(a)))
 					arff += "Comprou,";
 				else
-					arff += "NaoComprou,";
+					arff += "?,";
 			}
 			// Remove extra comma
 			arff = arff.substring(0, arff.length() - 1);

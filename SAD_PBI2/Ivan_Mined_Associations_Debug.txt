@@ -1,65 +1,55 @@
 ===== TASKDATA3 =====
+Pergunta de negocio: Qual a relação entre os produtos comprados e os clientes que as compram?
+=====================
 
 Apriori
 =======
 
-Minimum support: 0.9 (2541 instances)
-Minimum metric <confidence>: 0.9
-Number of cycles performed: 2
+Minimum support: 0.01 (28 instances)
+Minimum metric <confidence>: 0.7
+Number of cycles performed: 20
 
 Generated sets of large itemsets:
 
-Size of set of large itemsets L(1): 12
+Size of set of large itemsets L(1): 42
 
-Size of set of large itemsets L(2): 7
+Size of set of large itemsets L(2): 8
 
 Best rules found:
 
- 1. MONTH=9=NotThisMonth 2652 ==> PRODUCTLINE=Trains=NotPurchased 2581    <conf:(0.97)> lift:(1) lev:(0) [1] conv:(1)
- 2. MONTH=12=NotThisMonth 2643 ==> PRODUCTLINE=Trains=NotPurchased 2572    <conf:(0.97)> lift:(1) lev:(0) [1] conv:(1)
- 3. MONTH=8=NotThisMonth 2632 ==> PRODUCTLINE=Trains=NotPurchased 2561    <conf:(0.97)> lift:(1) lev:(0) [0] conv:(1)
- 4. MONTH=6=NotThisMonth 2692 ==> PRODUCTLINE=Trains=NotPurchased 2618    <conf:(0.97)> lift:(1) lev:(-0) [0] conv:(0.98)
- 5. MONTH=7=NotThisMonth 2682 ==> PRODUCTLINE=Trains=NotPurchased 2608    <conf:(0.97)> lift:(1) lev:(-0) [0] conv:(0.98)
- 6. MONTH=4=NotThisMonth 2645 ==> PRODUCTLINE=Trains=NotPurchased 2571    <conf:(0.97)> lift:(1) lev:(-0) [-1] conv:(0.96)
- 7. PRODUCTLINE=Trains=NotPurchased 2746 ==> MONTH=6=NotThisMonth 2618    <conf:(0.95)> lift:(1) lev:(-0) [0] conv:(0.99)
- 8. MONTH=7=NotThisMonth 2682 ==> MONTH=6=NotThisMonth 2551    <conf:(0.95)> lift:(1) lev:(-0) [-6] conv:(0.94)
- 9. PRODUCTLINE=Trains=NotPurchased 2746 ==> MONTH=7=NotThisMonth 2608    <conf:(0.95)> lift:(1) lev:(-0) [0] conv:(0.99)
-10. MONTH=6=NotThisMonth 2692 ==> MONTH=7=NotThisMonth 2551    <conf:(0.95)> lift:(1) lev:(-0) [-6] conv:(0.95)
+ 1. CLIENT=298 31 ==> PRODUCT=Classic Cars 31    <conf:(1)> lift:(2.95) lev:(0.01) [20] conv:(20.5)
+ 2. CLIENT=151 48 ==> PRODUCT=Classic Cars 34    <conf:(0.71)> lift:(2.09) lev:(0.01) [17] conv:(2.12)
 
 
 ===== TASKDATA4 =====
+Pergunta de negocio: Qual a relação entre produtos nos EUA (Market Basket Analisys)?
+=====================
 
 Apriori
 =======
 
-Minimum support: 0.9 (293 instances)
+Minimum support: 0.1 (11 instances)
 Minimum metric <confidence>: 0.9
-Number of cycles performed: 2
+Number of cycles performed: 18
 
 Generated sets of large itemsets:
 
-Size of set of large itemsets L(1): 108
+Size of set of large itemsets L(1): 28
 
-Size of set of large itemsets L(2): 129
+Size of set of large itemsets L(2): 16
 
-Size of set of large itemsets L(3): 45
-
-Size of set of large itemsets L(4): 16
-
-Size of set of large itemsets L(5): 6
-
-Size of set of large itemsets L(6): 1
+Size of set of large itemsets L(3): 5
 
 Best rules found:
 
- 1. S24_3191=NaoComprou 301 ==> S24_2766=NaoComprou 301    <conf:(1)> lift:(1.08) lev:(0.07) [23] conv:(23.08)
- 2. S24_2766=NaoComprou 301 ==> S24_3191=NaoComprou 301    <conf:(1)> lift:(1.08) lev:(0.07) [23] conv:(23.08)
- 3. S24_2887=NaoComprou S24_3191=NaoComprou 299 ==> S24_2766=NaoComprou 299    <conf:(1)> lift:(1.08) lev:(0.07) [22] conv:(22.93)
- 4. S24_2766=NaoComprou S24_2887=NaoComprou 299 ==> S24_3191=NaoComprou 299    <conf:(1)> lift:(1.08) lev:(0.07) [22] conv:(22.93)
- 5. S24_3191=NaoComprou S24_3432=NaoComprou 299 ==> S24_2766=NaoComprou 299    <conf:(1)> lift:(1.08) lev:(0.07) [22] conv:(22.93)
- 6. S24_2766=NaoComprou S24_3432=NaoComprou 299 ==> S24_3191=NaoComprou 299    <conf:(1)> lift:(1.08) lev:(0.07) [22] conv:(22.93)
- 7. S700_1691=NaoComprou 298 ==> S50_1341=NaoComprou 298    <conf:(1)> lift:(1.09) lev:(0.08) [25] conv:(25.6)
- 8. S50_1341=NaoComprou 298 ==> S700_1691=NaoComprou 298    <conf:(1)> lift:(1.09) lev:(0.08) [25] conv:(25.6)
- 9. S24_1046=NaoComprou S24_3191=NaoComprou 297 ==> S24_2766=NaoComprou 297    <conf:(1)> lift:(1.08) lev:(0.07) [22] conv:(22.78)
-10. S24_1046=NaoComprou S24_2766=NaoComprou 297 ==> S24_3191=NaoComprou 297    <conf:(1)> lift:(1.08) lev:(0.07) [22] conv:(22.78)
+ 1. S10_1678=Comprou 12 ==> S10_4698=Comprou 12    <conf:(1)> lift:(8) lev:(0.09) [10] conv:(10.5)
+ 2. S24_1578=Comprou 12 ==> S10_4698=Comprou 12    <conf:(1)> lift:(8) lev:(0.09) [10] conv:(10.5)
+ 3. S32_2509=Comprou 12 ==> S24_2840=Comprou 12    <conf:(1)> lift:(8.62) lev:(0.09) [10] conv:(10.61)
+ 4. S24_1444=Comprou 11 ==> S18_2238=Comprou 11    <conf:(1)> lift:(8.62) lev:(0.09) [9] conv:(9.72)
+ 5. S18_3136=Comprou 11 ==> S18_2957=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 6. S18_2957=Comprou 11 ==> S18_3136=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 7. S50_4713=Comprou 11 ==> S32_4485=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 8. S32_4485=Comprou 11 ==> S50_4713=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 9. S10_1678=Comprou S10_2016=Comprou 11 ==> S10_4698=Comprou 11    <conf:(1)> lift:(8) lev:(0.09) [9] conv:(9.63)
+10. S10_1678=Comprou S24_1578=Comprou 11 ==> S10_4698=Comprou 11    <conf:(1)> lift:(8) lev:(0.09) [9] conv:(9.63)
 

@@ -51,12 +51,12 @@ public class TASKDATA4 extends TASKDATA {
 			}
 		}
 
-		// System.out.println(arff_file);
+		//System.out.println(transactionList.toARFF());
 		Reader inputString = new StringReader(transactionList.toARFF());
 		BufferedReader reader = new BufferedReader(inputString);
 		ArffReader arff = new ArffReader(reader);
 		return arff.getData();
-
+		//return null;
 	}
 
 }

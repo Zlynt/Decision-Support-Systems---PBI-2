@@ -68,12 +68,12 @@ public class TASKDATA2 extends TASKDATA {
 
 		String[] arrayList = { "'?'", "'ThisProductLine'" };
 		for (int i = 0; i < listTuple.getProductLineList().size(); i++) {
-			arff += "@attribute 'PRODUCTLINE=" + listTuple.getProductLineList().get(i) + "' {" + arrayList[0] + "}\n";
+			arff += "@attribute 'PRODUCTLINE=" + listTuple.getProductLineList().get(i) + "' {" + arrayList[1] + "}\n";
 		}
 		
 		String[] arrayList2 = { "'?'", "'ThisCountry'" };
 		for (int i = 0; i < listTuple.getCountryList().size(); i++) {
-			arff += "@attribute 'COUNTRY=" + listTuple.getCountryList().get(i) + "' {" + arrayList2[0] + "}\n";
+			arff += "@attribute 'COUNTRY=" + listTuple.getCountryList().get(i) + "' {" + arrayList2[1] + "}\n";
 		}
 		System.out.println(arff);
 		

@@ -66,12 +66,12 @@ public class TASKDATA2 extends TASKDATA {
 		String arff = "";
 		arff += "@relation TASKDATA2\n\n"; // The format for the arff TAKSDATA1
 
-		String[] arrayList = { "'ThisProductLine'" };
+		String[] arrayList = { "'?'", "'ThisProductLine'" };
 		for (int i = 0; i < listTuple.getProductLineList().size(); i++) {
 			arff += "@attribute 'PRODUCTLINE=" + listTuple.getProductLineList().get(i) + "' {" + arrayList[0] + "}\n";
 		}
 		
-		String[] arrayList2 = { "'ThisCountry'" };
+		String[] arrayList2 = { "'?'", "'ThisCountry'" };
 		for (int i = 0; i < listTuple.getCountryList().size(); i++) {
 			arff += "@attribute 'COUNTRY=" + listTuple.getCountryList().get(i) + "' {" + arrayList2[0] + "}\n";
 		}
@@ -85,17 +85,17 @@ public class TASKDATA2 extends TASKDATA {
 			for (int j = 0; j < listTuple.getProductLineList().size(); j++)
 			{
 				if(listTuple.getTuple().get(i).getProductLine().compareTo(listTuple.getProductLineList().get(j)) == 0)
-					arff+=arrayList[0];
+					arff+=arrayList[1];
 				else 
-					arff+= "'?'";
+					arff+=arrayList[0];
 				arff+=",";
 			}
 			for (int k = 0; k < listTuple.getCountryList().size(); k++)
 			{
 				if(listTuple.getTuple().get(i).getCountry().compareTo(listTuple.getCountryList().get(k)) == 0)
-					arff+=arrayList2[0];
+					arff+=arrayList2[1];
 				else 
-					arff+= "'?'";
+					arff+=arrayList2[0];
 				arff+=",";
 			}
 			arff = arff.substring(0, arff.length() - 1); // remove last comma

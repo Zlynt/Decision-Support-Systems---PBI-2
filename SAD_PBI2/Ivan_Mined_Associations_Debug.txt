@@ -42,14 +42,14 @@ Size of set of large itemsets L(3): 5
 
 Best rules found:
 
- 1. S10_1678=Comprou 12 ==> S10_4698=Comprou 12    <conf:(1)> lift:(8) lev:(0.09) [10] conv:(10.5)
- 2. S24_1578=Comprou 12 ==> S10_4698=Comprou 12    <conf:(1)> lift:(8) lev:(0.09) [10] conv:(10.5)
- 3. S32_2509=Comprou 12 ==> S24_2840=Comprou 12    <conf:(1)> lift:(8.62) lev:(0.09) [10] conv:(10.61)
- 4. S24_1444=Comprou 11 ==> S18_2238=Comprou 11    <conf:(1)> lift:(8.62) lev:(0.09) [9] conv:(9.72)
- 5. S18_3136=Comprou 11 ==> S18_2957=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
- 6. S18_2957=Comprou 11 ==> S18_3136=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
- 7. S50_4713=Comprou 11 ==> S32_4485=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
- 8. S32_4485=Comprou 11 ==> S50_4713=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
- 9. S10_1678=Comprou S10_2016=Comprou 11 ==> S10_4698=Comprou 11    <conf:(1)> lift:(8) lev:(0.09) [9] conv:(9.63)
-10. S10_1678=Comprou S24_1578=Comprou 11 ==> S10_4698=Comprou 11    <conf:(1)> lift:(8) lev:(0.09) [9] conv:(9.63)
+ 1. 1954 Greyhound Scenicruiser=Comprou 12 ==> 1958 Chevy Corvette Limited Edition=Comprou 12    <conf:(1)> lift:(8.62) lev:(0.09) [10] conv:(10.61)
+ 2. 1969 Harley Davidson Ultimate Chopper=Comprou 12 ==> 2003 Harley-Davidson Eagle Drag Bike=Comprou 12    <conf:(1)> lift:(8) lev:(0.09) [10] conv:(10.5)
+ 3. 1997 BMW R 1100 S=Comprou 12 ==> 2003 Harley-Davidson Eagle Drag Bike=Comprou 12    <conf:(1)> lift:(8) lev:(0.09) [10] conv:(10.5)
+ 4. 1934 Ford V8 Coupe=Comprou 11 ==> 18th Century Vintage Horse Carriage=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 5. 18th Century Vintage Horse Carriage=Comprou 11 ==> 1934 Ford V8 Coupe=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 6. 1970 Dodge Coronet=Comprou 11 ==> 1998 Chrysler Plymouth Prowler=Comprou 11    <conf:(1)> lift:(8.62) lev:(0.09) [9] conv:(9.72)
+ 7. 2002 Yamaha YZR M1=Comprou 11 ==> 1974 Ducati 350 Mk3 Desmo=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 8. 1974 Ducati 350 Mk3 Desmo=Comprou 11 ==> 2002 Yamaha YZR M1=Comprou 11    <conf:(1)> lift:(10.18) lev:(0.09) [9] conv:(9.92)
+ 9. 1936 Harley Davidson El Knucklehead=Comprou 1997 BMW R 1100 S=Comprou 11 ==> 2003 Harley-Davidson Eagle Drag Bike=Comprou 11    <conf:(1)> lift:(8) lev:(0.09) [9] conv:(9.63)
+10. 1954 Greyhound Scenicruiser=Comprou 1957 Chevy Pickup=Comprou 11 ==> 1958 Chevy Corvette Limited Edition=Comprou 11    <conf:(1)> lift:(8.62) lev:(0.09) [9] conv:(9.72)
 

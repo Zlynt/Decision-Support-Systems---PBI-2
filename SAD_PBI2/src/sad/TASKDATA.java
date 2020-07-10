@@ -1,3 +1,4 @@
+package sad;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -124,7 +125,7 @@ public class TASKDATA {
 		model.setMinMetric(minSupport);
 		model.buildAssociations(instances);
 
-		return model.toString();
+		return model.getAssociationRules().toString();
 	}
 
 }

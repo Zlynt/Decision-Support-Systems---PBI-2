@@ -32,6 +32,7 @@ public class Josue {
 			Instances taskdata2_instances = taskdata2.load_arff();
 
 			System.out.println("[TASKDATA2] Mining association rules...");
+			//System.out.println(taskdata2.apriori_mine_association_rules(taskdata2_instances, 0.01, 0.7));
 			System.out.println(taskdata2.apriori_mine_association_rules(taskdata2_instances, 0.01, 0.7));
 			
 		} catch (Exception e) {

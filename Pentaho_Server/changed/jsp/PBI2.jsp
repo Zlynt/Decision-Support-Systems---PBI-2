@@ -369,13 +369,31 @@
     </div>
 
     <div id="pucContent">
+      <h1>
+        Some Dummy Rules:
+      </h1>
       <%
         PluginDoPentaho plugin = new PluginDoPentaho();
-        try{
-          out.print(plugin.getRegrasDeAssociacao("4"));
-        }catch(Exception err){
-          out.print(err.getStackTrace()[0]);
-        }
+
+        //out.print("<ul>");
+        
+        //out.print("<li>");
+        //out.print(plugin.getTASKDATA1Rules()));
+        //out.print("</li>");
+        
+        //out.print("<li>");
+        //out.print(plugin.getTASKDATA2Rules()));
+        //out.print("</li>");
+          
+        //out.print("<li>");
+        //out.print(plugin.getTASKDATA3Rules()));
+        //out.print("</li>");
+  
+        //out.print("<li>");
+        //out.print(plugin.getTASKDATA4Rules()));
+        //out.print("</li>");
+
+        //out.print("</ul>");
       %>
     </div>
   </div>
@@ -383,7 +401,10 @@
   <!-- ngView: -->
   <script>
     const setTASKDATA = (task_number) => {
-      document.getElementById('current_taskdata').innerHTML = task_number;
+      $("#current_taskdata").html(task_number);
+      $.get("/pentaho/TASKDATA" + task_number, function (data, status) {
+        alert("Data: " + data + "\nStatus: " + status);
+      });
     };
   </script>
 

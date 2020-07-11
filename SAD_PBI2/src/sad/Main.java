@@ -30,8 +30,6 @@ public class Main {
 		//Ivan ivan = new Ivan();
 		//ivan.executar_codigo();
 
-		PluginDoPentaho p = new PluginDoPentaho();
-		System.out.println("???\n"+p.getRegrasDeAssociacao("4")+"\n???");
 //		
 		
 

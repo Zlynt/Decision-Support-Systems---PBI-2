@@ -614,7 +614,7 @@ AND SALES_DATA.CITY IS NOT NULL
 AND SALES_DATA.COUNTRY IS NOT NULL
 AND SALES_DATA.TERRITORY IS NOT NULL
 AND SALES_DATA.MONTH_ID = '7'
-AND SALES_DATA.YEAR_ID = '2003'</sql>
+--AND SALES_DATA.YEAR_ID = '2003'</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>

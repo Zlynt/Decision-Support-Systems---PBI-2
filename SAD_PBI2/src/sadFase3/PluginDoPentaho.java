@@ -9,6 +9,7 @@ import org.pentaho.di.trans.Trans;
 import org.pentaho.di.trans.TransMeta;
 
 import TASKDATA3.AttributeList;
+import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.CSVLoader;
 
@@ -56,6 +57,15 @@ public class PluginDoPentaho {
 			System.out.println("[TASKDATA4] ARFF saved.");
 			debug += "CSV_CONVERTED ARFF_SAVED ";
 			
+			System.out.println("[TASKDATA4] Mining associations...");
+			Instances instances = taskData4.load_arff();
+			debug += "GOT_INSTANCES ";
+			Apriori model = new Apriori(); //Isto é a causa dos meus problemas. O Pentaho Server não se dá com o Apriori
+			//model.setLowerBoundMinSupport(0.01);
+			//model.buildAssociations(instances);
+			//String associationRules = model.toString();
+			System.out.println("[TASKDATA4] Association rules mined!1");
+			//debug += "RULES_MINED ";
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -51,10 +51,10 @@ public class PluginDoPentaho {
 			debug += "CSV_GENERATED ";
 
 			// Transform CSV into ARFF and save it
-			//System.out.println("[TASKDATA4] Converting the CSV to ARFF...");
-			//taskData4.csvToArff();
-			//System.out.println("[TASKDATA4] ARFF saved.");
-			//debug += "CSV_CONVERTED ARFF_SAVED ";
+			System.out.println("[TASKDATA4] Converting the CSV to ARFF...");
+			taskData4.csvToArff();
+			System.out.println("[TASKDATA4] ARFF saved.");
+			debug += "CSV_CONVERTED ARFF_SAVED ";
 			
 
 		} catch (Exception e) {

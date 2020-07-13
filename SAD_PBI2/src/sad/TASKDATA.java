@@ -1,8 +1,11 @@
 package sad;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
 
 import org.pentaho.di.core.KettleEnvironment;
 import org.pentaho.di.core.exception.KettleException;
@@ -29,13 +32,11 @@ public class TASKDATA {
 	}
 
 	public void generateCSV() throws KettleException {
-		System.out.println("[" + taskdata_name + "] Generating CSV file...");
 		KettleEnvironment.init();
 		TransMeta transMeta = new TransMeta(projectPath + "\\" + taskdata_name + ".ktr");
 		Trans trans = new Trans(transMeta); // create new transformation object
 		trans.execute(null);
 		trans.waitUntilFinished();
-		System.out.println("[" + taskdata_name + "] CSV saved to " + csv_path + "\\" + taskdata_name + ".csv");
 	}
 
 	// Check if CSV file exists
@@ -87,6 +88,21 @@ public class TASKDATA {
 		return arff.getData();
 	}
 
+	// Load the ARFF file
+	public Instances load_arff(String dataFile) throws Exception {
+		if (!arff_exists())
+			throw new Exception(taskdata_name + ".arff does not exist!");
+
+		Reader reader = new StringReader(dataFile);
+		BufferedReader bufferedReader = new BufferedReader(reader);
+		ArffReader arff = new ArffReader(bufferedReader);
+
+		if (enableDebug)
+			System.out.println("[DEBUG] " + arff_path + "\\" + taskdata_name + ".arff was loaded!");
+
+		return arff.getData();
+	}
+
 	// Save the arff file
 	protected void save_arff(Instances instances) throws IOException {
 		ArffSaver saver = new ArffSaver();
@@ -118,7 +134,8 @@ public class TASKDATA {
 	}
 
 	// Mine the association rules
-	public String apriori_mine_association_rules(Instances instances, double lowerBoundMinSupport, double minSupport) throws Exception {
+	public String apriori_mine_association_rules(Instances instances, double lowerBoundMinSupport, double minSupport)
+			throws Exception {
 
 		Apriori model = new Apriori();
 		model.setLowerBoundMinSupport(lowerBoundMinSupport);

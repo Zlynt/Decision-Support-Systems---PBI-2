@@ -80,7 +80,6 @@ public class TASKDATA3 extends TASKDATA {
 		
 		arff_file += "\n@data\n"+arff_data;
 
-		System.out.println(arff_file);
 		Reader inputString = new StringReader(arff_file);
 		BufferedReader reader = new BufferedReader(inputString);
 		ArffReader arff = new ArffReader(reader);

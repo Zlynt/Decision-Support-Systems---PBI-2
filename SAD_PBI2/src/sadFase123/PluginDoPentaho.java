@@ -4,10 +4,16 @@ import weka.associations.Apriori;
 import weka.core.Instances;
 
 public class PluginDoPentaho {
+	
+	private TASKDATA1 taskData1;
+	private TASKDATA2 taskData2;
 	private TASKDATA3 taskData3;
 	private TASKDATA4 taskData4;
 
 	public PluginDoPentaho() {
+		
+		taskData1 = new TASKDATA1();
+		taskData2 = new TASKDATA2();
 		taskData4 = new TASKDATA4();
 		taskData3 = new TASKDATA3();
 	}
@@ -18,6 +24,14 @@ public class PluginDoPentaho {
 
 	public String getTASKDATA2Rules() {
 		return "I'm a Rule from TASKDATA2";
+		
+		try {
+			System.out.println("[TASKDATA2] Generating CSV...");
+			
+		}
+		catch{
+			
+		}
 	}
 
 	public String getTASKDATA3Rules() throws Exception {

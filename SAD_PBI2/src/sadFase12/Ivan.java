@@ -1,3 +1,4 @@
+package sadFase12;
 import java.io.PrintWriter;
 
 import weka.associations.Apriori;

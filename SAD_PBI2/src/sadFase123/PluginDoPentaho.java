@@ -1,5 +1,8 @@
 package sadFase123;
 
+import java.io.PrintWriter;
+
+import sadFase12.TASKDATA3;
 import weka.associations.Apriori;
 import weka.core.Instances;
 
@@ -27,12 +30,33 @@ public class PluginDoPentaho {
 
 		String debug = "";
 
+		TASKDATA3 taskdata3 = new TASKDATA3();
+		try {
+			
+			// Task Data 3
+
+			taskdata3.generateCSV();
+			
+			System.out.println("[TASKDATA3] Processing the CSV input...");
+			taskdata3.save_arff(taskdata3.csv_to_instances());
+
+			System.out.println("[TASKDATA3] Loading arff...");
+			Instances taskdata3_instances = taskdata3.load_arff();
+
+			System.out.print("[TASKDATA3] Mining association rules...");
+			String taskData3MinedAssociationRules = taskdata3.apriori_mine_association_rules(taskdata3_instances, 0.01, 0.7);
+			System.out.println("done!");
+			System.out.println(taskData3MinedAssociationRules);
+			return taskData3MinedAssociationRules;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return debug;
 	}
 
-	public Apriori getTASKDATA4Rules() {
+	public String getTASKDATA4Rules() {
 		String debug = "";
-		Apriori apriori = null;
 		try {
 
 			// Generate the CSV file and save it
@@ -51,7 +75,7 @@ public class PluginDoPentaho {
 			Instances instances = taskData4.load_arff();
 			debug += "GOT_INSTANCES ";
 			
-			apriori = new Apriori(); //Isto é a causa dos problemas. O Pentaho Server não se dá com o Apriori
+			Apriori apriori = new Apriori(); //Isto é a causa dos problemas. O Pentaho Server não se dá com o Apriori
 			apriori.setLowerBoundMinSupport(0.01);
 			apriori.buildAssociations(instances);
 			//String associationRules = model.toString();
@@ -66,6 +90,6 @@ public class PluginDoPentaho {
 			debug += "MESSED_UP";
 		}
 
-		return apriori;
+		return debug;
 	}
 }

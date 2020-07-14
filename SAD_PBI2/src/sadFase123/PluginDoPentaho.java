@@ -23,15 +23,17 @@ public class PluginDoPentaho {
 	}
 
 	public String getTASKDATA2Rules() {
-		return "I'm a Rule from TASKDATA2";
+		String debug = "";
 		
 		try {
 			System.out.println("[TASKDATA2] Generating CSV...");
 			
 		}
-		catch{
-			
+		catch(Exception e){
+			e.printStackTrace();
 		}
+		
+		return debug;
 	}
 
 	public String getTASKDATA3Rules() throws Exception {

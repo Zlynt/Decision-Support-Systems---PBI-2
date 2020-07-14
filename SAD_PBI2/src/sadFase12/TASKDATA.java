@@ -88,7 +88,7 @@ public class TASKDATA {
 	}
 
 	// Save the arff file
-	protected void save_arff(Instances instances) throws IOException {
+	public void save_arff(Instances instances) throws IOException {
 		ArffSaver saver = new ArffSaver();
 		saver.setInstances(instances);
 		saver.setFile(new File(arff_path + "\\" + taskdata_name + ".arff"));

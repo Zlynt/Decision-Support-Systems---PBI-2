@@ -30,9 +30,9 @@ public class PluginDoPentaho {
 		return debug;
 	}
 
-	public String getTASKDATA4Rules() {
+	public Apriori getTASKDATA4Rules() {
 		String debug = "";
-
+		Apriori apriori = null;
 		try {
 
 			// Generate the CSV file and save it
@@ -51,9 +51,9 @@ public class PluginDoPentaho {
 			Instances instances = taskData4.load_arff();
 			debug += "GOT_INSTANCES ";
 			
-			Apriori model = new Apriori(); //Isto é a causa dos problemas. O Pentaho Server não se dá com o Apriori
-			model.setLowerBoundMinSupport(0.01);
-			model.buildAssociations(instances);
+			apriori = new Apriori(); //Isto é a causa dos problemas. O Pentaho Server não se dá com o Apriori
+			apriori.setLowerBoundMinSupport(0.01);
+			apriori.buildAssociations(instances);
 			//String associationRules = model.toString();
 			System.out.println("[TASKDATA4] Association rules mined!1");
 			debug += "RULES_MINED ";
@@ -66,6 +66,6 @@ public class PluginDoPentaho {
 			debug += "MESSED_UP";
 		}
 
-		return debug;
+		return apriori;
 	}
 }

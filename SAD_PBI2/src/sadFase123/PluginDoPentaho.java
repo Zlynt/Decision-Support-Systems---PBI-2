@@ -72,7 +72,7 @@ public class PluginDoPentaho {
 		return "";
 	}
 
-	public String getTASKDATA3Rules() throws Exception {
+	public String getTASKDATA3Rules() {
 		try {
 
 			// Generate the CSV file and save it

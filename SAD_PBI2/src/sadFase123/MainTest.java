@@ -8,6 +8,9 @@ public class MainTest {
 		// TODO Auto-generated method stub
 		PluginDoPentaho plugin = new PluginDoPentaho();
 		
+		plugin.getTASKDATA1Rules();
+		plugin.getTASKDATA2Rules();
+		plugin.getTASKDATA3Rules();
 		plugin.getTASKDATA4Rules();
 	}
 

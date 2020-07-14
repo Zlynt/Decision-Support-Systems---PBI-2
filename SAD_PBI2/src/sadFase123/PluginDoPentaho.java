@@ -37,41 +37,35 @@ public class PluginDoPentaho {
 	}
 
 	public String getTASKDATA3Rules() throws Exception {
-		// Generate the CSV file
-
-		String debug = "";
-
 		try {
-
 
 			// Generate the CSV file and save it
 			System.out.println("[TASKDATA3] Generating CSV...");
 			taskData3.generateCSV();
 			System.out.println("[TASKDATA3] CSV generated.");
-			debug += "CSV_GENERATED ";
+			//debug += "CSV_GENERATED ";
+
+			// Transform CSV into ARFF and save it
+			System.out.println("[TASKDATA4] Converting the CSV to ARFF...");
+			taskData3.csvToArff();
+			System.out.println("[TASKDATA4] ARFF saved.");
+			//debug += "CSV_TO_ARFF ARFF_SAVED";
+
+			System.out.println("[TASKDATA3] Mining associations...");
+			Instances instances = taskData3.load_arff();
+
+			Apriori apriori = new Apriori();
+			apriori.setLowerBoundMinSupport(0.01);
+			apriori.setMinMetric(0.7);
+			apriori.buildAssociations(instances);
+			System.out.println("[TASKDATA3] Association rules mined!");
 			
-			/*
-			// Task Data 3
-
-			taskdata3.generateCSV();
-
-			System.out.println("[TASKDATA3] Processing the CSV input...");
-			taskdata3.save_arff(taskdata3.csv_to_instances());
-
-			System.out.println("[TASKDATA3] Loading arff...");
-			Instances taskdata3_instances = taskdata3.load_arff();
-
-			System.out.print("[TASKDATA3] Mining association rules...");
-			String taskData3MinedAssociationRules = taskdata3.apriori_mine_association_rules(taskdata3_instances, 0.01,
-					0.7);
-			System.out.println("done!");
-			System.out.println(taskData3MinedAssociationRules);
-			return taskData3MinedAssociationRules;*/
+			return apriori.toString();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return debug;
+		return "";
 	}
 
 	public String getTASKDATA4Rules() {

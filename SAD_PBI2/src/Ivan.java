@@ -58,7 +58,6 @@ public class Ivan {
 			out.println("Pergunta de negocio: Qual a relação entre produtos nos EUA (Market Basket Analisys)?");
 			out.println("=====================");
 			out.println(taskData4MinedAssociationRules);
-			//out.println(taskdata4.csv_to_instances().toString());
 			out.close();			
 			
 			

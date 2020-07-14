@@ -1,7 +1,5 @@
 package sad;
 import java.io.*;
-import java.nio.*;
-import java.nio.file.Files;
 
 
 public class ManageFile {

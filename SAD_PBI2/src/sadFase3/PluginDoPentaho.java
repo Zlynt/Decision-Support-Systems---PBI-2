@@ -1,17 +1,7 @@
 package sadFase3;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.pentaho.di.core.KettleEnvironment;
-import org.pentaho.di.core.exception.KettleException;
-import org.pentaho.di.trans.Trans;
-import org.pentaho.di.trans.TransMeta;
-
-import TASKDATA3.AttributeList;
 import weka.associations.Apriori;
 import weka.core.Instances;
-import weka.core.converters.CSVLoader;
 
 public class PluginDoPentaho {
 	private TASKDATA4 taskData4;
@@ -64,7 +54,7 @@ public class PluginDoPentaho {
 			Apriori model = new Apriori(); //Isto é a causa dos problemas. O Pentaho Server não se dá com o Apriori
 			model.setLowerBoundMinSupport(0.01);
 			model.buildAssociations(instances);
-			String associationRules = model.toString();
+			//String associationRules = model.toString();
 			System.out.println("[TASKDATA4] Association rules mined!1");
 			debug += "RULES_MINED ";
 			

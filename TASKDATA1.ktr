@@ -1040,7 +1040,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
     </file>
     <fields>
       <field>
-        <name>PRODUCTCODE</name>
+        <name>PRODUCTNAME</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -1048,7 +1048,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>50</length>
+        <length>70</length>
         <precision>-1</precision>
       </field>
       <field>

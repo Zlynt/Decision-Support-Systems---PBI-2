@@ -65,7 +65,7 @@ public class TASKDATA1 extends TASKDATA {
 		String arff = "";
 		arff += "@relation TASKDATA1\n\n"; // The format for the arff TAKSDATA1
 
-		arff += "@attribute PRODUCTCODE {";
+		arff += "@attribute PRODUCTNAME {";
 		for (int i = 0; i < listTuple.getProductCodeList().size(); i++) {
 			arff += listTuple.getProductCodeList().get(i) + ",";
 		}

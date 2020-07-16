@@ -510,6 +510,11 @@
     </hop>
     <hop>
       <from>[Import] TASKDATA1 2</from>
+      <to>Substituir caracteres que interferem com o parsing do CSV</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Substituir caracteres que interferem com o parsing do CSV</from>
       <to>[Output] TASKDATA1 CSV 2</to>
       <enabled>Y</enabled>
     </hop>
@@ -1040,7 +1045,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
     </file>
     <fields>
       <field>
-        <name>PRODUCTCODE</name>
+        <name>PRODUCTNAME</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -1048,7 +1053,7 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>50</length>
+        <length>70</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -1086,6 +1091,50 @@ AND CUSTOMERS.COUNTRY = 'USA'</sql>
     </remotesteps>
     <GUI>
       <xloc>768</xloc>
+      <yloc>352</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Substituir caracteres que interferem com o parsing do CSV</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>var PROD = PRODUCTNAME.replace(",","").replace("'","");</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>PROD</name>
+        <rename>PRODUCTNAME</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
       <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>

@@ -1,6 +1,6 @@
 @relation TASKDATA1
 
-@attribute PRODUCTCODE {S10_1678,S10_1949,S10_2016,S10_4698,S10_4757,S10_4962,S12_1099,S12_1108,S12_1666,S12_2823,S12_3148,S12_3380,S12_3891,S12_3990,S12_4473,S12_4675,S18_1097,S18_1129,S18_1342,S18_1367,S18_1589,S18_1662,S18_1749,S18_1889,S18_1984,S18_2238,S18_2248,S18_2319,S18_2325,S18_2432,S18_2581,S18_2625,S18_2795,S18_2870,S18_2949,S18_2957,S18_3029,S18_3136,S18_3140,S18_3232,S18_3259,S18_3278,S18_3320,S18_3482,S18_3685,S18_3782,S18_3856,S18_4027,S18_4409,S18_4522,S18_4600,S18_4668,S18_4721,S18_4933,S24_1046,S24_1444,S24_1578,S24_1628,S24_1785,S24_1937,S24_2000,S24_2011,S24_2022,S24_2300,S24_2360,S24_2766,S24_2840,S24_2841,S24_2887,S24_2972,S24_3151,S24_3191,S24_3371,S24_3420,S24_3432,S24_3816,S24_3856,S24_3949,S24_3969,S24_4048,S24_4258,S24_4278,S24_4620,S32_1268,S32_1374,S32_2206,S32_2509,S32_3207,S32_3522,S32_4289,S32_4485,S50_1341,S50_1392,S50_1514,S50_4713,S700_1138,S700_1691,S700_1938,S700_2047,S700_2466,S700_2610,S700_2824,S700_2834,S700_3167,S700_3505,S700_3962,S700_4002,S72_1253,S72_3212}
+@attribute PRODUCTNAME {'18th century schooner','18th Century Vintage Horse Carriage','1900s Vintage Bi-Plane','1900s Vintage Tri-Plane','1903 Ford Model A','1904 Buick Runabout','1911 Ford Town Car','1912 Ford Model T Delivery Wagon','1913 Ford Model T Speedster','1917 Grand Touring Sedan','1917 Maxwell Touring Car','1926 Ford Fire Engine','1928 British Royal Navy Airplane','1928 Ford Phaeton Deluxe','1928 Mercedes-Benz SSK','1930 Buick Marquette Phaeton','1932 Alfa Romeo 8C2300 Spider Sport','1932 Model A Ford J-Coupe','1934 Ford V8 Coupe','1936 Chrysler Airflow','1936 Harley Davidson El Knucklehead','1936 Mercedes Benz 500k Roadster','1936 Mercedes-Benz 500K Special Roadster','1937 Horch 930V Limousine','1937 Lincoln Berline','1938 Cadillac V-16 Presidential Limousine','1939 Cadillac Limousine','1939 Chevrolet Deluxe Coupe','1940 Ford Delivery Sedan','1940 Ford Pickup Truck','1940s Ford truck','1941 Chevrolet Special Deluxe Cabriolet','1948 Porsche 356-A Roadster','1948 Porsche Type 356 Roadster','1949 Jaguar XK 120','1950s Chicago Surface Lines Streetcar','1952 Alpine Renault 1300','1952 Citroen-15CV','1954 Greyhound Scenicruiser','1956 Porsche 356A Coupe','1957 Chevy Pickup','1957 Corvette Convertible','1957 Ford Thunderbird','1957 Vespa GS150','1958 Chevy Corvette Limited Edition','1958 Setra Bus','1960 BSA Gold Star DBD34 1960','1961 Chevrolet Impala','1962 City of Detroit Streetcar','1962 LanciaA Delta 16V','1962 Volkswagen Microbus','1964 Mercedec Tour Bus','1965 Aston Martin DB5','1966 Shelby Cobra 427 S/C','1968 Dodge Charger','1968 Ford Mustang','1969 Chevrolet Camaro Z28','1969 Corvair Monza','1969 Dodge Charger','1969 Dodge Super Bee','1969 Ford Falcon','1969 Harley Davidson Ultimate Chopper','1970 Chevy Chevelle SS 454','1970 Dodge Coronet','1970 Plymouth Hemi Cuda','1970 Triumph Spitfire','1971 Alpine Renault 1600s','1972 Alfa Romeo GTA','1974 Ducati 350 Mk3 Desmo','1976 Ford Gran Torino','1980?s GM Manhattan Express','1980s Black Hawk Helicopter','1982 Camaro Z28','1982 Ducati 900 Monster','1982 Ducati 996 R','1982 Lamborghini Diablo','1992 Ferrari 360 Spider red','1992 Porsche Cayenne Turbo Silver','1993 Mazda RX-7','1995 Honda Civic','1996 Moto Guzzi 1100i','1996 Peterbilt 379 Stake Bed with Outrigger','1997 BMW F650 ST','1997 BMW R 1100 S','1998 Chrysler Plymouth Prowler','1999 Indy 500 Monte Carlo SS','1999 Yamaha Speed Boat','2001 Ferrari Enzo','2002 Chevy Corvette','2002 Suzuki XREO','2002 Yamaha YZR M1','2003 Harley-Davidson Eagle Drag Bike','American Airlines: B767-300','American Airlines: MD-11S','America West Airlines B757-200','ATA: B757-300','Boeing X-32A JSF','Collectable Wooden Train','Corsair F4U ( Bird Cage)','Diamond T620 Semi-Skirted Tanker','F/A 18 Hornet 1/72','HMS Bounty','P-51-D Mustang','Pont Yacht','The Mayflower','The Queen Mary','The Schooner Bluenose','The Titanic','The USS Constitution Ship'}
 @attribute DEALSIZE=Large {ThisDealsize}
 @attribute DEALSIZE=Medium {ThisDealsize}
 @attribute DEALSIZE=Small {ThisDealsize}
@@ -10,1058 +10,1058 @@
 @attribute QTR_ID=4 {ThisQTR}
 
 @data
-S18_1129,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1342,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1589,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_1749,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_1889,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_1984,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2248,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_2325,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2870,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3232,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3685,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4409,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_4933,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_1046,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_1628,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_1937,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2022,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2766,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2766,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2887,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2887,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2972,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3191,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3191,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3432,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3432,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3856,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3969,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_3969,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_1949,ThisDealsize,?,?,?,?,?,ThisQTR
-S10_1949,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4962,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_4962,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_1099,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_1108,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_1108,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_1108,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_1108,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_1666,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_1666,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_1666,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_3148,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3148,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3148,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_3380,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3891,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_3891,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3891,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_3891,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_3990,?,?,ThisDealsize,?,?,ThisQTR,?
-S12_4473,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_4473,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_4473,?,?,ThisDealsize,ThisQTR,?,?,?
-S12_4473,?,?,ThisDealsize,ThisQTR,?,?,?
-S12_4675,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_1097,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1097,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1097,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1129,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1342,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1342,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1367,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1367,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1749,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_1749,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_1889,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1984,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2238,ThisDealsize,?,?,?,?,ThisQTR,?
-S18_2238,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2238,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2238,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2248,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2248,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2319,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2319,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2325,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2325,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2325,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2432,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2432,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2432,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2795,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2795,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2795,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2795,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2949,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2949,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2957,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2957,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3136,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3136,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3140,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3140,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3140,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3232,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3232,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3259,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_3259,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3259,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3278,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3278,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3320,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3320,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3320,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3320,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_3482,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3482,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_3782,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_3782,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_4027,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4027,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4409,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4522,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_4522,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_4600,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_4600,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4600,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_4668,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_4668,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_4668,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_4668,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_4721,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4721,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_4933,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1046,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1444,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_1444,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_1444,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_1937,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1937,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2011,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_2011,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2022,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2022,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2022,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2300,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2300,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_2300,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2300,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2360,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2360,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2766,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2766,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2840,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2840,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2840,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2840,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2887,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2887,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2972,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2972,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3151,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3151,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_3191,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3191,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3371,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3371,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_3432,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3432,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_3816,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3816,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3856,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3856,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3969,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3969,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3969,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_4048,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_4048,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_4048,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_4258,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4258,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_4620,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_4620,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_1268,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_1268,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_1268,?,ThisDealsize,?,ThisQTR,?,?,?
-S32_1268,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_2206,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_2206,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_2509,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_2509,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_2509,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_2509,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_3207,?,ThisDealsize,?,?,?,ThisQTR,?
-S32_3207,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_3207,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_3522,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_3522,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_3522,?,ThisDealsize,?,ThisQTR,?,?,?
-S32_4485,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_4485,?,?,ThisDealsize,ThisQTR,?,?,?
-S50_1392,?,ThisDealsize,?,?,?,ThisQTR,?
-S50_1392,?,ThisDealsize,?,?,?,ThisQTR,?
-S50_1392,?,?,ThisDealsize,ThisQTR,?,?,?
-S50_1514,?,?,ThisDealsize,?,?,ThisQTR,?
-S50_1514,?,?,ThisDealsize,?,?,ThisQTR,?
-S50_4713,?,ThisDealsize,?,?,?,ThisQTR,?
-S50_4713,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_1138,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_1138,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_1138,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_1938,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_1938,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_2824,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_2824,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_2824,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_3505,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_3962,?,ThisDealsize,?,?,?,ThisQTR,?
-S72_3212,?,?,ThisDealsize,?,?,ThisQTR,?
-S10_1678,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_1949,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_2016,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4698,ThisDealsize,?,?,?,?,?,ThisQTR
-S12_1666,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_2823,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1097,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1342,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1367,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2625,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2949,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2957,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3136,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3320,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3320,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_4668,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1578,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2000,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4258,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_4258,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_3522,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_1678,?,?,ThisDealsize,ThisQTR,?,?,?
-S10_1678,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_2016,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_2016,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4698,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_4698,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4757,?,?,ThisDealsize,?,ThisQTR,?,?
-S12_1099,?,?,ThisDealsize,?,?,?,ThisQTR
-S12_2823,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_2823,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_3380,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_3990,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4473,?,?,ThisDealsize,?,?,ThisQTR,?
-S12_4675,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1889,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2238,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2319,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2625,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2625,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3029,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_3140,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3232,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_3259,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3278,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_4027,ThisDealsize,?,?,?,?,ThisQTR,?
-S18_4522,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_1444,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_1578,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_1578,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2000,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2000,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2011,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_2840,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3151,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3816,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_4048,?,ThisDealsize,?,?,?,ThisQTR,?
-S32_1374,?,?,ThisDealsize,ThisQTR,?,?,?
-S32_1374,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_2509,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_3207,?,?,ThisDealsize,?,?,ThisQTR,?
-S50_1392,?,ThisDealsize,?,?,?,ThisQTR,?
-S50_1514,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_1138,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_1938,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_2610,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_3505,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_3962,?,ThisDealsize,?,?,ThisQTR,?,?
-S72_1253,?,ThisDealsize,?,?,?,?,ThisQTR
-S72_3212,?,?,ThisDealsize,?,ThisQTR,?,?
-S12_1108,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_3148,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_3891,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_3891,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4473,?,?,ThisDealsize,?,ThisQTR,?,?
-S12_4473,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1129,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1589,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1749,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1984,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2238,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_2238,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2248,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2319,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2319,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2325,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2870,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3232,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3232,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_3685,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4027,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_4027,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4409,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_4933,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4933,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_1046,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1046,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_1444,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_1444,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1628,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2766,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2766,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_2840,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2840,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2887,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2887,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3191,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3191,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3432,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3432,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3969,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4048,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_4048,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_2509,?,?,ThisDealsize,?,ThisQTR,?,?
-S32_2509,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_3207,?,?,ThisDealsize,?,ThisQTR,?,?
-S50_1392,?,ThisDealsize,?,?,ThisQTR,?,?
-S50_1514,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_1678,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_2016,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4698,ThisDealsize,?,?,?,?,?,ThisQTR
-S10_4962,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_1108,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_1666,?,?,ThisDealsize,?,?,ThisQTR,?
-S12_3148,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3891,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_4473,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1342,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_1367,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_2319,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2432,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2581,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2625,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3232,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4027,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4600,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_4668,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_1578,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2000,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2300,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2840,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_1268,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_1374,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_2509,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_3207,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_3522,?,?,ThisDealsize,?,?,ThisQTR,?
-S50_1514,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2824,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2834,ThisDealsize,?,?,?,?,?,ThisQTR
-S10_1678,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_1949,ThisDealsize,?,?,?,?,ThisQTR,?
-S10_2016,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4698,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4698,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_4962,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_1666,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_2823,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1097,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2432,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2581,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2625,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2625,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_4600,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4668,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_1578,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1578,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_1785,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2000,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2300,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3949,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4278,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4278,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_1268,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_1374,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_3522,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_4289,?,?,ThisDealsize,?,?,?,ThisQTR
-S50_1341,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_1691,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_2466,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2824,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_2834,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_3167,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_4002,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_1949,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1097,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2949,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2957,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3136,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3856,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_2841,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_3420,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_4258,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_2047,?,ThisDealsize,?,?,ThisQTR,?,?
-S72_1253,?,?,ThisDealsize,?,ThisQTR,?,?
-S10_1678,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_2016,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_4698,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_1108,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_2823,?,ThisDealsize,?,?,ThisQTR,?,?
-S12_3148,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_3891,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_1589,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2581,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_2625,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_2870,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3685,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4027,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_1046,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1578,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_1628,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2000,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2766,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3191,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3432,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4278,?,?,ThisDealsize,?,ThisQTR,?,?
-S32_1374,?,?,ThisDealsize,?,ThisQTR,?,?
-S32_3207,?,?,ThisDealsize,?,ThisQTR,?,?
-S50_1514,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_2834,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_1678,?,?,ThisDealsize,?,ThisQTR,?,?
-S10_4698,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_2823,?,ThisDealsize,?,?,ThisQTR,?,?
-S12_3148,?,?,ThisDealsize,?,?,?,ThisQTR
-S12_4473,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1342,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1367,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2238,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_2319,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3232,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3782,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_4027,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4668,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1444,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1578,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2300,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2360,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2840,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4258,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_1268,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_2206,?,?,ThisDealsize,?,ThisQTR,?,?
-S32_3522,ThisDealsize,?,?,?,?,?,ThisQTR
-S32_4485,?,ThisDealsize,?,?,ThisQTR,?,?
-S50_4713,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_2824,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3029,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3320,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_3856,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_4258,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_2047,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_2466,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_4002,?,?,ThisDealsize,?,?,?,ThisQTR
-S72_1253,?,?,ThisDealsize,?,?,?,ThisQTR
-S12_1099,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_2823,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3380,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3990,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3278,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_3482,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3782,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_4721,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_2360,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3371,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_4620,?,ThisDealsize,?,?,?,ThisQTR,?
-S32_2206,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_4485,?,ThisDealsize,?,?,?,ThisQTR,?
-S50_4713,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_3962,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_1678,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_2016,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_4698,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_2823,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_2823,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1589,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_1749,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2248,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_2325,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2581,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2625,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2795,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3685,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_4409,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_4933,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_1046,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_1578,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_1628,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_1785,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_1937,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2000,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_2022,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2360,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2972,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_4278,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_1374,?,ThisDealsize,?,?,?,ThisQTR,?
-S32_2206,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_4485,?,ThisDealsize,?,?,?,ThisQTR,?
-S50_4713,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_2834,?,?,ThisDealsize,?,?,ThisQTR,?
-S12_3380,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3151,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_2610,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_4757,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1589,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1662,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1984,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2870,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3029,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3685,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_3856,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_1046,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_1628,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2841,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_3151,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3420,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3432,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3816,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3949,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_1138,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_2047,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_2466,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_2610,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_3505,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_3962,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_4002,?,ThisDealsize,?,ThisQTR,?,?,?
-S72_1253,?,?,ThisDealsize,ThisQTR,?,?,?
-S72_3212,?,?,ThisDealsize,ThisQTR,?,?,?
-S10_1678,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_1949,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_2016,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_4698,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_4962,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_1099,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_2823,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3380,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3990,?,?,ThisDealsize,?,?,ThisQTR,?
-S12_4473,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4675,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1342,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_1367,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1662,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1889,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2238,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2319,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2432,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2625,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2949,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2957,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3136,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3232,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_3278,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3320,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3482,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4600,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1444,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1578,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_2000,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2300,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2360,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2840,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2841,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2972,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3371,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3420,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3856,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_4048,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4258,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_4620,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_1268,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_1374,?,ThisDealsize,?,?,?,ThisQTR,?
-S32_2206,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_2509,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_4485,?,?,ThisDealsize,?,?,ThisQTR,?
-S50_1392,?,ThisDealsize,?,?,?,?,ThisQTR
-S50_4713,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_2047,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2834,?,ThisDealsize,?,?,?,ThisQTR,?
-S72_1253,?,?,ThisDealsize,?,?,ThisQTR,?
-S10_2016,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4698,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4473,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2238,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2319,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2581,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2625,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3232,ThisDealsize,?,?,?,?,?,ThisQTR
-S24_1444,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1785,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2000,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2840,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3949,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4048,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4278,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_1374,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_2509,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_3207,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_4289,?,ThisDealsize,?,?,?,?,ThisQTR
-S50_1341,?,?,ThisDealsize,?,?,?,ThisQTR
-S50_1392,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_1691,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_2466,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2834,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_3167,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_4002,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_4757,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_1108,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_3148,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_3891,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_1129,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_1662,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3029,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3140,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3259,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3856,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4027,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4522,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2011,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2841,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3151,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3420,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3816,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3949,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_4485,?,ThisDealsize,?,ThisQTR,?,?,?
-S50_1341,?,?,ThisDealsize,?,?,ThisQTR,?
-S50_1514,?,?,ThisDealsize,?,?,?,ThisQTR
-S50_4713,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_1138,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_1691,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_1938,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_2047,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2466,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2610,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2610,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_3167,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_3505,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_3962,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_4002,?,?,ThisDealsize,?,?,ThisQTR,?
-S72_1253,?,?,ThisDealsize,?,?,ThisQTR,?
-S72_3212,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_1678,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_1949,ThisDealsize,?,?,ThisQTR,?,?,?
-S10_2016,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4698,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4757,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_4962,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_1099,ThisDealsize,?,?,?,?,?,ThisQTR
-S12_1666,?,?,ThisDealsize,ThisQTR,?,?,?
-S12_2823,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_3990,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1097,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1342,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1367,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1367,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_1749,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2248,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2325,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2432,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2625,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2795,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_2949,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2957,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3136,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3278,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3482,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3782,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_4409,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4721,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1578,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1937,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2011,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2022,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2360,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3151,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3371,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3969,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4620,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_2206,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_4485,?,?,ThisDealsize,?,?,?,ThisQTR
-S50_4713,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_1938,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_1678,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_2016,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_4698,ThisDealsize,?,?,?,ThisQTR,?,?
-S12_2823,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_2581,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2625,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_1578,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_1785,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3151,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_3949,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_4278,?,ThisDealsize,?,?,ThisQTR,?,?
-S32_1374,?,ThisDealsize,?,?,ThisQTR,?,?
-S32_4289,?,ThisDealsize,?,?,ThisQTR,?,?
-S50_1341,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_1138,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_1691,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_2466,ThisDealsize,?,?,?,ThisQTR,?,?
-S700_2610,?,?,ThisDealsize,ThisQTR,?,?,?
-S700_2834,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_3167,ThisDealsize,?,?,?,ThisQTR,?,?
-S700_4002,?,?,ThisDealsize,?,ThisQTR,?,?
-S10_1949,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4757,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_4962,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_1666,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1097,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1662,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_2949,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2957,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3029,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3136,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3856,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4600,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_4668,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2841,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3420,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3816,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4258,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_3522,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2047,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2824,?,?,ThisDealsize,?,?,?,ThisQTR
-S72_1253,?,?,ThisDealsize,?,?,?,ThisQTR
-S10_4757,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_3380,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4675,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1889,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3029,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3232,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3856,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2841,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_2972,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3420,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_3816,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_3856,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2047,?,?,ThisDealsize,ThisQTR,?,?,?
-S72_1253,?,?,ThisDealsize,ThisQTR,?,?,?
-S10_4757,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_4757,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_3029,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3140,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3259,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3782,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_4522,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_4721,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2011,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_2360,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_3151,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_3151,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3816,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_4620,?,ThisDealsize,?,?,ThisQTR,?,?
-S32_2206,?,?,ThisDealsize,?,ThisQTR,?,?
-S32_4485,?,ThisDealsize,?,?,ThisQTR,?,?
-S50_4713,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_1138,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_1138,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_1938,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_2610,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2610,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_3505,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_3505,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_3962,?,?,ThisDealsize,?,ThisQTR,?,?
-S72_3212,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_1949,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4962,?,?,ThisDealsize,?,?,?,ThisQTR
-S12_1666,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4675,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1097,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1129,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1342,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1367,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1589,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1749,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1889,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1984,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_2248,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2325,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_2432,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2795,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2870,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2949,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2957,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3136,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3232,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3685,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4409,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_1046,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1628,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1937,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2022,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2766,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2887,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2972,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3191,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3432,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3856,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3969,?,?,ThisDealsize,ThisQTR,?,?,?
-S10_1678,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_1949,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_2016,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_4698,?,ThisDealsize,?,?,?,ThisQTR,?
-S10_4962,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_1099,ThisDealsize,?,?,?,?,ThisQTR,?
-S12_2823,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3380,?,ThisDealsize,?,?,?,ThisQTR,?
-S12_3990,?,?,ThisDealsize,?,?,ThisQTR,?
-S12_4473,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4675,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1342,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_1367,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1662,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1889,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2238,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2319,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2432,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2625,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2949,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2957,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3136,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3232,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_3278,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3320,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3482,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4600,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1444,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1578,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_2000,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2300,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2360,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2840,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2841,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2972,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3371,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3420,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_3856,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_4048,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4258,?,ThisDealsize,?,ThisQTR,?,?,?
-S24_4620,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_1268,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_1374,?,ThisDealsize,?,?,?,ThisQTR,?
-S32_2206,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_2509,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_4485,?,?,ThisDealsize,?,?,ThisQTR,?
-S50_1392,?,ThisDealsize,?,?,?,?,ThisQTR
-S50_4713,?,ThisDealsize,?,?,?,ThisQTR,?
-S700_2047,?,?,ThisDealsize,?,?,ThisQTR,?
-S700_2834,?,ThisDealsize,?,?,?,ThisQTR,?
-S72_1253,?,?,ThisDealsize,?,?,ThisQTR,?
-S10_1949,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_4757,?,?,ThisDealsize,?,?,?,ThisQTR
-S12_4473,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2238,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_2949,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2957,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3136,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3320,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4027,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4522,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1444,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_2011,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4048,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_4258,?,ThisDealsize,?,?,?,?,ThisQTR
-S50_1392,?,?,ThisDealsize,?,ThisQTR,?,?
-S50_1514,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_1938,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_3505,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_3962,?,?,ThisDealsize,?,?,?,ThisQTR
-S72_3212,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1662,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_2581,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3782,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_4721,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_1785,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2841,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_3420,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_3949,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_4278,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_1374,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_4289,?,?,ThisDealsize,?,?,?,ThisQTR
-S50_1341,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_1691,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2047,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_2466,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_2834,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_3167,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_4002,?,?,ThisDealsize,?,ThisQTR,?,?
-S72_1253,?,?,ThisDealsize,?,ThisQTR,?,?
-S10_4757,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_1589,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_1662,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_1662,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_1749,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_2248,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2581,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_2870,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2949,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2957,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_3029,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_3136,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3320,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_3856,ThisDealsize,?,?,?,ThisQTR,?,?
-S18_4409,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_4933,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_1046,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_1628,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_1785,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2000,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2766,ThisDealsize,?,?,?,ThisQTR,?,?
-S24_2841,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2887,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3191,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_3420,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_3432,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3816,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_3949,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_4258,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_4278,?,?,ThisDealsize,?,ThisQTR,?,?
-S32_1374,?,ThisDealsize,?,?,ThisQTR,?,?
-S32_4289,?,ThisDealsize,?,?,ThisQTR,?,?
-S50_1341,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_1691,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_2047,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_2466,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_2834,?,ThisDealsize,?,?,ThisQTR,?,?
-S700_3167,?,?,ThisDealsize,?,ThisQTR,?,?
-S700_4002,?,?,ThisDealsize,?,ThisQTR,?,?
-S72_1253,?,?,ThisDealsize,?,ThisQTR,?,?
-S10_1949,?,ThisDealsize,?,?,ThisQTR,?,?
-S10_4962,?,ThisDealsize,?,?,ThisQTR,?,?
-S12_1108,ThisDealsize,?,?,?,?,?,ThisQTR
-S12_1666,?,ThisDealsize,?,?,ThisQTR,?,?
-S12_3148,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_3891,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_1097,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_3140,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3259,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4027,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4600,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_4668,?,?,ThisDealsize,?,ThisQTR,?,?
-S32_1268,?,ThisDealsize,?,?,ThisQTR,?,?
-S32_3522,?,ThisDealsize,?,?,ThisQTR,?,?
-S50_1514,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_1938,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2824,?,ThisDealsize,?,?,ThisQTR,?,?
-S12_2823,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3278,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3782,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_4721,ThisDealsize,?,?,?,?,?,ThisQTR
-S24_2360,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3969,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_4620,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_2206,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_4485,?,?,ThisDealsize,?,?,?,ThisQTR
-S50_4713,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_1678,?,ThisDealsize,?,ThisQTR,?,?,?
-S10_2016,?,?,ThisDealsize,ThisQTR,?,?,?
-S10_4698,?,?,ThisDealsize,ThisQTR,?,?,?
-S12_2823,?,ThisDealsize,?,ThisQTR,?,?,?
-S12_4675,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1129,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1589,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1889,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_1984,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2870,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3140,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3232,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3685,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4522,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1046,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1628,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2766,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2972,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3191,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3432,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3856,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_4289,?,ThisDealsize,?,ThisQTR,?,?,?
-S50_1341,?,ThisDealsize,?,ThisQTR,?,?,?
-S700_1691,ThisDealsize,?,?,ThisQTR,?,?,?
-S700_1938,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_2834,ThisDealsize,?,?,ThisQTR,?,?,?
-S10_1949,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1097,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1342,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_1367,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_2949,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2957,?,?,ThisDealsize,ThisQTR,?,?,?
-S18_3136,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3320,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_4668,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_4258,?,ThisDealsize,?,ThisQTR,?,?,?
-S50_1341,?,?,ThisDealsize,?,?,?,ThisQTR
-S700_1691,?,ThisDealsize,?,?,?,?,ThisQTR
-S700_3167,?,ThisDealsize,?,?,?,?,ThisQTR
-S10_2016,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_1129,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1129,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1589,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1749,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_1984,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1984,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_2625,?,?,ThisDealsize,?,ThisQTR,?,?
-S18_2870,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_2870,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3232,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_3232,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_3685,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_3685,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_2000,?,ThisDealsize,?,?,ThisQTR,?,?
-S24_2972,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_2972,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_3371,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_3856,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_4620,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_2206,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_4485,?,ThisDealsize,?,?,?,?,ThisQTR
-S50_4713,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4473,?,ThisDealsize,?,ThisQTR,?,?,?
-S18_1342,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_1367,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_1749,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2238,ThisDealsize,?,?,ThisQTR,?,?,?
-S18_2248,?,?,ThisDealsize,?,?,ThisQTR,?
-S18_2325,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_2795,?,ThisDealsize,?,?,?,ThisQTR,?
-S18_3320,?,ThisDealsize,?,?,?,ThisQTR,?
-S24_1937,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2022,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_2840,?,?,ThisDealsize,ThisQTR,?,?,?
-S24_3969,?,?,ThisDealsize,?,?,ThisQTR,?
-S24_4258,?,?,ThisDealsize,?,?,ThisQTR,?
-S32_2509,?,?,ThisDealsize,ThisQTR,?,?,?
-S10_4962,?,ThisDealsize,?,?,?,?,ThisQTR
-S12_4473,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2238,ThisDealsize,?,?,?,?,?,ThisQTR
-S18_2319,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_2325,?,ThisDealsize,?,?,ThisQTR,?,?
-S18_2432,?,?,ThisDealsize,?,?,?,ThisQTR
-S18_3232,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4027,?,ThisDealsize,?,?,?,?,ThisQTR
-S18_4600,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_1444,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_1937,?,?,ThisDealsize,?,ThisQTR,?,?
-S24_2300,?,ThisDealsize,?,?,?,?,ThisQTR
-S24_2840,?,?,ThisDealsize,?,?,?,ThisQTR
-S24_4048,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_1268,?,ThisDealsize,?,?,?,?,ThisQTR
-S32_2509,?,?,ThisDealsize,?,?,?,ThisQTR
-S32_3207,?,?,ThisDealsize,?,?,?,ThisQTR
-S50_1392,?,?,ThisDealsize,?,?,?,ThisQTR
+'1993 Mazda RX-7',?,ThisDealsize,?,?,?,ThisQTR,?
+'1937 Lincoln Berline',?,?,ThisDealsize,?,?,?,ThisQTR
+'1965 Aston Martin DB5',?,?,ThisDealsize,?,?,ThisQTR,?
+'1917 Grand Touring Sedan',?,?,ThisDealsize,?,ThisQTR,?,?
+'1948 Porsche 356-A Roadster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1995 Honda Civic',?,ThisDealsize,?,?,?,ThisQTR,?
+'1911 Ford Town Car',?,?,ThisDealsize,?,ThisQTR,?,?
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,?,ThisQTR,?,?
+'1999 Indy 500 Monte Carlo SS',?,ThisDealsize,?,?,?,ThisQTR,?
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,ThisQTR,?
+'1948 Porsche Type 356 Roadster',?,ThisDealsize,?,?,?,ThisQTR,?
+'1932 Alfa Romeo 8C2300 Spider Sport',?,ThisDealsize,?,?,ThisQTR,?,?
+'1957 Ford Thunderbird',?,?,ThisDealsize,?,ThisQTR,?,?
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,?,ThisQTR,?,?
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,?,?,ThisQTR,?
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,?,ThisQTR,?,?
+'1938 Cadillac V-16 Presidential Limousine',?,?,ThisDealsize,?,ThisQTR,?,?
+'1949 Jaguar XK 120',?,?,ThisDealsize,?,ThisQTR,?,?
+'1949 Jaguar XK 120',?,?,ThisDealsize,?,?,?,ThisQTR
+'1952 Citroen-15CV',?,?,ThisDealsize,?,ThisQTR,?,?
+'1952 Citroen-15CV',?,?,ThisDealsize,?,?,?,ThisQTR
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,ThisQTR,?
+'1969 Chevrolet Camaro Z28',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Chevrolet Camaro Z28',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Chevy Corvette',?,ThisDealsize,?,?,ThisQTR,?,?
+'2002 Chevy Corvette',?,?,ThisDealsize,?,?,?,ThisQTR
+'1956 Porsche 356A Coupe',?,ThisDealsize,?,?,?,ThisQTR,?
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,ThisQTR,?,?
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1952 Alpine Renault 1300',ThisDealsize,?,?,?,?,?,ThisQTR
+'1952 Alpine Renault 1300',?,ThisDealsize,?,?,?,?,ThisQTR
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,ThisQTR,?,?,?
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,?,?,?,ThisQTR
+'1968 Ford Mustang',ThisDealsize,?,?,?,?,ThisQTR,?
+'2001 Ferrari Enzo',ThisDealsize,?,?,?,?,ThisQTR,?
+'2001 Ferrari Enzo',ThisDealsize,?,?,?,?,ThisQTR,?
+'2001 Ferrari Enzo',?,ThisDealsize,?,ThisQTR,?,?,?
+'2001 Ferrari Enzo',?,ThisDealsize,?,ThisQTR,?,?,?
+'1958 Setra Bus',?,ThisDealsize,?,ThisQTR,?,?,?
+'1958 Setra Bus',?,ThisDealsize,?,ThisQTR,?,?,?
+'1958 Setra Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Corvair Monza',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Corvair Monza',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Corvair Monza',?,ThisDealsize,?,ThisQTR,?,?,?
+'1968 Dodge Charger',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Ford Falcon',ThisDealsize,?,?,?,?,ThisQTR,?
+'1969 Ford Falcon',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Ford Falcon',?,ThisDealsize,?,ThisQTR,?,?,?
+'1969 Ford Falcon',?,ThisDealsize,?,ThisQTR,?,?,?
+'1970 Plymouth Hemi Cuda',?,?,ThisDealsize,?,?,ThisQTR,?
+'1957 Chevy Pickup',?,ThisDealsize,?,ThisQTR,?,?,?
+'1957 Chevy Pickup',?,ThisDealsize,?,?,?,ThisQTR,?
+'1957 Chevy Pickup',?,?,ThisDealsize,ThisQTR,?,?,?
+'1957 Chevy Pickup',?,?,ThisDealsize,ThisQTR,?,?,?
+'1969 Dodge Charger',?,?,ThisDealsize,?,?,ThisQTR,?
+'1940 Ford Pickup Truck',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940 Ford Pickup Truck',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940 Ford Pickup Truck',?,ThisDealsize,?,?,?,?,ThisQTR
+'1993 Mazda RX-7',?,ThisDealsize,?,ThisQTR,?,?,?
+'1937 Lincoln Berline',?,?,ThisDealsize,?,?,?,ThisQTR
+'1937 Lincoln Berline',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1917 Grand Touring Sedan',ThisDealsize,?,?,?,?,?,ThisQTR
+'1917 Grand Touring Sedan',ThisDealsize,?,?,?,?,?,ThisQTR
+'1948 Porsche 356-A Roadster',?,ThisDealsize,?,?,?,ThisQTR,?
+'1995 Honda Civic',?,?,ThisDealsize,ThisQTR,?,?,?
+'1998 Chrysler Plymouth Prowler',ThisDealsize,?,?,?,?,ThisQTR,?
+'1998 Chrysler Plymouth Prowler',?,ThisDealsize,?,?,?,ThisQTR,?
+'1998 Chrysler Plymouth Prowler',?,?,ThisDealsize,ThisQTR,?,?,?
+'1998 Chrysler Plymouth Prowler',?,?,ThisDealsize,ThisQTR,?,?,?
+'1911 Ford Town Car',?,?,ThisDealsize,?,?,?,ThisQTR
+'1911 Ford Town Car',?,?,ThisDealsize,?,?,?,ThisQTR
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,ThisQTR,?,?,?
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,ThisQTR,?
+'1932 Model A Ford J-Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,ThisQTR,?,?,?
+'1926 Ford Fire Engine',?,?,ThisDealsize,ThisQTR,?,?,?
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,ThisQTR,?
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1928 Mercedes-Benz SSK',?,ThisDealsize,?,?,?,?,ThisQTR
+'1928 Mercedes-Benz SSK',?,ThisDealsize,?,?,?,?,ThisQTR
+'1928 Mercedes-Benz SSK',?,?,ThisDealsize,ThisQTR,?,?,?
+'1928 Mercedes-Benz SSK',?,ThisDealsize,?,?,ThisQTR,?,?
+'1913 Ford Model T Speedster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1913 Ford Model T Speedster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1934 Ford V8 Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'1934 Ford V8 Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,?,?,?,ThisQTR
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,?,?,?,ThisQTR
+'1903 Ford Model A',?,ThisDealsize,?,?,?,ThisQTR,?
+'1903 Ford Model A',?,ThisDealsize,?,?,?,ThisQTR,?
+'1903 Ford Model A',?,ThisDealsize,?,ThisQTR,?,?,?
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,ThisQTR,?,?,?
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,ThisQTR,?
+'Collectable Wooden Train',?,?,ThisDealsize,?,?,ThisQTR,?
+'Collectable Wooden Train',?,ThisDealsize,?,?,?,ThisQTR,?
+'Collectable Wooden Train',?,?,ThisDealsize,ThisQTR,?,?,?
+'1969 Dodge Super Bee',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Dodge Super Bee',?,ThisDealsize,?,ThisQTR,?,?,?
+'1917 Maxwell Touring Car',?,?,ThisDealsize,?,?,?,ThisQTR
+'1917 Maxwell Touring Car',?,ThisDealsize,?,?,?,?,ThisQTR
+'1917 Maxwell Touring Car',?,?,ThisDealsize,?,?,?,ThisQTR
+'1917 Maxwell Touring Car',ThisDealsize,?,?,ThisQTR,?,?,?
+'1976 Ford Gran Torino',?,ThisDealsize,?,?,?,ThisQTR,?
+'1976 Ford Gran Torino',ThisDealsize,?,?,ThisQTR,?,?,?
+'1957 Vespa GS150',?,?,ThisDealsize,?,?,ThisQTR,?
+'1957 Vespa GS150',?,ThisDealsize,?,ThisQTR,?,?,?
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,ThisQTR,?
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,ThisQTR,?
+'1932 Alfa Romeo 8C2300 Spider Sport',?,ThisDealsize,?,?,?,?,ThisQTR
+'1904 Buick Runabout',?,?,ThisDealsize,?,?,ThisQTR,?
+'1904 Buick Runabout',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940s Ford truck',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940s Ford truck',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940s Ford truck',?,ThisDealsize,?,ThisQTR,?,?,?
+'1939 Cadillac Limousine',?,?,ThisDealsize,ThisQTR,?,?,?
+'1939 Cadillac Limousine',?,?,ThisDealsize,ThisQTR,?,?,?
+'1939 Cadillac Limousine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1939 Cadillac Limousine',ThisDealsize,?,?,ThisQTR,?,?,?
+'1957 Corvette Convertible',?,ThisDealsize,?,?,?,ThisQTR,?
+'1957 Corvette Convertible',?,ThisDealsize,?,ThisQTR,?,?,?
+'1957 Ford Thunderbird',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Chevy Chevelle SS 454',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,ThisQTR,?
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,ThisQTR,?
+'1970 Dodge Coronet',?,?,ThisDealsize,ThisQTR,?,?,?
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'18th century schooner',?,ThisDealsize,?,?,?,ThisQTR,?
+'18th century schooner',?,ThisDealsize,?,ThisQTR,?,?,?
+'1938 Cadillac V-16 Presidential Limousine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1938 Cadillac V-16 Presidential Limousine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1938 Cadillac V-16 Presidential Limousine',?,?,ThisDealsize,?,ThisQTR,?,?
+'1962 Volkswagen Microbus',?,ThisDealsize,?,ThisQTR,?,?,?
+'1962 Volkswagen Microbus',?,ThisDealsize,?,?,?,ThisQTR,?
+'1962 Volkswagen Microbus',?,ThisDealsize,?,ThisQTR,?,?,?
+'1962 Volkswagen Microbus',?,?,ThisDealsize,ThisQTR,?,?,?
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1982 Ducati 900 Monster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1949 Jaguar XK 120',?,?,ThisDealsize,?,?,?,ThisQTR
+'1949 Jaguar XK 120',?,ThisDealsize,?,ThisQTR,?,?,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,ThisQTR,?,?,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,ThisQTR,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,?,ThisQTR
+'1958 Chevy Corvette Limited Edition',?,ThisDealsize,?,ThisQTR,?,?,?
+'1952 Citroen-15CV',?,?,ThisDealsize,?,?,?,ThisQTR
+'1952 Citroen-15CV',?,ThisDealsize,?,ThisQTR,?,?,?
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,ThisQTR,?
+'1982 Lamborghini Diablo',?,ThisDealsize,?,ThisQTR,?,?,?
+'1912 Ford Model T Delivery Wagon',?,ThisDealsize,?,?,?,ThisQTR,?
+'1912 Ford Model T Delivery Wagon',?,?,ThisDealsize,ThisQTR,?,?,?
+'1969 Chevrolet Camaro Z28',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Chevrolet Camaro Z28',?,ThisDealsize,?,ThisQTR,?,?,?
+'1971 Alpine Renault 1600s',?,?,ThisDealsize,?,?,ThisQTR,?
+'1971 Alpine Renault 1600s',?,?,ThisDealsize,ThisQTR,?,?,?
+'2002 Chevy Corvette',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Chevy Corvette',?,?,ThisDealsize,ThisQTR,?,?,?
+'1940 Ford Delivery Sedan',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940 Ford Delivery Sedan',?,ThisDealsize,?,ThisQTR,?,?,?
+'1956 Porsche 356A Coupe',?,ThisDealsize,?,?,?,ThisQTR,?
+'1956 Porsche 356A Coupe',?,ThisDealsize,?,ThisQTR,?,?,?
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,?,ThisQTR,?
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,?,ThisQTR,?
+'1992 Porsche Cayenne Turbo Silver',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Chrysler Airflow',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Chrysler Airflow',?,ThisDealsize,?,ThisQTR,?,?,?
+'1961 Chevrolet Impala',?,?,ThisDealsize,?,?,ThisQTR,?
+'1961 Chevrolet Impala',?,?,ThisDealsize,ThisQTR,?,?,?
+'1980?s GM Manhattan Express',?,?,ThisDealsize,ThisQTR,?,?,?
+'1980?s GM Manhattan Express',?,ThisDealsize,?,?,?,?,ThisQTR
+'1980?s GM Manhattan Express',?,ThisDealsize,?,ThisQTR,?,?,?
+'1980?s GM Manhattan Express',?,?,ThisDealsize,ThisQTR,?,?,?
+'1982 Ducati 996 R',?,?,ThisDealsize,?,?,ThisQTR,?
+'1982 Ducati 996 R',?,?,ThisDealsize,ThisQTR,?,?,?
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,ThisQTR,?,?,?
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,ThisQTR,?
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,?,ThisQTR
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,ThisQTR,?,?,?
+'1950s Chicago Surface Lines Streetcar',?,ThisDealsize,?,?,?,ThisQTR,?
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,?,?,ThisQTR,?
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,ThisQTR,?,?,?
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,?,ThisDealsize,ThisQTR,?,?,?
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,?,ThisDealsize,ThisQTR,?,?,?
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,ThisDealsize,?,ThisQTR,?,?,?
+'1974 Ducati 350 Mk3 Desmo',?,?,ThisDealsize,?,?,ThisQTR,?
+'1974 Ducati 350 Mk3 Desmo',?,?,ThisDealsize,ThisQTR,?,?,?
+'Diamond T620 Semi-Skirted Tanker',?,ThisDealsize,?,?,?,ThisQTR,?
+'Diamond T620 Semi-Skirted Tanker',?,ThisDealsize,?,?,?,ThisQTR,?
+'Diamond T620 Semi-Skirted Tanker',?,?,ThisDealsize,ThisQTR,?,?,?
+'1962 City of Detroit Streetcar',?,?,ThisDealsize,?,?,ThisQTR,?
+'1962 City of Detroit Streetcar',?,?,ThisDealsize,?,?,ThisQTR,?
+'2002 Yamaha YZR M1',?,ThisDealsize,?,?,?,ThisQTR,?
+'2002 Yamaha YZR M1',?,ThisDealsize,?,ThisQTR,?,?,?
+'The Schooner Bluenose',?,?,ThisDealsize,?,?,ThisQTR,?
+'The Schooner Bluenose',?,?,ThisDealsize,ThisQTR,?,?,?
+'The Schooner Bluenose',?,?,ThisDealsize,ThisQTR,?,?,?
+'The Mayflower',?,ThisDealsize,?,?,?,ThisQTR,?
+'The Mayflower',?,ThisDealsize,?,?,?,ThisQTR,?
+'1982 Camaro Z28',?,ThisDealsize,?,ThisQTR,?,?,?
+'1982 Camaro Z28',?,ThisDealsize,?,ThisQTR,?,?,?
+'1982 Camaro Z28',?,?,ThisDealsize,ThisQTR,?,?,?
+'The Titanic',?,?,ThisDealsize,?,?,ThisQTR,?
+'The Queen Mary',?,ThisDealsize,?,?,?,ThisQTR,?
+'Pont Yacht',?,?,ThisDealsize,?,?,ThisQTR,?
+'1969 Harley Davidson Ultimate Chopper',?,?,ThisDealsize,?,?,?,ThisQTR
+'1952 Alpine Renault 1300',?,ThisDealsize,?,?,?,?,ThisQTR
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,?,ThisQTR
+'2003 Harley-Davidson Eagle Drag Bike',ThisDealsize,?,?,?,?,?,ThisQTR
+'1958 Setra Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940 Ford Pickup Truck',?,?,ThisDealsize,?,?,?,ThisQTR
+'1937 Lincoln Berline',?,ThisDealsize,?,ThisQTR,?,?,?
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,?,ThisQTR
+'1913 Ford Model T Speedster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1934 Ford V8 Coupe',?,?,ThisDealsize,ThisQTR,?,?,?
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,ThisQTR,?,?,?
+'1917 Maxwell Touring Car',?,ThisDealsize,?,ThisQTR,?,?,?
+'1917 Maxwell Touring Car',ThisDealsize,?,?,?,?,?,ThisQTR
+'1939 Cadillac Limousine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,?,?,ThisQTR
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Chrysler Airflow',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Chrysler Airflow',?,ThisDealsize,?,?,?,?,ThisQTR
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,?,ThisDealsize,?,?,?,ThisQTR
+'1969 Harley Davidson Ultimate Chopper',?,?,ThisDealsize,ThisQTR,?,?,?
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,?,?,ThisQTR
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,ThisQTR,?,?,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,?,ThisQTR
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,ThisQTR,?,?,?
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,?,?,?,ThisQTR
+'1972 Alfa Romeo GTA',?,?,ThisDealsize,?,ThisQTR,?,?
+'1968 Ford Mustang',?,?,ThisDealsize,?,?,?,ThisQTR
+'2002 Suzuki XREO',?,ThisDealsize,?,ThisQTR,?,?,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,?,ThisQTR
+'1968 Dodge Charger',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Plymouth Hemi Cuda',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Chevy Pickup',?,?,ThisDealsize,?,?,ThisQTR,?
+'1969 Dodge Charger',?,?,ThisDealsize,?,?,?,ThisQTR
+'1948 Porsche 356-A Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1998 Chrysler Plymouth Prowler',?,ThisDealsize,?,?,?,ThisQTR,?
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,ThisQTR,?
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Harley Davidson El Knucklehead',?,ThisDealsize,?,?,?,?,ThisQTR
+'1999 Yamaha Speed Boat',?,?,ThisDealsize,?,ThisQTR,?,?
+'1903 Ford Model A',?,ThisDealsize,?,?,ThisQTR,?,?
+'1992 Ferrari 360 Spider red',?,?,ThisDealsize,?,?,ThisQTR,?
+'Collectable Wooden Train',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Dodge Super Bee',?,?,ThisDealsize,?,?,?,ThisQTR
+'1970 Triumph Spitfire',ThisDealsize,?,?,?,?,ThisQTR,?
+'1904 Buick Runabout',?,ThisDealsize,?,?,ThisQTR,?,?
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,ThisQTR,?
+'1997 BMW R 1100 S',?,?,ThisDealsize,ThisQTR,?,?,?
+'1997 BMW R 1100 S',?,?,ThisDealsize,?,?,?,ThisQTR
+'1960 BSA Gold Star DBD34 1960',?,ThisDealsize,?,ThisQTR,?,?,?
+'1960 BSA Gold Star DBD34 1960',?,ThisDealsize,?,?,?,?,ThisQTR
+'18th century schooner',?,ThisDealsize,?,?,ThisQTR,?,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,ThisQTR,?
+'1912 Ford Model T Delivery Wagon',?,ThisDealsize,?,?,ThisQTR,?,?
+'1940 Ford Delivery Sedan',?,?,ThisDealsize,?,ThisQTR,?,?
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,?,ThisQTR,?
+'1997 BMW F650 ST',?,?,ThisDealsize,ThisQTR,?,?,?
+'1997 BMW F650 ST',?,?,ThisDealsize,?,?,?,ThisQTR
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,ThisQTR,?
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,?,?,ThisQTR,?
+'Diamond T620 Semi-Skirted Tanker',?,ThisDealsize,?,?,?,ThisQTR,?
+'1962 City of Detroit Streetcar',?,?,ThisDealsize,?,?,ThisQTR,?
+'The Schooner Bluenose',?,?,ThisDealsize,?,ThisQTR,?,?
+'The Mayflower',?,ThisDealsize,?,?,ThisQTR,?,?
+'The USS Constitution Ship',?,?,ThisDealsize,?,ThisQTR,?,?
+'The Titanic',?,ThisDealsize,?,?,ThisQTR,?,?
+'The Queen Mary',?,ThisDealsize,?,?,ThisQTR,?,?
+'Boeing X-32A JSF',?,ThisDealsize,?,?,?,?,ThisQTR
+'Pont Yacht',?,?,ThisDealsize,?,ThisQTR,?,?
+'2001 Ferrari Enzo',ThisDealsize,?,?,?,ThisQTR,?,?
+'1969 Corvair Monza',ThisDealsize,?,?,?,ThisQTR,?,?
+'1969 Ford Falcon',ThisDealsize,?,?,?,ThisQTR,?,?
+'1969 Ford Falcon',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Chevy Pickup',?,?,ThisDealsize,?,ThisQTR,?,?
+'1957 Chevy Pickup',?,ThisDealsize,?,?,?,?,ThisQTR
+'1993 Mazda RX-7',?,ThisDealsize,?,?,?,?,ThisQTR
+'1965 Aston Martin DB5',?,ThisDealsize,?,?,?,?,ThisQTR
+'1917 Grand Touring Sedan',?,ThisDealsize,?,?,?,?,ThisQTR
+'1995 Honda Civic',?,ThisDealsize,?,?,?,?,ThisQTR
+'1998 Chrysler Plymouth Prowler',ThisDealsize,?,?,?,ThisQTR,?,?
+'1998 Chrysler Plymouth Prowler',?,ThisDealsize,?,?,?,?,ThisQTR
+'1911 Ford Town Car',?,?,ThisDealsize,?,?,?,ThisQTR
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,ThisQTR,?,?
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'1999 Indy 500 Monte Carlo SS',?,ThisDealsize,?,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,ThisQTR,?,?
+'1992 Ferrari 360 Spider red',ThisDealsize,?,?,?,?,?,ThisQTR
+'1948 Porsche Type 356 Roadster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,ThisQTR,?,?
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,?,ThisQTR
+'1932 Alfa Romeo 8C2300 Spider Sport',?,?,ThisDealsize,?,?,?,ThisQTR
+'1957 Ford Thunderbird',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Ford Thunderbird',?,?,ThisDealsize,?,?,ThisQTR,?
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,?,?,?,ThisQTR
+'1970 Chevy Chevelle SS 454',?,ThisDealsize,?,?,?,ThisQTR,?
+'1970 Dodge Coronet',?,?,ThisDealsize,?,ThisQTR,?,?
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,?,ThisQTR
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,?,?,?,ThisQTR
+'1949 Jaguar XK 120',?,ThisDealsize,?,?,?,?,ThisQTR
+'1949 Jaguar XK 120',?,ThisDealsize,?,?,?,ThisQTR,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,ThisQTR,?,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,?,ThisQTR
+'1952 Citroen-15CV',?,ThisDealsize,?,?,?,?,ThisQTR
+'1952 Citroen-15CV',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Chevrolet Camaro Z28',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Chevrolet Camaro Z28',?,ThisDealsize,?,?,?,ThisQTR,?
+'2002 Chevy Corvette',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Chevy Corvette',?,ThisDealsize,?,?,?,ThisQTR,?
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Porsche Cayenne Turbo Silver',?,?,ThisDealsize,?,ThisQTR,?,?
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,?,?,ThisQTR
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,ThisQTR,?,?
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,?,ThisQTR
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,?,ThisQTR,?,?
+'Diamond T620 Semi-Skirted Tanker',?,ThisDealsize,?,?,ThisQTR,?,?
+'1962 City of Detroit Streetcar',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,?,?,ThisQTR
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,?,ThisQTR
+'2003 Harley-Davidson Eagle Drag Bike',ThisDealsize,?,?,?,?,?,ThisQTR
+'1962 LanciaA Delta 16V',ThisDealsize,?,?,?,?,ThisQTR,?
+'2001 Ferrari Enzo',?,ThisDealsize,?,?,?,ThisQTR,?
+'1958 Setra Bus',?,?,ThisDealsize,?,?,ThisQTR,?
+'1969 Corvair Monza',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Ford Falcon',ThisDealsize,?,?,?,?,ThisQTR,?
+'1957 Chevy Pickup',?,ThisDealsize,?,?,?,ThisQTR,?
+'1937 Lincoln Berline',?,ThisDealsize,?,?,ThisQTR,?,?
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,?,ThisQTR,?,?
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,ThisQTR,?
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,ThisQTR,?
+'P-51-D Mustang',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,ThisQTR,?
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,ThisQTR,?
+'1940s Ford truck',?,?,ThisDealsize,?,?,ThisQTR,?
+'1939 Cadillac Limousine',?,?,ThisDealsize,?,?,ThisQTR,?
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,?,?,ThisQTR
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,?,?,ThisQTR
+'1962 Volkswagen Microbus',?,?,ThisDealsize,?,?,ThisQTR,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,ThisQTR,?
+'1980?s GM Manhattan Express',?,?,ThisDealsize,?,?,ThisQTR,?
+'1997 BMW F650 ST',?,ThisDealsize,?,?,?,?,ThisQTR
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,ThisQTR,?
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,?,?,ThisQTR,?
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,?,ThisDealsize,?,?,ThisQTR,?
+'1962 City of Detroit Streetcar',?,?,ThisDealsize,?,?,ThisQTR,?
+'1982 Camaro Z28',?,?,ThisDealsize,?,?,ThisQTR,?
+'ATA: B757-300',ThisDealsize,?,?,?,?,?,ThisQTR
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,?,?,ThisQTR
+'1952 Alpine Renault 1300',ThisDealsize,?,?,?,?,ThisQTR,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,?,ThisQTR
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,?,?,?,ThisQTR
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,ThisQTR,?,?,?
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,?,?,ThisQTR,?
+'1958 Setra Bus',?,ThisDealsize,?,?,?,ThisQTR,?
+'2002 Suzuki XREO',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940 Ford Pickup Truck',?,ThisDealsize,?,?,?,ThisQTR,?
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,ThisQTR,?
+'P-51-D Mustang',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,ThisQTR,?,?,?
+'1940s Ford truck',?,ThisDealsize,?,?,?,ThisQTR,?
+'1939 Cadillac Limousine',?,?,ThisDealsize,?,?,ThisQTR,?
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,?,?,ThisQTR
+'1997 BMW R 1100 S',?,ThisDealsize,?,ThisQTR,?,?,?
+'1928 British Royal Navy Airplane',?,ThisDealsize,?,?,?,?,ThisQTR
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,?,?,ThisQTR
+'1962 Volkswagen Microbus',?,ThisDealsize,?,?,?,ThisQTR,?
+'Corsair F4U ( Bird Cage)',?,?,ThisDealsize,?,?,?,ThisQTR
+'1900s Vintage Tri-Plane',?,ThisDealsize,?,?,?,?,ThisQTR
+'1900s Vintage Tri-Plane',?,?,ThisDealsize,?,?,?,ThisQTR
+'1980?s GM Manhattan Express',?,?,ThisDealsize,?,?,ThisQTR,?
+'1997 BMW F650 ST',?,ThisDealsize,?,?,?,?,ThisQTR
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,?,ThisDealsize,?,?,ThisQTR,?
+'1928 Ford Phaeton Deluxe',?,?,ThisDealsize,?,?,?,ThisQTR
+'1930 Buick Marquette Phaeton',?,?,ThisDealsize,?,?,?,ThisQTR
+'American Airlines: B767-300',?,?,ThisDealsize,?,?,?,ThisQTR
+'America West Airlines B757-200',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Camaro Z28',?,ThisDealsize,?,?,?,ThisQTR,?
+'ATA: B757-300',?,ThisDealsize,?,?,?,?,ThisQTR
+'F/A 18 Hornet 1/72',?,ThisDealsize,?,?,?,?,ThisQTR
+'American Airlines: MD-11S',?,ThisDealsize,?,?,?,?,ThisQTR
+'1952 Alpine Renault 1300',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940 Ford Pickup Truck',?,ThisDealsize,?,ThisQTR,?,?,?
+'1913 Ford Model T Speedster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1934 Ford V8 Coupe',?,?,ThisDealsize,ThisQTR,?,?,?
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,ThisQTR,?,?,?
+'1941 Chevrolet Special Deluxe Cabriolet',?,ThisDealsize,?,?,ThisQTR,?,?
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,?,ThisQTR,?,?
+'1937 Horch 930V Limousine',?,?,ThisDealsize,?,ThisQTR,?,?
+'1936 Chrysler Airflow',?,ThisDealsize,?,ThisQTR,?,?,?
+'HMS Bounty',?,ThisDealsize,?,?,ThisQTR,?,?
+'Boeing X-32A JSF',?,?,ThisDealsize,?,ThisQTR,?,?
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,ThisQTR,?,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,ThisQTR,?,?
+'2003 Harley-Davidson Eagle Drag Bike',ThisDealsize,?,?,?,ThisQTR,?,?
+'2001 Ferrari Enzo',ThisDealsize,?,?,?,ThisQTR,?,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Corvair Monza',ThisDealsize,?,?,?,ThisQTR,?,?
+'1969 Ford Falcon',?,ThisDealsize,?,?,ThisQTR,?,?
+'1965 Aston Martin DB5',?,ThisDealsize,?,?,?,?,ThisQTR
+'P-51-D Mustang',?,?,ThisDealsize,?,ThisQTR,?,?
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,ThisQTR,?,?
+'1999 Indy 500 Monte Carlo SS',?,ThisDealsize,?,?,?,?,ThisQTR
+'1948 Porsche Type 356 Roadster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,ThisQTR,?,?
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,?,?,?,ThisQTR
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,ThisQTR,?,?
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,?,?,?,ThisQTR
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,ThisQTR,?,?
+'1949 Jaguar XK 120',?,?,ThisDealsize,?,?,?,ThisQTR
+'1969 Chevrolet Camaro Z28',?,?,ThisDealsize,?,?,?,ThisQTR
+'2002 Chevy Corvette',?,?,ThisDealsize,?,?,?,ThisQTR
+'1900s Vintage Tri-Plane',?,?,ThisDealsize,?,ThisQTR,?,?
+'1997 BMW F650 ST',?,?,ThisDealsize,?,ThisQTR,?,?
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,?,ThisQTR,?,?
+'1962 City of Detroit Streetcar',?,ThisDealsize,?,?,ThisQTR,?,?
+'ATA: B757-300',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Harley Davidson Ultimate Chopper',?,?,ThisDealsize,?,ThisQTR,?,?
+'2003 Harley-Davidson Eagle Drag Bike',ThisDealsize,?,?,?,ThisQTR,?,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Corvair Monza',?,?,ThisDealsize,?,?,?,ThisQTR
+'1957 Chevy Pickup',?,?,ThisDealsize,?,?,?,ThisQTR
+'1937 Lincoln Berline',?,ThisDealsize,?,ThisQTR,?,?,?
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1998 Chrysler Plymouth Prowler',ThisDealsize,?,?,?,?,?,ThisQTR
+'1964 Mercedec Tour Bus',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Vespa GS150',?,?,ThisDealsize,?,ThisQTR,?,?
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,?,ThisQTR
+'1939 Cadillac Limousine',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,?,ThisQTR
+'1997 BMW R 1100 S',?,?,ThisDealsize,?,ThisQTR,?,?
+'1962 Volkswagen Microbus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,ThisQTR,?,?
+'1958 Chevy Corvette Limited Edition',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Chrysler Airflow',?,ThisDealsize,?,?,?,?,ThisQTR
+'1980?s GM Manhattan Express',?,?,ThisDealsize,?,?,?,ThisQTR
+'1982 Ducati 996 R',?,?,ThisDealsize,?,ThisQTR,?,?
+'1996 Peterbilt 379 Stake Bed with Outrigger',ThisDealsize,?,?,?,?,?,ThisQTR
+'1974 Ducati 350 Mk3 Desmo',?,ThisDealsize,?,?,ThisQTR,?,?
+'2002 Yamaha YZR M1',?,?,ThisDealsize,?,ThisQTR,?,?
+'1982 Camaro Z28',?,ThisDealsize,?,?,?,?,ThisQTR
+'1999 Yamaha Speed Boat',?,ThisDealsize,?,?,ThisQTR,?,?
+'1917 Maxwell Touring Car',?,?,ThisDealsize,?,?,ThisQTR,?
+'1941 Chevrolet Special Deluxe Cabriolet',?,ThisDealsize,?,?,ThisQTR,?,?
+'1936 Chrysler Airflow',?,ThisDealsize,?,?,?,ThisQTR,?
+'HMS Bounty',?,?,ThisDealsize,?,?,?,ThisQTR
+'America West Airlines B757-200',?,ThisDealsize,?,?,?,?,ThisQTR
+'American Airlines: MD-11S',?,?,ThisDealsize,?,?,?,ThisQTR
+'Boeing X-32A JSF',?,?,ThisDealsize,?,?,?,ThisQTR
+'1968 Ford Mustang',ThisDealsize,?,?,?,?,ThisQTR,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,ThisQTR,?
+'1968 Dodge Charger',?,ThisDealsize,?,?,?,ThisQTR,?
+'1970 Plymouth Hemi Cuda',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Dodge Super Bee',?,?,ThisDealsize,?,?,ThisQTR,?
+'1976 Ford Gran Torino',?,ThisDealsize,?,?,?,ThisQTR,?
+'1957 Vespa GS150',?,?,ThisDealsize,?,?,ThisQTR,?
+'1957 Corvette Convertible',?,ThisDealsize,?,?,?,ThisQTR,?
+'1982 Ducati 900 Monster',?,ThisDealsize,?,?,?,ThisQTR,?
+'1971 Alpine Renault 1600s',?,?,ThisDealsize,?,?,ThisQTR,?
+'1961 Chevrolet Impala',?,ThisDealsize,?,?,?,ThisQTR,?
+'1982 Ducati 996 R',?,?,ThisDealsize,?,?,ThisQTR,?
+'1974 Ducati 350 Mk3 Desmo',?,ThisDealsize,?,?,?,ThisQTR,?
+'2002 Yamaha YZR M1',?,?,ThisDealsize,?,?,ThisQTR,?
+'The Queen Mary',?,ThisDealsize,?,?,?,ThisQTR,?
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,?,ThisQTR,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,ThisQTR,?
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,?,?,ThisQTR,?
+'2002 Suzuki XREO',ThisDealsize,?,?,?,?,ThisQTR,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,?,ThisQTR
+'1965 Aston Martin DB5',?,?,ThisDealsize,ThisQTR,?,?,?
+'1917 Grand Touring Sedan',?,ThisDealsize,?,ThisQTR,?,?,?
+'1911 Ford Town Car',ThisDealsize,?,?,ThisQTR,?,?,?
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,ThisQTR,?,?,?
+'P-51-D Mustang',?,?,ThisDealsize,?,?,ThisQTR,?
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,ThisQTR,?
+'1928 Mercedes-Benz SSK',?,ThisDealsize,?,ThisQTR,?,?,?
+'1948 Porsche Type 356 Roadster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1932 Alfa Romeo 8C2300 Spider Sport',?,?,ThisDealsize,ThisQTR,?,?,?
+'1957 Ford Thunderbird',?,ThisDealsize,?,ThisQTR,?,?,?
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,ThisQTR,?,?,?
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,?,ThisQTR,?
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,ThisQTR,?,?,?
+'1928 British Royal Navy Airplane',?,ThisDealsize,?,?,?,ThisQTR,?
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,ThisQTR,?,?,?
+'1960 BSA Gold Star DBD34 1960',?,ThisDealsize,?,?,?,ThisQTR,?
+'1938 Cadillac V-16 Presidential Limousine',?,?,ThisDealsize,ThisQTR,?,?,?
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1982 Lamborghini Diablo',?,ThisDealsize,?,ThisQTR,?,?,?
+'1900s Vintage Tri-Plane',?,?,ThisDealsize,?,?,ThisQTR,?
+'1997 BMW F650 ST',?,ThisDealsize,?,?,?,ThisQTR,?
+'1982 Ducati 996 R',?,?,ThisDealsize,?,?,ThisQTR,?
+'1974 Ducati 350 Mk3 Desmo',?,ThisDealsize,?,?,?,ThisQTR,?
+'2002 Yamaha YZR M1',?,ThisDealsize,?,?,?,ThisQTR,?
+'ATA: B757-300',?,?,ThisDealsize,?,?,ThisQTR,?
+'1968 Dodge Charger',?,ThisDealsize,?,ThisQTR,?,?,?
+'1912 Ford Model T Delivery Wagon',?,?,ThisDealsize,?,?,?,ThisQTR
+'The USS Constitution Ship',?,?,ThisDealsize,?,?,?,ThisQTR
+'1972 Alfa Romeo GTA',?,ThisDealsize,?,ThisQTR,?,?,?
+'1965 Aston Martin DB5',?,ThisDealsize,?,ThisQTR,?,?,?
+'1980s Black Hawk Helicopter',?,ThisDealsize,?,ThisQTR,?,?,?
+'1995 Honda Civic',?,ThisDealsize,?,ThisQTR,?,?,?
+'1999 Indy 500 Monte Carlo SS',?,ThisDealsize,?,ThisQTR,?,?,?
+'1999 Yamaha Speed Boat',?,ThisDealsize,?,ThisQTR,?,?,?
+'1948 Porsche Type 356 Roadster',ThisDealsize,?,?,ThisQTR,?,?,?
+'1941 Chevrolet Special Deluxe Cabriolet',?,ThisDealsize,?,ThisQTR,?,?,?
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,ThisQTR,?,?,?
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,ThisQTR,?,?,?
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,ThisQTR,?,?,?
+'1912 Ford Model T Delivery Wagon',?,ThisDealsize,?,ThisQTR,?,?,?
+'1937 Horch 930V Limousine',?,ThisDealsize,?,ThisQTR,?,?,?
+'2002 Chevy Corvette',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940 Ford Delivery Sedan',?,ThisDealsize,?,ThisQTR,?,?,?
+'Corsair F4U ( Bird Cage)',?,?,ThisDealsize,ThisQTR,?,?,?
+'The Schooner Bluenose',?,?,ThisDealsize,ThisQTR,?,?,?
+'HMS Bounty',?,?,ThisDealsize,ThisQTR,?,?,?
+'America West Airlines B757-200',?,ThisDealsize,?,ThisQTR,?,?,?
+'The USS Constitution Ship',?,?,ThisDealsize,ThisQTR,?,?,?
+'The Titanic',?,ThisDealsize,?,ThisQTR,?,?,?
+'The Queen Mary',?,?,ThisDealsize,ThisQTR,?,?,?
+'American Airlines: MD-11S',?,ThisDealsize,?,ThisQTR,?,?,?
+'Boeing X-32A JSF',?,?,ThisDealsize,ThisQTR,?,?,?
+'Pont Yacht',?,?,ThisDealsize,ThisQTR,?,?,?
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,?,ThisQTR,?
+'1952 Alpine Renault 1300',?,ThisDealsize,?,ThisQTR,?,?,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,ThisQTR,?
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,?,?,ThisQTR,?
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,?,?,?,ThisQTR
+'1968 Ford Mustang',ThisDealsize,?,?,?,?,ThisQTR,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,ThisQTR,?
+'1968 Dodge Charger',?,ThisDealsize,?,?,?,ThisQTR,?
+'1970 Plymouth Hemi Cuda',?,?,ThisDealsize,?,?,ThisQTR,?
+'1957 Chevy Pickup',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Dodge Charger',?,ThisDealsize,?,?,?,ThisQTR,?
+'1937 Lincoln Berline',ThisDealsize,?,?,ThisQTR,?,?,?
+'1936 Mercedes-Benz 500K Special Roadster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1980s Black Hawk Helicopter',?,ThisDealsize,?,?,?,ThisQTR,?
+'1948 Porsche 356-A Roadster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1998 Chrysler Plymouth Prowler',?,ThisDealsize,?,?,?,?,ThisQTR
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,ThisQTR,?
+'1913 Ford Model T Speedster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1934 Ford V8 Coupe',?,?,ThisDealsize,ThisQTR,?,?,?
+'18th Century Vintage Horse Carriage',?,?,ThisDealsize,ThisQTR,?,?,?
+'1992 Ferrari 360 Spider red',ThisDealsize,?,?,?,?,?,ThisQTR
+'1969 Dodge Super Bee',?,ThisDealsize,?,?,?,ThisQTR,?
+'1917 Maxwell Touring Car',?,ThisDealsize,?,ThisQTR,?,?,?
+'1976 Ford Gran Torino',?,ThisDealsize,?,?,?,ThisQTR,?
+'1940s Ford truck',?,?,ThisDealsize,?,?,?,ThisQTR
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,?,ThisQTR
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,?,ThisQTR,?
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,?,ThisQTR,?
+'1962 Volkswagen Microbus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,?,ThisQTR
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,?,?,ThisQTR,?
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,ThisQTR,?
+'1971 Alpine Renault 1600s',?,?,ThisDealsize,?,?,ThisQTR,?
+'1937 Horch 930V Limousine',?,?,ThisDealsize,?,?,ThisQTR,?
+'1956 Porsche 356A Coupe',?,?,ThisDealsize,?,?,ThisQTR,?
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Chrysler Airflow',?,ThisDealsize,?,ThisQTR,?,?,?
+'1961 Chevrolet Impala',?,?,ThisDealsize,?,?,ThisQTR,?
+'1980?s GM Manhattan Express',?,ThisDealsize,?,?,?,?,ThisQTR
+'1997 BMW F650 ST',?,ThisDealsize,?,?,?,ThisQTR,?
+'1982 Ducati 996 R',?,?,ThisDealsize,?,?,ThisQTR,?
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,?,ThisQTR
+'1974 Ducati 350 Mk3 Desmo',?,?,ThisDealsize,?,?,ThisQTR,?
+'Diamond T620 Semi-Skirted Tanker',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Yamaha YZR M1',?,ThisDealsize,?,?,?,ThisQTR,?
+'HMS Bounty',?,?,ThisDealsize,?,?,ThisQTR,?
+'ATA: B757-300',?,ThisDealsize,?,?,?,ThisQTR,?
+'Boeing X-32A JSF',?,?,ThisDealsize,?,?,ThisQTR,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,?,ThisQTR
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Chevy Pickup',?,ThisDealsize,?,?,?,?,ThisQTR
+'1998 Chrysler Plymouth Prowler',?,ThisDealsize,?,?,?,?,ThisQTR
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'P-51-D Mustang',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',ThisDealsize,?,?,?,?,?,ThisQTR
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,?,ThisQTR
+'1928 British Royal Navy Airplane',?,ThisDealsize,?,?,?,?,ThisQTR
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,?,?,ThisQTR
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,?,ThisQTR
+'Corsair F4U ( Bird Cage)',?,ThisDealsize,?,?,?,?,ThisQTR
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,?,?,ThisQTR
+'1900s Vintage Tri-Plane',?,ThisDealsize,?,?,?,?,ThisQTR
+'1997 BMW F650 ST',?,?,ThisDealsize,?,?,?,ThisQTR
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,?,ThisQTR
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,?,?,?,ThisQTR
+'1928 Ford Phaeton Deluxe',?,ThisDealsize,?,?,?,?,ThisQTR
+'1930 Buick Marquette Phaeton',?,?,ThisDealsize,?,?,?,ThisQTR
+'Diamond T620 Semi-Skirted Tanker',?,ThisDealsize,?,?,?,?,ThisQTR
+'American Airlines: B767-300',?,?,ThisDealsize,?,?,?,ThisQTR
+'America West Airlines B757-200',?,ThisDealsize,?,?,?,?,ThisQTR
+'ATA: B757-300',?,ThisDealsize,?,?,?,?,ThisQTR
+'F/A 18 Hornet 1/72',?,?,ThisDealsize,?,?,?,ThisQTR
+'American Airlines: MD-11S',?,?,ThisDealsize,?,?,?,ThisQTR
+'1972 Alfa Romeo GTA',?,ThisDealsize,?,?,?,ThisQTR,?
+'2001 Ferrari Enzo',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Corvair Monza',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Ford Falcon',ThisDealsize,?,?,?,?,?,ThisQTR
+'1993 Mazda RX-7',?,?,ThisDealsize,ThisQTR,?,?,?
+'1980s Black Hawk Helicopter',?,ThisDealsize,?,?,?,ThisQTR,?
+'1999 Yamaha Speed Boat',?,ThisDealsize,?,?,?,ThisQTR,?
+'1903 Ford Model A',?,ThisDealsize,?,?,?,?,ThisQTR
+'Collectable Wooden Train',?,ThisDealsize,?,?,?,?,ThisQTR
+'1941 Chevrolet Special Deluxe Cabriolet',?,ThisDealsize,?,?,?,ThisQTR,?
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,?,ThisQTR
+'1904 Buick Runabout',?,ThisDealsize,?,?,?,?,ThisQTR
+'18th century schooner',?,ThisDealsize,?,?,?,?,ThisQTR
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,?,?,ThisQTR,?
+'1912 Ford Model T Delivery Wagon',?,?,ThisDealsize,?,?,?,ThisQTR
+'1937 Horch 930V Limousine',?,?,ThisDealsize,?,?,ThisQTR,?
+'1940 Ford Delivery Sedan',?,?,ThisDealsize,?,?,ThisQTR,?
+'Corsair F4U ( Bird Cage)',?,?,ThisDealsize,?,?,ThisQTR,?
+'1974 Ducati 350 Mk3 Desmo',?,ThisDealsize,?,ThisQTR,?,?,?
+'1930 Buick Marquette Phaeton',?,?,ThisDealsize,?,?,ThisQTR,?
+'1962 City of Detroit Streetcar',?,?,ThisDealsize,?,?,?,ThisQTR
+'2002 Yamaha YZR M1',?,ThisDealsize,?,ThisQTR,?,?,?
+'The Schooner Bluenose',?,?,ThisDealsize,?,?,?,ThisQTR
+'American Airlines: B767-300',?,ThisDealsize,?,?,?,ThisQTR,?
+'The Mayflower',?,?,ThisDealsize,?,?,?,ThisQTR
+'HMS Bounty',?,?,ThisDealsize,?,?,ThisQTR,?
+'America West Airlines B757-200',?,?,ThisDealsize,?,?,ThisQTR,?
+'The USS Constitution Ship',?,?,ThisDealsize,?,?,ThisQTR,?
+'The USS Constitution Ship',?,?,ThisDealsize,?,?,?,ThisQTR
+'F/A 18 Hornet 1/72',?,?,ThisDealsize,?,?,ThisQTR,?
+'The Titanic',?,ThisDealsize,?,?,?,?,ThisQTR
+'The Queen Mary',?,?,ThisDealsize,?,?,?,ThisQTR
+'American Airlines: MD-11S',?,?,ThisDealsize,?,?,ThisQTR,?
+'Boeing X-32A JSF',?,?,ThisDealsize,?,?,ThisQTR,?
+'Pont Yacht',?,?,ThisDealsize,?,?,?,ThisQTR
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,?,?,ThisQTR
+'1952 Alpine Renault 1300',ThisDealsize,?,?,ThisQTR,?,?,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,?,ThisQTR
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,?,?,?,ThisQTR
+'1972 Alfa Romeo GTA',?,ThisDealsize,?,ThisQTR,?,?,?
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,ThisQTR,?,?,?
+'1968 Ford Mustang',ThisDealsize,?,?,?,?,?,ThisQTR
+'1958 Setra Bus',?,?,ThisDealsize,ThisQTR,?,?,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Plymouth Hemi Cuda',?,?,ThisDealsize,?,?,?,ThisQTR
+'1940 Ford Pickup Truck',?,ThisDealsize,?,ThisQTR,?,?,?
+'1937 Lincoln Berline',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1917 Grand Touring Sedan',?,ThisDealsize,?,?,?,?,ThisQTR
+'1911 Ford Town Car',?,?,ThisDealsize,?,?,?,ThisQTR
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'1926 Ford Fire Engine',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,?,ThisQTR
+'1928 Mercedes-Benz SSK',ThisDealsize,?,?,?,?,?,ThisQTR
+'1913 Ford Model T Speedster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1934 Ford V8 Coupe',?,?,ThisDealsize,ThisQTR,?,?,?
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,ThisQTR,?,?,?
+'1969 Dodge Super Bee',?,?,ThisDealsize,?,?,?,ThisQTR
+'1976 Ford Gran Torino',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Vespa GS150',?,?,ThisDealsize,?,?,?,ThisQTR
+'1932 Alfa Romeo 8C2300 Spider Sport',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Corvette Convertible',?,ThisDealsize,?,?,?,?,ThisQTR
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,?,?,ThisQTR
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'18th century schooner',?,?,ThisDealsize,ThisQTR,?,?,?
+'1938 Cadillac V-16 Presidential Limousine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1912 Ford Model T Delivery Wagon',?,ThisDealsize,?,ThisQTR,?,?,?
+'1971 Alpine Renault 1600s',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1961 Chevrolet Impala',?,?,ThisDealsize,?,?,?,ThisQTR
+'1982 Ducati 996 R',?,?,ThisDealsize,?,?,?,ThisQTR
+'1974 Ducati 350 Mk3 Desmo',?,?,ThisDealsize,?,?,?,ThisQTR
+'2002 Yamaha YZR M1',?,?,ThisDealsize,?,?,?,ThisQTR
+'The Mayflower',?,ThisDealsize,?,ThisQTR,?,?,?
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,ThisQTR,?,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,ThisQTR,?,?
+'2003 Harley-Davidson Eagle Drag Bike',ThisDealsize,?,?,?,ThisQTR,?,?
+'2002 Suzuki XREO',ThisDealsize,?,?,?,ThisQTR,?,?
+'P-51-D Mustang',?,ThisDealsize,?,?,ThisQTR,?,?
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,ThisQTR,?,?
+'1997 BMW R 1100 S',?,?,ThisDealsize,?,ThisQTR,?,?
+'1928 British Royal Navy Airplane',?,ThisDealsize,?,?,ThisQTR,?,?
+'1912 Ford Model T Delivery Wagon',?,ThisDealsize,?,ThisQTR,?,?,?
+'Corsair F4U ( Bird Cage)',?,ThisDealsize,?,?,ThisQTR,?,?
+'1900s Vintage Tri-Plane',?,ThisDealsize,?,?,ThisQTR,?,?
+'1997 BMW F650 ST',?,ThisDealsize,?,?,ThisQTR,?,?
+'1928 Ford Phaeton Deluxe',?,ThisDealsize,?,?,ThisQTR,?,?
+'1930 Buick Marquette Phaeton',?,?,ThisDealsize,?,ThisQTR,?,?
+'The Schooner Bluenose',?,?,ThisDealsize,ThisQTR,?,?,?
+'American Airlines: B767-300',?,?,ThisDealsize,?,ThisQTR,?,?
+'America West Airlines B757-200',ThisDealsize,?,?,?,ThisQTR,?,?
+'The USS Constitution Ship',?,?,ThisDealsize,ThisQTR,?,?,?
+'ATA: B757-300',?,?,ThisDealsize,?,ThisQTR,?,?
+'F/A 18 Hornet 1/72',ThisDealsize,?,?,?,ThisQTR,?,?
+'American Airlines: MD-11S',?,?,ThisDealsize,?,ThisQTR,?,?
+'1952 Alpine Renault 1300',?,ThisDealsize,?,?,?,?,ThisQTR
+'1972 Alfa Romeo GTA',?,?,ThisDealsize,?,?,?,ThisQTR
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,?,?,?,ThisQTR
+'1958 Setra Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940 Ford Pickup Truck',?,?,ThisDealsize,?,?,?,ThisQTR
+'1980s Black Hawk Helicopter',ThisDealsize,?,?,?,?,?,ThisQTR
+'1913 Ford Model T Speedster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1934 Ford V8 Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'1999 Yamaha Speed Boat',?,?,ThisDealsize,?,?,?,ThisQTR
+'18th Century Vintage Horse Carriage',?,?,ThisDealsize,?,?,?,ThisQTR
+'1941 Chevrolet Special Deluxe Cabriolet',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940s Ford truck',?,?,ThisDealsize,?,?,?,ThisQTR
+'1939 Cadillac Limousine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,?,?,?,ThisQTR
+'1937 Horch 930V Limousine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1940 Ford Delivery Sedan',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Chrysler Airflow',?,ThisDealsize,?,?,?,?,ThisQTR
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,ThisDealsize,?,?,?,?,ThisQTR
+'HMS Bounty',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Camaro Z28',?,?,ThisDealsize,?,?,?,ThisQTR
+'Boeing X-32A JSF',?,?,ThisDealsize,?,?,?,ThisQTR
+'1972 Alfa Romeo GTA',?,ThisDealsize,?,ThisQTR,?,?,?
+'1968 Dodge Charger',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Dodge Charger',?,ThisDealsize,?,?,?,?,ThisQTR
+'1948 Porsche 356-A Roadster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1999 Yamaha Speed Boat',?,?,ThisDealsize,ThisQTR,?,?,?
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,?,ThisQTR
+'1941 Chevrolet Special Deluxe Cabriolet',?,?,ThisDealsize,ThisQTR,?,?,?
+'1900s Vintage Bi-Plane',?,ThisDealsize,?,ThisQTR,?,?,?
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,?,ThisQTR
+'1937 Horch 930V Limousine',?,?,ThisDealsize,ThisQTR,?,?,?
+'1940 Ford Delivery Sedan',?,?,ThisDealsize,ThisQTR,?,?,?
+'1956 Porsche 356A Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'HMS Bounty',?,?,ThisDealsize,ThisQTR,?,?,?
+'Boeing X-32A JSF',?,?,ThisDealsize,ThisQTR,?,?,?
+'1972 Alfa Romeo GTA',?,ThisDealsize,?,?,?,ThisQTR,?
+'1972 Alfa Romeo GTA',?,?,ThisDealsize,?,ThisQTR,?,?
+'1999 Yamaha Speed Boat',?,ThisDealsize,?,?,ThisQTR,?,?
+'1903 Ford Model A',?,ThisDealsize,?,?,ThisQTR,?,?
+'Collectable Wooden Train',?,ThisDealsize,?,?,ThisQTR,?,?
+'1957 Vespa GS150',?,?,ThisDealsize,?,ThisQTR,?,?
+'1904 Buick Runabout',?,?,ThisDealsize,?,ThisQTR,?,?
+'1957 Corvette Convertible',?,?,ThisDealsize,?,ThisQTR,?,?
+'18th century schooner',?,ThisDealsize,?,?,ThisQTR,?,?
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,ThisQTR,?,?
+'1912 Ford Model T Delivery Wagon',?,ThisDealsize,?,?,?,ThisQTR,?
+'1912 Ford Model T Delivery Wagon',?,ThisDealsize,?,?,ThisQTR,?,?
+'1940 Ford Delivery Sedan',?,ThisDealsize,?,?,ThisQTR,?,?
+'1961 Chevrolet Impala',?,ThisDealsize,?,?,ThisQTR,?,?
+'1982 Ducati 996 R',?,?,ThisDealsize,?,ThisQTR,?,?
+'1974 Ducati 350 Mk3 Desmo',?,ThisDealsize,?,?,ThisQTR,?,?
+'2002 Yamaha YZR M1',?,ThisDealsize,?,?,ThisQTR,?,?
+'The Schooner Bluenose',?,?,ThisDealsize,?,?,ThisQTR,?
+'The Schooner Bluenose',?,?,ThisDealsize,?,ThisQTR,?,?
+'The Mayflower',?,ThisDealsize,?,?,ThisQTR,?,?
+'The USS Constitution Ship',?,?,ThisDealsize,?,?,ThisQTR,?
+'The USS Constitution Ship',?,?,ThisDealsize,?,ThisQTR,?,?
+'The Titanic',?,ThisDealsize,?,?,?,ThisQTR,?
+'The Titanic',?,ThisDealsize,?,?,ThisQTR,?,?
+'The Queen Mary',?,?,ThisDealsize,?,ThisQTR,?,?
+'Pont Yacht',?,ThisDealsize,?,?,ThisQTR,?,?
+'1952 Alpine Renault 1300',?,ThisDealsize,?,?,?,?,ThisQTR
+'1962 LanciaA Delta 16V',?,?,ThisDealsize,?,?,?,ThisQTR
+'1958 Setra Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Dodge Charger',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940 Ford Pickup Truck',?,?,ThisDealsize,?,?,?,ThisQTR
+'1993 Mazda RX-7',?,ThisDealsize,?,?,?,?,ThisQTR
+'1937 Lincoln Berline',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1965 Aston Martin DB5',?,ThisDealsize,?,?,?,?,ThisQTR
+'1917 Grand Touring Sedan',?,ThisDealsize,?,ThisQTR,?,?,?
+'1948 Porsche 356-A Roadster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1995 Honda Civic',ThisDealsize,?,?,?,?,?,ThisQTR
+'1911 Ford Town Car',?,ThisDealsize,?,ThisQTR,?,?,?
+'1932 Model A Ford J-Coupe',ThisDealsize,?,?,?,?,?,ThisQTR
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1928 Mercedes-Benz SSK',?,ThisDealsize,?,?,?,?,ThisQTR
+'1999 Indy 500 Monte Carlo SS',?,ThisDealsize,?,?,?,?,ThisQTR
+'1913 Ford Model T Speedster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1934 Ford V8 Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'18th Century Vintage Horse Carriage',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,?,ThisQTR
+'1948 Porsche Type 356 Roadster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1932 Alfa Romeo 8C2300 Spider Sport',?,?,ThisDealsize,ThisQTR,?,?,?
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,?,?,?,ThisQTR
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,?,?,?,ThisQTR
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,?,?,?,ThisQTR
+'1938 Cadillac V-16 Presidential Limousine',?,ThisDealsize,?,?,?,?,ThisQTR
+'1949 Jaguar XK 120',?,ThisDealsize,?,?,?,?,ThisQTR
+'1952 Citroen-15CV',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,?,ThisQTR
+'1969 Chevrolet Camaro Z28',?,?,ThisDealsize,?,?,?,ThisQTR
+'2002 Chevy Corvette',?,ThisDealsize,?,?,?,?,ThisQTR
+'1956 Porsche 356A Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,?,?,ThisQTR,?
+'1952 Alpine Renault 1300',?,ThisDealsize,?,ThisQTR,?,?,?
+'1996 Moto Guzzi 1100i',?,ThisDealsize,?,?,?,ThisQTR,?
+'2003 Harley-Davidson Eagle Drag Bike',?,ThisDealsize,?,?,?,ThisQTR,?
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,?,?,?,ThisQTR
+'1968 Ford Mustang',ThisDealsize,?,?,?,?,ThisQTR,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,ThisQTR,?
+'1968 Dodge Charger',?,ThisDealsize,?,?,?,ThisQTR,?
+'1970 Plymouth Hemi Cuda',?,?,ThisDealsize,?,?,ThisQTR,?
+'1957 Chevy Pickup',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Dodge Charger',?,ThisDealsize,?,?,?,ThisQTR,?
+'1937 Lincoln Berline',ThisDealsize,?,?,ThisQTR,?,?,?
+'1936 Mercedes-Benz 500K Special Roadster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1980s Black Hawk Helicopter',?,ThisDealsize,?,?,?,ThisQTR,?
+'1948 Porsche 356-A Roadster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1998 Chrysler Plymouth Prowler',?,ThisDealsize,?,?,?,?,ThisQTR
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,?,ThisQTR,?
+'1913 Ford Model T Speedster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1934 Ford V8 Coupe',?,?,ThisDealsize,ThisQTR,?,?,?
+'18th Century Vintage Horse Carriage',?,?,ThisDealsize,ThisQTR,?,?,?
+'1992 Ferrari 360 Spider red',ThisDealsize,?,?,?,?,?,ThisQTR
+'1969 Dodge Super Bee',?,ThisDealsize,?,?,?,ThisQTR,?
+'1917 Maxwell Touring Car',?,ThisDealsize,?,ThisQTR,?,?,?
+'1976 Ford Gran Torino',?,ThisDealsize,?,?,?,ThisQTR,?
+'1940s Ford truck',?,?,ThisDealsize,?,?,?,ThisQTR
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,?,ThisQTR
+'1997 BMW R 1100 S',?,ThisDealsize,?,?,?,ThisQTR,?
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,?,ThisQTR,?
+'1962 Volkswagen Microbus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,?,ThisQTR
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,?,?,ThisQTR,?
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,ThisQTR,?
+'1971 Alpine Renault 1600s',?,?,ThisDealsize,?,?,ThisQTR,?
+'1937 Horch 930V Limousine',?,?,ThisDealsize,?,?,ThisQTR,?
+'1956 Porsche 356A Coupe',?,?,ThisDealsize,?,?,ThisQTR,?
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,?,?,ThisQTR
+'1936 Chrysler Airflow',?,ThisDealsize,?,ThisQTR,?,?,?
+'1961 Chevrolet Impala',?,?,ThisDealsize,?,?,ThisQTR,?
+'1980?s GM Manhattan Express',?,ThisDealsize,?,?,?,?,ThisQTR
+'1997 BMW F650 ST',?,ThisDealsize,?,?,?,ThisQTR,?
+'1982 Ducati 996 R',?,?,ThisDealsize,?,?,ThisQTR,?
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,?,ThisQTR
+'1974 Ducati 350 Mk3 Desmo',?,?,ThisDealsize,?,?,ThisQTR,?
+'Diamond T620 Semi-Skirted Tanker',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Yamaha YZR M1',?,ThisDealsize,?,?,?,ThisQTR,?
+'HMS Bounty',?,?,ThisDealsize,?,?,ThisQTR,?
+'ATA: B757-300',?,ThisDealsize,?,?,?,ThisQTR,?
+'Boeing X-32A JSF',?,?,ThisDealsize,?,?,ThisQTR,?
+'1952 Alpine Renault 1300',?,ThisDealsize,?,?,?,?,ThisQTR
+'1972 Alfa Romeo GTA',?,?,ThisDealsize,?,?,?,ThisQTR
+'1957 Chevy Pickup',?,ThisDealsize,?,?,ThisQTR,?,?
+'1998 Chrysler Plymouth Prowler',ThisDealsize,?,?,?,ThisQTR,?,?
+'1913 Ford Model T Speedster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1934 Ford V8 Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,?,?,?,ThisQTR
+'1917 Maxwell Touring Car',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,?,ThisQTR
+'1904 Buick Runabout',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Dodge Coronet',?,ThisDealsize,?,?,ThisQTR,?,?
+'18th century schooner',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Porsche Cayenne Turbo Silver',?,ThisDealsize,?,?,ThisQTR,?,?
+'1936 Chrysler Airflow',?,ThisDealsize,?,?,?,?,ThisQTR
+'Diamond T620 Semi-Skirted Tanker',?,?,ThisDealsize,?,ThisQTR,?,?
+'1962 City of Detroit Streetcar',?,?,ThisDealsize,?,?,?,ThisQTR
+'The Mayflower',?,?,ThisDealsize,?,?,?,ThisQTR
+'The Titanic',?,?,ThisDealsize,?,?,?,ThisQTR
+'The Queen Mary',?,?,ThisDealsize,?,?,?,ThisQTR
+'Pont Yacht',?,ThisDealsize,?,?,?,?,ThisQTR
+'1980s Black Hawk Helicopter',?,?,ThisDealsize,?,ThisQTR,?,?
+'P-51-D Mustang',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Vespa GS150',?,ThisDealsize,?,?,?,ThisQTR,?
+'1957 Corvette Convertible',?,ThisDealsize,?,?,?,ThisQTR,?
+'1928 British Royal Navy Airplane',?,?,ThisDealsize,?,?,?,ThisQTR
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,?,ThisQTR,?,?
+'1937 Horch 930V Limousine',?,?,ThisDealsize,?,ThisQTR,?,?
+'Corsair F4U ( Bird Cage)',?,ThisDealsize,?,?,ThisQTR,?,?
+'1900s Vintage Tri-Plane',?,ThisDealsize,?,?,?,?,ThisQTR
+'1997 BMW F650 ST',?,ThisDealsize,?,?,?,?,ThisQTR
+'1928 Ford Phaeton Deluxe',?,?,ThisDealsize,?,?,?,ThisQTR
+'1930 Buick Marquette Phaeton',?,ThisDealsize,?,?,?,?,ThisQTR
+'American Airlines: B767-300',?,ThisDealsize,?,?,?,?,ThisQTR
+'HMS Bounty',?,?,ThisDealsize,?,ThisQTR,?,?
+'America West Airlines B757-200',?,ThisDealsize,?,?,ThisQTR,?,?
+'ATA: B757-300',?,ThisDealsize,?,?,?,?,ThisQTR
+'F/A 18 Hornet 1/72',?,ThisDealsize,?,?,?,?,ThisQTR
+'American Airlines: MD-11S',?,?,ThisDealsize,?,ThisQTR,?,?
+'Boeing X-32A JSF',?,?,ThisDealsize,?,ThisQTR,?,?
+'1972 Alfa Romeo GTA',ThisDealsize,?,?,?,ThisQTR,?,?
+'1965 Aston Martin DB5',ThisDealsize,?,?,?,ThisQTR,?,?
+'1980s Black Hawk Helicopter',ThisDealsize,?,?,?,ThisQTR,?,?
+'1980s Black Hawk Helicopter',?,ThisDealsize,?,?,ThisQTR,?,?
+'1917 Grand Touring Sedan',ThisDealsize,?,?,?,ThisQTR,?,?
+'1911 Ford Town Car',?,ThisDealsize,?,?,ThisQTR,?,?
+'P-51-D Mustang',?,?,ThisDealsize,?,ThisQTR,?,?
+'1999 Indy 500 Monte Carlo SS',?,ThisDealsize,?,?,ThisQTR,?,?
+'1913 Ford Model T Speedster',?,ThisDealsize,?,?,ThisQTR,?,?
+'1934 Ford V8 Coupe',?,?,ThisDealsize,?,ThisQTR,?,?
+'1999 Yamaha Speed Boat',?,?,ThisDealsize,?,ThisQTR,?,?
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,?,ThisQTR,?,?
+'1917 Maxwell Touring Car',?,?,ThisDealsize,?,ThisQTR,?,?
+'1941 Chevrolet Special Deluxe Cabriolet',ThisDealsize,?,?,?,ThisQTR,?,?
+'1932 Alfa Romeo 8C2300 Spider Sport',?,?,ThisDealsize,?,ThisQTR,?,?
+'1957 Ford Thunderbird',?,ThisDealsize,?,?,ThisQTR,?,?
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,?,ThisQTR,?,?
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,?,ThisQTR,?,?
+'1928 British Royal Navy Airplane',?,?,ThisDealsize,?,ThisQTR,?,?
+'1960 BSA Gold Star DBD34 1960',?,?,ThisDealsize,?,ThisQTR,?,?
+'1949 Jaguar XK 120',ThisDealsize,?,?,?,ThisQTR,?,?
+'1900s Vintage Bi-Plane',?,?,ThisDealsize,?,ThisQTR,?,?
+'1952 Citroen-15CV',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Chevrolet Camaro Z28',?,?,ThisDealsize,?,ThisQTR,?,?
+'1937 Horch 930V Limousine',?,?,ThisDealsize,?,ThisQTR,?,?
+'2002 Chevy Corvette',?,ThisDealsize,?,?,ThisQTR,?,?
+'1940 Ford Delivery Sedan',?,ThisDealsize,?,?,ThisQTR,?,?
+'Corsair F4U ( Bird Cage)',?,ThisDealsize,?,?,ThisQTR,?,?
+'1936 Chrysler Airflow',?,ThisDealsize,?,?,ThisQTR,?,?
+'1900s Vintage Tri-Plane',?,?,ThisDealsize,?,ThisQTR,?,?
+'1997 BMW F650 ST',?,ThisDealsize,?,?,ThisQTR,?,?
+'1928 Ford Phaeton Deluxe',?,ThisDealsize,?,?,ThisQTR,?,?
+'1930 Buick Marquette Phaeton',?,?,ThisDealsize,?,ThisQTR,?,?
+'American Airlines: B767-300',?,?,ThisDealsize,?,ThisQTR,?,?
+'HMS Bounty',?,ThisDealsize,?,?,ThisQTR,?,?
+'America West Airlines B757-200',?,ThisDealsize,?,?,ThisQTR,?,?
+'ATA: B757-300',?,ThisDealsize,?,?,ThisQTR,?,?
+'F/A 18 Hornet 1/72',?,?,ThisDealsize,?,ThisQTR,?,?
+'American Airlines: MD-11S',?,?,ThisDealsize,?,ThisQTR,?,?
+'Boeing X-32A JSF',?,?,ThisDealsize,?,ThisQTR,?,?
+'1952 Alpine Renault 1300',?,ThisDealsize,?,?,ThisQTR,?,?
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,?,ThisQTR,?,?
+'2001 Ferrari Enzo',ThisDealsize,?,?,?,?,?,ThisQTR
+'1958 Setra Bus',?,ThisDealsize,?,?,ThisQTR,?,?
+'1969 Corvair Monza',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Ford Falcon',ThisDealsize,?,?,?,?,?,ThisQTR
+'1940 Ford Pickup Truck',?,ThisDealsize,?,?,ThisQTR,?,?
+'1903 Ford Model A',?,ThisDealsize,?,?,?,?,ThisQTR
+'Collectable Wooden Train',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940s Ford truck',?,?,ThisDealsize,?,ThisQTR,?,?
+'1939 Cadillac Limousine',?,?,ThisDealsize,?,ThisQTR,?,?
+'1980?s GM Manhattan Express',?,ThisDealsize,?,?,ThisQTR,?,?
+'1996 Peterbilt 379 Stake Bed with Outrigger',?,ThisDealsize,?,?,ThisQTR,?,?
+'1962 City of Detroit Streetcar',?,?,ThisDealsize,?,?,?,ThisQTR
+'The Mayflower',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Camaro Z28',?,ThisDealsize,?,?,ThisQTR,?,?
+'2002 Suzuki XREO',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Dodge Super Bee',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Vespa GS150',?,?,ThisDealsize,?,?,?,ThisQTR
+'1957 Corvette Convertible',ThisDealsize,?,?,?,?,?,ThisQTR
+'1982 Ducati 900 Monster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,ThisQTR,?,?
+'1961 Chevrolet Impala',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Ducati 996 R',?,?,ThisDealsize,?,?,?,ThisQTR
+'1974 Ducati 350 Mk3 Desmo',?,?,ThisDealsize,?,?,?,ThisQTR
+'2002 Yamaha YZR M1',?,ThisDealsize,?,?,?,?,ThisQTR
+'1969 Harley Davidson Ultimate Chopper',?,ThisDealsize,?,ThisQTR,?,?,?
+'1996 Moto Guzzi 1100i',?,?,ThisDealsize,ThisQTR,?,?,?
+'2003 Harley-Davidson Eagle Drag Bike',?,?,ThisDealsize,ThisQTR,?,?,?
+'2002 Suzuki XREO',?,ThisDealsize,?,ThisQTR,?,?,?
+'1969 Dodge Charger',?,?,ThisDealsize,?,?,?,ThisQTR
+'1993 Mazda RX-7',?,ThisDealsize,?,?,?,?,ThisQTR
+'1965 Aston Martin DB5',?,ThisDealsize,?,?,?,?,ThisQTR
+'1948 Porsche 356-A Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1995 Honda Civic',?,ThisDealsize,?,?,?,?,ThisQTR
+'1999 Indy 500 Monte Carlo SS',?,?,ThisDealsize,?,?,?,ThisQTR
+'1903 Ford Model A',?,ThisDealsize,?,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,?,ThisQTR
+'1948 Porsche Type 356 Roadster',?,ThisDealsize,?,?,?,?,ThisQTR
+'1904 Buick Runabout',?,?,ThisDealsize,?,?,?,ThisQTR
+'1970 Chevy Chevelle SS 454',?,?,ThisDealsize,?,?,?,ThisQTR
+'1966 Shelby Cobra 427 S/C',?,?,ThisDealsize,?,?,?,ThisQTR
+'1949 Jaguar XK 120',?,?,ThisDealsize,?,?,?,ThisQTR
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,?,ThisQTR
+'1969 Chevrolet Camaro Z28',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Chevy Corvette',?,?,ThisDealsize,?,?,?,ThisQTR
+'1956 Porsche 356A Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'1928 Ford Phaeton Deluxe',?,ThisDealsize,?,ThisQTR,?,?,?
+'1930 Buick Marquette Phaeton',?,ThisDealsize,?,ThisQTR,?,?,?
+'American Airlines: B767-300',ThisDealsize,?,?,ThisQTR,?,?,?
+'The Mayflower',?,ThisDealsize,?,?,?,?,ThisQTR
+'ATA: B757-300',ThisDealsize,?,?,ThisQTR,?,?,?
+'1952 Alpine Renault 1300',?,ThisDealsize,?,ThisQTR,?,?,?
+'1940 Ford Pickup Truck',?,ThisDealsize,?,ThisQTR,?,?,?
+'1937 Lincoln Berline',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,ThisQTR,?,?,?
+'1913 Ford Model T Speedster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1934 Ford V8 Coupe',?,?,ThisDealsize,ThisQTR,?,?,?
+'18th Century Vintage Horse Carriage',?,ThisDealsize,?,ThisQTR,?,?,?
+'1917 Maxwell Touring Car',?,ThisDealsize,?,ThisQTR,?,?,?
+'1939 Cadillac Limousine',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Chrysler Airflow',?,ThisDealsize,?,ThisQTR,?,?,?
+'1930 Buick Marquette Phaeton',?,?,ThisDealsize,?,?,?,ThisQTR
+'American Airlines: B767-300',?,ThisDealsize,?,?,?,?,ThisQTR
+'F/A 18 Hornet 1/72',?,ThisDealsize,?,?,?,?,ThisQTR
+'1996 Moto Guzzi 1100i',?,?,ThisDealsize,?,ThisQTR,?,?
+'1993 Mazda RX-7',?,ThisDealsize,?,ThisQTR,?,?,?
+'1993 Mazda RX-7',?,ThisDealsize,?,?,?,?,ThisQTR
+'1965 Aston Martin DB5',?,ThisDealsize,?,?,?,?,ThisQTR
+'1917 Grand Touring Sedan',?,ThisDealsize,?,?,?,?,ThisQTR
+'1995 Honda Civic',?,ThisDealsize,?,ThisQTR,?,?,?
+'1995 Honda Civic',?,?,ThisDealsize,?,?,?,ThisQTR
+'1936 Harley Davidson El Knucklehead',?,?,ThisDealsize,?,ThisQTR,?,?
+'1999 Indy 500 Monte Carlo SS',?,ThisDealsize,?,ThisQTR,?,?,?
+'1999 Indy 500 Monte Carlo SS',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',ThisDealsize,?,?,ThisQTR,?,?,?
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,?,ThisQTR
+'1948 Porsche Type 356 Roadster',?,ThisDealsize,?,ThisQTR,?,?,?
+'1948 Porsche Type 356 Roadster',?,?,ThisDealsize,?,?,?,ThisQTR
+'1960 BSA Gold Star DBD34 1960',?,ThisDealsize,?,?,ThisQTR,?,?
+'1982 Lamborghini Diablo',?,?,ThisDealsize,ThisQTR,?,?,?
+'1982 Lamborghini Diablo',?,?,ThisDealsize,?,?,?,ThisQTR
+'1971 Alpine Renault 1600s',?,ThisDealsize,?,?,?,?,ThisQTR
+'1956 Porsche 356A Coupe',?,ThisDealsize,?,?,?,?,ThisQTR
+'1961 Chevrolet Impala',?,ThisDealsize,?,?,?,?,ThisQTR
+'1982 Ducati 996 R',?,ThisDealsize,?,?,?,?,ThisQTR
+'1974 Ducati 350 Mk3 Desmo',?,ThisDealsize,?,?,?,?,ThisQTR
+'2002 Yamaha YZR M1',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Chevy Pickup',?,ThisDealsize,?,ThisQTR,?,?,?
+'1937 Lincoln Berline',?,ThisDealsize,?,?,?,ThisQTR,?
+'1936 Mercedes-Benz 500K Special Roadster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1917 Grand Touring Sedan',?,ThisDealsize,?,?,?,ThisQTR,?
+'1998 Chrysler Plymouth Prowler',ThisDealsize,?,?,ThisQTR,?,?,?
+'1911 Ford Town Car',?,?,ThisDealsize,?,?,ThisQTR,?
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,?,?,ThisQTR,?
+'1928 Mercedes-Benz SSK',?,ThisDealsize,?,?,?,ThisQTR,?
+'1917 Maxwell Touring Car',?,ThisDealsize,?,?,?,ThisQTR,?
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,?,?,ThisQTR,?
+'1938 Cadillac V-16 Presidential Limousine',?,?,ThisDealsize,?,?,ThisQTR,?
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,ThisQTR,?,?,?
+'1936 Mercedes Benz 500k Roadster',?,?,ThisDealsize,?,?,ThisQTR,?
+'1936 Chrysler Airflow',?,?,ThisDealsize,?,?,ThisQTR,?
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,ThisQTR,?,?,?
+'1962 LanciaA Delta 16V',?,ThisDealsize,?,?,?,?,ThisQTR
+'1957 Chevy Pickup',?,ThisDealsize,?,?,?,?,ThisQTR
+'1998 Chrysler Plymouth Prowler',ThisDealsize,?,?,?,?,?,ThisQTR
+'1964 Mercedec Tour Bus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1932 Model A Ford J-Coupe',?,ThisDealsize,?,?,ThisQTR,?,?
+'1926 Ford Fire Engine',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Ferrari 360 Spider red',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Triumph Spitfire',?,ThisDealsize,?,?,?,?,ThisQTR
+'1940s Ford truck',?,ThisDealsize,?,?,?,?,ThisQTR
+'1970 Dodge Coronet',?,?,ThisDealsize,?,?,?,ThisQTR
+'1939 Chevrolet Deluxe Coupe',?,?,ThisDealsize,?,ThisQTR,?,?
+'1962 Volkswagen Microbus',?,ThisDealsize,?,?,?,?,ThisQTR
+'1958 Chevy Corvette Limited Edition',?,?,ThisDealsize,?,?,?,ThisQTR
+'1992 Porsche Cayenne Turbo Silver',?,?,ThisDealsize,?,?,?,ThisQTR
+'1980?s GM Manhattan Express',?,ThisDealsize,?,?,?,?,ThisQTR
+'1954 Greyhound Scenicruiser',?,?,ThisDealsize,?,?,?,ThisQTR
+'1950s Chicago Surface Lines Streetcar',?,?,ThisDealsize,?,?,?,ThisQTR
+'Diamond T620 Semi-Skirted Tanker',?,?,ThisDealsize,?,?,?,ThisQTR

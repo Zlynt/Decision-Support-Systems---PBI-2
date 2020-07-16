@@ -283,7 +283,34 @@
     <servlet-name>DebugHome</servlet-name>
     <jsp-file>/mantle/MantleDebug.jsp</jsp-file>
   </servlet>
+
+  <servlet>
+    <servlet-name>sad</servlet-name>
+    <jsp-file>/jsp/sad.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>taskdata1</servlet-name>
+    <jsp-file>/jsp/taskdata1.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>taskdata2</servlet-name>
+    <jsp-file>/jsp/taskdata2.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>taskdata3</servlet-name>
+    <jsp-file>/jsp/taskdata3.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>taskdata4</servlet-name>
+    <jsp-file>/jsp/taskdata4.jsp</jsp-file>
+  </servlet>
   
+  
+  <!--
   <servlet>
     <servlet-name>PBI2</servlet-name>
     <jsp-file>/jsp/PBI2.jsp</jsp-file>
@@ -293,6 +320,7 @@
     <servlet-name>PBI2</servlet-name>
     <url-pattern>/PBI2</url-pattern>
   </servlet-mapping>
+  -->
 
   <servlet>
     <servlet-name>InitFailure</servlet-name>
@@ -475,6 +503,31 @@
   <servlet-mapping>
     <servlet-name>DebugHome</servlet-name>
     <url-pattern>/DebugHome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>sad</servlet-name>
+    <url-pattern>/sad</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>taskdata1</servlet-name>
+    <url-pattern>/taskdata1</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>taskdata2</servlet-name>
+    <url-pattern>/taskdata2</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>taskdata3</servlet-name>
+    <url-pattern>/taskdata3</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>taskdata4</servlet-name>
+    <url-pattern>/taskdata4</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>

@@ -42,6 +42,8 @@ public class TASKDATA3 extends TASKDATA {
 				if (isData) {
 					String currentLineProduct = currentLine.split(",")[1];
 					String currentLineClient = currentLine.split(",")[2];
+					while(currentLineProduct.contains("  "))
+						currentLineProduct = currentLineProduct.replace("  ", " ");
 
 					if (!productList.contains(currentLineProduct))
 						productList.add(currentLineProduct);

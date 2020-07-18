@@ -127,5 +127,9 @@ public class TASKDATA {
 
 		return model.toString();
 	}
+	
+	public void create_xml_after_apriori() {
+		//TODO: Creating a XML file based on the results of the associations for each TASKDATA
+	}
 
 }

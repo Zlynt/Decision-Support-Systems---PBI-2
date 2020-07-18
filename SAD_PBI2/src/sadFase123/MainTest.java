@@ -36,6 +36,8 @@ public class MainTest {
 			//System.out.println("Conv "+conv);
 			//System.out.println("Confr: "+conf);
 			//System.out.println(rightSide);
+			TASKDATA taskdata = new TASKDATA("3");
+			taskdata.create_xml_after_apriori();
 		}
 	}
 

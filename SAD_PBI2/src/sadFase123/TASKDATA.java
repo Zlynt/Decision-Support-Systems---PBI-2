@@ -17,6 +17,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Attr;
@@ -27,6 +28,7 @@ public class TASKDATA {
 	protected static final String projectPath = "C:\\sad\\implementacao";
 	protected static final String csvPath = projectPath + "\\CSV";
 	protected static final String arffPath = projectPath + "\\ARFF";
+	protected static final String xmlPath = projectPath + "\\XML\\TASKDATAResults.xml";
 	protected String csvFileLocation;
 	protected String arffFileLocation;
 	protected String krtFileLocation;
@@ -40,6 +42,7 @@ public class TASKDATA {
 		csvFileLocation = csvPath + "\\" + taskName + ".csv";
 		arffFileLocation = arffPath + "\\" + taskName + ".arff";
 		krtFileLocation = projectPath + "\\" + taskName + ".ktr";
+		
 	}
 
 	/**
@@ -164,7 +167,25 @@ public class TASKDATA {
 			DocumentBuilder documentBuilder = documentFactory.newDocumentBuilder();
 			Document document = documentBuilder.newDocument();
 			
+			// add root element
+            Element root = document.createElement("taskdatas");
+            document.appendChild(root);
+            
+            //creating new xml file
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource domSource = new DOMSource(document);
+            StreamResult streamResult = new StreamResult(new File(xmlPath));
+            
+            transformer.transform(domSource, streamResult);
+            System.out.println("Done implementing XML File");
 			
-		}
+			
+		
+		} catch (ParserConfigurationException pce) {
+	        pce.printStackTrace();
+	    } catch (TransformerException tfe) {
+	        tfe.printStackTrace();
+	    }
 	}
 }

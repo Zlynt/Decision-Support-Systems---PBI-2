@@ -37,22 +37,27 @@ public class MainTest {
 			//System.out.println(rightSide);
 
 			String rightSupport = rightSide.split(" ")[rightSide.split(" ").length-9];
+			rightSupport = rightSupport.replaceAll("[^\\d.]", "");
 			rightSupportArray.add(rightSupport);
 			//System.out.println(rightSupport);
 			
 			String conf = rightSide.split(" ")[rightSide.split(" ").length-5];
+			conf = conf.replaceAll("[^\\d.]", "");
 			confArray.add(conf);
 			//System.out.println(conf);
 			
 			String lift = rightSide.split(" ")[rightSide.split(" ").length-4];
+			lift = lift.replaceAll("[^\\d.]", "");
 			liftArray.add(lift);
 			//System.out.println(lift);
 			
 			String lev = rightSide.split(" ")[rightSide.split(" ").length-3];
+			lev = lev.replaceAll("[^\\d.]", "");
 			levArray.add(lev);
 			//System.out.println(lev);
 			
 			String conv = rightSide.split(" ")[rightSide.split(" ").length-1];
+			conv = conv.replaceAll("[^\\d.]", "");
 			convArray.add(conv);
 			//System.out.println(conv);
 

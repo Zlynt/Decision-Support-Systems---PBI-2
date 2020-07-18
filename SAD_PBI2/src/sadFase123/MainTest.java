@@ -18,12 +18,14 @@ import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import weka.core.Instances;
+
 public class MainTest {
 
 	protected static final String projectPath = "C:\\sad\\implementacao";
 	protected static final String xmlPath = projectPath + "\\XML\\TASKDATAResults.xml";
-	
-	public static void main(String[] args) throws KettleException {
+
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		PluginDoPentaho pluginDoPentaho = new PluginDoPentaho();
 		List<String> currentRuleArray = new ArrayList<String>();
@@ -41,152 +43,324 @@ public class MainTest {
 			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 			Document doc = docBuilder.newDocument();
-
-			// pluginDoPentaho.getTASKDATA1Rules();
-			// pluginDoPentaho.getTASKDATA2Rules();
-			// pluginDoPentaho.getTASKDATA3Rules();
-			String currentTask = pluginDoPentaho.getTASKDATA3Rules().split("Best rules found:\n\n")[1];
+			
+			Element rootElement = doc.createElement("Taskdatas");
+			doc.appendChild(rootElement);
+			
+			Element taskData1Element = doc.createElement("Taskdata1");
+			rootElement.appendChild(taskData1Element);
+			
+			String currentTask = pluginDoPentaho.getTASKDATA1Rules().split("Best rules found:\n\n")[1];
 			for (int i = 0; i < currentTask.split("\n").length; i++) {
 				String currentRule = currentTask.split("\n")[i];
 				currentRuleArray.add(currentRule);
-				// System.out.println(currentRule);
-
-				String producttest = currentRule.split("PRODUCT=")[1];
-				productTestArray.add(producttest);
 
 				String leftSide = currentRule.split(" ==> ")[0];
 				leftSideArray.add(leftSide);
-				// System.out.println(leftSide);
 
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
-				// System.out.println(rightSide);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
 				rightSupportArray.add(rightSupport);
-				// System.out.println(rightSupport);
 
 				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
 				conf = conf.replaceAll("[^\\d.]", "");
 				confArray.add(conf);
-				// System.out.println(conf);
 
 				String lift = rightSide.split(" ")[rightSide.split(" ").length - 4];
 				lift = lift.replaceAll("[^\\d.]", "");
 				liftArray.add(lift);
-				// System.out.println(lift);
 
 				String lev = rightSide.split(" ")[rightSide.split(" ").length - 3];
 				lev = lev.replaceAll("[^\\d.]", "");
 				levArray.add(lev);
-				// System.out.println(lev);
 
 				String conv = rightSide.split(" ")[rightSide.split(" ").length - 1];
 				conv = conv.replaceAll("[^\\d.]", "");
 				convArray.add(conv);
-				// System.out.println(conv);
 
 				String tmp_rightSupport = "";
 				for (int p = 0; p < rightSide.split(" ").length - 9; p++) {
 					tmp_rightSupport += rightSide.split(" ")[p];
 				}
 				rightSide = tmp_rightSupport;
-
-//			System.out.println("Sup "+rightSupport);
-//			System.out.println("Lift: "+lift);
-//			System.out.println("Lev "+lev);
-//			System.out.println("Conv "+conv);
-//			System.out.println("Confr: "+conf);
-//			System.out.println(rightSide);
-
 			}
-
-			for (int i = 0; i < rightSideArray.size(); i++) {
-				System.out.println(rightSideArray.get(i));
-			}
+			
 			for (int i = 0; i < currentRuleArray.size(); i++) {
-				System.out.println(currentRuleArray.get(i));
-			}
-
-			for (int i = 0; i < rightSupportArray.size(); i++) {
-				System.out.println(rightSupportArray.get(i));
-			}
-
-			for (int i = 0; i < confArray.size(); i++) {
-				System.out.println(confArray.get(i));
-			}
-
-			for (int i = 0; i < liftArray.size(); i++) {
-				System.out.println(liftArray.get(i));
-			}
-
-			for (int i = 0; i < levArray.size(); i++) {
-				System.out.println(levArray.get(i));
-			}
-			
-			Element rootElement = doc.createElement("Taskdata");
-			doc.appendChild(rootElement);
-			
-			for (int i = 0; i < currentRuleArray.size(); i++)
-			{
 				// staff elements
-				Element staff = doc.createElement("Rule");
-				rootElement.appendChild(staff);
+				Element ruleElement = doc.createElement("Rule");
+				taskData1Element.appendChild(ruleElement);
 				int tmp_i = i + 1;
-				
-				// set attribute to staff element
-//				Attr attr = doc.createAttribute("id");
-//				attr.setValue(String.valueOf(tmp_i));
-//				staff.setAttributeNode(attr);
+				ruleElement.setAttribute("id", String.valueOf(tmp_i));
 
-				// shorten way
-				staff.setAttribute("id", String.valueOf(tmp_i));
-
-				
 				// firstname elements
-				Element firstname = doc.createElement("support");
-				firstname.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-				staff.appendChild(firstname);
+				Element supportElement = doc.createElement("support");
+				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+				ruleElement.appendChild(supportElement);
 
 				// lastname elements
-				Element lastname = doc.createElement("conf");
-				lastname.appendChild(doc.createTextNode(confArray.get(i)));
-				staff.appendChild(lastname);
+				Element confElement = doc.createElement("conf");
+				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+				ruleElement.appendChild(confElement);
 
 				// nickname elements
-				Element nickname = doc.createElement("lift");
-				nickname.appendChild(doc.createTextNode(liftArray.get(i)));
-				staff.appendChild(nickname);
+				Element liftElement = doc.createElement("lift");
+				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+				ruleElement.appendChild(liftElement);
 
 				// salary elements
-				Element salary = doc.createElement("lev");
-				salary.appendChild(doc.createTextNode(convArray.get(i)));
-				staff.appendChild(salary);
+				Element levElement = doc.createElement("lev");
+				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+				ruleElement.appendChild(levElement);
 			}
 			
+			currentRuleArray.clear();
+			productTestArray.clear();
+			leftSideArray.clear();
+			rightSideArray.clear();
+			rightSupportArray.clear();
+			confArray.clear();
+			liftArray.clear();
+			convArray.clear();
 			
+			Element taskData2Element = doc.createElement("Taskdata2");
+			rootElement.appendChild(taskData2Element);
+			
+			currentTask = pluginDoPentaho.getTASKDATA2Rules().split("Best rules found:\n\n")[1];
+			for (int i = 0; i < currentTask.split("\n").length; i++) {
+				String currentRule = currentTask.split("\n")[i];
+				currentRuleArray.add(currentRule);
 
+				String leftSide = currentRule.split(" ==> ")[0];
+				leftSideArray.add(leftSide);
+
+				String rightSide = currentRule.split(" ==> ")[1];
+				rightSideArray.add(rightSide);
+
+				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
+				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
+				rightSupportArray.add(rightSupport);
+
+				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
+				conf = conf.replaceAll("[^\\d.]", "");
+				confArray.add(conf);
+
+				String lift = rightSide.split(" ")[rightSide.split(" ").length - 4];
+				lift = lift.replaceAll("[^\\d.]", "");
+				liftArray.add(lift);
+
+				String lev = rightSide.split(" ")[rightSide.split(" ").length - 3];
+				lev = lev.replaceAll("[^\\d.]", "");
+				levArray.add(lev);
+
+				String conv = rightSide.split(" ")[rightSide.split(" ").length - 1];
+				conv = conv.replaceAll("[^\\d.]", "");
+				convArray.add(conv);
+
+				String tmp_rightSupport = "";
+				for (int p = 0; p < rightSide.split(" ").length - 9; p++) {
+					tmp_rightSupport += rightSide.split(" ")[p];
+				}
+				rightSide = tmp_rightSupport;
+			}
 			
+			for (int i = 0; i < currentRuleArray.size(); i++) {
+				// staff elements
+				Element ruleElement = doc.createElement("Rule");
+				taskData2Element.appendChild(ruleElement);
+				int tmp_i = i + 1;
+				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+
+				// firstname elements
+				Element supportElement = doc.createElement("support");
+				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+				ruleElement.appendChild(supportElement);
+
+				// lastname elements
+				Element confElement = doc.createElement("conf");
+				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+				ruleElement.appendChild(confElement);
+
+				// nickname elements
+				Element liftElement = doc.createElement("lift");
+				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+				ruleElement.appendChild(liftElement);
+
+				// salary elements
+				Element levElement = doc.createElement("lev");
+				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+				ruleElement.appendChild(levElement);
+			}
+			
+			currentRuleArray.clear();
+			productTestArray.clear();
+			leftSideArray.clear();
+			rightSideArray.clear();
+			rightSupportArray.clear();
+			confArray.clear();
+			liftArray.clear();
+			convArray.clear();
+			
+			Element taskData3Element = doc.createElement("Taskdata3");
+			rootElement.appendChild(taskData3Element);
+			
+			currentTask = pluginDoPentaho.getTASKDATA3Rules().split("Best rules found:\n\n")[1];
+			for (int i = 0; i < currentTask.split("\n").length; i++) {
+				String currentRule = currentTask.split("\n")[i];
+				currentRuleArray.add(currentRule);
+
+				String leftSide = currentRule.split(" ==> ")[0];
+				leftSideArray.add(leftSide);
+
+				String rightSide = currentRule.split(" ==> ")[1];
+				rightSideArray.add(rightSide);
+
+				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
+				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
+				rightSupportArray.add(rightSupport);
+
+				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
+				conf = conf.replaceAll("[^\\d.]", "");
+				confArray.add(conf);
+
+				String lift = rightSide.split(" ")[rightSide.split(" ").length - 4];
+				lift = lift.replaceAll("[^\\d.]", "");
+				liftArray.add(lift);
+
+				String lev = rightSide.split(" ")[rightSide.split(" ").length - 3];
+				lev = lev.replaceAll("[^\\d.]", "");
+				levArray.add(lev);
+
+				String conv = rightSide.split(" ")[rightSide.split(" ").length - 1];
+				conv = conv.replaceAll("[^\\d.]", "");
+				convArray.add(conv);
+
+				String tmp_rightSupport = "";
+				for (int p = 0; p < rightSide.split(" ").length - 9; p++) {
+					tmp_rightSupport += rightSide.split(" ")[p];
+				}
+				rightSide = tmp_rightSupport;
+			}
+			
+			for (int i = 0; i < currentRuleArray.size(); i++) {
+				// staff elements
+				Element ruleElement = doc.createElement("Rule");
+				taskData3Element.appendChild(ruleElement);
+				int tmp_i = i + 1;
+				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+
+				// firstname elements
+				Element supportElement = doc.createElement("support");
+				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+				ruleElement.appendChild(supportElement);
+
+				// lastname elements
+				Element confElement = doc.createElement("conf");
+				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+				ruleElement.appendChild(confElement);
+
+				// nickname elements
+				Element liftElement = doc.createElement("lift");
+				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+				ruleElement.appendChild(liftElement);
+
+				// salary elements
+				Element levElement = doc.createElement("lev");
+				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+				ruleElement.appendChild(levElement);
+			}
+
+			currentRuleArray.clear();
+			productTestArray.clear();
+			leftSideArray.clear();
+			rightSideArray.clear();
+			rightSupportArray.clear();
+			confArray.clear();
+			liftArray.clear();
+			convArray.clear();
+			
+			Element taskData4Element = doc.createElement("Taskdata4");
+			rootElement.appendChild(taskData4Element);
+
+			currentTask = pluginDoPentaho.getTASKDATA4Rules().split("Best rules found:\n\n")[1];
+			for (int i = 0; i < currentTask.split("\n").length; i++) {
+				String currentRule = currentTask.split("\n")[i];
+				currentRuleArray.add(currentRule);
+
+				String leftSide = currentRule.split(" ==> ")[0];
+				leftSideArray.add(leftSide);
+
+				String rightSide = currentRule.split(" ==> ")[1];
+				rightSideArray.add(rightSide);
+
+				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
+				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
+				rightSupportArray.add(rightSupport);
+
+				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
+				conf = conf.replaceAll("[^\\d.]", "");
+				confArray.add(conf);
+
+				String lift = rightSide.split(" ")[rightSide.split(" ").length - 4];
+				lift = lift.replaceAll("[^\\d.]", "");
+				liftArray.add(lift);
+
+				String lev = rightSide.split(" ")[rightSide.split(" ").length - 3];
+				lev = lev.replaceAll("[^\\d.]", "");
+				levArray.add(lev);
+
+				String conv = rightSide.split(" ")[rightSide.split(" ").length - 1];
+				conv = conv.replaceAll("[^\\d.]", "");
+				convArray.add(conv);
+
+				String tmp_rightSupport = "";
+				for (int p = 0; p < rightSide.split(" ").length - 9; p++) {
+					tmp_rightSupport += rightSide.split(" ")[p];
+				}
+				rightSide = tmp_rightSupport;
+			}
+
+			for (int i = 0; i < currentRuleArray.size(); i++) {
+				// staff elements
+				Element ruleElement = doc.createElement("Rule");
+				taskData4Element.appendChild(ruleElement);
+				int tmp_i = i + 1;
+				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+
+				// firstname elements
+				Element supportElement = doc.createElement("support");
+				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+				ruleElement.appendChild(supportElement);
+
+				// lastname elements
+				Element confElement = doc.createElement("conf");
+				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+				ruleElement.appendChild(confElement);
+
+				// nickname elements
+				Element liftElement = doc.createElement("lift");
+				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+				ruleElement.appendChild(liftElement);
+
+				// salary elements
+				Element levElement = doc.createElement("lev");
+				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+				ruleElement.appendChild(levElement);
+			}
 
 			// write the content into xml file
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
-			//Transformer transformer = transformerFactory.newTransformer();
 			DOMSource source = new DOMSource(doc);
 			StreamResult result = new StreamResult(new File(xmlPath));
-
-			// Output to console for testing
-			// StreamResult result = new StreamResult(System.out);
 
 			transformer.transform(source, result);
 
 			System.out.println("File saved!");
-			
-			
-			
-			
+
 		} catch (ParserConfigurationException pce) {
 			pce.printStackTrace();
 		} catch (TransformerException tfe) {

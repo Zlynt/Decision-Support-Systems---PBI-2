@@ -1,15 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Taskdata>
-   <Rule id="1">
-      <support>31</support>
-      <conf>1</conf>
-      <lift>2.95</lift>
-      <lev>20.5</lev>
-   </Rule>
-   <Rule id="2">
-      <support>34</support>
-      <conf>0.71</conf>
-      <lift>2.09</lift>
-      <lev>2.12</lev>
-   </Rule>
-</Taskdata>
+<Taskdatas>
+   <Taskdata1>
+      <Rule id="1">
+         <support>13</support>
+         <conf>1</conf>
+         <lift>2.31</lift>
+         <lev>7.37</lev>
+      </Rule>
+      <Rule id="2">
+         <support>13</support>
+         <conf>0.93</conf>
+         <lift>2.14</lift>
+         <lev>3.97</lev>
+      </Rule>
+      <Rule id="3">
+         <support>11</support>
+         <conf>0.92</conf>
+         <lift>2.12</lift>
+         <lev>3.4</lev>
+      </Rule>
+      <Rule id="4">
+         <support>11</support>
+         <conf>0.92</conf>
+         <lift>1.82</lift>
+         <lev>2.98</lev>
+      </Rule>
+      <Rule id="5">
+         <support>13</support>
+         <conf>0.87</conf>
+         <lift>1.72</lift>
+         <lev>2.48</lev>
+      </Rule>
+      <Rule id="6">
+         <support>12</support>
+         <conf>0.86</conf>
+         <lift>1.7</lift>
+         <lev>2.32</lev>
+      </Rule>
+      <Rule id="7">
+         <support>12</support>
+         <conf>0.86</conf>
+         <lift>1.98</lift>
+         <lev>2.65</lev>
+      </Rule>
+      <Rule id="8">
+         <support>12</support>
+         <conf>0.86</conf>
+         <lift>1.7</lift>
+         <lev>2.32</lev>
+      </Rule>
+   </Taskdata1>
+   <Taskdata2>
+      <Rule id="1">
+         <support>15</support>
+         <conf>1</conf>
+         <lift>2.43</lift>
+         <lev>8.83</lev>
+      </Rule>
+      <Rule id="2">
+         <support>2</support>
+         <conf>1</conf>
+         <lift>6.41</lift>
+         <lev>1.69</lev>
+      </Rule>
+      <Rule id="3">
+         <support>8</support>
+         <conf>0.89</conf>
+         <lift>8.36</lift>
+         <lev>4.02</lev>
+      </Rule>
+      <Rule id="4">
+         <support>9</support>
+         <conf>0.75</conf>
+         <lift>3.3</lift>
+         <lev>2.32</lev>
+      </Rule>
+      <Rule id="5">
+         <support>14</support>
+         <conf>0.74</conf>
+         <lift>3.25</lift>
+         <lev>2.45</lev>
+      </Rule>
+      <Rule id="6">
+         <support>13</support>
+         <conf>0.72</conf>
+         <lift>1.82</lift>
+         <lev>1.81</lev>
+      </Rule>
+   </Taskdata2>
+   <Taskdata3>
+      <Rule id="1">
+         <support>31</support>
+         <conf>1</conf>
+         <lift>2.95</lift>
+         <lev>20.5</lev>
+      </Rule>
+      <Rule id="2">
+         <support>34</support>
+         <conf>0.71</conf>
+         <lift>2.09</lift>
+         <lev>2.12</lev>
+      </Rule>
+   </Taskdata3>
+   <Taskdata4>
+      <Rule id="1">
+         <support>12</support>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>10.5</lev>
+      </Rule>
+      <Rule id="2">
+         <support>12</support>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>10.5</lev>
+      </Rule>
+      <Rule id="3">
+         <support>12</support>
+         <conf>1</conf>
+         <lift>8.62</lift>
+         <lev>10.61</lev>
+      </Rule>
+      <Rule id="4">
+         <support>11</support>
+         <conf>1</conf>
+         <lift>8.62</lift>
+         <lev>9.72</lev>
+      </Rule>
+      <Rule id="5">
+         <support>11</support>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>9.92</lev>
+      </Rule>
+      <Rule id="6">
+         <support>11</support>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>9.92</lev>
+      </Rule>
+      <Rule id="7">
+         <support>11</support>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>9.92</lev>
+      </Rule>
+      <Rule id="8">
+         <support>11</support>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>9.92</lev>
+      </Rule>
+      <Rule id="9">
+         <support>11</support>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>9.63</lev>
+      </Rule>
+      <Rule id="10">
+         <support>11</support>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>9.63</lev>
+      </Rule>
+   </Taskdata4>
+</Taskdatas>

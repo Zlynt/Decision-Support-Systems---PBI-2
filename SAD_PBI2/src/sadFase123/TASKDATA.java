@@ -12,6 +12,17 @@ import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader.ArffReader;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import org.w3c.dom.Attr;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
 public class TASKDATA {
 	protected static final String projectPath = "C:\\sad\\implementacao";
 	protected static final String csvPath = projectPath + "\\CSV";
@@ -148,5 +159,12 @@ public class TASKDATA {
 	
 	public void create_xml_after_apriori() {
 		//TODO: Creating a XML file based on the results of the associations for each TASKDATA
+		try {
+			DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder documentBuilder = documentFactory.newDocumentBuilder();
+			Document document = documentBuilder.newDocument();
+			
+			
+		}
 	}
 }

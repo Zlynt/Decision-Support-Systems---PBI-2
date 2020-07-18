@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<company>
-   <Staff id="1">
-      <firstname>yong</firstname>
-      <lastname>mook kim</lastname>
-      <nickname>mkyong</nickname>
-      <salary>100000</salary>
-   </Staff>
-</company>
+<Taskdata>
+   <Rule id="1">
+      <support>31</support>
+      <conf>1</conf>
+      <lift>2.95</lift>
+      <lev>20.5</lev>
+   </Rule>
+   <Rule id="2">
+      <support>34</support>
+      <conf>0.71</conf>
+      <lift>2.09</lift>
+      <lev>2.12</lev>
+   </Rule>
+</Taskdata>

@@ -108,9 +108,6 @@ public class MainTest {
 			for (int i = 0; i < currentRuleArray.size(); i++) {
 				System.out.println(currentRuleArray.get(i));
 			}
-			for (int i = 0; i < rightSupportArray.size(); i++) {
-				System.out.println(rightSupportArray.get(i));
-			}
 
 			for (int i = 0; i < rightSupportArray.size(); i++) {
 				System.out.println(rightSupportArray.get(i));
@@ -128,40 +125,49 @@ public class MainTest {
 				System.out.println(levArray.get(i));
 			}
 			
-			Element rootElement = doc.createElement("taskdata");
+			Element rootElement = doc.createElement("Taskdata");
 			doc.appendChild(rootElement);
+			
+			for (int i = 0; i < currentRuleArray.size(); i++)
+			{
+				// staff elements
+				Element staff = doc.createElement("Rule");
+				rootElement.appendChild(staff);
+				int tmp_i = i + 1;
+				
+				// set attribute to staff element
+//				Attr attr = doc.createAttribute("id");
+//				attr.setValue(String.valueOf(tmp_i));
+//				staff.setAttributeNode(attr);
 
-			// staff elements
-			Element staff = doc.createElement("Staff");
-			rootElement.appendChild(staff);
+				// shorten way
+				staff.setAttribute("id", String.valueOf(tmp_i));
 
-			// set attribute to staff element
-			Attr attr = doc.createAttribute("id");
-			attr.setValue("1");
-			staff.setAttributeNode(attr);
+				
+				// firstname elements
+				Element firstname = doc.createElement("support");
+				firstname.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+				staff.appendChild(firstname);
 
-			// shorten way
-			// staff.setAttribute("id", "1");
+				// lastname elements
+				Element lastname = doc.createElement("conf");
+				lastname.appendChild(doc.createTextNode(confArray.get(i)));
+				staff.appendChild(lastname);
 
-			// firstname elements
-			Element firstname = doc.createElement("firstname");
-			firstname.appendChild(doc.createTextNode("yong"));
-			staff.appendChild(firstname);
+				// nickname elements
+				Element nickname = doc.createElement("lift");
+				nickname.appendChild(doc.createTextNode(liftArray.get(i)));
+				staff.appendChild(nickname);
 
-			// lastname elements
-			Element lastname = doc.createElement("lastname");
-			lastname.appendChild(doc.createTextNode("mook kim"));
-			staff.appendChild(lastname);
+				// salary elements
+				Element salary = doc.createElement("lev");
+				salary.appendChild(doc.createTextNode(convArray.get(i)));
+				staff.appendChild(salary);
+			}
+			
+			
 
-			// nickname elements
-			Element nickname = doc.createElement("nickname");
-			nickname.appendChild(doc.createTextNode("mkyong"));
-			staff.appendChild(nickname);
-
-			// salary elements
-			Element salary = doc.createElement("salary");
-			salary.appendChild(doc.createTextNode("100000"));
-			staff.appendChild(salary);
+			
 
 			// write the content into xml file
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();

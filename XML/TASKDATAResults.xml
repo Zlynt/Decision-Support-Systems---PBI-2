@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Taskdatas>
-   <Taskdata1/>
+   <Taskdata1>
+      <Rule id="1">
+         <support>13</support>
+         <conf>1</conf>
+         <lift>2.31</lift>
+         <lev>7.37</lev>
+      </Rule>
+      <Rule id="2">
+         <support>13</support>
+         <conf>0.93</conf>
+         <lift>2.14</lift>
+         <lev>3.97</lev>
+      </Rule>
+      <Rule id="3">
+         <support>11</support>
+         <conf>0.92</conf>
+         <lift>2.12</lift>
+         <lev>3.4</lev>
+      </Rule>
+      <Rule id="4">
+         <support>11</support>
+         <conf>0.92</conf>
+         <lift>1.82</lift>
+         <lev>2.98</lev>
+      </Rule>
+      <Rule id="5">
+         <support>13</support>
+         <conf>0.87</conf>
+         <lift>1.72</lift>
+         <lev>2.48</lev>
+      </Rule>
+      <Rule id="6">
+         <support>12</support>
+         <conf>0.86</conf>
+         <lift>1.7</lift>
+         <lev>2.32</lev>
+      </Rule>
+      <Rule id="7">
+         <support>12</support>
+         <conf>0.86</conf>
+         <lift>1.98</lift>
+         <lev>2.65</lev>
+      </Rule>
+      <Rule id="8">
+         <support>12</support>
+         <conf>0.86</conf>
+         <lift>1.7</lift>
+         <lev>2.32</lev>
+      </Rule>
+   </Taskdata1>
    <Taskdata2>
       <Rule id="1">
          <support>15</support>

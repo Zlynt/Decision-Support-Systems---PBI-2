@@ -144,33 +144,33 @@ public class MainTest {
 
 
 //			applyElements(currentRuleArray, doc, taskData1Element, supportElement, confElement, liftElement, levElement);
-//			for (int i = 0; i < currentRuleArray.size(); i++) {
-//				// staff elements
-//				Element ruleElement = doc.createElement("Rule");
-//				taskData1Element.appendChild(ruleElement);
-//				int tmp_i = i + 1;
-//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-//
-//				// firstname elements
-//				Element supportElement = doc.createElement("support");
-//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-//				ruleElement.appendChild(supportElement);
-//
-//				// lastname elements
-//				Element confElement = doc.createElement("conf");
-//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-//				ruleElement.appendChild(confElement);
-//
-//				// nickname elements
-//				Element liftElement = doc.createElement("lift");
-//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-//				ruleElement.appendChild(liftElement);
-//
-//				// salary elements
-//				Element levElement = doc.createElement("lev");
-//				levElement.appendChild(doc.createTextNode(convArray.get(i)));
-//				ruleElement.appendChild(levElement);
-//			}
+			for (int i = 0; i < currentRuleArray.size(); i++) {
+				// rule elements
+				Element ruleElement = doc.createElement("Rule");
+				taskData1Element.appendChild(ruleElement);
+				int tmp_i = i + 1;
+				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+
+				// support elements
+				Element supportElement = doc.createElement("support");
+				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+				ruleElement.appendChild(supportElement);
+
+				// conf elements
+				Element confElement = doc.createElement("conf");
+				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+				ruleElement.appendChild(confElement);
+
+				// lift elements
+				Element liftElement = doc.createElement("lift");
+				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+				ruleElement.appendChild(liftElement);
+
+				// lev elements
+				Element levElement = doc.createElement("lev");
+				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+				ruleElement.appendChild(levElement);
+			}
 
 			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, convArray);
 
@@ -184,6 +184,9 @@ public class MainTest {
 
 				String leftSide = currentRule.split(" ==> ")[0];
 				leftSideArray.add(leftSide);
+				
+				//String strategy1 = currentRule.split("CLIENT=")[1];
+				//System.out.println(strategy1);
 
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);

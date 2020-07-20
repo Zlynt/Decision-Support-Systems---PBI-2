@@ -4,6 +4,7 @@ import org.pentaho.di.core.exception.KettleException;
 import java.util.List;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -81,6 +82,8 @@ public class MainTest {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		PluginDoPentaho pluginDoPentaho = new PluginDoPentaho();
+		List<String> strategy_part1Array = new ArrayList<String>();
+		List<String> strategy_part2Array = new ArrayList<String>();
 		List<String> currentRuleArray = new ArrayList<String>();
 		List<String> leftSideArray = new ArrayList<String>();
 		List<String> rightSideArray = new ArrayList<String>();
@@ -185,9 +188,6 @@ public class MainTest {
 				String leftSide = currentRule.split(" ==> ")[0];
 				leftSideArray.add(leftSide);
 				
-				//String strategy1 = currentRule.split("CLIENT=")[1];
-				//System.out.println(strategy1);
-
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
 
@@ -219,28 +219,28 @@ public class MainTest {
 			}
 
 			for (int i = 0; i < currentRuleArray.size(); i++) {
-				// staff elements
+				// rule elements
 				Element ruleElement = doc.createElement("Rule");
 				taskData2Element.appendChild(ruleElement);
 				int tmp_i = i + 1;
 				ruleElement.setAttribute("id", String.valueOf(tmp_i));
 
-				// firstname elements
+				// support elements
 				Element supportElement = doc.createElement("support");
 				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
 				ruleElement.appendChild(supportElement);
 
-				// lastname elements
+				// conf elements
 				Element confElement = doc.createElement("conf");
 				confElement.appendChild(doc.createTextNode(confArray.get(i)));
 				ruleElement.appendChild(confElement);
 
-				// nickname elements
+				// lift elements
 				Element liftElement = doc.createElement("lift");
 				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
 				ruleElement.appendChild(liftElement);
 
-				// salary elements
+				// lev elements
 				Element levElement = doc.createElement("lev");
 				levElement.appendChild(doc.createTextNode(convArray.get(i)));
 				ruleElement.appendChild(levElement);
@@ -258,13 +258,26 @@ public class MainTest {
 
 				String leftSide = currentRule.split(" ==> ")[0];
 				leftSideArray.add(leftSide);
+				
+				String strategy_part1 = leftSide.split("CLIENT=")[1];
+				strategy_part1 = strategy_part1.split(" ")[0];
+				//System.out.println(strategy_part1);
+				strategy_part1Array.add(strategy_part1);
 
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
+				String strategy_part2 = currentRule.split("PRODUCT=")[1];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
+				strategy_part2 = strategy_part2.split(rightSupport)[0];
+				//System.out.println(strategy2);
 				rightSupportArray.add(rightSupport);
+				strategy_part2Array.add(strategy_part2);
+				
+				
+				//strategy2 = strategy2.split(" ")[0];
+				//System.out.println(strategy2);
 
 				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
 				conf = conf.replaceAll("[^\\d.]", "");
@@ -290,37 +303,46 @@ public class MainTest {
 			}
 
 			for (int i = 0; i < currentRuleArray.size(); i++) {
-				// staff elements
+				// rule elements
 				Element ruleElement = doc.createElement("Rule");
 				taskData3Element.appendChild(ruleElement);
 				int tmp_i = i + 1;
 				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-
-				// firstname elements
+				
+				//strategy elements
+				Element strategy_part1 = doc.createElement("strategy_part1");
+				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
+				ruleElement.appendChild(strategy_part1);
+				Element strategy_part2 = doc.createElement("strategy_part2");
+				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
+				ruleElement.appendChild(strategy_part2);
+				
+				// support elements
 				Element supportElement = doc.createElement("support");
 				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
 				ruleElement.appendChild(supportElement);
 
-				// lastname elements
+				// conf elements
 				Element confElement = doc.createElement("conf");
 				confElement.appendChild(doc.createTextNode(confArray.get(i)));
 				ruleElement.appendChild(confElement);
 
-				// nickname elements
+				// lift elements
 				Element liftElement = doc.createElement("lift");
 				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
 				ruleElement.appendChild(liftElement);
 
-				// salary elements
+				// lev elements
 				Element levElement = doc.createElement("lev");
 				levElement.appendChild(doc.createTextNode(convArray.get(i)));
 				ruleElement.appendChild(levElement);
 			}
 
 			currentRuleArray.clear();
-
 			leftSideArray.clear();
 			rightSideArray.clear();
+			strategy_part1Array.clear();
+			strategy_part2Array.clear();
 			rightSupportArray.clear();
 			confArray.clear();
 			liftArray.clear();

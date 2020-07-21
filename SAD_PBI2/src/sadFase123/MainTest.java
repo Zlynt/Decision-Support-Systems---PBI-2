@@ -188,12 +188,26 @@ public class MainTest {
 				String leftSide = currentRule.split(" ==> ")[0];
 				leftSideArray.add(leftSide);
 				
+				System.out.println(leftSide);
+				
+//				String info;
+//				int compare = 
+//				String strategy_part1 = leftSide.split("COUNTRY=")[1];
+//				strategy_part1 = strategy_part1.split(" ")[0];
+//				//System.out.println(strategy_part1);
+//				strategy_part1Array.add(strategy_part1);
+
+				
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
 
-				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
-				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
-				rightSupportArray.add(rightSupport);
+//				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
+//				//if ("")
+//				String strategy_part2 = currentRule.split("PRODUCTLINE=")[1];
+//				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
+//				strategy_part2 = strategy_part2.split("  "+rightSupport)[0];
+//				strategy_part2Array.add(strategy_part2);
+//				rightSupportArray.add(rightSupport);
 
 				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
 				conf = conf.replaceAll("[^\\d.]", "");
@@ -224,6 +238,14 @@ public class MainTest {
 				taskData2Element.appendChild(ruleElement);
 				int tmp_i = i + 1;
 				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+				
+				//strategy elements
+//				Element strategy_part1 = doc.createElement("strategy_part1");
+//				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
+//				ruleElement.appendChild(strategy_part1);
+//				Element strategy_part2 = doc.createElement("strategy_part2");
+//				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
+//				ruleElement.appendChild(strategy_part2);
 
 				// support elements
 				Element supportElement = doc.createElement("support");
@@ -247,7 +269,9 @@ public class MainTest {
 			}
 
 			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, convArray);
-
+			strategy_part1Array.clear();
+			strategy_part2Array.clear();
+			
 			Element taskData3Element = doc.createElement("Taskdata3");
 			rootElement.appendChild(taskData3Element);
 
@@ -270,7 +294,7 @@ public class MainTest {
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				String strategy_part2 = currentRule.split("PRODUCT=")[1];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
-				strategy_part2 = strategy_part2.split(rightSupport)[0];
+				strategy_part2 = strategy_part2.split("  "+rightSupport)[0];
 				//System.out.println(strategy2);
 				rightSupportArray.add(rightSupport);
 				strategy_part2Array.add(strategy_part2);

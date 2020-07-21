@@ -91,7 +91,7 @@
    <Taskdata3>
       <Rule id="1">
          <strategy_part1>298</strategy_part1>
-         <strategy_part2>Classic Cars  </strategy_part2>
+         <strategy_part2>Classic Cars</strategy_part2>
          <support>31</support>
          <conf>1</conf>
          <lift>2.95</lift>
@@ -99,7 +99,7 @@
       </Rule>
       <Rule id="2">
          <strategy_part1>151</strategy_part1>
-         <strategy_part2>Classic Cars  </strategy_part2>
+         <strategy_part2>Classic Cars</strategy_part2>
          <support>34</support>
          <conf>0.71</conf>
          <lift>2.09</lift>

@@ -26,7 +26,7 @@ public class MainTest {
 	protected static final String projectPath = "C:\\sad\\implementacao";
 	protected static final String xmlPath = projectPath + "\\XML\\TASKDATAResults.xml";
 	
-	public static void applyElements(List<String> list, Document doc, Element element, List<String> combination,
+	public static void applyElements(List<String> list, Document doc, Element element, List<String> premise, List<String> consequence,
 			 List<String> leftSupport,  List<String> rightSupport, List<String> conf, List<String> lift, List<String> lev, List<String> conv)
 	{
 		for (int i = 0; i < list.size(); i++) {
@@ -36,10 +36,15 @@ public class MainTest {
 			int tmp_i = i + 1;
 			ruleElement.setAttribute("id", String.valueOf(tmp_i));
 			
-			//combination elements
-			Element combinationElement = doc.createElement("combination");
-			combinationElement.appendChild(doc.createTextNode(combination.get(i)));
-			ruleElement.appendChild(combinationElement);
+			//premise elements
+			Element premiseElement = doc.createElement("premise");
+			premiseElement.appendChild(doc.createTextNode(premise.get(i)));
+			ruleElement.appendChild(premiseElement);
+			
+			//consequence elements
+			Element consequenceElement = doc.createElement("consequence");
+			consequenceElement.appendChild(doc.createTextNode(consequence.get(i)));
+			ruleElement.appendChild(consequenceElement);
 
 			// support elements
 			Element leftSupportElement = doc.createElement("leftSupport");
@@ -74,12 +79,13 @@ public class MainTest {
 	}
 
 	public static void clear(	List<String> current, List<String> left,
-								List<String> right, List<String> combination, List<String> leftSupport, List<String> rightSupport,
+								List<String> right,  List<String> premise, List<String> consequence, List<String> leftSupport, List<String> rightSupport,
 								List<String> conf, List<String> lift, List<String> lev, List<String> conv){
 		current.clear();
 		left.clear();
 		right.clear();
-		combination.clear();
+		premise.clear();
+		consequence.clear();
 		leftSupport.clear();
 		rightSupport.clear();
 		conf.clear();
@@ -94,6 +100,8 @@ public class MainTest {
 		List<String> currentRuleArray = new ArrayList<String>();
 		List<String> leftSideArray = new ArrayList<String>();
 		List<String> rightSideArray = new ArrayList<String>();
+		List<String> premiseArray = new ArrayList<String>();
+		List<String> consequenceArray = new ArrayList<String>();
 		List<String> combinationArray = new ArrayList<String>();
 		List<String> leftSupportArray = new ArrayList<String>();
 		List<String> rightSupportArray = new ArrayList<String>();
@@ -126,20 +134,13 @@ public class MainTest {
 				leftSide = leftSide.replace("  PRODUCTNAME=", "");
 				leftSideArray.add(leftSide);
 				leftSupportArray.add(leftSupport);
-//				System.out.println(leftSide);
-//				System.out.println(leftSupport);
+				premiseArray.add(leftSide);
 
 				String rightSide = currentRule.split(" ==> ")[1];
 				String rightData = rightSide.split("=ThisDealsize")[0];
 				rightSideArray.add(rightSide);
 				rightData = rightData.replace("DEALSIZE=", "");
-				String tmp_data_combination = leftSide+" and "+rightData;
-				tmp_data_combination = tmp_data_combination.replace("  ", " ");
-				combinationArray.add(tmp_data_combination);
-				
-//				System.out.println(rightSide);
-//				System.out.println(rightData);
-//				System.out.println(tmp_data_combination);
+				consequenceArray.add(rightData);
 				
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
@@ -170,8 +171,8 @@ public class MainTest {
 			}
 
 
-			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData1Element, premiseArray, consequenceArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, premiseArray, consequenceArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData2Element = doc.createElement("Taskdata2");
 			rootElement.appendChild(taskData2Element);
@@ -198,6 +199,7 @@ public class MainTest {
 				}
 				
 				leftSideArray.add(leftSide);
+				premiseArray.add(leftSide);
 //				System.out.println(leftSide);
 
 				String rightSide = currentRule.split(" ==> ")[1];
@@ -214,10 +216,11 @@ public class MainTest {
 				}
 				
 				rightSideArray.add(rightSide);
-				String tmp_data_combination = leftSide+" and "+rightData;
-				tmp_data_combination = tmp_data_combination.replace("  ", " ");
-				System.out.println(tmp_data_combination);
-				combinationArray.add(tmp_data_combination);
+				consequenceArray.add(rightData);
+//				String tmp_data_combination = leftSide+" and "+rightData;
+//				tmp_data_combination = tmp_data_combination.replace("  ", " ");
+//				System.out.println(tmp_data_combination);
+//				combinationArray.add(tmp_data_combination);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				rightSupportArray.add(rightSupport);
@@ -245,8 +248,8 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData2Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData2Element, premiseArray, consequenceArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, premiseArray, consequenceArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData3Element = doc.createElement("Taskdata3");
 			rootElement.appendChild(taskData3Element);
@@ -263,6 +266,7 @@ public class MainTest {
 				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
 				leftSide = leftSide.replace((i+1)+".","");
 				leftSide = leftSide.replace("  CLIENT=", "Client ");
+				premiseArray.add(leftSide);
 				//System.out.println(leftSide);
 				
 				String rightSide = currentRule.split(" ==> ")[1];
@@ -274,6 +278,7 @@ public class MainTest {
 				
 				String rightData = currentRule.split("PRODUCT=")[1];
 				rightData = rightData.split("  "+rightSupport)[0];
+				consequenceArray.add(rightData);
 				//System.out.println(rightData);
 				
 				String tmp_data_combination = leftSide+" and "+rightData;
@@ -304,8 +309,8 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData3Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData3Element, premiseArray, consequenceArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, premiseArray, consequenceArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData4Element = doc.createElement("Taskdata4");
 			rootElement.appendChild(taskData4Element);
@@ -333,18 +338,20 @@ public class MainTest {
 				}
 				else 
 					leftSide = leftSide.replace("=Bought", "");
+				premiseArray.add(leftSide);
 				
 				//System.out.println(leftSide);
 
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
 				String rightData = rightSide.split("=Bought")[0];
+				consequenceArray.add(rightData);
 				//System.out.println(rightData);
 				
-				String tmp_data_combination = leftSide+" and "+rightData;
-				tmp_data_combination = tmp_data_combination.replace("  ", " ");
-				//System.out.println(tmp_data_combination);
-				combinationArray.add(tmp_data_combination);
+//				String tmp_data_combination = leftSide+" and "+rightData;
+//				tmp_data_combination = tmp_data_combination.replace("  ", " ");
+//				//System.out.println(tmp_data_combination);
+//				combinationArray.add(tmp_data_combination);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
@@ -373,7 +380,7 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData4Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData4Element, premiseArray, consequenceArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			// write the content into xml file
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();

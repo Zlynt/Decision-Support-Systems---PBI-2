@@ -25,14 +25,9 @@ public class MainTest {
 
 	protected static final String projectPath = "C:\\sad\\implementacao";
 	protected static final String xmlPath = projectPath + "\\XML\\TASKDATAResults.xml";
-
-	public static void currentTask()
-	{
-		
-	}
 	
 	public static void applyElements(List<String> list, Document doc, Element element, List<String> combination,
-			 List<String> support, List<String> conf, List<String> lift, List<String> lev, List<String> conv)
+			 List<String> leftSupport,  List<String> rightSupport, List<String> conf, List<String> lift, List<String> lev, List<String> conv)
 	{
 		for (int i = 0; i < list.size(); i++) {
 			// rule elements
@@ -47,9 +42,14 @@ public class MainTest {
 			ruleElement.appendChild(combinationElement);
 
 			// support elements
-			Element supportElement = doc.createElement("support");
-			supportElement.appendChild(doc.createTextNode(support.get(i)));
-			ruleElement.appendChild(supportElement);
+			Element leftSupportElement = doc.createElement("leftSupport");
+			leftSupportElement.appendChild(doc.createTextNode(leftSupport.get(i)));
+			ruleElement.appendChild(leftSupportElement);
+			
+			// support elements
+			Element rightSupportElement = doc.createElement("rightSupport");
+			rightSupportElement.appendChild(doc.createTextNode(rightSupport.get(i)));
+			ruleElement.appendChild(rightSupportElement);
 
 			// conf elements
 			Element confElement = doc.createElement("conf");
@@ -74,13 +74,14 @@ public class MainTest {
 	}
 
 	public static void clear(	List<String> current, List<String> left,
-								List<String> right, List<String> combination, List<String> support,
+								List<String> right, List<String> combination, List<String> leftSupport, List<String> rightSupport,
 								List<String> conf, List<String> lift, List<String> lev, List<String> conv){
 		current.clear();
 		left.clear();
 		right.clear();
 		combination.clear();
-		support.clear();
+		leftSupport.clear();
+		rightSupport.clear();
 		conf.clear();
 		lift.clear();
 		lev.clear();
@@ -90,12 +91,11 @@ public class MainTest {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		PluginDoPentaho pluginDoPentaho = new PluginDoPentaho();
-		List<String> strategy_part1Array = new ArrayList<String>();
-		List<String> strategy_part2Array = new ArrayList<String>();
 		List<String> currentRuleArray = new ArrayList<String>();
 		List<String> leftSideArray = new ArrayList<String>();
 		List<String> rightSideArray = new ArrayList<String>();
 		List<String> combinationArray = new ArrayList<String>();
+		List<String> leftSupportArray = new ArrayList<String>();
 		List<String> rightSupportArray = new ArrayList<String>();
 		List<String> confArray = new ArrayList<String>();
 		List<String> liftArray = new ArrayList<String>();
@@ -120,11 +120,14 @@ public class MainTest {
 				currentRuleArray.add(currentRule);
 
 				String leftSide = currentRule.split(" ==> ")[0];
+				String leftSupport = leftSide.split(" ")[leftSide.split(" ").length - 1];
 				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
 				leftSide = leftSide.replace((i+1)+".","");
 				leftSide = leftSide.replace("  PRODUCTNAME=", "");
 				leftSideArray.add(leftSide);
+				leftSupportArray.add(leftSupport);
 //				System.out.println(leftSide);
+//				System.out.println(leftSupport);
 
 				String rightSide = currentRule.split(" ==> ")[1];
 				String rightData = rightSide.split("=ThisDealsize")[0];
@@ -167,8 +170,8 @@ public class MainTest {
 			}
 
 
-			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData2Element = doc.createElement("Taskdata2");
 			rootElement.appendChild(taskData2Element);
@@ -179,6 +182,8 @@ public class MainTest {
 				currentRuleArray.add(currentRule);
 
 				String leftSide = currentRule.split(" ==> ")[0];
+				String leftSupport = leftSide.split(" ")[leftSide.split(" ").length - 1];
+				leftSupportArray.add(leftSupport);
 				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
 				leftSide = leftSide.replace((i+1)+".","");
 				if (leftSide.contains("  COUNTRY="))
@@ -240,9 +245,9 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData2Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			
+			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+
 			Element taskData3Element = doc.createElement("Taskdata3");
 			rootElement.appendChild(taskData3Element);
 
@@ -252,6 +257,8 @@ public class MainTest {
 				currentRuleArray.add(currentRule);
 
 				String leftSide = currentRule.split(" ==> ")[0];
+				String leftSupport = leftSide.split(" ")[leftSide.split(" ").length - 1];
+				leftSupportArray.add(leftSupport);
 				leftSideArray.add(leftSide);
 				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
 				leftSide = leftSide.replace((i+1)+".","");
@@ -297,8 +304,8 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData3Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData4Element = doc.createElement("Taskdata4");
 			rootElement.appendChild(taskData4Element);
@@ -309,8 +316,8 @@ public class MainTest {
 				currentRuleArray.add(currentRule);
 
 				String leftSide = currentRule.split(" ==> ")[0];
-				String leftSupport = leftSide.split("=Bought")[1];
-				//System.out.println("before:"+leftSide);
+				String leftSupport = leftSide.split(" ")[leftSide.split(" ").length - 1];
+				leftSupportArray.add(leftSupport);
 				leftSideArray.add(leftSide);
 				
 				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
@@ -336,7 +343,7 @@ public class MainTest {
 				
 				String tmp_data_combination = leftSide+" and "+rightData;
 				tmp_data_combination = tmp_data_combination.replace("  ", " ");
-				System.out.println(tmp_data_combination);
+				//System.out.println(tmp_data_combination);
 				combinationArray.add(tmp_data_combination);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
@@ -366,7 +373,7 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData4Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			// write the content into xml file
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();

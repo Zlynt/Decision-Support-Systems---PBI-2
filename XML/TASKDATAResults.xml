@@ -3,7 +3,8 @@
    <Taskdata1>
       <Rule id="1">
          <combination>1954 Greyhound Scenicruiser and Small</combination>
-         <support>13</support>
+         <leftSupport>13</leftSupport>
+         <rightSupport>13</rightSupport>
          <conf>1</conf>
          <lift>2.31</lift>
          <lev>0.01</lev>
@@ -11,7 +12,8 @@
       </Rule>
       <Rule id="2">
          <combination>1936 Harley Davidson El Knucklehead and Small</combination>
-         <support>13</support>
+         <leftSupport>14</leftSupport>
+         <rightSupport>13</rightSupport>
          <conf>0.93</conf>
          <lift>2.14</lift>
          <lev>0.01</lev>
@@ -19,7 +21,8 @@
       </Rule>
       <Rule id="3">
          <combination>1970 Dodge Coronet and Small</combination>
-         <support>11</support>
+         <leftSupport>12</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>0.92</conf>
          <lift>2.12</lift>
          <lev>0.01</lev>
@@ -27,7 +30,8 @@
       </Rule>
       <Rule id="4">
          <combination>1970 Triumph Spitfire and Medium</combination>
-         <support>11</support>
+         <leftSupport>12</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>0.92</conf>
          <lift>1.82</lift>
          <lev>0</lev>
@@ -35,7 +39,8 @@
       </Rule>
       <Rule id="5">
          <combination>2002 Suzuki XREO and Medium</combination>
-         <support>13</support>
+         <leftSupport>15</leftSupport>
+         <rightSupport>13</rightSupport>
          <conf>0.87</conf>
          <lift>1.72</lift>
          <lev>0.01</lev>
@@ -43,7 +48,8 @@
       </Rule>
       <Rule id="6">
          <combination>1936 Chrysler Airflow and Medium</combination>
-         <support>12</support>
+         <leftSupport>14</leftSupport>
+         <rightSupport>12</rightSupport>
          <conf>0.86</conf>
          <lift>1.7</lift>
          <lev>0</lev>
@@ -51,7 +57,8 @@
       </Rule>
       <Rule id="7">
          <combination>1958 Chevy Corvette Limited Edition and Small</combination>
-         <support>12</support>
+         <leftSupport>14</leftSupport>
+         <rightSupport>12</rightSupport>
          <conf>0.86</conf>
          <lift>1.98</lift>
          <lev>0.01</lev>
@@ -59,17 +66,17 @@
       </Rule>
       <Rule id="8">
          <combination>1996 Moto Guzzi 1100i and Medium</combination>
-         <support>12</support>
+         <leftSupport>14</leftSupport>
+         <rightSupport>12</rightSupport>
          <conf>0.86</conf>
          <lift>1.7</lift>
          <lev>0</lev>
          <conv>2.32</conv>
       </Rule>
-   </Taskdata1>
-   <Taskdata2>
       <Rule id="1">
          <combination>Italy and Classic_Cars</combination>
-         <support>15</support>
+         <leftSupport>15</leftSupport>
+         <rightSupport>15</rightSupport>
          <conf>1</conf>
          <lift>2.43</lift>
          <lev>0.06</lev>
@@ -77,7 +84,8 @@
       </Rule>
       <Rule id="2">
          <combination>Austria and Vintage_Cars</combination>
-         <support>2</support>
+         <leftSupport>2</leftSupport>
+         <rightSupport>2</rightSupport>
          <conf>1</conf>
          <lift>6.41</lift>
          <lev>0.01</lev>
@@ -85,7 +93,8 @@
       </Rule>
       <Rule id="3">
          <combination>Ships and Belgium</combination>
-         <support>8</support>
+         <leftSupport>9</leftSupport>
+         <rightSupport>8</rightSupport>
          <conf>0.89</conf>
          <lift>8.36</lift>
          <lev>0.05</lev>
@@ -93,7 +102,8 @@
       </Rule>
       <Rule id="4">
          <combination>Planes and France</combination>
-         <support>9</support>
+         <leftSupport>12</leftSupport>
+         <rightSupport>9</rightSupport>
          <conf>0.75</conf>
          <lift>3.3</lift>
          <lev>0.04</lev>
@@ -101,7 +111,8 @@
       </Rule>
       <Rule id="5">
          <combination>Motorcycles and France</combination>
-         <support>14</support>
+         <leftSupport>19</leftSupport>
+         <rightSupport>14</rightSupport>
          <conf>0.74</conf>
          <lift>3.25</lift>
          <lev>0.07</lev>
@@ -109,17 +120,17 @@
       </Rule>
       <Rule id="6">
          <combination>Trucks_and_Buses and USA</combination>
-         <support>13</support>
+         <leftSupport>18</leftSupport>
+         <rightSupport>13</rightSupport>
          <conf>0.72</conf>
          <lift>1.82</lift>
          <lev>0.04</lev>
          <conv>1.81</conv>
       </Rule>
-   </Taskdata2>
-   <Taskdata3>
       <Rule id="1">
          <combination>Client 298 and Classic Cars</combination>
-         <support>31</support>
+         <leftSupport>31</leftSupport>
+         <rightSupport>31</rightSupport>
          <conf>1</conf>
          <lift>2.95</lift>
          <lev>0.01</lev>
@@ -127,17 +138,17 @@
       </Rule>
       <Rule id="2">
          <combination>Client 151 and Classic Cars</combination>
-         <support>34</support>
+         <leftSupport>48</leftSupport>
+         <rightSupport>34</rightSupport>
          <conf>0.71</conf>
          <lift>2.09</lift>
          <lev>0.01</lev>
          <conv>2.12</conv>
       </Rule>
-   </Taskdata3>
-   <Taskdata4>
       <Rule id="1">
          <combination>1969 Harley Davidson Ultimate Chopper and 2003 Harley-Davidson Eagle Drag Bike</combination>
-         <support>12</support>
+         <leftSupport>12</leftSupport>
+         <rightSupport>12</rightSupport>
          <conf>1</conf>
          <lift>8</lift>
          <lev>0.09</lev>
@@ -145,7 +156,8 @@
       </Rule>
       <Rule id="2">
          <combination>1997 BMW R 1100 S and 2003 Harley-Davidson Eagle Drag Bike</combination>
-         <support>12</support>
+         <leftSupport>12</leftSupport>
+         <rightSupport>12</rightSupport>
          <conf>1</conf>
          <lift>8</lift>
          <lev>0.09</lev>
@@ -153,7 +165,8 @@
       </Rule>
       <Rule id="3">
          <combination>1954 Greyhound Scenicruiser and 1958 Chevy Corvette Limited Edition</combination>
-         <support>12</support>
+         <leftSupport>12</leftSupport>
+         <rightSupport>12</rightSupport>
          <conf>1</conf>
          <lift>8.62</lift>
          <lev>0.09</lev>
@@ -161,7 +174,8 @@
       </Rule>
       <Rule id="4">
          <combination>1970 Dodge Coronet and 1998 Chrysler Plymouth Prowler</combination>
-         <support>11</support>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>1</conf>
          <lift>8.62</lift>
          <lev>0.09</lev>
@@ -169,7 +183,8 @@
       </Rule>
       <Rule id="5">
          <combination>18th Century Vintage Horse Carriage and 1934 Ford V8 Coupe</combination>
-         <support>11</support>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>1</conf>
          <lift>10.18</lift>
          <lev>0.09</lev>
@@ -177,7 +192,8 @@
       </Rule>
       <Rule id="6">
          <combination>1934 Ford V8 Coupe and 18th Century Vintage Horse Carriage</combination>
-         <support>11</support>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>1</conf>
          <lift>10.18</lift>
          <lev>0.09</lev>
@@ -185,7 +201,8 @@
       </Rule>
       <Rule id="7">
          <combination>2002 Yamaha YZR M1 and 1974 Ducati 350 Mk3 Desmo</combination>
-         <support>11</support>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>1</conf>
          <lift>10.18</lift>
          <lev>0.09</lev>
@@ -193,7 +210,8 @@
       </Rule>
       <Rule id="8">
          <combination>1974 Ducati 350 Mk3 Desmo and 2002 Yamaha YZR M1</combination>
-         <support>11</support>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>1</conf>
          <lift>10.18</lift>
          <lev>0.09</lev>
@@ -201,7 +219,8 @@
       </Rule>
       <Rule id="9">
          <combination>1969 Harley Davidson Ultimate Chopper and 1996 Moto Guzzi 1100i and  and 2003 Harley-Davidson Eagle Drag Bike</combination>
-         <support>11</support>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>1</conf>
          <lift>8</lift>
          <lev>0.09</lev>
@@ -209,11 +228,15 @@
       </Rule>
       <Rule id="10">
          <combination>1969 Harley Davidson Ultimate Chopper and 1997 BMW R 1100 S and 2003 Harley-Davidson Eagle Drag Bike</combination>
-         <support>11</support>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
          <conf>1</conf>
          <lift>8</lift>
          <lev>0.09</lev>
          <conv>9.63</conv>
       </Rule>
-   </Taskdata4>
+   </Taskdata1>
+   <Taskdata2/>
+   <Taskdata3/>
+   <Taskdata4/>
 </Taskdatas>

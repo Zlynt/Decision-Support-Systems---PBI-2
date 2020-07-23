@@ -26,50 +26,25 @@ public class MainTest {
 	protected static final String projectPath = "C:\\sad\\implementacao";
 	protected static final String xmlPath = projectPath + "\\XML\\TASKDATAResults.xml";
 
-//	protected static List<String> currentRuleArray = new ArrayList<String>();
-//	protected static List<String> leftSideArray = new ArrayList<String>();
-//	protected static List<String> rightSideArray = new ArrayList<String>();
-//	protected static List<String> rightSupportArray = new ArrayList<String>();
-//	protected static List<String> confArray = new ArrayList<String>();
-//	protected static List<String> liftArray = new ArrayList<String>();
-//	protected static List<String> levArray = new ArrayList<String>();
-//	protected static List<String> convArray = new ArrayList<String>();
-
-	public static void applyElements(List<String> list, Document doc, Element element, 
+	public static void currentTask()
+	{
+		
+	}
+	
+	public static void applyElements(List<String> list, Document doc, Element element, List<String> combination,
 			 List<String> support, List<String> conf, List<String> lift, List<String> lev, List<String> conv)
 	{
 		for (int i = 0; i < list.size(); i++) {
-//			// Rule elements
-//			Element ruleElement = doc.createElement("Rule");
-//			element.appendChild(ruleElement);
-//			int tmp_i = i + 1;
-//			ruleElement.setAttribute("id", String.valueOf(tmp_i));
-//
-//			// Support elements
-//			Element supportElement = doc.createElement("support");
-//			supportElement.appendChild(doc.createTextNode(support.get(i)));
-//			ruleElement.appendChild(supportElement);
-//
-//			// Conf elements
-//			Element confElement = doc.createElement("conf");
-//			confElement.appendChild(doc.createTextNode(conf.get(i)));
-//			ruleElement.appendChild(confElement);
-//
-//			// Lift elements
-//			Element liftElement = doc.createElement("lift");
-//			liftElement.appendChild(doc.createTextNode(lift.get(i)));
-//			ruleElement.appendChild(liftElement);
-//
-//			// Lev elements
-//			Element levElement = doc.createElement("lev");
-//			levElement.appendChild(doc.createTextNode(lev.get(i)));
-//			ruleElement.appendChild(levElement);
-			
 			// rule elements
 			Element ruleElement = doc.createElement("Rule");
 			element.appendChild(ruleElement);
 			int tmp_i = i + 1;
 			ruleElement.setAttribute("id", String.valueOf(tmp_i));
+			
+			//combination elements
+			Element combinationElement = doc.createElement("combination");
+			combinationElement.appendChild(doc.createTextNode(combination.get(i)));
+			ruleElement.appendChild(combinationElement);
 
 			// support elements
 			Element supportElement = doc.createElement("support");
@@ -99,11 +74,12 @@ public class MainTest {
 	}
 
 	public static void clear(	List<String> current, List<String> left,
-								List<String> right, List<String> support,
+								List<String> right, List<String> combination, List<String> support,
 								List<String> conf, List<String> lift, List<String> lev, List<String> conv){
 		current.clear();
 		left.clear();
 		right.clear();
+		combination.clear();
 		support.clear();
 		conf.clear();
 		lift.clear();
@@ -119,13 +95,12 @@ public class MainTest {
 		List<String> currentRuleArray = new ArrayList<String>();
 		List<String> leftSideArray = new ArrayList<String>();
 		List<String> rightSideArray = new ArrayList<String>();
+		List<String> combinationArray = new ArrayList<String>();
 		List<String> rightSupportArray = new ArrayList<String>();
 		List<String> confArray = new ArrayList<String>();
 		List<String> liftArray = new ArrayList<String>();
 		List<String> levArray = new ArrayList<String>();
 		List<String> convArray = new ArrayList<String>();
-		
-//		Element supportElement, confElement, liftElement , levElement;
 
 		try {
 
@@ -145,10 +120,24 @@ public class MainTest {
 				currentRuleArray.add(currentRule);
 
 				String leftSide = currentRule.split(" ==> ")[0];
+				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
+				leftSide = leftSide.replace((i+1)+".","");
+				leftSide = leftSide.replace("  PRODUCTNAME=", "");
 				leftSideArray.add(leftSide);
+//				System.out.println(leftSide);
 
 				String rightSide = currentRule.split(" ==> ")[1];
+				String rightData = rightSide.split("=ThisDealsize")[0];
 				rightSideArray.add(rightSide);
+				rightData = rightData.replace("DEALSIZE=", "");
+				String tmp_data_combination = leftSide+" and "+rightData;
+				tmp_data_combination = tmp_data_combination.replace("  ", " ");
+				combinationArray.add(tmp_data_combination);
+				
+//				System.out.println(rightSide);
+//				System.out.println(rightData);
+//				System.out.println(tmp_data_combination);
+				
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
@@ -178,36 +167,8 @@ public class MainTest {
 			}
 
 
-			applyElements(currentRuleArray, doc, taskData1Element, rightSupportArray, confArray, liftArray, levArray, convArray);
-//			for (int i = 0; i < currentRuleArray.size(); i++) {
-//				// rule elements
-//				Element ruleElement = doc.createElement("Rule");
-//				taskData1Element.appendChild(ruleElement);
-//				int tmp_i = i + 1;
-//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-//
-//				// support elements
-//				Element supportElement = doc.createElement("support");
-//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-//				ruleElement.appendChild(supportElement);
-//
-//				// conf elements
-//				Element confElement = doc.createElement("conf");
-//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-//				ruleElement.appendChild(confElement);
-//
-//				// lift elements
-//				Element liftElement = doc.createElement("lift");
-//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-//				ruleElement.appendChild(liftElement);
-//
-//				// lev elements
-//				Element levElement = doc.createElement("lev");
-//				levElement.appendChild(doc.createTextNode(convArray.get(i)));
-//				ruleElement.appendChild(levElement);
-//			}
-
-			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData2Element = doc.createElement("Taskdata2");
 			rootElement.appendChild(taskData2Element);
@@ -218,27 +179,42 @@ public class MainTest {
 				currentRuleArray.add(currentRule);
 
 				String leftSide = currentRule.split(" ==> ")[0];
+				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
+				leftSide = leftSide.replace((i+1)+".","");
+				if (leftSide.contains("  COUNTRY="))
+				{
+					leftSide = leftSide.replace("  COUNTRY=", "");
+					leftSide = leftSide.replace("=ThisCountry", "");
+				}
+				else if (leftSide.contains(("  PRODUCTLINE=")))
+				{
+					leftSide = leftSide.replace("  PRODUCTLINE=", "");
+					leftSide = leftSide.replace("=ThisProductLine", "");
+				}
+				
 				leftSideArray.add(leftSide);
-				
-				System.out.println(leftSide);
-				
-//				String info;
-//				int compare = 
-//				String strategy_part1 = leftSide.split("COUNTRY=")[1];
-//				strategy_part1 = strategy_part1.split(" ")[0];
-//				//System.out.println(strategy_part1);
-//				strategy_part1Array.add(strategy_part1);
+//				System.out.println(leftSide);
 
-				
 				String rightSide = currentRule.split(" ==> ")[1];
+				String rightData = null;
+				if (rightSide.contains("COUNTRY="))
+				{
+					rightData = rightSide.split("=ThisCountry")[0];
+					rightData = rightData.replace("COUNTRY=", "");
+				}
+				else if (rightSide.contains("PRODUCTLINE="))
+				{
+					rightData = rightSide.split("=ThisProductLine")[0];
+					rightData = rightData.replace("PRODUCTLINE=", "");
+				}
+				
 				rightSideArray.add(rightSide);
+				String tmp_data_combination = leftSide+" and "+rightData;
+				tmp_data_combination = tmp_data_combination.replace("  ", " ");
+				System.out.println(tmp_data_combination);
+				combinationArray.add(tmp_data_combination);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
-//				//if ("")
-//				String strategy_part2 = currentRule.split("PRODUCTLINE=")[1];
-//				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
-//				strategy_part2 = strategy_part2.split("  "+rightSupport)[0];
-//				strategy_part2Array.add(strategy_part2);
 				rightSupportArray.add(rightSupport);
 
 				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
@@ -264,51 +240,8 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData2Element, rightSupportArray, confArray, liftArray, levArray, convArray);
-//			for (int i = 0; i < currentRuleArray.size(); i++) {
-//				// rule elements
-//				Element ruleElement = doc.createElement("Rule");
-//				taskData2Element.appendChild(ruleElement);
-//				int tmp_i = i + 1;
-//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-//				
-//				//strategy elements
-////				Element strategy_part1 = doc.createElement("strategy_part1");
-////				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
-////				ruleElement.appendChild(strategy_part1);
-////				Element strategy_part2 = doc.createElement("strategy_part2");
-////				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
-////				ruleElement.appendChild(strategy_part2);
-//
-//				// support elements
-//				Element supportElement = doc.createElement("support");
-//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-//				ruleElement.appendChild(supportElement);
-//
-//				// conf elements
-//				Element confElement = doc.createElement("conf");
-//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-//				ruleElement.appendChild(confElement);
-//
-//				// lift elements
-//				Element liftElement = doc.createElement("lift");
-//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-//				ruleElement.appendChild(liftElement);
-//				
-//				// lev elements
-//				Element levElement = doc.createElement("lev");
-//				levElement.appendChild(doc.createTextNode(levArray.get(i)));
-//				ruleElement.appendChild(levElement);
-//
-//				// conv elements
-//				Element convElement = doc.createElement("conv");
-//				convElement.appendChild(doc.createTextNode(convArray.get(i)));
-//				ruleElement.appendChild(convElement);
-//			}
-
-			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, levArray, convArray);
-			strategy_part1Array.clear();
-			strategy_part2Array.clear();
+			applyElements(currentRuleArray, doc, taskData2Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 			
 			Element taskData3Element = doc.createElement("Taskdata3");
 			rootElement.appendChild(taskData3Element);
@@ -320,27 +253,27 @@ public class MainTest {
 
 				String leftSide = currentRule.split(" ==> ")[0];
 				leftSideArray.add(leftSide);
+				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
+				leftSide = leftSide.replace((i+1)+".","");
+				leftSide = leftSide.replace("  CLIENT=", "Client ");
+				//System.out.println(leftSide);
 				
-				String strategy_part1 = leftSide.split("CLIENT=")[1];
-				strategy_part1 = strategy_part1.split(" ")[0];
-				//System.out.println(strategy_part1);
-				strategy_part1Array.add(strategy_part1);
-
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
-
+				
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
-				String strategy_part2 = currentRule.split("PRODUCT=")[1];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
-				strategy_part2 = strategy_part2.split("  "+rightSupport)[0];
-				//System.out.println(strategy2);
 				rightSupportArray.add(rightSupport);
-				strategy_part2Array.add(strategy_part2);
 				
+				String rightData = currentRule.split("PRODUCT=")[1];
+				rightData = rightData.split("  "+rightSupport)[0];
+				//System.out.println(rightData);
 				
-				//strategy2 = strategy2.split(" ")[0];
-				//System.out.println(strategy2);
-
+				String tmp_data_combination = leftSide+" and "+rightData;
+				tmp_data_combination = tmp_data_combination.replace("  ", " ");
+				//System.out.println(tmp_data_combination);
+				combinationArray.add(tmp_data_combination);
+				
 				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
 				conf = conf.replaceAll("[^\\d.]", "");
 				confArray.add(conf);
@@ -364,54 +297,8 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData3Element, rightSupportArray, confArray, liftArray, levArray, convArray);
-//			for (int i = 0; i < currentRuleArray.size(); i++) {
-//				// rule elements
-//				Element ruleElement = doc.createElement("Rule");
-//				taskData3Element.appendChild(ruleElement);
-//				int tmp_i = i + 1;
-//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-//				
-//				//strategy elements
-//				Element strategy_part1 = doc.createElement("strategy_part1");
-//				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
-//				ruleElement.appendChild(strategy_part1);
-//				Element strategy_part2 = doc.createElement("strategy_part2");
-//				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
-//				ruleElement.appendChild(strategy_part2);
-//				
-//				// support elements
-//				Element supportElement = doc.createElement("support");
-//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-//				ruleElement.appendChild(supportElement);
-//
-//				// conf elements
-//				Element confElement = doc.createElement("conf");
-//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-//				ruleElement.appendChild(confElement);
-//
-//				// lift elements
-//				Element liftElement = doc.createElement("lift");
-//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-//				ruleElement.appendChild(liftElement);
-//
-//				// lev elements
-//				Element levElement = doc.createElement("lev");
-//				levElement.appendChild(doc.createTextNode(convArray.get(i)));
-//				ruleElement.appendChild(levElement);
-//			}
-
-			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, levArray,convArray);
-//			currentRuleArray.clear();
-//			leftSideArray.clear();
-//			rightSideArray.clear();
-//			strategy_part1Array.clear();
-//			strategy_part2Array.clear();
-//			rightSupportArray.clear();
-//			confArray.clear();
-//			liftArray.clear();
-//			levArray.clear();
-//			convArray.clear();
+			applyElements(currentRuleArray, doc, taskData3Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData4Element = doc.createElement("Taskdata4");
 			rootElement.appendChild(taskData4Element);
@@ -422,10 +309,35 @@ public class MainTest {
 				currentRuleArray.add(currentRule);
 
 				String leftSide = currentRule.split(" ==> ")[0];
+				String leftSupport = leftSide.split("=Bought")[1];
+				//System.out.println("before:"+leftSide);
 				leftSideArray.add(leftSide);
+				
+				leftSide = leftSide.substring(0, leftSide.length() - leftSide.split(" ")[1].length());
+				if (i+1 == 10)
+					leftSide = leftSide.replace("10. ","");
+				else
+					leftSide = leftSide.replace(" "+(i+1)+". ","");
+				
+				if (i+1 >= 9)
+				{
+					leftSide = leftSide.replace("=Bought", " and ");
+					leftSide = leftSide.replace("=Bough", "");
+				}
+				else 
+					leftSide = leftSide.replace("=Bought", "");
+				
+				//System.out.println(leftSide);
 
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
+				String rightData = rightSide.split("=Bought")[0];
+				//System.out.println(rightData);
+				
+				String tmp_data_combination = leftSide+" and "+rightData;
+				tmp_data_combination = tmp_data_combination.replace("  ", " ");
+				System.out.println(tmp_data_combination);
+				combinationArray.add(tmp_data_combination);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
@@ -454,34 +366,7 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData4Element, rightSupportArray, confArray, liftArray, levArray, convArray);
-//			for (int i = 0; i < currentRuleArray.size(); i++) {
-//				// Rule elements
-//				Element ruleElement = doc.createElement("Rule");
-//				taskData4Element.appendChild(ruleElement);
-//				int tmp_i = i + 1;
-//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-//
-//				// Support elements
-//				Element supportElement = doc.createElement("support");
-//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-//				ruleElement.appendChild(supportElement);
-//
-//				// Conf elements
-//				Element confElement = doc.createElement("conf");
-//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-//				ruleElement.appendChild(confElement);
-//
-//				// Lift elements
-//				Element liftElement = doc.createElement("lift");
-//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-//				ruleElement.appendChild(liftElement);
-//
-//				// Lev elements
-//				Element levElement = doc.createElement("lev");
-//				levElement.appendChild(doc.createTextNode(convArray.get(i)));
-//				ruleElement.appendChild(levElement);
-//			}
+			applyElements(currentRuleArray, doc, taskData4Element, combinationArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			// write the content into xml file
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();

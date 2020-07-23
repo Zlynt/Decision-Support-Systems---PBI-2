@@ -201,13 +201,13 @@ public class MainTest {
 				String rightSide = currentRule.split(" ==> ")[1];
 				rightSideArray.add(rightSide);
 
-//				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
+				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 //				//if ("")
 //				String strategy_part2 = currentRule.split("PRODUCTLINE=")[1];
 //				rightSupport = rightSupport.replaceAll("[^\\d.]", "");
 //				strategy_part2 = strategy_part2.split("  "+rightSupport)[0];
 //				strategy_part2Array.add(strategy_part2);
-//				rightSupportArray.add(rightSupport);
+				rightSupportArray.add(rightSupport);
 
 				String conf = rightSide.split(" ")[rightSide.split(" ").length - 5];
 				conf = conf.replaceAll("[^\\d.]", "");

@@ -35,10 +35,10 @@ public class MainTest {
 //	protected static List<String> levArray = new ArrayList<String>();
 //	protected static List<String> convArray = new ArrayList<String>();
 
-//	public void applyElements(List<String> list, Document doc, Element element, 
-//			 Element support, Element conf, Element lift, Element lev)
-//	{
-//		for (int i = 0; i < list.size(); i++) {
+	public static void applyElements(List<String> list, Document doc, Element element, 
+			 List<String> support, List<String> conf, List<String> lift, List<String> lev, List<String> conv)
+	{
+		for (int i = 0; i < list.size(); i++) {
 //			// Rule elements
 //			Element ruleElement = doc.createElement("Rule");
 //			element.appendChild(ruleElement);
@@ -64,18 +64,50 @@ public class MainTest {
 //			Element levElement = doc.createElement("lev");
 //			levElement.appendChild(doc.createTextNode(lev.get(i)));
 //			ruleElement.appendChild(levElement);
-//		}
-//	}
+			
+			// rule elements
+			Element ruleElement = doc.createElement("Rule");
+			element.appendChild(ruleElement);
+			int tmp_i = i + 1;
+			ruleElement.setAttribute("id", String.valueOf(tmp_i));
+
+			// support elements
+			Element supportElement = doc.createElement("support");
+			supportElement.appendChild(doc.createTextNode(support.get(i)));
+			ruleElement.appendChild(supportElement);
+
+			// conf elements
+			Element confElement = doc.createElement("conf");
+			confElement.appendChild(doc.createTextNode(conf.get(i)));
+			ruleElement.appendChild(confElement);
+
+			// lift elements
+			Element liftElement = doc.createElement("lift");
+			liftElement.appendChild(doc.createTextNode(lift.get(i)));
+			ruleElement.appendChild(liftElement);
+
+			// lev elements
+			Element levElement = doc.createElement("lev");
+			levElement.appendChild(doc.createTextNode(lev.get(i)));
+			ruleElement.appendChild(levElement);
+			
+			// conv elements
+			Element convElement = doc.createElement("conv");
+			convElement.appendChild(doc.createTextNode(conv.get(i)));
+			ruleElement.appendChild(convElement);
+		}
+	}
 
 	public static void clear(	List<String> current, List<String> left,
 								List<String> right, List<String> support,
-								List<String> conf, List<String> lift, List<String> conv){
+								List<String> conf, List<String> lift, List<String> lev, List<String> conv){
 		current.clear();
 		left.clear();
 		right.clear();
 		support.clear();
 		conf.clear();
 		lift.clear();
+		lev.clear();
 		conv.clear();
 	}
 
@@ -146,36 +178,36 @@ public class MainTest {
 			}
 
 
-//			applyElements(currentRuleArray, doc, taskData1Element, supportElement, confElement, liftElement, levElement);
-			for (int i = 0; i < currentRuleArray.size(); i++) {
-				// rule elements
-				Element ruleElement = doc.createElement("Rule");
-				taskData1Element.appendChild(ruleElement);
-				int tmp_i = i + 1;
-				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+			applyElements(currentRuleArray, doc, taskData1Element, rightSupportArray, confArray, liftArray, levArray, convArray);
+//			for (int i = 0; i < currentRuleArray.size(); i++) {
+//				// rule elements
+//				Element ruleElement = doc.createElement("Rule");
+//				taskData1Element.appendChild(ruleElement);
+//				int tmp_i = i + 1;
+//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+//
+//				// support elements
+//				Element supportElement = doc.createElement("support");
+//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+//				ruleElement.appendChild(supportElement);
+//
+//				// conf elements
+//				Element confElement = doc.createElement("conf");
+//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+//				ruleElement.appendChild(confElement);
+//
+//				// lift elements
+//				Element liftElement = doc.createElement("lift");
+//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+//				ruleElement.appendChild(liftElement);
+//
+//				// lev elements
+//				Element levElement = doc.createElement("lev");
+//				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+//				ruleElement.appendChild(levElement);
+//			}
 
-				// support elements
-				Element supportElement = doc.createElement("support");
-				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-				ruleElement.appendChild(supportElement);
-
-				// conf elements
-				Element confElement = doc.createElement("conf");
-				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-				ruleElement.appendChild(confElement);
-
-				// lift elements
-				Element liftElement = doc.createElement("lift");
-				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-				ruleElement.appendChild(liftElement);
-
-				// lev elements
-				Element levElement = doc.createElement("lev");
-				levElement.appendChild(doc.createTextNode(convArray.get(i)));
-				ruleElement.appendChild(levElement);
-			}
-
-			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData2Element = doc.createElement("Taskdata2");
 			rootElement.appendChild(taskData2Element);
@@ -261,14 +293,19 @@ public class MainTest {
 				Element liftElement = doc.createElement("lift");
 				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
 				ruleElement.appendChild(liftElement);
-
+				
 				// lev elements
 				Element levElement = doc.createElement("lev");
-				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+				levElement.appendChild(doc.createTextNode(levArray.get(i)));
 				ruleElement.appendChild(levElement);
+
+				// conv elements
+				Element convElement = doc.createElement("conv");
+				convElement.appendChild(doc.createTextNode(convArray.get(i)));
+				ruleElement.appendChild(convElement);
 			}
 
-			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, convArray);
+			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 			strategy_part1Array.clear();
 			strategy_part2Array.clear();
 			

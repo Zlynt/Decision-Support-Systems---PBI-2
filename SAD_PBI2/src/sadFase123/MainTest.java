@@ -245,7 +245,7 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData2Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData3Element = doc.createElement("Taskdata3");
@@ -304,7 +304,7 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData3Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 			clear(currentRuleArray, leftSideArray, rightSideArray, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			Element taskData4Element = doc.createElement("Taskdata4");
@@ -373,7 +373,7 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			applyElements(currentRuleArray, doc, taskData1Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
+			applyElements(currentRuleArray, doc, taskData4Element, combinationArray, leftSupportArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 
 			// write the content into xml file
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();

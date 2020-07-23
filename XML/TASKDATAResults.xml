@@ -73,6 +73,8 @@
          <lev>0</lev>
          <conv>2.32</conv>
       </Rule>
+   </Taskdata1>
+   <Taskdata2>
       <Rule id="1">
          <combination>Italy and Classic_Cars</combination>
          <leftSupport>15</leftSupport>
@@ -127,6 +129,8 @@
          <lev>0.04</lev>
          <conv>1.81</conv>
       </Rule>
+   </Taskdata2>
+   <Taskdata3>
       <Rule id="1">
          <combination>Client 298 and Classic Cars</combination>
          <leftSupport>31</leftSupport>
@@ -145,6 +149,8 @@
          <lev>0.01</lev>
          <conv>2.12</conv>
       </Rule>
+   </Taskdata3>
+   <Taskdata4>
       <Rule id="1">
          <combination>1969 Harley Davidson Ultimate Chopper and 2003 Harley-Davidson Eagle Drag Bike</combination>
          <leftSupport>12</leftSupport>
@@ -235,8 +241,5 @@
          <lev>0.09</lev>
          <conv>9.63</conv>
       </Rule>
-   </Taskdata1>
-   <Taskdata2/>
-   <Taskdata3/>
-   <Taskdata4/>
+   </Taskdata4>
 </Taskdatas>

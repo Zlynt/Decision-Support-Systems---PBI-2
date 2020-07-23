@@ -104,20 +104,18 @@
    </Taskdata2>
    <Taskdata3>
       <Rule id="1">
-         <strategy_part1>298</strategy_part1>
-         <strategy_part2>Classic Cars</strategy_part2>
          <support>31</support>
          <conf>1</conf>
          <lift>2.95</lift>
-         <lev>20.5</lev>
+         <lev>0.01</lev>
+         <conv>20.5</conv>
       </Rule>
       <Rule id="2">
-         <strategy_part1>151</strategy_part1>
-         <strategy_part2>Classic Cars</strategy_part2>
          <support>34</support>
          <conf>0.71</conf>
          <lift>2.09</lift>
-         <lev>2.12</lev>
+         <lev>0.01</lev>
+         <conv>2.12</conv>
       </Rule>
    </Taskdata3>
    <Taskdata4>
@@ -125,61 +123,71 @@
          <support>12</support>
          <conf>1</conf>
          <lift>8</lift>
-         <lev>10.5</lev>
+         <lev>0.09</lev>
+         <conv>10.5</conv>
       </Rule>
       <Rule id="2">
          <support>12</support>
          <conf>1</conf>
          <lift>8</lift>
-         <lev>10.5</lev>
+         <lev>0.09</lev>
+         <conv>10.5</conv>
       </Rule>
       <Rule id="3">
          <support>12</support>
          <conf>1</conf>
          <lift>8.62</lift>
-         <lev>10.61</lev>
+         <lev>0.09</lev>
+         <conv>10.61</conv>
       </Rule>
       <Rule id="4">
          <support>11</support>
          <conf>1</conf>
          <lift>8.62</lift>
-         <lev>9.72</lev>
+         <lev>0.09</lev>
+         <conv>9.72</conv>
       </Rule>
       <Rule id="5">
          <support>11</support>
          <conf>1</conf>
          <lift>10.18</lift>
-         <lev>9.92</lev>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
       </Rule>
       <Rule id="6">
          <support>11</support>
          <conf>1</conf>
          <lift>10.18</lift>
-         <lev>9.92</lev>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
       </Rule>
       <Rule id="7">
          <support>11</support>
          <conf>1</conf>
          <lift>10.18</lift>
-         <lev>9.92</lev>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
       </Rule>
       <Rule id="8">
          <support>11</support>
          <conf>1</conf>
          <lift>10.18</lift>
-         <lev>9.92</lev>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
       </Rule>
       <Rule id="9">
          <support>11</support>
          <conf>1</conf>
          <lift>8</lift>
-         <lev>9.63</lev>
+         <lev>0.09</lev>
+         <conv>9.63</conv>
       </Rule>
       <Rule id="10">
          <support>11</support>
          <conf>1</conf>
          <lift>8</lift>
-         <lev>9.63</lev>
+         <lev>0.09</lev>
+         <conv>9.63</conv>
       </Rule>
    </Taskdata4>
 </Taskdatas>

@@ -264,46 +264,47 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			for (int i = 0; i < currentRuleArray.size(); i++) {
-				// rule elements
-				Element ruleElement = doc.createElement("Rule");
-				taskData2Element.appendChild(ruleElement);
-				int tmp_i = i + 1;
-				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-				
-				//strategy elements
-//				Element strategy_part1 = doc.createElement("strategy_part1");
-//				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
-//				ruleElement.appendChild(strategy_part1);
-//				Element strategy_part2 = doc.createElement("strategy_part2");
-//				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
-//				ruleElement.appendChild(strategy_part2);
-
-				// support elements
-				Element supportElement = doc.createElement("support");
-				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-				ruleElement.appendChild(supportElement);
-
-				// conf elements
-				Element confElement = doc.createElement("conf");
-				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-				ruleElement.appendChild(confElement);
-
-				// lift elements
-				Element liftElement = doc.createElement("lift");
-				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-				ruleElement.appendChild(liftElement);
-				
-				// lev elements
-				Element levElement = doc.createElement("lev");
-				levElement.appendChild(doc.createTextNode(levArray.get(i)));
-				ruleElement.appendChild(levElement);
-
-				// conv elements
-				Element convElement = doc.createElement("conv");
-				convElement.appendChild(doc.createTextNode(convArray.get(i)));
-				ruleElement.appendChild(convElement);
-			}
+			applyElements(currentRuleArray, doc, taskData2Element, rightSupportArray, confArray, liftArray, levArray, convArray);
+//			for (int i = 0; i < currentRuleArray.size(); i++) {
+//				// rule elements
+//				Element ruleElement = doc.createElement("Rule");
+//				taskData2Element.appendChild(ruleElement);
+//				int tmp_i = i + 1;
+//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+//				
+//				//strategy elements
+////				Element strategy_part1 = doc.createElement("strategy_part1");
+////				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
+////				ruleElement.appendChild(strategy_part1);
+////				Element strategy_part2 = doc.createElement("strategy_part2");
+////				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
+////				ruleElement.appendChild(strategy_part2);
+//
+//				// support elements
+//				Element supportElement = doc.createElement("support");
+//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+//				ruleElement.appendChild(supportElement);
+//
+//				// conf elements
+//				Element confElement = doc.createElement("conf");
+//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+//				ruleElement.appendChild(confElement);
+//
+//				// lift elements
+//				Element liftElement = doc.createElement("lift");
+//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+//				ruleElement.appendChild(liftElement);
+//				
+//				// lev elements
+//				Element levElement = doc.createElement("lev");
+//				levElement.appendChild(doc.createTextNode(levArray.get(i)));
+//				ruleElement.appendChild(levElement);
+//
+//				// conv elements
+//				Element convElement = doc.createElement("conv");
+//				convElement.appendChild(doc.createTextNode(convArray.get(i)));
+//				ruleElement.appendChild(convElement);
+//			}
 
 			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, levArray, convArray);
 			strategy_part1Array.clear();
@@ -363,51 +364,54 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			for (int i = 0; i < currentRuleArray.size(); i++) {
-				// rule elements
-				Element ruleElement = doc.createElement("Rule");
-				taskData3Element.appendChild(ruleElement);
-				int tmp_i = i + 1;
-				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-				
-				//strategy elements
-				Element strategy_part1 = doc.createElement("strategy_part1");
-				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
-				ruleElement.appendChild(strategy_part1);
-				Element strategy_part2 = doc.createElement("strategy_part2");
-				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
-				ruleElement.appendChild(strategy_part2);
-				
-				// support elements
-				Element supportElement = doc.createElement("support");
-				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-				ruleElement.appendChild(supportElement);
+			applyElements(currentRuleArray, doc, taskData3Element, rightSupportArray, confArray, liftArray, levArray, convArray);
+//			for (int i = 0; i < currentRuleArray.size(); i++) {
+//				// rule elements
+//				Element ruleElement = doc.createElement("Rule");
+//				taskData3Element.appendChild(ruleElement);
+//				int tmp_i = i + 1;
+//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+//				
+//				//strategy elements
+//				Element strategy_part1 = doc.createElement("strategy_part1");
+//				strategy_part1.appendChild(doc.createTextNode(strategy_part1Array.get(i)));
+//				ruleElement.appendChild(strategy_part1);
+//				Element strategy_part2 = doc.createElement("strategy_part2");
+//				strategy_part2.appendChild(doc.createTextNode(strategy_part2Array.get(i)));
+//				ruleElement.appendChild(strategy_part2);
+//				
+//				// support elements
+//				Element supportElement = doc.createElement("support");
+//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+//				ruleElement.appendChild(supportElement);
+//
+//				// conf elements
+//				Element confElement = doc.createElement("conf");
+//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+//				ruleElement.appendChild(confElement);
+//
+//				// lift elements
+//				Element liftElement = doc.createElement("lift");
+//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+//				ruleElement.appendChild(liftElement);
+//
+//				// lev elements
+//				Element levElement = doc.createElement("lev");
+//				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+//				ruleElement.appendChild(levElement);
+//			}
 
-				// conf elements
-				Element confElement = doc.createElement("conf");
-				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-				ruleElement.appendChild(confElement);
-
-				// lift elements
-				Element liftElement = doc.createElement("lift");
-				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-				ruleElement.appendChild(liftElement);
-
-				// lev elements
-				Element levElement = doc.createElement("lev");
-				levElement.appendChild(doc.createTextNode(convArray.get(i)));
-				ruleElement.appendChild(levElement);
-			}
-
-			currentRuleArray.clear();
-			leftSideArray.clear();
-			rightSideArray.clear();
-			strategy_part1Array.clear();
-			strategy_part2Array.clear();
-			rightSupportArray.clear();
-			confArray.clear();
-			liftArray.clear();
-			convArray.clear();
+			clear(currentRuleArray, leftSideArray, rightSideArray, rightSupportArray, confArray, liftArray, levArray,convArray);
+//			currentRuleArray.clear();
+//			leftSideArray.clear();
+//			rightSideArray.clear();
+//			strategy_part1Array.clear();
+//			strategy_part2Array.clear();
+//			rightSupportArray.clear();
+//			confArray.clear();
+//			liftArray.clear();
+//			levArray.clear();
+//			convArray.clear();
 
 			Element taskData4Element = doc.createElement("Taskdata4");
 			rootElement.appendChild(taskData4Element);
@@ -450,33 +454,34 @@ public class MainTest {
 				rightSide = tmp_rightSupport;
 			}
 
-			for (int i = 0; i < currentRuleArray.size(); i++) {
-				// Rule elements
-				Element ruleElement = doc.createElement("Rule");
-				taskData4Element.appendChild(ruleElement);
-				int tmp_i = i + 1;
-				ruleElement.setAttribute("id", String.valueOf(tmp_i));
-
-				// Support elements
-				Element supportElement = doc.createElement("support");
-				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
-				ruleElement.appendChild(supportElement);
-
-				// Conf elements
-				Element confElement = doc.createElement("conf");
-				confElement.appendChild(doc.createTextNode(confArray.get(i)));
-				ruleElement.appendChild(confElement);
-
-				// Lift elements
-				Element liftElement = doc.createElement("lift");
-				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
-				ruleElement.appendChild(liftElement);
-
-				// Lev elements
-				Element levElement = doc.createElement("lev");
-				levElement.appendChild(doc.createTextNode(convArray.get(i)));
-				ruleElement.appendChild(levElement);
-			}
+			applyElements(currentRuleArray, doc, taskData4Element, rightSupportArray, confArray, liftArray, levArray, convArray);
+//			for (int i = 0; i < currentRuleArray.size(); i++) {
+//				// Rule elements
+//				Element ruleElement = doc.createElement("Rule");
+//				taskData4Element.appendChild(ruleElement);
+//				int tmp_i = i + 1;
+//				ruleElement.setAttribute("id", String.valueOf(tmp_i));
+//
+//				// Support elements
+//				Element supportElement = doc.createElement("support");
+//				supportElement.appendChild(doc.createTextNode(rightSupportArray.get(i)));
+//				ruleElement.appendChild(supportElement);
+//
+//				// Conf elements
+//				Element confElement = doc.createElement("conf");
+//				confElement.appendChild(doc.createTextNode(confArray.get(i)));
+//				ruleElement.appendChild(confElement);
+//
+//				// Lift elements
+//				Element liftElement = doc.createElement("lift");
+//				liftElement.appendChild(doc.createTextNode(liftArray.get(i)));
+//				ruleElement.appendChild(liftElement);
+//
+//				// Lev elements
+//				Element levElement = doc.createElement("lev");
+//				levElement.appendChild(doc.createTextNode(convArray.get(i)));
+//				ruleElement.appendChild(levElement);
+//			}
 
 			// write the content into xml file
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();

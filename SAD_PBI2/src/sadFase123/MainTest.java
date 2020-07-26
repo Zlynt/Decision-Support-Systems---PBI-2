@@ -33,8 +33,8 @@ public class MainTest {
 			// rule elements
 			Element ruleElement = doc.createElement("Rule");
 			element.appendChild(ruleElement);
-			int tmp_i = i + 1;
-			ruleElement.setAttribute("id", String.valueOf(tmp_i));
+//			int tmp_i = i + 1;
+//			ruleElement.setAttribute("id", String.valueOf(tmp_i));
 			
 			//premise elements
 			Element premiseElement = doc.createElement("premise");
@@ -217,11 +217,7 @@ public class MainTest {
 				
 				rightSideArray.add(rightSide);
 				consequenceArray.add(rightData);
-//				String tmp_data_combination = leftSide+" and "+rightData;
-//				tmp_data_combination = tmp_data_combination.replace("  ", " ");
-//				System.out.println(tmp_data_combination);
-//				combinationArray.add(tmp_data_combination);
-
+				
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				rightSupportArray.add(rightSupport);
 
@@ -338,8 +334,7 @@ public class MainTest {
 				}
 				else 
 					leftSide = leftSide.replace("=Bought", "");
-				premiseArray.add(leftSide);
-				
+				premiseArray.add(leftSide);				
 				//System.out.println(leftSide);
 
 				String rightSide = currentRule.split(" ==> ")[1];
@@ -347,11 +342,6 @@ public class MainTest {
 				String rightData = rightSide.split("=Bought")[0];
 				consequenceArray.add(rightData);
 				//System.out.println(rightData);
-				
-//				String tmp_data_combination = leftSide+" and "+rightData;
-//				tmp_data_combination = tmp_data_combination.replace("  ", " ");
-//				//System.out.println(tmp_data_combination);
-//				combinationArray.add(tmp_data_combination);
 
 				String rightSupport = rightSide.split(" ")[rightSide.split(" ").length - 9];
 				rightSupport = rightSupport.replaceAll("[^\\d.]", "");

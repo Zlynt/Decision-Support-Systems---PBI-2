@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Taskdatas>
+   <Taskdata1>
+      <Rule>
+         <premise>1954 Greyhound Scenicruiser </premise>
+         <consequence>Small</consequence>
+         <leftSupport>13</leftSupport>
+         <rightSupport>13</rightSupport>
+         <conf>1</conf>
+         <lift>2.31</lift>
+         <lev>0.01</lev>
+         <conv>7.37</conv>
+      </Rule>
+      <Rule>
+         <premise>1936 Harley Davidson El Knucklehead </premise>
+         <consequence>Small</consequence>
+         <leftSupport>14</leftSupport>
+         <rightSupport>13</rightSupport>
+         <conf>0.93</conf>
+         <lift>2.14</lift>
+         <lev>0.01</lev>
+         <conv>3.97</conv>
+      </Rule>
+      <Rule>
+         <premise>1970 Dodge Coronet </premise>
+         <consequence>Small</consequence>
+         <leftSupport>12</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>0.92</conf>
+         <lift>2.12</lift>
+         <lev>0.01</lev>
+         <conv>3.4</conv>
+      </Rule>
+      <Rule>
+         <premise>1970 Triumph Spitfire </premise>
+         <consequence>Medium</consequence>
+         <leftSupport>12</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>0.92</conf>
+         <lift>1.82</lift>
+         <lev>0</lev>
+         <conv>2.98</conv>
+      </Rule>
+      <Rule>
+         <premise>2002 Suzuki XREO </premise>
+         <consequence>Medium</consequence>
+         <leftSupport>15</leftSupport>
+         <rightSupport>13</rightSupport>
+         <conf>0.87</conf>
+         <lift>1.72</lift>
+         <lev>0.01</lev>
+         <conv>2.48</conv>
+      </Rule>
+      <Rule>
+         <premise>1936 Chrysler Airflow </premise>
+         <consequence>Medium</consequence>
+         <leftSupport>14</leftSupport>
+         <rightSupport>12</rightSupport>
+         <conf>0.86</conf>
+         <lift>1.7</lift>
+         <lev>0</lev>
+         <conv>2.32</conv>
+      </Rule>
+      <Rule>
+         <premise>1958 Chevy Corvette Limited Edition </premise>
+         <consequence>Small</consequence>
+         <leftSupport>14</leftSupport>
+         <rightSupport>12</rightSupport>
+         <conf>0.86</conf>
+         <lift>1.98</lift>
+         <lev>0.01</lev>
+         <conv>2.65</conv>
+      </Rule>
+      <Rule>
+         <premise>1996 Moto Guzzi 1100i </premise>
+         <consequence>Medium</consequence>
+         <leftSupport>14</leftSupport>
+         <rightSupport>12</rightSupport>
+         <conf>0.86</conf>
+         <lift>1.7</lift>
+         <lev>0</lev>
+         <conv>2.32</conv>
+      </Rule>
+   </Taskdata1>
+   <Taskdata2>
+      <Rule>
+         <premise>Italy </premise>
+         <consequence>Classic_Cars</consequence>
+         <leftSupport>15</leftSupport>
+         <rightSupport>15</rightSupport>
+         <conf>1</conf>
+         <lift>2.43</lift>
+         <lev>0.06</lev>
+         <conv>8.83</conv>
+      </Rule>
+      <Rule>
+         <premise>Austria</premise>
+         <consequence>Vintage_Cars</consequence>
+         <leftSupport>2</leftSupport>
+         <rightSupport>2</rightSupport>
+         <conf>1</conf>
+         <lift>6.41</lift>
+         <lev>0.01</lev>
+         <conv>1.69</conv>
+      </Rule>
+      <Rule>
+         <premise>Ships</premise>
+         <consequence>Belgium</consequence>
+         <leftSupport>9</leftSupport>
+         <rightSupport>8</rightSupport>
+         <conf>0.89</conf>
+         <lift>8.36</lift>
+         <lev>0.05</lev>
+         <conv>4.02</conv>
+      </Rule>
+      <Rule>
+         <premise>Planes </premise>
+         <consequence>France</consequence>
+         <leftSupport>12</leftSupport>
+         <rightSupport>9</rightSupport>
+         <conf>0.75</conf>
+         <lift>3.3</lift>
+         <lev>0.04</lev>
+         <conv>2.32</conv>
+      </Rule>
+      <Rule>
+         <premise>Motorcycles </premise>
+         <consequence>France</consequence>
+         <leftSupport>19</leftSupport>
+         <rightSupport>14</rightSupport>
+         <conf>0.74</conf>
+         <lift>3.25</lift>
+         <lev>0.07</lev>
+         <conv>2.45</conv>
+      </Rule>
+      <Rule>
+         <premise>Trucks_and_Buses </premise>
+         <consequence>USA</consequence>
+         <leftSupport>18</leftSupport>
+         <rightSupport>13</rightSupport>
+         <conf>0.72</conf>
+         <lift>1.82</lift>
+         <lev>0.04</lev>
+         <conv>1.81</conv>
+      </Rule>
+   </Taskdata2>
+   <Taskdata3>
+      <Rule>
+         <premise>Client 298 </premise>
+         <consequence>Classic Cars</consequence>
+         <leftSupport>31</leftSupport>
+         <rightSupport>31</rightSupport>
+         <conf>1</conf>
+         <lift>2.95</lift>
+         <lev>0.01</lev>
+         <conv>20.5</conv>
+      </Rule>
+      <Rule>
+         <premise>Client 151 </premise>
+         <consequence>Classic Cars</consequence>
+         <leftSupport>48</leftSupport>
+         <rightSupport>34</rightSupport>
+         <conf>0.71</conf>
+         <lift>2.09</lift>
+         <lev>0.01</lev>
+         <conv>2.12</conv>
+      </Rule>
+   </Taskdata3>
+   <Taskdata4>
+      <Rule>
+         <premise>1969 Harley Davidson Ultimate Chopper </premise>
+         <consequence>2003 Harley-Davidson Eagle Drag Bike</consequence>
+         <leftSupport>12</leftSupport>
+         <rightSupport>12</rightSupport>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>0.09</lev>
+         <conv>10.5</conv>
+      </Rule>
+      <Rule>
+         <premise>1997 BMW R 1100 S </premise>
+         <consequence>2003 Harley-Davidson Eagle Drag Bike</consequence>
+         <leftSupport>12</leftSupport>
+         <rightSupport>12</rightSupport>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>0.09</lev>
+         <conv>10.5</conv>
+      </Rule>
+      <Rule>
+         <premise>1954 Greyhound Scenicruiser </premise>
+         <consequence>1958 Chevy Corvette Limited Edition</consequence>
+         <leftSupport>12</leftSupport>
+         <rightSupport>12</rightSupport>
+         <conf>1</conf>
+         <lift>8.62</lift>
+         <lev>0.09</lev>
+         <conv>10.61</conv>
+      </Rule>
+      <Rule>
+         <premise>1970 Dodge Coronet </premise>
+         <consequence>1998 Chrysler Plymouth Prowler</consequence>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>1</conf>
+         <lift>8.62</lift>
+         <lev>0.09</lev>
+         <conv>9.72</conv>
+      </Rule>
+      <Rule>
+         <premise>18th Century Vintage Horse Carriage </premise>
+         <consequence>1934 Ford V8 Coupe</consequence>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
+      </Rule>
+      <Rule>
+         <premise>1934 Ford V8 Coupe </premise>
+         <consequence>18th Century Vintage Horse Carriage</consequence>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
+      </Rule>
+      <Rule>
+         <premise>2002 Yamaha YZR M1 </premise>
+         <consequence>1974 Ducati 350 Mk3 Desmo</consequence>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
+      </Rule>
+      <Rule>
+         <premise>1974 Ducati 350 Mk3 Desmo </premise>
+         <consequence>2002 Yamaha YZR M1</consequence>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>1</conf>
+         <lift>10.18</lift>
+         <lev>0.09</lev>
+         <conv>9.92</conv>
+      </Rule>
+      <Rule>
+         <premise>1969 Harley Davidson Ultimate Chopper and  1996 Moto Guzzi 1100i and  </premise>
+         <consequence>2003 Harley-Davidson Eagle Drag Bike</consequence>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>0.09</lev>
+         <conv>9.63</conv>
+      </Rule>
+      <Rule>
+         <premise>1969 Harley Davidson Ultimate Chopper and  1997 BMW R 1100 S</premise>
+         <consequence>2003 Harley-Davidson Eagle Drag Bike</consequence>
+         <leftSupport>11</leftSupport>
+         <rightSupport>11</rightSupport>
+         <conf>1</conf>
+         <lift>8</lift>
+         <lev>0.09</lev>
+         <conv>9.63</conv>
+      </Rule>
+   </Taskdata4>
+</Taskdatas>
